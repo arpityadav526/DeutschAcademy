@@ -1,0 +1,275 @@
+{
+  "id": "unit-02",
+  "level": "A2",
+  "number": 2,
+  "title": "Two-Way Prepositions (Wechselpräpositionen)",
+  "subtitle": "Master the spatial dichotomy: Wohin? (Accusative) vs. Wo? (Dative) and paired position verbs",
+  "grammarFocus": [
+    "The 9 Two-Way Prepositions (an, auf, hinter, in, neben, über, unter, vor, zwischen)",
+    "The Wohin? (Motion/Direction = Akkusativ) Rule",
+    "The Wo? (Static Location = Dativ) Rule",
+    "Transitive vs. Intransitive Verb Pairs (stellen/stehen, legen/liegen, setzen/sitzen, hängen/hängen)"
+  ],
+  "estimatedMinutes": 55,
+  "concept": {
+    "title": "The Spatial Crossroads: Accusative for Direction, Dative for Location",
+    "explanation": "Nine spatial prepositions in German can govern **either the Accusative or the Dative case**, depending entirely on the physical relationship being expressed. This is known as the <rule>Wechselpräpositionen Rule</rule>.\n\n### The Nine Two-Way Prepositions\nMemorize them as spatial coordinates:\n- <rule>an</rule> (at / on vertical surface: e.g. wall, door)\n- <rule>auf</rule> (on top of horizontal surface: e.g. table, floor)\n- <rule>hinter</rule> (behind)\n- <rule>in</rule> (in / into)\n- <rule>neben</rule> (next to / beside)\n- <rule>über</rule> (above / over)\n- <rule>unter</rule> (under / below / among)\n- <rule>vor</rule> (in front of / before)\n- <rule>zwischen</rule> (between)\n\n### 1. The Golden Dichotomy: 'Wohin?' vs. 'Wo?'\n\n#### A. Direction / Motion toward a Goal = AKKUSATIV (Wohin?)\nWhen an action causes a **change of location** or moves across a boundary toward a target, use the **Accusative**:\n- *Ich gehe <rule>in</rule> <akk>das Kino</akk> (ins Kino).* (I am going into the cinema.)\n- *Ich lege das Buch <rule>auf</rule> <akk>den Tisch</akk>.* (I place the book onto the table.)\n\n#### B. Static Location / Position = DATIV (Wo?)\nWhen the action takes place in a fixed location or remains **within the same boundary**, use the **Dative**:\n- *Ich bin <rule>in</rule> <dat>dem Kino</dat> (im Kino).* (I am located inside the cinema.)\n- *Das Buch liegt <rule>auf</rule> <dat>dem Tisch</dat>.* (The book is lying on the table.)\n\n### 2. Paired Action Verbs vs. Position Verbs\nGerman pairs regular active verbs (actions causing movement, taking Akkusativ) with irregular static verbs (states of rest, taking Dativ):\n\n1. **Upright placement**: <rule>stellen</rule> (active, Akk) vs. <rule>stehen</rule> (static, Dat)\n   - *Ich stelle die Vase auf <akk>den Tisch</akk>.* (Action → Akk)\n   - *Die Vase steht auf <dat>dem Tisch</dat>.* (State → Dat)\n\n2. **Horizontal placement**: <rule>legen</rule> (active, Akk) vs. <rule>liegen</rule> (static, Dat)\n   - *Er legt sich auf <akk>das Sofa</akk>.* (Action → Akk)\n   - *Er liegt auf <dat>dem Sofa</dat>.* (State → Dat)\n\n3. **Seated placement**: <rule>setzen</rule> (active, Akk) vs. <rule>sitzen</rule> (static, Dat)\n   - *Sie setzt das Kind auf <akk>den Stuhl</akk>.* (Action → Akk)\n   - *Das Kind sitzt auf <dat>dem Stuhl</dat>.* (State → Dat)\n\n4. **Suspension**: <rule>hängen</rule> (active, Akk) vs. <rule>hängen</rule> (static, Dat)\n   - *Wir hängen das Bild an <akk>die Wand</akk>.* (Action → Akk)\n   - *Das Bild hängt an <dat>der Wand</dat>.* (State → Dat)",
+    "tables": [
+      {
+        "caption": "The Action vs. Position Verb Matrix",
+        "headers": ["Action Verb (Akkusativ / Wohin?)", "Position Verb (Dativ / Wo?)", "Example Action (Akk.)", "Example Position (Dat.)"],
+        "rows": [
+          ["stellen (to place upright)", "stehen (to stand)", "Ich stelle die Tasse auf <akk>den Tisch</akk>.", "Die Tasse steht auf <dat>dem Tisch</dat>."],
+          ["legen (to lay flat)", "liegen (to lie)", "Er legt den Teppich auf <akk>den Boden</akk>.", "Der Teppich liegt auf <dat>dem Boden</dat>."],
+          ["setzen (to seat / set down)", "sitzen (to sit)", "Setz dich neben <akk>mich</akk>!", "Er sitzt neben <dat>mir</dat>."],
+          ["hängen (to hang something)", "hängen (to be hanging)", "Ich hänge die Lampe über <akk>den Tisch</akk>.", "Die Lampe hängt über <dat>dem Tisch</dat>."]
+        ]
+      }
+    ],
+    "deepDives": [
+      {
+        "title": "Common Preposition Contractions",
+        "content": "Germans routinely contract two-way prepositions with definite articles in both cases:\n- in + das = **ins** (Akk)\n- an + das = **ans** (Akk)\n- auf + das = **aufs** (Akk)\n- in + dem = **im** (Dat)\n- an + dem = **am** (Dat)\nAlways use the contraction in normal speech unless you are emphasizing a specific entity ('in DEM Haus, nicht in jenem').",
+        "warning": false
+      }
+    ]
+  },
+  "workedExamples": [
+    {
+      "german": "Lukas stellt das Auto vor die Garage, und jetzt steht es vor der Garage.",
+      "english": "Lukas parks (places) the car in front of the garage, and now it stands in front of the garage.",
+      "breakdown": [
+        {"part": "Lukas stellt", "role": "Subject + Active Transitive Verb", "caseType": "verb", "explanation": "stellen demands movement"},
+        {"part": "das Auto", "role": "Direct Object (Akk. Neut.)", "caseType": "akk"},
+        {"part": "vor die Garage", "role": "Direction (Akk. Fem.)", "caseType": "akk", "explanation": "Wohin? Movement toward position in front of garage → Akkusativ (die)"},
+        {"part": "und jetzt steht es", "role": "State / Static Position Verb", "caseType": "verb", "explanation": "stehen expresses rest"},
+        {"part": "vor der Garage", "role": "Static Location (Dat. Fem.)", "caseType": "dat", "explanation": "Wo? Fixed location → Dativ (der)"}
+      ]
+    }
+  ],
+  "guidedPractice": [
+    {
+      "id": "a2-u02-e1",
+      "type": "multiple_choice",
+      "instruction": "Identify whether the sentence describes a static location (Wo? = Dativ) or motion (Wohin? = Akkusativ):",
+      "prompt": "Das Buch liegt auf ___ Tisch. (der Tisch)",
+      "target": "dem",
+      "options": ["der", "den", "dem", "des"],
+      "explanation": "'liegen' describes a static position (Wo liegt das Buch?). Static location requires Dative: auf dem Tisch.",
+      "grammarTopic": "Wechselpräpositionen Dativ"
+    },
+    {
+      "id": "a2-u02-e2",
+      "type": "fill_in_blank",
+      "instruction": "Complete with the correct accusative contraction for motion into the cinema:",
+      "prompt": "Wir gehen heute Abend ___ Kino. (in + das)",
+      "target": "ins",
+      "acceptableAnswers": ["ins", "in das"],
+      "explanation": "Movement into the cinema (Wohin?) takes accusative: in das → ins Kino.",
+      "grammarTopic": "Contractions"
+    },
+    {
+      "id": "a2-u02-e3",
+      "type": "multiple_choice",
+      "instruction": "Choose the correct paired verb (action vs. position):",
+      "prompt": "Ich ___ das Glas auf den Tisch. (active placement)",
+      "target": "stelle",
+      "options": ["stehe", "stelle", "liege", "sitze"],
+      "explanation": "Active placement upright requires the transitive verb 'stellen': Ich stelle das Glas...",
+      "grammarTopic": "Verb Pairs"
+    },
+    {
+      "id": "a2-u02-e4",
+      "type": "sentence_reorder",
+      "instruction": "Assemble the sentence with the static dative location at the end:",
+      "prompt": "The picture is hanging on the wall.",
+      "tokens": ["Das", "Bild", "hängt", "an", "der", "Wand."],
+      "target": "Das Bild hängt an der Wand.",
+      "explanation": "Static position on vertical surface: 'die Wand' becomes 'der Wand' in Dative.",
+      "grammarTopic": "Wechselpräpositionen Dativ"
+    },
+    {
+      "id": "a2-u02-e5",
+      "type": "error_spotting",
+      "instruction": "Spot the case error in this directional motion sentence:",
+      "prompt": "Click the incorrect article:",
+      "target": "dem",
+      "errorSpotting": {
+        "tokens": ["Er", "legt", "das", "Handy", "auf", "dem", "Schreibtisch."],
+        "errorIndex": 5,
+        "correctedToken": "den",
+        "explanation": "'legen' is an active movement verb (Wohin?). It requires the ACCUSATIVE case: 'auf den Schreibtisch', not 'auf dem'."
+      },
+      "explanation": "'legen' expresses motion/direction and requires Akkusativ: auf den Schreibtisch.",
+      "grammarTopic": "Wechselpräpositionen Akkusativ"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "stellen",
+      "english": "to put / place upright (Akkusativ)",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Stell die Flasche bitte in den Kühlschrank!",
+      "exampleTranslation": "Please place the bottle into the refrigerator!"
+    },
+    {
+      "word": "stehen",
+      "english": "to stand / be upright (Dativ)",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Die Flasche steht im Kühlschrank.",
+      "exampleTranslation": "The bottle is in the refrigerator."
+    },
+    {
+      "word": "legen",
+      "english": "to lay / put flat (Akkusativ)",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Ich lege das Buch auf das Bett.",
+      "exampleTranslation": "I lay the book onto the bed."
+    },
+    {
+      "word": "liegen",
+      "english": "to lie / be flat (Dativ)",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Das Buch liegt auf dem Bett.",
+      "exampleTranslation": "The book is lying on the bed."
+    },
+    {
+      "word": "setzen",
+      "english": "to set down / seat (Akkusativ)",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Setzen Sie sich bitte auf diesen Stuhl!",
+      "exampleTranslation": "Please take a seat on this chair!"
+    },
+    {
+      "word": "sitzen",
+      "english": "to sit / be seated (Dativ)",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Er sitzt am Schreibtisch und arbeitet.",
+      "exampleTranslation": "He is sitting at the desk and working."
+    }
+  ],
+  "readingPassage": {
+    "title": "Umzug in die neue Wohnung (Moving into the New Apartment)",
+    "germanText": "Heute zieht Familie Weber um. Vor dem Haus steht ein großer Umzugswagen. Die Möbelpacker tragen schwere Schränke in das Haus. Herr Weber stellt den Schreibtisch ans Fenster, weil das Licht dort am besten ist. Frau Weber legt einen neuen Teppich auf den Boden im Wohnzimmer. Der Kater Felix schaut neugierig zu: Zuerst kriecht er unter das Sofa, aber nach einer Stunde schläft er friedlich auf dem weichen Kissen.",
+    "englishSummary": "Today the Weber family is moving. In front of the house stands a large moving van. The movers carry heavy cabinets into the house. Mr. Weber places the desk by the window because the light is best there. Mrs. Weber lays a new rug onto the floor in the living room. The tomcat Felix watches curiously: First he crawls under the sofa, but after an hour he sleeps peacefully on the soft pillow.",
+    "glossary": [
+      {"word": "Umzugswagen", "meaning": "moving truck", "grammarNote": "steht vor dem Haus (Dativ: Wo?)"},
+      {"word": "ans Fenster", "meaning": "by / to the window", "grammarNote": "an + das = ans (Akkusativ: Wohin?)"},
+      {"word": "unter das Sofa", "meaning": "under the sofa", "grammarNote": "kriecht unter das Sofa (Akkusativ: Wohin?)"}
+    ],
+    "comprehensionQuestions": [
+      {
+        "question": "Why is 'ans Fenster' in the accusative case in 'Herr Weber stellt den Schreibtisch ans Fenster'?",
+        "options": [
+          "Because 'Fenster' is feminine",
+          "Because 'stellen' describes motion/direction toward a destination (Wohin?)",
+          "Because the window is closed",
+          "Because of moving"
+        ],
+        "correctIndex": 1,
+        "explanation": "'stellen' is an active directional verb answering 'Wohin?', requiring the Accusative."
+      },
+      {
+        "question": "What case is used in 'schläft er friedlich auf dem weichen Kissen'?",
+        "options": ["Nominative", "Accusative", "Dative (auf dem Kissen)", "Genitive"],
+        "correctIndex": 2,
+        "explanation": "Sleeping is a static state in a fixed location (Wo schläft er?); hence Dative ('auf dem Kissen')."
+      }
+    ]
+  },
+  "listeningDialogue": {
+    "title": "Das Zimmer neu einrichten (Rearranging the Room)",
+    "speakers": ["Markus", "Sophie"],
+    "lines": [
+      {"speaker": "Markus", "text": "Sophie, wohin stellen wir dieses Bücherregal?", "translation": "Sophie, where shall we place this bookshelf?"},
+      {"speaker": "Sophie", "text": "Stell es bitte neben die Tür, zwischen den Schrank und das Fenster.", "translation": "Please place it next to the door, between the cabinet and the window."},
+      {"speaker": "Markus", "text": "Gute Idee! Und wo hängen wir das große Bild auf?", "translation": "Good idea! And where shall we hang the large picture?"},
+      {"speaker": "Sophie", "text": "Häng es bitte über das Sofa an die Wand.", "translation": "Please hang it above the sofa on the wall."}
+    ],
+    "questions": [
+      {
+        "question": "Which case is used in Sophie's answer 'neben die Tür, zwischen den Schrank...'?",
+        "options": ["Accusative (answering Wohin?)", "Dative (answering Wo?)", "Nominative", "Genitive"],
+        "correctIndex": 0,
+        "explanation": "She gives instructions for where to move/place items (Wohin?), requiring Accusative."
+      }
+    ]
+  },
+  "production": {
+    "writing": {
+      "prompt": "Describe how your room or study area is organized. Write at least four sentences: two describing where things ARE located (Wo? + Dativ with stehen, liegen, sitzen, hängen) and two describing where you PUT or MOVE things (Wohin? + Akkusativ with stellen, legen, setzen, hängen).",
+      "guidelines": [
+        "Use at least two position verbs with Dative (z.B. Mein Computer steht auf dem Schreibtisch)",
+        "Use at least two action verbs with Accusative (z.B. Ich lege mein Buch auf den Tisch)",
+        "Use different two-way prepositions (an, auf, in, neben, unter, über)"
+      ],
+      "sampleResponse": "In meinem Arbeitszimmer herrscht Ordnung: Mein Laptop steht auf dem großen Schreibtisch und mein Rucksack liegt unter dem Tisch. An der Wand über dem Sofa hängt ein schönes Bild von Berlin. Wenn ich nach Hause komme, stelle ich meine Schuhe immer neben die Tür und lege meinen Schlüssel auf das Regal.",
+      "selfCheckRubric": [
+        "Did you use Dative for static location (auf dem Schreibtisch, unter dem Tisch, an der Wand)?",
+        "Did you use Accusative for directional placement (neben die Tür, auf das Regal)?",
+        "Did you correctly distinguish 'stellen/stehen' and 'legen/liegen'?"
+      ]
+    },
+    "speaking": {
+      "prompt": "Practice the contrast between static Dative and active Accusative by speaking this sentence:",
+      "targetSentence": "Ich stelle die Lampe auf den Tisch und jetzt steht sie auf dem Tisch.",
+      "translation": "I place the lamp onto the table and now it stands on the table.",
+      "phoneticTips": "Crisply contrast 'auf DEN Tisch' (Accusative /dɛn/) with 'auf DEM Tisch' (Dative /deːm/)."
+    }
+  },
+  "unitTest": {
+    "passingScore": 80,
+    "questions": [
+      {
+        "id": "a2-u02-test-1",
+        "type": "multiple_choice",
+        "instruction": "Test 1: What case is triggered by 'Wohin?' (motion / destination)?",
+        "prompt": "With two-way prepositions, movement toward a destination requires which case?",
+        "target": "Akkusativ (Accusative)",
+        "options": ["Nominativ", "Akkusativ (Accusative)", "Dativ (Dative)", "Genitiv"],
+        "explanation": "Wohin? (movement crossing a boundary toward a target) requires Akkusativ.",
+        "grammarTopic": "Wohin vs. Wo"
+      },
+      {
+        "id": "a2-u02-test-2",
+        "type": "fill_in_blank",
+        "instruction": "Test 2: Complete the static location with the dative article for 'das Bett':",
+        "prompt": "Die Katze schläft unter ___ Bett. (das)",
+        "target": "dem",
+        "acceptableAnswers": ["dem"],
+        "explanation": "Sleeping is static location (Wo?). Neuter dative is 'dem': unter dem Bett.",
+        "grammarTopic": "Wechselpräpositionen Dativ"
+      },
+      {
+        "id": "a2-u02-test-3",
+        "type": "multiple_choice",
+        "instruction": "Test 3: Select the correct action verb for placing a book flat:",
+        "prompt": "Ich ___ das Buch auf den Tisch. (action)",
+        "target": "lege",
+        "options": ["liege", "lege", "stehe", "sitze"],
+        "explanation": "'legen' is the active verb for laying something flat (taking Akkusativ).",
+        "grammarTopic": "legen vs. liegen"
+      },
+      {
+        "id": "a2-u02-test-4",
+        "type": "fill_in_blank",
+        "instruction": "Test 4: Insert the accusative article for directional movement:",
+        "prompt": "Er hängt das Foto an ___ Wand. (die Wand)",
+        "target": "die",
+        "acceptableAnswers": ["die"],
+        "explanation": "Directional action (Wohin?) requires Accusative. Feminine accusative is 'die': an die Wand.",
+        "grammarTopic": "Wechselpräpositionen Akkusativ"
+      },
+      {
+        "id": "a2-u02-test-5",
+        "type": "sentence_reorder",
+        "instruction": "Test 5: Arrange into a correct German sentence:",
+        "prompt": "The keys are lying on the desk.",
+        "tokens": ["Die", "Schlüssel", "liegen", "auf", "dem", "Schreibtisch."],
+        "target": "Die Schlüssel liegen auf dem Schreibtisch.",
+        "explanation": "Static position: liegen + auf dem Schreibtisch (Dativ).",
+        "grammarTopic": "liegen + Dativ"
+      }
+    ]
+  }
+}

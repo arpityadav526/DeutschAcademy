@@ -1,0 +1,93 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  name          String?
+  passwordHash  String
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  currentLevel  String    @default("A1")
+
+  progress      UserProgress[]
+  srsItems      SRSItem[]
+  weakSpots     UserWeakSpot[]
+  testAttempts  TestAttempt[]
+  writings      WritingSubmission[]
+}
+
+model UserProgress {
+  id          String   @id @default(cuid())
+  userId      String
+  level       String   // "A1", "A2", etc.
+  unitId      String   // "unit-01"
+  completed   Boolean  @default(false)
+  score       Float    @default(0.0)
+  lastStudied DateTime @default(now())
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@unique([userId, level, unitId])
+}
+
+model SRSItem {
+  id             String    @id @default(cuid())
+  userId         String
+  itemType       String    // "sentence" | "vocab" | "grammar_rule"
+  prompt         String    // German sentence with cloze bracket or question
+  answer         String    // Expected response
+  translation    String    // English translation
+  grammarTopic   String    // e.g., "dative_prepositions", "accusative_endings"
+  explanation    String    // Why this answer is correct
+
+  // SuperMemo-2 (SM-2) attributes
+  repetition     Int       @default(0)
+  interval       Int       @default(1) // in days
+  easeFactor     Float     @default(2.5)
+  nextReviewDate DateTime  @default(now())
+  lastReviewed   DateTime?
+
+  user           User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@index([userId, nextReviewDate])
+}
+
+model UserWeakSpot {
+  id           String   @id @default(cuid())
+  userId       String
+  grammarTopic String   // e.g. "two_way_prepositions", "verb_second_order"
+  errorCount   Int      @default(1)
+  lastErrorAt  DateTime @default(now())
+
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@unique([userId, grammarTopic])
+}
+
+model TestAttempt {
+  id         String   @id @default(cuid())
+  userId     String
+  level      String
+  unitId     String
+  score      Float
+  passed     Boolean
+  createdAt  DateTime @default(now())
+
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model WritingSubmission {
+  id           String   @id @default(cuid())
+  userId       String
+  promptId     String
+  level        String
+  userText     String
+  feedback     String?  // JSON stringified AI/checklist report
+  createdAt    DateTime @default(now())
+
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}

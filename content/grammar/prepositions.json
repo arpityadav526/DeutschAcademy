@@ -1,0 +1,86 @@
+{
+  "id": "prepositions",
+  "title": "German Prepositions & Governed Cases (Präpositionen)",
+  "level": "A1-B1",
+  "summary": "Every German preposition strictly dictates the case of the noun phrase that follows it. Prepositions are categorized into four absolute groups: Akkusativ-only, Dativ-only, Two-Way (Wechselpräpositionen), and Genitiv-only.",
+  "tables": [
+    {
+      "title": "Akkusativ-Only Prepositions (Mnemonic: DOGFU / FUDGE)",
+      "description": "These prepositions ALWAYS take the Accusative case, without exception.",
+      "headers": ["Preposition", "Meaning", "Example", "English"],
+      "rows": [
+        ["bis", "until, by", "bis nächsten Montag", "until next Monday"],
+        ["durch", "through, by means of", "durch den dunklen Wald", "through the dark forest"],
+        ["für", "for", "Das Geschenk ist für dich", "The gift is for you"],
+        ["gegen", "against, around (time)", "Er fährt gegen den Baum", "He drives against the tree"],
+        ["ohne", "without", "ohne einen Cent", "without a cent"],
+        ["um", "around, at (clock time)", "um die Ecke / um 8 Uhr", "around the corner / at 8 o'clock"]
+      ]
+    },
+    {
+      "title": "Dativ-Only Prepositions (Mnemonic: Aus-bei-mit-nach, seit-von-zu)",
+      "description": "These prepositions ALWAYS take the Dative case, without exception.",
+      "headers": ["Preposition", "Meaning", "Example", "English"],
+      "rows": [
+        ["aus", "out of, from (origin)", "Sie kommt aus der Schweiz", "She comes from Switzerland"],
+        ["bei", "at, with, at the home of", "Er wohnt bei seinen Eltern", "He lives with his parents"],
+        ["mit", "with, by (transportation)", "Ich fahre mit dem Zug", "I travel by train"],
+        ["nach", "after, to (cities/countries)", "nach der Vorlesung / nach Berlin", "after the lecture / to Berlin"],
+        ["seit", "since, for (time duration)", "seit einem Jahr", "for one year"],
+        ["von", "from, of, by (author/agent)", "ein Buch von Goethe", "a book by Goethe"],
+        ["zu", "to (places/people), for", "Gehen wir zu Fuß zur Schule", "Let's walk to school"],
+        ["gegenüber", "opposite, toward", "gegenüber dem Bahnhof", "opposite the train station"]
+      ]
+    },
+    {
+      "title": "Two-Way Prepositions (Wechselpräpositionen)",
+      "description": "The 9 spatial prepositions: Wohin? (motion / direction toward a goal) = Akkusativ; Wo? (static location / place) = Dativ.",
+      "headers": ["Preposition", "Akkusativ (Wohin? Motion)", "Dativ (Wo? Static Location)"],
+      "rows": [
+        ["an (at/on vertical surface)", "Ich hänge das Bild an die Wand.", "Das Bild hängt an der Wand."],
+        ["auf (on horizontal surface)", "Ich lege das Buch auf den Tisch.", "Das Buch liegt auf dem Tisch."],
+        ["hinter (behind)", "Er geht hinter das Haus.", "Er steht hinter dem Haus."],
+        ["in (in/into)", "Wir gehen in das (ins) Kino.", "Wir sind in dem (im) Kino."],
+        ["neben (next to)", "Setz dich neben mich!", "Er sitzt neben mir."],
+        ["über (above/over)", "Sie hängt die Lampe über den Tisch.", "Die Lampe hängt über dem Tisch."],
+        ["unter (under/among)", "Die Katze läuft unter das Sofa.", "Die Katze schläft unter dem Sofa."],
+        ["vor (in front of/before)", "Er stellt das Auto vor die Garage.", "Das Auto steht vor der Garage."],
+        ["zwischen (between)", "Stell den Stuhl zwischen die Tische.", "Der Stuhl steht zwischen den Tischen."]
+      ]
+    },
+    {
+      "title": "Genitiv-Only Prepositions",
+      "description": "Common in written, academic, and formal German.",
+      "headers": ["Preposition", "Meaning", "Example", "English"],
+      "rows": [
+        ["wegen", "because of", "wegen des schlechten Wetters", "because of the bad weather"],
+        ["während", "during", "während der Konferenz", "during the conference"],
+        ["trotz", "in spite of / despite", "trotz des Regens", "despite the rain"],
+        ["(an)statt", "instead of", "statt eines Briefes", "instead of a letter"]
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "name": "Wechselpräpositionen Action vs. Position Verbs",
+      "explanation": "German pairs action/movement verbs (transitive, regular, taking Akkusativ) with static position verbs (intransitive, irregular, taking Dativ).",
+      "examples": [
+        {
+          "german": "legen (put flat) vs. liegen (lie flat)",
+          "english": "Ich lege das Buch auf den Tisch. / Das Buch liegt auf dem Tisch.",
+          "breakdown": "legen is active (Akkusativ); liegen is static (Dativ)"
+        },
+        {
+          "german": "stellen (put upright) vs. stehen (stand upright)",
+          "english": "Ich stelle die Flasche in den Kühlschrank. / Die Flasche steht im Kühlschrank.",
+          "breakdown": "stellen is active (Akkusativ); stehen is static (Dativ)"
+        },
+        {
+          "german": "setzen (set down) vs. sitzen (sit)",
+          "english": "Sie setzt das Kind auf den Stuhl. / Das Kind sitzt auf dem Stuhl.",
+          "breakdown": "setzen is active (Akkusativ); sitzen is static (Dativ)"
+        }
+      ]
+    }
+  ]
+}

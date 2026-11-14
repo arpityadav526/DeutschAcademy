@@ -1,0 +1,77 @@
+{
+  "id": "verbs",
+  "title": "Verb Conjugation & Tenses (Konjugation & Zeiten)",
+  "level": "A1-B2",
+  "summary": "Master German verb mechanics: regular present-tense personal endings, stem-vowel mutations, irregular auxiliaries (haben/sein/werden), modal verbs, and past participle formations.",
+  "tables": [
+    {
+      "title": "Regular Present Tense Endings (Präsens)",
+      "description": "Standard personal endings attached to the verb stem (e.g., lern-en).",
+      "headers": ["Pronoun", "Ending", "Example: lernen (to learn)", "Example: machen (to make/do)"],
+      "rows": [
+        ["ich", "-e", "ich lerne", "ich mache"],
+        ["du", "-st", "du lernst", "du machst"],
+        ["er / sie / es", "-t", "er lernt", "sie macht"],
+        ["wir", "-en", "wir lernen", "wir machen"],
+        ["ihr", "-t", "ihr lernt", "ihr macht"],
+        ["sie / Sie", "-en", "sie lernen", "Sie machen"]
+      ]
+    },
+    {
+      "title": "The Irregular Auxiliaries (sein, haben, werden)",
+      "description": "The three most essential verbs in the German language, also serving as auxiliary verbs for compound tenses.",
+      "headers": ["Pronoun", "sein (to be)", "haben (to have)", "werden (to become/will)"],
+      "rows": [
+        ["ich", "bin", "habe", "werde"],
+        ["du", "bist", "hast", "wirst"],
+        ["er / sie / es", "ist", "hat", "wird"],
+        ["wir", "sind", "haben", "werden"],
+        ["ihr", "seid", "habt", "werdet"],
+        ["sie / Sie", "sind", "haben", "werden"]
+      ]
+    },
+    {
+      "title": "Stem-Vowel Changes (du & er/sie/es only)",
+      "description": "In strong verbs, vowel changes occur ONLY in the 2nd (du) and 3rd person singular (er/sie/es).",
+      "headers": ["Vowel Change", "Infinitive", "ich form", "du form", "er/sie/es form"],
+      "rows": [
+        ["e → i", "sprechen (to speak)", "ich spreche", "du sprichst", "er spricht"],
+        ["e → ie", "sehen (to see)", "ich sehe", "du siehst", "sie sieht"],
+        ["e → ie", "lesen (to read)", "ich lese", "du liest", "er liest"],
+        ["a → ä", "fahren (to drive)", "ich fahre", "du fährst", "er fährt"],
+        ["a → ä", "schlafen (to sleep)", "ich schlafe", "du schläfst", "sie schläft"]
+      ]
+    },
+    {
+      "title": "Modal Verbs (Modalverben)",
+      "description": "Notice: 1st (ich) and 3rd person singular (er/sie/es) are identical and have NO ending.",
+      "headers": ["Pronoun", "können (can)", "müssen (must)", "wollen (want)", "dürfen (may)", "sollen (should)", "möchten (would like)"],
+      "rows": [
+        ["ich", "kann", "muss", "will", "darf", "soll", "möchte"],
+        ["du", "kannst", "musst", "willst", "darfst", "sollst", "möchtest"],
+        ["er/sie/es", "kann", "muss", "will", "darf", "soll", "möchte"],
+        ["wir", "können", "müssen", "wollen", "dürfen", "sollen", "möchten"],
+        ["ihr", "könnt", "müsst", "wollt", "dürft", "sollt", "möchtet"],
+        ["sie/Sie", "können", "müssen", "wollen", "dürfen", "sollen", "möchten"]
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "name": "The Sentence Bracket (Satzklammer)",
+      "explanation": "When two verbal elements occur in a German main clause (e.g. Modal Verb + Infinitive, or Perfekt Auxiliary + Participle, or Separable Verb), the conjugated verb goes into Position 2, and the second verbal element goes to the very end of the clause.",
+      "examples": [
+        {
+          "german": "Ich <verb>kann</verb> heute Abend leider nicht <verb>kommen</verb>.",
+          "english": "Unfortunately, I cannot come this evening.",
+          "breakdown": "kann (modal) at Position 2, kommen (infinitive) at the very end"
+        },
+        {
+          "german": "Er <verb>steht</verb> jeden Morgen um sechs Uhr <prefix>auf</prefix>.",
+          "english": "He gets up every morning at six o'clock.",
+          "breakdown": "steht (conjugated stem) at Position 2, auf (separable prefix) at the end"
+        }
+      ]
+    }
+  ]
+}

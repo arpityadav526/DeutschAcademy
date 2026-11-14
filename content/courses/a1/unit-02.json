@@ -1,0 +1,294 @@
+{
+  "id": "unit-02",
+  "level": "A1",
+  "number": 2,
+  "title": "Greetings, Personal Pronouns & Regular Verb Conjugation",
+  "subtitle": "Conjugate present tense regular verbs and navigate formal vs. informal address",
+  "grammarFocus": ["Personal Pronouns (Personalpronomen)", "Regular Verb Endings (-e, -st, -t, -en, -t, -en)", "Stems ending in -d/-t (arbeiten, finden)", "Formal 'Sie' vs. Informal 'du'/'ihr'"],
+  "estimatedMinutes": 40,
+  "concept": {
+    "title": "The Engine of German Sentences: Verb Conjugation",
+    "explanation": "In English, verbs barely change (I learn, you learn, he learn**s**). In German, verbs <rule>inflect systematically</rule> according to the grammatical person doing the action.\n\n### 1. Personal Pronouns (The Subjects)\nEvery German subject is represented by a personal pronoun:\n- <nom>ich</nom> = I\n- <nom>du</nom> = you (informal singular: friend, child, close family)\n- <nom>er</nom> / <nom>sie</nom> / <nom>es</nom> = he / she / it (and any masculine / feminine / neuter noun!)\n- <nom>wir</nom> = we\n- <nom>ihr</nom> = you all (informal plural: addressing a group of friends)\n- <nom>sie</nom> = they (lowercase, 3rd person plural)\n- <nom>Sie</nom> = You (capitalized: formal singular and plural, used for strangers, colleagues, professionals)\n\n### 2. Regular Present Tense Conjugation (Präsens)\nTo conjugate a regular verb, drop the infinitive ending **-en** to find the verb **stem**, then attach the personal endings:\n- Stem of *lernen* = **lern-**\n- <nom>ich</nom> lern<verb>-e</verb>\n- <nom>du</nom> lern<verb>-st</verb>\n- <nom>er / sie / es</nom> lern<verb>-t</verb>\n- <nom>wir</nom> lern<verb>-en</verb>\n- <nom>ihr</nom> lern<verb>-t</verb>\n- <nom>sie / Sie</nom> lern<verb>-en</verb>\n\n### 3. Stems Ending in -t or -d (The Phonetic Buffer)\nWhen a verb stem ends in **-t** or **-d** (e.g., *arbeit-en*, *find-en*, *wart-en*), pronouncing '-st' or '-t' directly would be nearly impossible. Therefore, German inserts an **-e-** buffer:\n- *du arbeit<verb>-est</verb>*, *er arbeit<verb>-et</verb>*, *ihr arbeit<verb>-et</verb>*\n\n### 4. Cultural Register: 'Du' vs. 'Sie'\nNever use 'du' with adults you do not know, civil servants, store clerks, or business partners. Address them with capitalized <nom>Sie</nom> and their surname (*Guten Tag, Herr Müller*). Only switch to 'du' when explicitly offered (*das Du anbieten*).",
+    "tables": [
+      {
+        "caption": "Regular Verb Conjugation Matrix (Präsens)",
+        "headers": ["Pronoun", "Ending", "lernen (to learn)", "wohnen (to live/reside)", "arbeiten (to work)"],
+        "rows": [
+          ["ich", "-e", "ich lerne", "ich wohne", "ich arbeite"],
+          ["du", "-st (-est)", "du lernst", "du wohnst", "du arbeitest"],
+          ["er / sie / es", "-t (-et)", "er lernt", "sie wohnt", "es arbeitet"],
+          ["wir", "-en", "wir lernen", "wir wohnen", "wir arbeiten"],
+          ["ihr", "-t (-et)", "ihr lernt", "ihr wohnt", "ihr arbeitet"],
+          ["sie / Sie", "-en", "sie lernen", "Sie wohnen", "Sie arbeiten"]
+        ]
+      }
+    ],
+    "deepDives": [
+      {
+        "title": "Verbs with Stems Ending in -s, -ß, or -z",
+        "content": "Verbs like heißen (stem: heiß-) or reisen (stem: reis-) cannot take another '-s' in the 'du' form. Therefore, the 'du' ending is simply '-t', making the 'du' and 'er/sie/es' forms identical: 'du heißt' and 'er heißt'.",
+        "warning": false
+      },
+      {
+        "title": "Always Capitalize Formal 'Sie'!",
+        "content": "In writing, formal 'Sie' (and its possessive 'Ihr') MUST always be capitalized. A lowercase 'sie' means 'she' or 'they'. Confusing them can cause major misunderstandings in formal correspondence.",
+        "warning": true
+      }
+    ]
+  },
+  "workedExamples": [
+    {
+      "german": "Ich wohne in Berlin und arbeite bei Siemens.",
+      "english": "I live in Berlin and work at Siemens.",
+      "breakdown": [
+        {"part": "Ich", "role": "Subject Pronoun", "caseType": "nom", "explanation": "1st person singular"},
+        {"part": "wohne", "role": "Conjugated Verb (Position 2)", "caseType": "verb", "explanation": "wohnen stem + -e"},
+        {"part": "in Berlin", "role": "Prepositional Place Phrase", "explanation": "in + city name"},
+        {"part": "und", "role": "Coordinating Conjunction (Pos 0)", "explanation": "Links two clauses"},
+        {"part": "arbeite", "role": "Conjugated Verb", "caseType": "verb", "explanation": "arbeiten stem + -e (subject 'ich' implied)"},
+        {"part": "bei Siemens", "role": "Company Affiliation", "explanation": "'bei' is used for employment at a firm"}
+      ]
+    },
+    {
+      "german": "Woher kommen Sie, Herr Becker?",
+      "english": "Where do you come from, Mr. Becker?",
+      "breakdown": [
+        {"part": "Woher", "role": "Question Word (Origin)", "explanation": "Inquires about geographic provenance"},
+        {"part": "kommen", "role": "Conjugated Verb (Pos 2)", "caseType": "verb", "explanation": "Conjugated for formal 'Sie' with ending -en"},
+        {"part": "Sie", "role": "Formal Subject Pronoun", "caseType": "nom", "explanation": "Capitalized formal address"},
+        {"part": "Herr Becker", "role": "Formal Salutation", "explanation": "Mr. + surname"}
+      ]
+    }
+  ],
+  "guidedPractice": [
+    {
+      "id": "a1-u02-e1",
+      "type": "fill_in_blank",
+      "instruction": "Conjugate the verb in brackets for the subject pronoun:",
+      "prompt": "Lisa und David [wohnen] in Frankfurt. -> Lisa und David ___ in Frankfurt.",
+      "target": "wohnen",
+      "acceptableAnswers": ["wohnen"],
+      "explanation": "Lisa und David represent 3rd person plural (sie = they), so the regular ending is -en.",
+      "grammarTopic": "Regular Verb Conjugation"
+    },
+    {
+      "id": "a1-u02-e2",
+      "type": "fill_in_blank",
+      "instruction": "Conjugate the verb 'arbeiten' for 'du' (watch for the stem ending in -t):",
+      "prompt": "Wo ___ du? (arbeiten)",
+      "target": "arbeitest",
+      "acceptableAnswers": ["arbeitest"],
+      "explanation": "Because the stem 'arbeit-' ends in -t, an extra 'e' buffer is inserted before -st: du arbeitest.",
+      "grammarTopic": "Stems in -d/-t"
+    },
+    {
+      "id": "a1-u02-e3",
+      "type": "table_completion",
+      "instruction": "Complete the conjugation table for 'kommen' (to come):",
+      "prompt": "Fill in the correct forms for du, er/sie/es, and ihr:",
+      "target": "[\"kommst\", \"kommt\", \"kommt\"]",
+      "tableData": {
+        "headers": ["Pronoun", "Conjugated Form"],
+        "rows": [
+          {"label": "ich", "cells": ["komme"], "blanks": []},
+          {"label": "du", "cells": [""], "blanks": [0]},
+          {"label": "er / sie / es", "cells": [""], "blanks": [0]},
+          {"label": "wir", "cells": ["kommen"], "blanks": []},
+          {"label": "ihr", "cells": [""], "blanks": [0]},
+          {"label": "sie / Sie", "cells": ["kommen"], "blanks": []}
+        ]
+      },
+      "explanation": "Regular verb endings: du kommst (-st), er kommt (-t), ihr kommt (-t).",
+      "grammarTopic": "Conjugation Table"
+    },
+    {
+      "id": "a1-u02-e4",
+      "type": "sentence_reorder",
+      "instruction": "Arrange the words into a correct German statement:",
+      "prompt": "We are learning German in Vienna.",
+      "tokens": ["Wir", "lernen", "in", "Wien", "Deutsch."],
+      "target": "Wir lernen in Wien Deutsch.",
+      "acceptableAnswers": ["In Wien lernen wir Deutsch.", "Wir lernen Deutsch in Wien."],
+      "explanation": "Subject 'Wir' in Pos 1, conjugated verb 'lernen' in Pos 2, followed by location and object.",
+      "grammarTopic": "Word Order"
+    },
+    {
+      "id": "a1-u02-e5",
+      "type": "multiple_choice",
+      "instruction": "Select the correct address for an interview with an unfamiliar employer:",
+      "prompt": "How should you ask your interviewer if they work here?",
+      "target": "Arbeiten Sie hier?",
+      "options": ["Arbeitest du hier?", "Arbeitet ihr hier?", "Arbeiten Sie hier?", "Arbeite Sie hier?"],
+      "explanation": "In professional and formal contexts, always use 'Sie' with the -en verb ending: Arbeiten Sie hier?",
+      "grammarTopic": "Formal Address"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "kommen",
+      "english": "to come",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Ich komme aus Österreich.",
+      "exampleTranslation": "I come from Austria."
+    },
+    {
+      "word": "wohnen",
+      "english": "to live / reside",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Wir wohnen in Hamburg.",
+      "exampleTranslation": "We live in Hamburg."
+    },
+    {
+      "word": "arbeiten",
+      "english": "to work",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Er arbeitet als Ingenieur.",
+      "exampleTranslation": "He works as an engineer."
+    },
+    {
+      "word": "lernen",
+      "english": "to learn / study",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Sie lernen sehr schnell Deutsch.",
+      "exampleTranslation": "They are learning German very quickly."
+    },
+    {
+      "article": "der",
+      "word": "Herr",
+      "plural": "Herren",
+      "english": "Mr. / gentleman",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Guten Tag, Herr Schmidt!",
+      "exampleTranslation": "Good day, Mr. Schmidt!"
+    },
+    {
+      "article": "die",
+      "word": "Frau",
+      "plural": "Frauen",
+      "english": "Mrs. / Ms. / woman",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Frau Müller kommt aus der Schweiz.",
+      "exampleTranslation": "Ms. Müller comes from Switzerland."
+    }
+  ],
+  "readingPassage": {
+    "title": "Drei Personen stellen sich vor (Three People Introduce Themselves)",
+    "germanText": "Hallo! Ich heiße Sarah. Ich komme aus Bern in der Schweiz, aber jetzt wohne ich in Berlin. Ich lerne Deutsch und Informatik. Das ist mein Kollege Marco. Er kommt aus Italien und arbeitet hier als Arzt. Zusammen lernen wir jeden Abend Deutsch.",
+    "englishSummary": "Hello! My name is Sarah. I come from Bern in Switzerland, but now I live in Berlin. I study German and computer science. This is my colleague Marco. He comes from Italy and works here as a doctor. Together we learn German every evening.",
+    "glossary": [
+      {"word": "Kollege", "meaning": "colleague (masc.)", "grammarNote": "der Kollege"},
+      {"word": "Arzt", "meaning": "doctor / physician", "grammarNote": "der Arzt"},
+      {"word": "zusammen", "meaning": "together", "grammarNote": "adverb"}
+    ],
+    "comprehensionQuestions": [
+      {
+        "question": "Where does Sarah originally come from?",
+        "options": ["Berlin", "Bern", "Rom", "Wien"],
+        "correctIndex": 1,
+        "explanation": "The text states: 'Ich komme aus Bern in der Schweiz'."
+      },
+      {
+        "question": "What is Marco's profession?",
+        "options": ["Student", "Engineer", "Doctor (Arzt)", "Teacher"],
+        "correctIndex": 2,
+        "explanation": "The text says: 'Er kommt aus Italien und arbeitet hier als Arzt.'"
+      }
+    ]
+  },
+  "listeningDialogue": {
+    "title": "Am ersten Arbeitstag (On the First Day of Work)",
+    "speakers": ["Herr Hartmann", "Frau Schneider"],
+    "lines": [
+      {"speaker": "Herr Hartmann", "text": "Guten Morgen! Sind Sie Frau Schneider?", "translation": "Good morning! Are you Mrs. Schneider?"},
+      {"speaker": "Frau Schneider", "text": "Ja, guten Morgen. Mein Name ist Claudia Schneider.", "translation": "Yes, good morning. My name is Claudia Schneider."},
+      {"speaker": "Herr Hartmann", "text": "Herzlich willkommen! Wo wohnen Sie jetzt in Frankfurt?", "translation": "Welcome! Where do you live now in Frankfurt?"},
+      {"speaker": "Frau Schneider", "text": "Ich wohne im Zentrum, in der Goetheallee.", "translation": "I live in the city center, on Goethe Avenue."}
+    ],
+    "questions": [
+      {
+        "question": "In which city does Frau Schneider live now?",
+        "options": ["München", "Frankfurt", "Berlin", "Köln"],
+        "correctIndex": 1,
+        "explanation": "Herr Hartmann asks: 'Wo wohnen Sie jetzt in Frankfurt?' and she confirms."
+      }
+    ]
+  },
+  "production": {
+    "writing": {
+      "prompt": "Write a formal introductory email to a language school director introducing yourself (name, country of origin, city of residence, languages you speak, and why you are learning German).",
+      "guidelines": [
+        "Open with 'Sehr geehrte Damen und Herren,' or 'Guten Tag,'",
+        "State your name with 'Mein Name ist...' or 'Ich heiße...'",
+        "Use correctly conjugated verbs for 'kommen', 'wohnen', and 'lernen'",
+        "Close with 'Mit freundlichen Grüßen'"
+      ],
+      "sampleResponse": "Sehr geehrte Damen und Herren, mein Name ist Alex Morgan. Ich komme aus Kanada, aber ich wohne jetzt in Köln. Ich spreche Englisch und Französisch, und ich lerne Deutsch für meinen Beruf. Mit freundlichen Grüßen, Alex Morgan",
+      "selfCheckRubric": [
+        "Did you conjugate 1st person verbs with -e (ich komme, ich wohne, ich lerne)?",
+        "Are all German nouns capitalized (Damen, Herren, Name, Kanada, Köln, Deutsch, Beruf)?",
+        "Is the verb in Position 2 in your main sentences?"
+      ]
+    },
+    "speaking": {
+      "prompt": "Introduce yourself aloud in German by speaking the target sentence:",
+      "targetSentence": "Hallo, ich heiße Maria, komme aus Spanien und wohne in Berlin.",
+      "translation": "Hello, my name is Maria, I come from Spain and live in Berlin.",
+      "phoneticTips": "Pronounce 'Spanien' with an initial 'Shp-' sound: /'ʃpaːni̯ən/."
+    }
+  },
+  "unitTest": {
+    "passingScore": 80,
+    "questions": [
+      {
+        "id": "u02-test-1",
+        "type": "multiple_choice",
+        "instruction": "Test 1: What is the personal ending for 'du' in regular verbs?",
+        "prompt": "Choose the correct ending for 'du' (e.g. du lern___):",
+        "target": "-st",
+        "options": ["-e", "-st", "-t", "-en"],
+        "explanation": "The 2nd person singular informal ending is always -st.",
+        "grammarTopic": "Verb Endings"
+      },
+      {
+        "id": "u02-test-2",
+        "type": "fill_in_blank",
+        "instruction": "Test 2: Conjugate the verb 'finden' for 'er':",
+        "prompt": "Er ___ den Schlüssel nicht. (finden)",
+        "target": "findet",
+        "acceptableAnswers": ["findet"],
+        "explanation": "Because the stem 'find-' ends in -d, an 'e' buffer is added before -t: findet.",
+        "grammarTopic": "Stems in -d/-t"
+      },
+      {
+        "id": "u02-test-3",
+        "type": "multiple_choice",
+        "instruction": "Test 3: Which subject pronoun corresponds to a group of friends you are addressing?",
+        "prompt": "You are talking to two colleagues who are close friends. Which pronoun do you use?",
+        "target": "ihr",
+        "options": ["du", "ihr", "Sie", "sie"],
+        "explanation": "'ihr' is the informal plural pronoun ('you guys / you all').",
+        "grammarTopic": "Personal Pronouns"
+      },
+      {
+        "id": "u02-test-4",
+        "type": "smart_translation",
+        "instruction": "Test 4: Translate the sentence into German:",
+        "prompt": "Where do you live, Mr. Weber?",
+        "target": "Wo wohnen Sie, Herr Weber?",
+        "acceptableAnswers": ["Wo wohnen Sie Herr Weber?", "Wo wohnen Sie, Herr Weber"],
+        "explanation": "Addressing Mr. Weber requires formal 'Sie': Wo wohnen Sie, Herr Weber?",
+        "grammarTopic": "Formal Address"
+      },
+      {
+        "id": "u02-test-5",
+        "type": "sentence_reorder",
+        "instruction": "Test 5: Arrange into a correct sentence:",
+        "prompt": "They live in Munich.",
+        "tokens": ["Sie", "wohnen", "in", "München."],
+        "target": "Sie wohnen in München.",
+        "explanation": "Subject 'Sie', verb 'wohnen' in Position 2, place 'in München'.",
+        "grammarTopic": "Word Order"
+      }
+    ]
+  }
+}

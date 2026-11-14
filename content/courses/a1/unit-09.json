@@ -1,0 +1,280 @@
+{
+  "id": "unit-09",
+  "level": "A1",
+  "number": 9,
+  "title": "Numbers, Time, Dates & Calendar",
+  "subtitle": "Conquer the 'ones-before-tens' number system, colloquial time, and temporal prepositions",
+  "grammarFocus": ["Cardinal Numbers (0–1,000,000: 'ones-before-tens')", "Official Time (24-Hour) vs. Colloquial Time (halb, viertel, vor, nach)", "Temporal Prepositions: um, am, im", "Days, Months, and Ordinal Dates"],
+  "estimatedMinutes": 45,
+  "concept": {
+    "title": "Mastering German Temporality: Numbers, Clocks & Dates",
+    "explanation": "Expressing numbers, schedules, and dates in German requires mastering three distinct systems: the flipped number structure, the 'halb' clock convention, and the tripartite temporal preposition rule (<rule>um, am, im</rule>).\n\n### 1. The Flipped Number Rule (Ones Before Tens!)\nFrom 21 to 99, German states the **ones digit first, then 'und', then the tens digit** (like archaic English 'four-and-twenty'):\n- 21 = *einundzwanzig* (one-and-twenty)\n- 35 = *fünfunddreißig* (five-and-thirty)\n- 78 = *achtundsiebzig* (eight-and-seventy)\n- 99 = *neunundneunzig*\n- 154 = *einhundertvierundfünfzig*\n\n### 2. Telling Time: The 'Halb' Trap!\nGerman uses two systems:\n1. **Official Time (24-Hour Digital Clock)**: Used for trains, news, flight schedules, and official business. Simple and direct:\n   - 14:15 = *vierzehn Uhr fünfzehn*\n   - 17:30 = *siebzehn Uhr dreißig*\n   - 20:45 = *zwanzig Uhr fünfundvierzig*\n2. **Colloquial Time (12-Hour Daily Speech)**:\n   - <rule>halb</rule> means **half-way TO the next hour** (NOT half-past)! *halb drei* = **2:30** (halfway to 3:00)! *halb acht* = **7:30**.\n   - *Viertel nach* (quarter past): 2:15 = *Viertel nach zwei*\n   - *Viertel vor* (quarter to): 2:45 = *Viertel vor drei*\n   - *zehn nach zwei* (2:10) / *fünf vor halb drei* (2:25)\n\n### 3. The Three Temporal Prepositions: 'um', 'am', 'im'\nNever guess which preposition introduces a time expression:\n- <rule>um</rule> = **Exact clock times**: *um 8 Uhr*, *um Mitternacht*\n- <rule>am</rule> (an + dem) = **Days, parts of the day, specific dates**:\n  - Days: *am Montag*, *am Wochenende*\n  - Parts of the day: *am Morgen*, *am Nachmittag*, *am Abend* (EXCEPTION: *in der Nacht*!)\n  - Dates: *am ersten Mai*, *am 15. Oktober*\n- <rule>im</rule> (in + dem) = **Months, seasons, decades**:\n  - Months: *im Januar*, *im Juli*\n  - Seasons: *im Frühling*, *im Sommer*, *im Herbst*, *im Winter*",
+    "tables": [
+      {
+        "caption": "Temporal Preposition Triad: um, am, im",
+        "headers": ["Preposition", "Governs", "Standard Examples", "Key Exception"],
+        "rows": [
+          ["um", "Exact clock time", "um 14:00 Uhr, um viertel nach acht", "um Mitternacht"],
+          ["am", "Days, parts of day, dates", "am Dienstag, am Abend, am 1. Mai", "in der Nacht (not am!)"],
+          ["im", "Months, seasons, years", "im August, im Winter, im Jahr 2026", "in den 90er Jahren"]
+        ]
+      }
+    ],
+    "deepDives": [
+      {
+        "title": "Don't Miss Your Train: 'halb vier' is 3:30!",
+        "content": "English speakers arriving in Germany often show up one hour late for appointments because of 'halb'. When a German colleague says 'Wir treffen uns um halb vier', they mean 3:30 (half-way TO four), NEVER 4:30! Think of a glass being filled: at 3:30, the fourth hour is half full.",
+        "warning": true
+      }
+    ]
+  },
+  "workedExamples": [
+    {
+      "german": "Der Zug nach München fährt um viertel vor neun ab.",
+      "english": "The train to Munich departs at a quarter to nine (8:45).",
+      "breakdown": [
+        {"part": "Der Zug nach München", "role": "Subject Phrase", "caseType": "nom"},
+        {"part": "fährt ... ab", "role": "Separable Verb (abfahren)", "caseType": "verb", "explanation": "stem in Pos 2, prefix at sentence end"},
+        {"part": "um viertel vor neun", "role": "Temporal Clock Phrase", "explanation": "'um' for clock time; 'viertel vor neun' = 8:45"}
+      ]
+    },
+    {
+      "german": "Am Montag, dem 15. Oktober, habe ich einen Arzttermin.",
+      "english": "On Monday, October 15th, I have a doctor's appointment.",
+      "breakdown": [
+        {"part": "Am Montag, dem 15. Oktober", "role": "Position 1 (Time phrase)", "explanation": "'am' used for days and calendar dates"},
+        {"part": "habe", "role": "Verb in Position 2", "caseType": "verb"},
+        {"part": "ich", "role": "Subject in Position 3", "caseType": "nom"},
+        {"part": "einen Arzttermin", "role": "Accusative Direct Object (Masc.)", "caseType": "akk"}
+      ]
+    }
+  ],
+  "guidedPractice": [
+    {
+      "id": "a1-u09-e1",
+      "type": "multiple_choice",
+      "instruction": "Convert the colloquial German time to digital clock format:",
+      "prompt": "What time is 'halb sechs'?",
+      "target": "5:30",
+      "options": ["6:30", "5:30", "6:15", "5:45"],
+      "explanation": "'halb sechs' means halfway TO six o'clock, which is 5:30.",
+      "grammarTopic": "Telling Time"
+    },
+    {
+      "id": "a1-u09-e2",
+      "type": "fill_in_blank",
+      "instruction": "Choose the correct temporal preposition (um, am, im):",
+      "prompt": "Der Deutschkurs beginnt ___ 18:30 Uhr. (clock time)",
+      "target": "um",
+      "acceptableAnswers": ["um"],
+      "explanation": "Exact clock times always take the preposition 'um': um 18:30 Uhr.",
+      "grammarTopic": "Temporal Prepositions"
+    },
+    {
+      "id": "a1-u09-e3",
+      "type": "fill_in_blank",
+      "instruction": "Fill in the correct preposition for a season:",
+      "prompt": "___ Sommer reisen wir nach Italien.",
+      "target": "Im",
+      "acceptableAnswers": ["Im", "im"],
+      "explanation": "Seasons (Sommer, Winter, etc.) take the preposition 'im' (in + dem): Im Sommer.",
+      "grammarTopic": "Temporal Prepositions"
+    },
+    {
+      "id": "a1-u09-e4",
+      "type": "multiple_choice",
+      "instruction": "Spell out the German number 47:",
+      "prompt": "How is 47 written in German?",
+      "target": "siebenundvierzig",
+      "options": ["vierzigsieben", "siebenundvierzig", "vierzigundsieben", "siebzigundvier"],
+      "explanation": "German puts ones before tens connected with 'und': 7 (sieben) + und + 40 (vierzig) = siebenundvierzig.",
+      "grammarTopic": "Cardinal Numbers"
+    },
+    {
+      "id": "a1-u09-e5",
+      "type": "sentence_reorder",
+      "instruction": "Arrange the words into a sentence starting with the date:",
+      "prompt": "On Friday evening we go to the cinema.",
+      "tokens": ["Am", "Freitagabend", "gehen", "wir", "ins", "Kino."],
+      "target": "Am Freitagabend gehen wir ins Kino.",
+      "explanation": "'Am Freitagabend' is in Position 1, followed by verb 'gehen' in Position 2.",
+      "grammarTopic": "Word Order & Time"
+    }
+  ],
+  "vocabulary": [
+    {
+      "article": "die",
+      "word": "Uhr",
+      "plural": "Uhren",
+      "english": "clock / o'clock / watch",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Wie viel Uhr ist es?",
+      "exampleTranslation": "What time is it?"
+    },
+    {
+      "article": "die",
+      "word": "Minute",
+      "plural": "Minuten",
+      "english": "minute",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Ich brauche fünf Minuten.",
+      "exampleTranslation": "I need five minutes."
+    },
+    {
+      "article": "die",
+      "word": "Stunde",
+      "plural": "Stunden",
+      "english": "hour",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Der Unterricht dauert zwei Stunden.",
+      "exampleTranslation": "The class lasts two hours."
+    },
+    {
+      "article": "der",
+      "word": "Termin",
+      "plural": "Termine",
+      "english": "appointment",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Ich habe einen Termin beim Arzt.",
+      "exampleTranslation": "I have an appointment at the doctor's."
+    },
+    {
+      "article": "die",
+      "word": "Woche",
+      "plural": "Wochen",
+      "english": "week",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Nächste Woche fahre ich nach Hamburg.",
+      "exampleTranslation": "Next week I travel to Hamburg."
+    },
+    {
+      "article": "der",
+      "word": "Monat",
+      "plural": "Monate",
+      "english": "month",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Im Monat Mai blühen die Blumen.",
+      "exampleTranslation": "In the month of May the flowers bloom."
+    }
+  ],
+  "readingPassage": {
+    "title": "Ein Terminkalender für die Woche (A Weekly Schedule)",
+    "germanText": "Frau Klein hat diese Woche viele Termine. Am Montag um 9:00 Uhr hat sie eine Teambesprechung im Büro. Am Mittwoch um halb zwei isst sie mit einer Kollegin zu Mittag. Am Freitagabend um viertel nach sieben besucht sie ein Konzert in der Philharmonie. Am Wochenende hat sie frei. Im August fährt sie für zwei Wochen in den Urlaub nach Österreich.",
+    "englishSummary": "Mrs. Klein has many appointments this week. On Monday at 9:00 AM she has a team meeting at the office. On Wednesday at 1:30 PM she has lunch with a colleague. On Friday evening at 7:15 PM she attends a concert at the philharmonic hall. On the weekend she has time off. In August she is traveling on vacation to Austria for two weeks.",
+    "glossary": [
+      {"word": "Besprechung", "meaning": "meeting", "grammarNote": "die Besprechung"},
+      {"word": "halb zwei", "meaning": "1:30 PM", "grammarNote": "halfway to two"},
+      {"word": "viertel nach sieben", "meaning": "7:15 PM", "grammarNote": "quarter past seven"}
+    ],
+    "comprehensionQuestions": [
+      {
+        "question": "What time does Frau Klein eat lunch on Wednesday?",
+        "options": ["12:30 PM", "1:30 PM (halb zwei)", "2:30 PM", "1:15 PM"],
+        "correctIndex": 1,
+        "explanation": "'halb zwei' means 1:30 PM."
+      },
+      {
+        "question": "Which preposition does the passage use for the month of August?",
+        "options": ["am", "um", "im", "bei"],
+        "correctIndex": 2,
+        "explanation": "Months always take 'im': 'Im August fährt sie für zwei Wochen in den Urlaub...'"
+      }
+    ]
+  },
+  "listeningDialogue": {
+    "title": "Einen Termin vereinbaren (Scheduling an Appointment)",
+    "speakers": ["Praxisassistentin", "Patient"],
+    "lines": [
+      {"speaker": "Praxisassistentin", "text": "Praxis Dr. Müller, guten Tag!", "translation": "Dr. Müller's medical practice, good day!"},
+      {"speaker": "Patient", "text": "Guten Tag, ich brauche einen Termin für diese Woche.", "translation": "Good day, I need an appointment for this week."},
+      {"speaker": "Praxisassistentin", "text": "Hätten Sie am Donnerstag um viertel vor zehn Zeit?", "translation": "Would you have time on Thursday at a quarter to ten (9:45)?"},
+      {"speaker": "Patient", "text": "Um 9:45 Uhr? Ja, das passt mir sehr gut!", "translation": "At 9:45 AM? Yes, that suits me very well!"}
+    ],
+    "questions": [
+      {
+        "question": "What digital time corresponds to 'viertel vor zehn'?",
+        "options": ["10:15", "9:45", "10:45", "9:15"],
+        "correctIndex": 1,
+        "explanation": "'Viertel vor zehn' is a quarter of an hour before 10, which is 9:45."
+      }
+    ]
+  },
+  "production": {
+    "writing": {
+      "prompt": "Write down your typical weekly schedule. Mention at least three specific events with exact times, days of the week, and months, using 'um', 'am', and 'im' accurately.",
+      "guidelines": [
+        "Include one event with clock time using 'um' (e.g. um 8:00 Uhr / um halb neun)",
+        "Include one event with a day or part of day using 'am' (e.g. am Dienstag, am Nachmittag)",
+        "Include one seasonal or monthly reference using 'im' (e.g. im Sommer, im Juli)",
+        "Maintain V2 word order"
+      ],
+      "sampleResponse": "Mein Wochenplan: Am Montag arbeite ich von 8:00 bis 17:00 Uhr. Am Mittwoch um halb sieben gehe ich ins Fitnessstudio. Am Freitagabend treffe ich meine Freunde im Café. Im Juli habe ich drei Wochen Urlaub.",
+      "selfCheckRubric": [
+        "Did you use 'um' strictly for clock times and 'am' for days?",
+        "Did you use 'im' for months and seasons?",
+        "Is the verb in Position 2 in each sentence?"
+      ]
+    },
+    "speaking": {
+      "prompt": "Practice saying dates and time aloud by speaking this target sentence:",
+      "targetSentence": "Mein Deutschkurs beginnt am Montag um halb neun und endet im Juni.",
+      "translation": "My German course begins on Monday at half past eight (8:30) and ends in June.",
+      "phoneticTips": "Pronounce 'halb neun' with a short crisp 'a' (/halp nɔɪn/) and 'Juni' with a clear /uː/ sound."
+    }
+  },
+  "unitTest": {
+    "passingScore": 80,
+    "questions": [
+      {
+        "id": "u09-test-1",
+        "type": "multiple_choice",
+        "instruction": "Test 1: What time does 'halb acht' indicate?",
+        "prompt": "In colloquial German, 'halb acht' means:",
+        "target": "7:30",
+        "options": ["8:30", "7:30", "8:15", "7:45"],
+        "explanation": "'halb acht' means half-way to eight: 7:30.",
+        "grammarTopic": "Telling Time"
+      },
+      {
+        "id": "u09-test-2",
+        "type": "fill_in_blank",
+        "instruction": "Test 2: Supply the temporal preposition for days of the week:",
+        "prompt": "Wir haben ___ Samstag frei. (Saturday)",
+        "target": "am",
+        "acceptableAnswers": ["am"],
+        "explanation": "Days of the week take 'am' (an + dem): am Samstag.",
+        "grammarTopic": "Temporal Prepositions"
+      },
+      {
+        "id": "u09-test-3",
+        "type": "multiple_choice",
+        "instruction": "Test 3: Select the correct German number for 63:",
+        "prompt": "How is 63 written?",
+        "target": "dreiundsechzig",
+        "options": ["sechzigdrei", "dreiundsechzig", "dreiundsiebzig", "sechzigunddrei"],
+        "explanation": "Ones before tens: 3 (drei) + und + 60 (sechzig) = dreiundsechzig.",
+        "grammarTopic": "Cardinal Numbers"
+      },
+      {
+        "id": "u09-test-4",
+        "type": "fill_in_blank",
+        "instruction": "Test 4: Supply the preposition for a month:",
+        "prompt": "Mein Geburtstag ist ___ Oktober.",
+        "target": "im",
+        "acceptableAnswers": ["im", "Im"],
+        "explanation": "Months take 'im' (in + dem): im Oktober.",
+        "grammarTopic": "Temporal Prepositions"
+      },
+      {
+        "id": "u09-test-5",
+        "type": "multiple_choice",
+        "instruction": "Test 5: Exception to the 'am' rule for parts of the day:",
+        "prompt": "Which part of the day does NOT take 'am'?",
+        "target": "die Nacht (in der Nacht)",
+        "options": ["der Morgen (am Morgen)", "der Nachmittag (am Nachmittag)", "die Nacht (in der Nacht)", "der Abend (am Abend)"],
+        "explanation": "Nacht is feminine and takes 'in der Nacht', whereas masculine parts of the day take 'am' (am Morgen, am Abend).",
+        "grammarTopic": "Exceptions"
+      }
+    ]
+  }
+}

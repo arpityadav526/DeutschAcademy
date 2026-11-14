@@ -1,0 +1,318 @@
+{
+  "id": "unit-01",
+  "level": "A1",
+  "number": 1,
+  "title": "Alphabet, Pronunciation & German Phonetics",
+  "subtitle": "Master the precise phonetic rules of standard High German (Hochdeutsch)",
+  "grammarFocus": ["German Alphabet", "Umlauts (ä, ö, ü)", "Eszett (ß)", "Diphthongs (ei, ie, eu, au)", "Consonant Clusters (ch, sch, sp, st)"],
+  "estimatedMinutes": 35,
+  "concept": {
+    "title": "The Phonetics of Hochdeutsch: Rules, Not Guesswork",
+    "explanation": "Unlike English, German orthography is remarkably <rule>phonetic and consistent</rule>. Once you know the rules, you can pronounce any written German word correctly on sight.\n\n### 1. The Core Alphabet & Special Characters\nThe German alphabet has 26 standard Latin letters, plus three **Umlauts** (<rule>ä</rule>, <rule>ö</rule>, <rule>ü</rule>) and the ligature **Eszett** (<rule>ß</rule>, called 'scharfes S').\n- <rule>ä</rule> sounds like the 'e' in 'bed' (short: Männer) or like the 'ai' in 'air' (long: Bär).\n- <rule>ö</rule> is produced by rounding your lips into an 'O' shape while saying English 'ay' (e.g., schön, hören).\n- <rule>ü</rule> is produced by rounding your lips into an 'O' shape while saying English 'ee' (e.g., über, Tür).\n- <rule>ß</rule> represents a sharp, voiceless 's' sound (like 'hiss') and is used strictly after long vowels and diphthongs (e.g., Straße, heiß).\n\n### 2. The Golden Diphthong Rule: 'ei' vs. 'ie'\nA classic trap for English speakers! Remember: **Pronounce the second letter!**\n- <rule>ei</rule> is pronounced like English 'eye' or 'pie' (e.g., nein, mein, frei).\n- <rule>ie</rule> is pronounced like English 'ee' or 'see' (e.g., Sie, hier, Liebe).\n- <rule>eu</rule> / <rule>äu</rule> are both pronounced like English 'oy' in 'boy' (e.g., neu, Europa, Häuser).\n\n### 3. Key Consonants & Clusters\n- <rule>w</rule> is always pronounced like English 'V' (Wasser = 'Vah-ser').\n- <rule>v</rule> in native German words sounds like English 'F' (Vater = 'Fah-ter', vier = 'feer'). In loan words it sounds like English 'V' (Vase, Visum).\n- <rule>s</rule> before a vowel sounds like English 'Z' (Sonne = 'Zon-neh', sagen = 'Zah-gen'). Double 'ss' is always a sharp voiceless 's' (Wasser, dass).\n- <rule>sp</rule> and <rule>st</rule> at the beginning of a syllable sound like 'shp' and 'sht' (Sport = 'Shport', Stadt = 'Shtadt').\n- <rule>ch</rule> has two variants: the soft 'Ich-Laut' after front vowels e/i/ä/ö/ü (ich, nicht, Bücher) and the throaty 'Ach-Laut' after back vowels a/o/u (Bach, noch, Buch).",
+    "tables": [
+      {
+        "caption": "The German Alphabet: Letter Names & Key Examples",
+        "headers": ["Letter", "German Name", "Sound Equivalent", "Example Word"],
+        "rows": [
+          ["A a", "Ah", "father", "der <nom>Apfel</nom> (apple)"],
+          ["B b", "Bay", "boy", "das <nom>Buch</nom> (book)"],
+          ["C c", "Tsay", "ts in cats (before e/i)", "das <nom>Café</nom> (café)"],
+          ["D d", "Day", "door (word-final = t)", "der <nom>Dank</nom> (thanks)"],
+          ["E e", "Ay", "bed (short) / say (long)", "die <nom>Eltern</nom> (parents)"],
+          ["F f", "Eff", "fish", "die <nom>Frau</nom> (woman/wife)"],
+          ["G g", "Gay", "gold (word-final = k)", "das <nom>Geld</nom> (money)"],
+          ["H h", "Hah", "house (silent after vowel)", "das <nom>Haus</nom> (house)"],
+          ["I i", "Ee", "machine (long) / pin (short)", "die <nom>Insel</nom> (island)"],
+          ["J j", "Yot", "yes (y-sound)", "das <nom>Jahr</nom> (year)"],
+          ["K k", "Kah", "kite", "das <nom>Kind</nom> (child)"],
+          ["L l", "Ell", "lamp", "das <nom>Land</nom> (country)"],
+          ["M m", "Emm", "moon", "der <nom>Mann</nom> (man)"],
+          ["N n", "Enn", "name", "die <nom>Nacht</nom> (night)"],
+          ["O o", "Oh", "door", "das <nom>Obst</nom> (fruit)"],
+          ["P p", "Pay", "pen", "die <nom>Post</nom> (mail/post office)"],
+          ["Q q", "Koo", "kv sound (qu = kv)", "die <nom>Quelle</nom> (source)"],
+          ["R r", "Err", "uvular r (back of throat)", "der <nom>Regen</nom> (rain)"],
+          ["S s", "Ess", "z before vowel / s sharp", "die <nom>Sonne</nom> (sun)"],
+          ["T t", "Tay", "tea", "der <nom>Tag</nom> (day)"],
+          ["U u", "Oo", "boot (long) / put (short)", "die <nom>Uhr</nom> (clock/hour)"],
+          ["V v", "Fow", "father (native) / vase (foreign)", "der <nom>Vater</nom> (father)"],
+          ["W w", "Vay", "voice (English v)", "das <nom>Wasser</nom> (water)"],
+          ["X x", "Iks", "box", "das <nom>Xylofon</nom> (xylophone)"],
+          ["Y y", "Üpsilon", "like ü or i", "das <nom>Yoga</nom> (yoga)"],
+          ["Z z", "Tsett", "always 'ts' (like cats)", "die <nom>Zeit</nom> (time)"]
+        ]
+      }
+    ],
+    "deepDives": [
+      {
+        "title": "Word-Final Devoicing (Auslautverhärtung)",
+        "content": "At the very end of a word or syllable, German voiced consonants (b, d, g) become devoiced into their unvoiced counterparts (p, t, k). For example: 'der Tag' is pronounced 'Tahk', 'das Bild' is pronounced 'Bilt', and 'das Grab' is pronounced 'Grahp'. When an ending is added (die Tage), the voiced 'g' returns!",
+        "warning": false
+      },
+      {
+        "title": "Never Pronounce 'Z' like English Zebra!",
+        "content": "In German, 'Z' is NEVER a buzzing sound. It is ALWAYS pronounced like 'TS' (as in the end of 'cats'). Say: Zeit ('Tsayt'), Zug ('Tsook'), zwei ('Tsvay'), Zimmer ('Tsim-mer'). Making a buzzing 'Z' immediately marks foreign speech.",
+        "warning": true
+      }
+    ]
+  },
+  "workedExamples": [
+    {
+      "german": "Guten Tag, wie heißen Sie?",
+      "english": "Good day, what is your name?",
+      "breakdown": [
+        {"part": "Guten", "role": "Adjective (Akk.)", "explanation": "Short for 'Ich wünsche Ihnen einen guten Tag'"},
+        {"part": "Tag", "role": "Noun (Masc.)", "explanation": "Final 'g' devoices to a soft 'k' sound: /taːk/"},
+        {"part": "wie", "role": "Interrogative", "explanation": "'ie' diphthong pronounced as long /iː/ ('vee')"},
+        {"part": "heißen", "role": "Verb", "explanation": "'ei' diphthong is /aɪ/ ('hye-sen'), 'ß' is a sharp voiceless 's'"},
+        {"part": "Sie", "role": "Pronoun", "explanation": "Capitalized formal 'You' pronounced /ziː/"}
+      ],
+      "note": "Notice the contrast: 'wie' has 'ie' (/iː/), while 'heißen' has 'ei' (/aɪ/)."
+    },
+    {
+      "german": "Die Stadt ist sehr schön.",
+      "english": "The city is very beautiful.",
+      "breakdown": [
+        {"part": "Die", "role": "Definite Article (Fem.)", "explanation": "Pronounced with long /iː/ ('dee')"},
+        {"part": "Stadt", "role": "Noun (Fem.)", "explanation": "'St-' at word onset is pronounced 'Sht-' /ʃt/ ('Shtatt')"},
+        {"part": "ist", "role": "Verb (sein)", "explanation": "Short /ɪ/ sound"},
+        {"part": "sehr", "role": "Adverb", "explanation": "The 'h' is silent and lengthens the 'e': /zeːɐ̯/"},
+        {"part": "schön", "role": "Adjective", "explanation": "Umlaut 'ö' with rounded lips: /ʃøːn/"}
+      ]
+    }
+  ],
+  "guidedPractice": [
+    {
+      "id": "a1-u01-e1",
+      "type": "multiple_choice",
+      "instruction": "Which letter combination in German sounds like English 'eye'?",
+      "prompt": "Select the correct German diphthong that corresponds to the vowel sound in English 'pie' or 'eye':",
+      "target": "ei",
+      "options": ["ie", "ei", "eu", "äu"],
+      "explanation": "In German, 'ei' is always pronounced like English 'eye' (e.g. mein, nein, frei). In contrast, 'ie' is pronounced like English 'ee' (e.g. Sie, nie). Rule: pronounce the second letter!",
+      "grammarTopic": "Diphthongs"
+    },
+    {
+      "id": "a1-u01-e2",
+      "type": "multiple_choice",
+      "instruction": "Identify the correct phonetic rule for German 'W' and 'V':",
+      "prompt": "How are the German letters 'W' (as in Wasser) and 'V' (as in Vater) pronounced?",
+      "target": "W is pronounced like English V; native V is pronounced like English F",
+      "options": [
+        "W is pronounced like English W; V is pronounced like English V",
+        "W is pronounced like English V; native V is pronounced like English F",
+        "Both W and V are pronounced like English W",
+        "W is silent; V is always pronounced like B"
+      ],
+      "explanation": "German 'W' is always a 'V' sound (Wasser = 'Vah-ser'). Native German 'V' is an 'F' sound (Vater = 'Fah-ter', vier = 'feer').",
+      "grammarTopic": "Consonant Pronunciation"
+    },
+    {
+      "id": "a1-u01-e3",
+      "type": "fill_in_blank",
+      "instruction": "Complete the word with the correct diphthong ('ei' or 'ie'):",
+      "prompt": "Ich trinke k___nen Kaffee. (meaning: I drink no coffee)",
+      "target": "ei",
+      "acceptableAnswers": ["ei", "keinen"],
+      "explanation": "The word is 'keinen' (from 'kein', meaning none/no), which is pronounced with the /aɪ/ sound, spelled 'ei'.",
+      "grammarTopic": "Spelling & Diphthongs"
+    },
+    {
+      "id": "a1-u01-e4",
+      "type": "dictation",
+      "instruction": "Listen to the word and transcribe it accurately with its capitalization:",
+      "prompt": "Transcribe the German word spoken:",
+      "target": "Straße",
+      "acceptableAnswers": ["die Straße", "Strasse", "Straße"],
+      "audioText": "Straße",
+      "explanation": "'Straße' (street) starts with 'St-' (pronounced 'Sht') and ends with an Eszett 'ß' after the long 'a' vowel.",
+      "grammarTopic": "Orthography & Eszett"
+    },
+    {
+      "id": "a1-u01-e5",
+      "type": "sentence_reorder",
+      "instruction": "Arrange the words into the standard German greeting formula:",
+      "prompt": "Good day, my name is Schmidt.",
+      "tokens": ["Guten", "Tag,", "ich", "heiße", "Schmidt."],
+      "target": "Guten Tag, ich heiße Schmidt.",
+      "explanation": "'Guten Tag' introduces the greeting, followed by subject 'ich' and the conjugated verb 'heiße' in position 2.",
+      "grammarTopic": "Word Order"
+    }
+  ],
+  "vocabulary": [
+    {
+      "article": "der",
+      "word": "Name",
+      "plural": "Namen",
+      "english": "name",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Mein Name ist Lukas.",
+      "exampleTranslation": "My name is Lukas."
+    },
+    {
+      "article": "der",
+      "word": "Tag",
+      "plural": "Tage",
+      "english": "day",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Guten Tag, wie geht es Ihnen?",
+      "exampleTranslation": "Good day, how are you?"
+    },
+    {
+      "article": "die",
+      "word": "Straße",
+      "plural": "Straßen",
+      "english": "street",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Ich wohne in der Goethestraße.",
+      "exampleTranslation": "I live on Goethe Street."
+    },
+    {
+      "article": "das",
+      "word": "Wort",
+      "plural": "Wörter",
+      "english": "word",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Wie spricht man dieses Wort aus?",
+      "exampleTranslation": "How does one pronounce this word?"
+    },
+    {
+      "word": "heißen",
+      "english": "to be called / named",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Wie heißen Sie?",
+      "exampleTranslation": "What are you called? (What is your name?)"
+    },
+    {
+      "word": "schön",
+      "english": "beautiful / nice",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "Das Wetter ist heute sehr schön.",
+      "exampleTranslation": "The weather is very nice today."
+    }
+  ],
+  "readingPassage": {
+    "title": "Erste Schritte in Deutschland (First Steps in Germany)",
+    "germanText": "Guten Tag! Mein Name ist Thomas Becker. Ich komme aus München. München ist eine sehr schöne Stadt in Bayern. Ich buchstabiere meinen Namen: T-H-O-M-A-S. Deutsch ist eine logische Sprache. Alle Substantive schreibt man groß.",
+    "englishSummary": "Good day! My name is Thomas Becker. I come from Munich. Munich is a very beautiful city in Bavaria. I spell my name: T-H-O-M-A-S. German is a logical language. All nouns are capitalized.",
+    "glossary": [
+      {"word": "buchstabiere", "meaning": "spell (verb)", "grammarNote": "buchstabieren (Präsens 1st person)"},
+      {"word": "Substantive", "meaning": "nouns", "grammarNote": "plural of das Substantiv"},
+      {"word": "groß", "meaning": "capitalized / big", "grammarNote": "großschreiben = to capitalize"}
+    ],
+    "comprehensionQuestions": [
+      {
+        "question": "Where does Thomas come from?",
+        "options": ["Berlin", "München", "Hamburg", "Wien"],
+        "correctIndex": 1,
+        "explanation": "The text states: 'Ich komme aus München.'"
+      },
+      {
+        "question": "According to the passage, what orthographic rule applies to all German nouns?",
+        "options": ["They are written with umlauts", "They end with -en", "They are capitalized (groß)", "They are all masculine"],
+        "correctIndex": 2,
+        "explanation": "The passage confirms: 'Alle Substantive schreibt man groß' (All nouns are capitalized)."
+      }
+    ]
+  },
+  "listeningDialogue": {
+    "title": "Buchstabieren am Telefon (Spelling on the Phone)",
+    "speakers": ["Frau Weber", "Herr Meier"],
+    "lines": [
+      {"speaker": "Frau Weber", "text": "Guten Morgen! Hier ist Weber. Wie heißen Sie bitte?", "translation": "Good morning! This is Weber speaking. What is your name please?"},
+      {"speaker": "Herr Meier", "text": "Guten Morgen Frau Weber. Mein Name ist Florian Meier.", "translation": "Good morning Mrs. Weber. My name is Florian Meier."},
+      {"speaker": "Frau Weber", "text": "Wie schreibt man Meier? Mit e-i oder mit a-i?", "translation": "How do you spell Meier? With e-i or with a-i?"},
+      {"speaker": "Herr Meier", "text": "Mit M-E-I-E-R. Das ist die klassische Schreibweise.", "translation": "With M-E-I-E-R. That is the classical spelling."}
+    ],
+    "questions": [
+      {
+        "question": "Which diphthong is used to spell Herr Meier's surname?",
+        "options": ["a-i", "e-i", "i-e", "e-u"],
+        "correctIndex": 1,
+        "explanation": "Herr Meier explicitly spells his name: 'Mit M-E-I-E-R'."
+      }
+    ]
+  },
+  "production": {
+    "writing": {
+      "prompt": "Spell your full name in German and write three introductory words with German phonetic features (e.g. an umlaut word, an 'ei' word, and an 'sp/st' word).",
+      "guidelines": [
+        "Use 'Guten Tag, mein Name ist...' to introduce yourself",
+        "Write out the spelling using German letter names (z.B. A-N-N-A)",
+        "Include at least one word with an umlaut (ä, ö, ü) or ß (z.B. schön, Straße, über)"
+      ],
+      "sampleResponse": "Guten Tag! Mein Name ist David. Ich buchstabiere: D-A-V-I-D. Drei schöne deutsche Wörter sind: die Straße, das Wasser und das Buch.",
+      "selfCheckRubric": [
+        "Did you capitalize all German nouns (z.B. Name, Straße, Wasser, Buch)?",
+        "Did you place the conjugated verb in Position 2 in declarative sentences?",
+        "Did you spell the Eszett (ß) correctly after long vowels?"
+      ]
+    },
+    "speaking": {
+      "prompt": "Speak the following German phonetic test sentence clearly into the microphone:",
+      "targetSentence": "Guten Tag, ich heiße David und komme aus Berlin.",
+      "translation": "Good day, my name is David and I come from Berlin.",
+      "phoneticTips": "Pronounce 'Guten Tag' with a crisp final 'k' sound, 'heiße' with a clear /aɪ/ diphthong, and 'Berlin' with emphasis on the second syllable."
+    }
+  },
+  "unitTest": {
+    "passingScore": 80,
+    "questions": [
+      {
+        "id": "u01-test-1",
+        "type": "multiple_choice",
+        "instruction": "Test 1: Identify the correct pronunciation of German 'Z':",
+        "prompt": "How is the German letter 'Z' in 'Zeit' or 'Zug' pronounced?",
+        "target": "Always like 'ts' in English 'cats'",
+        "options": [
+          "Like a buzzing 'z' in English 'zebra'",
+          "Always like 'ts' in English 'cats'",
+          "Like an English 's'",
+          "It is silent"
+        ],
+        "explanation": "German 'Z' is always pronounced like 'ts' in 'cats', never like 'z' in 'zebra'.",
+        "grammarTopic": "Consonant Pronunciation"
+      },
+      {
+        "id": "u01-test-2",
+        "type": "multiple_choice",
+        "instruction": "Test 2: Which word contains the vowel sound /iː/ (English 'ee')?",
+        "prompt": "Select the word pronounced with the long /iː/ sound:",
+        "target": "Liebe",
+        "options": ["mein", "kein", "Liebe", "nein"],
+        "explanation": "'Liebe' contains 'ie', which is pronounced /iː/. The words 'mein', 'kein', and 'nein' contain 'ei', pronounced /aɪ/.",
+        "grammarTopic": "Diphthongs"
+      },
+      {
+        "id": "u01-test-3",
+        "type": "fill_in_blank",
+        "instruction": "Test 3: Fill in the missing ligature:",
+        "prompt": "Die Stra___e ist sehr lang. (street)",
+        "target": "ß",
+        "acceptableAnswers": ["ß", "ss", "Straße"],
+        "explanation": "'Straße' is spelled with 'ß' because it follows a long 'a' vowel.",
+        "grammarTopic": "Orthography & Eszett"
+      },
+      {
+        "id": "u01-test-4",
+        "type": "multiple_choice",
+        "instruction": "Test 4: What is the sound of 'sp' and 'st' at the beginning of a German word?",
+        "prompt": "How do native speakers pronounce words like 'Sport' and 'Stadt'?",
+        "target": "Shp- and Sht-",
+        "options": ["Sp- and St- (like in English)", "Shp- and Sht-", "Silent S", "Zp- and Zt-"],
+        "explanation": "At the start of a syllable, 'sp' and 'st' are pronounced 'shp' and 'sht' in German.",
+        "grammarTopic": "Consonant Clusters"
+      },
+      {
+        "id": "u01-test-5",
+        "type": "sentence_reorder",
+        "instruction": "Test 5: Reorder the sentence into standard German syntax:",
+        "prompt": "My name is Julia and I come from Germany.",
+        "tokens": ["Mein", "Name", "ist", "Julia", "und", "ich", "komme", "aus", "Deutschland."],
+        "target": "Mein Name ist Julia und ich komme aus Deutschland.",
+        "explanation": "The sentence links two main clauses with coordinating conjunction 'und' in Position 0.",
+        "grammarTopic": "Word Order"
+      }
+    ]
+  }
+}

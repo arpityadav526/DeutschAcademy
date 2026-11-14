@@ -1,0 +1,282 @@
+{
+  "id": "unit-05",
+  "level": "A1",
+  "number": 5,
+  "title": "Plural Forms of German Nouns",
+  "subtitle": "Master the 5 predictable plural patterns and umlaut shifts",
+  "grammarFocus": ["Universal Plural Article (die)", "Pattern 1: -e (often with Umlaut)", "Pattern 2: -er (almost always with Umlaut)", "Pattern 3: -(e)n (dominant feminine pattern)", "Pattern 4: -s (loanwords & vowels)", "Pattern 5: No ending (nouns in -er, -el, -en)"],
+  "estimatedMinutes": 40,
+  "concept": {
+    "title": "The Five German Plural Mechanisms",
+    "explanation": "Unlike English (which simply adds '-s' or '-es'), German has five primary mechanisms to form noun plurals. The most encouraging rule of German grammar: <rule>In the Nominative and Accusative cases, the definite article for EVERY plural noun is ALWAYS 'die'</rule>!\n\n### Pattern 1: Ending in '-e' (Often with Umlaut)\n- Very common for single-syllable masculine nouns and some neuter nouns.\n- *der Tag* → *die Tag<rule>-e</rule>*\n- *der Tisch* → *die Tisch<rule>-e</rule>*\n- *der Arzt* → *die <rule>Ä</rule>rzt<rule>-e</rule>* (with umlaut)\n- *der Stuhl* → *die St<rule>ü</rule>hl<rule>-e</rule>* (with umlaut)\n\n### Pattern 2: Ending in '-er' (Almost ALWAYS with Umlaut)\n- Characteristic of short neuter nouns and a small group of masculine nouns.\n- *das Kind* → *die Kind<rule>-er</rule>*\n- *das Buch* → *die B<rule>ü</rule>ch<rule>-er</rule>*\n- *das Bild* → *die Bild<rule>-er</rule>*\n- *der Mann* → *die M<rule>ä</rule>nn<rule>-er</rule>*\n\n### Pattern 3: Ending in '-(e)n' (The Feminine Champion)\n- Applies to approximately **95% of all feminine nouns**, as well as masculine weak nouns (N-Deklination).\n- *die Frau* → *die Frau<rule>-en</rule>*\n- *die Zeitung* → *die Zeitung<rule>-en</rule>*\n- *die Lampe* → *die Lampe<rule>-n</rule>* (nouns already ending in -e simply take -n)\n- *die Universität* → *die Universität<rule>-en</rule>*\n\n### Pattern 4: Ending in '-s' (Modern & Foreign Words)\n- Applies to loanwords from English and French, words ending in vowels other than -e, and abbreviations.\n- *das Auto* → *die Auto<rule>-s</rule>*\n- *das Hotel* → *die Hotel<rule>-s</rule>*\n- *das Foto* → *die Foto<rule>-s</rule>*\n- *das Restaurant* → *die Restaurant<rule>-s</rule>*\n\n### Pattern 5: No Ending (Zero Ending: -)\n- Applies to masculine and neuter nouns ending in **-el**, **-en**, or **-er**. The word ending does not change, though an umlaut may be added.\n- *der Lehrer* → *die Lehrer* (no change)\n- *das Fenster* → *die Fenster* (no change)\n- *der Apfel* → *die <rule>Ä</rule>pfel* (umlaut shift only)\n- *der Vater* → *die V<rule>ä</rule>ter* (umlaut shift only)",
+    "tables": [
+      {
+        "caption": "Summary of the 5 German Plural Types",
+        "headers": ["Type", "Ending", "Umlaut?", "Typical Gender", "Core Example"],
+        "rows": [
+          ["Type 1", "-e", "Frequent (a, o, u)", "Masculine / Neuter", "der Stuhl → die Stühle"],
+          ["Type 2", "-er", "Almost always", "Neuter", "das Buch → die Bücher"],
+          ["Type 3", "-(e)n", "Never", "Feminine (95%)", "die Frau → die Frauen"],
+          ["Type 4", "-s", "Never", "Loanwords / Vowels", "das Auto → die Autos"],
+          ["Type 5", "— (none)", "Sometimes", "Nouns in -er, -el, -en", "der Apfel → die Äpfel"]
+        ]
+      }
+    ],
+    "deepDives": [
+      {
+        "title": "Feminine Nouns with -in add -nen in Plural",
+        "content": "Female professional nouns ending in '-in' (e.g. die Lehrerin, die Ärztin, die Studentin) double the 'n' before adding '-en' in the plural: *die Lehrerinnen*, *die Ärztinnen*, *die Studentinnen*.",
+        "warning": false
+      }
+    ]
+  },
+  "workedExamples": [
+    {
+      "german": "Die Kinder lesen viele Bücher in der Schule.",
+      "english": "The children read many books in school.",
+      "breakdown": [
+        {"part": "Die Kinder", "role": "Plural Subject (Type 2)", "caseType": "nom", "explanation": "das Kind → die Kinder (-er ending)"},
+        {"part": "lesen", "role": "Plural Verb Form", "caseType": "verb", "explanation": "3rd person plural ending -en"},
+        {"part": "viele Bücher", "role": "Plural Object (Type 2)", "caseType": "akk", "explanation": "das Buch → die Bücher (umlaut + -er)"},
+        {"part": "in der Schule", "role": "Prepositional Place Phrase"}
+      ]
+    },
+    {
+      "german": "Hier sind drei Hotels und vier Bäckereien.",
+      "english": "Here are three hotels and four bakeries.",
+      "breakdown": [
+        {"part": "Hier sind", "role": "Introductory Phrase + Plural Verb"},
+        {"part": "drei Hotels", "role": "Plural Noun (Type 4)", "explanation": "Loanword takes -s: das Hotel → die Hotels"},
+        {"part": "und", "role": "Conjunction"},
+        {"part": "vier Bäckereien", "role": "Plural Noun (Type 3)", "explanation": "Feminine in -ei takes -en: die Bäckerei → die Bäckereien"}
+      ]
+    }
+  ],
+  "guidedPractice": [
+    {
+      "id": "a1-u05-e1",
+      "type": "multiple_choice",
+      "instruction": "What is the plural form of 'die Zeitung'?",
+      "prompt": "Choose the correct plural form of 'die Zeitung' (the newspaper):",
+      "target": "die Zeitungen",
+      "options": ["die Zeitunge", "die Zeitungen", "die Zeitungs", "die Zeitünger"],
+      "explanation": "Feminine nouns ending in '-ung' consistently take '-en': die Zeitungen.",
+      "grammarTopic": "Feminine Plurals"
+    },
+    {
+      "id": "a1-u05-e2",
+      "type": "fill_in_blank",
+      "instruction": "Supply the plural form of 'das Buch' (including the umlaut):",
+      "prompt": "Auf dem Schreibtisch liegen viele ___ . (das Buch)",
+      "target": "Bücher",
+      "acceptableAnswers": ["Bücher", "die Bücher"],
+      "explanation": "The plural of 'das Buch' is 'die Bücher' (Type 2: umlaut + -er).",
+      "grammarTopic": "Neuter Plurals"
+    },
+    {
+      "id": "a1-u05-e3",
+      "type": "fill_in_blank",
+      "instruction": "Provide the plural of 'der Apfel' (apple):",
+      "prompt": "Im Korb liegen rote ___ . (der Apfel)",
+      "target": "Äpfel",
+      "acceptableAnswers": ["Äpfel", "die Äpfel"],
+      "explanation": "Nouns ending in -el take no suffix, but shift vowel to an umlaut: der Apfel → die Äpfel.",
+      "grammarTopic": "Zero Ending Plurals"
+    },
+    {
+      "id": "a1-u05-e4",
+      "type": "multiple_choice",
+      "instruction": "Which of the following words takes an '-s' plural?",
+      "prompt": "Select the noun that forms its plural with '-s':",
+      "target": "das Foto",
+      "options": ["der Tisch", "die Frau", "das Foto", "das Kind"],
+      "explanation": "Words ending in vowels other than -e (Foto, Auto, Kino) take '-s': die Fotos.",
+      "grammarTopic": "Plural in -s"
+    },
+    {
+      "id": "a1-u05-e5",
+      "type": "sentence_reorder",
+      "instruction": "Arrange the words to state that two doctors work in this clinic:",
+      "prompt": "Two female doctors work in this clinic.",
+      "tokens": ["Zwei", "Ärztinnen", "arbeiten", "in", "dieser", "Klinik."],
+      "target": "Zwei Ärztinnen arbeiten in dieser Klinik.",
+      "explanation": "die Ärztin → die Ärztinnen (female professions ending in -in add -nen in plural).",
+      "grammarTopic": "Female Profession Plurals"
+    }
+  ],
+  "vocabulary": [
+    {
+      "article": "das",
+      "word": "Buch",
+      "plural": "Bücher",
+      "english": "book",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Ich lese gern deutsche Bücher.",
+      "exampleTranslation": "I like reading German books."
+    },
+    {
+      "article": "das",
+      "word": "Kind",
+      "plural": "Kinder",
+      "english": "child",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Die Kinder spielen im Garten.",
+      "exampleTranslation": "The children are playing in the garden."
+    },
+    {
+      "article": "der",
+      "word": "Stuhl",
+      "plural": "Stühle",
+      "english": "chair",
+      "partOfSpeech": "noun",
+      "exampleSentence": "In der Küche stehen vier Stühle.",
+      "exampleTranslation": "In the kitchen stand four chairs."
+    },
+    {
+      "article": "das",
+      "word": "Auto",
+      "plural": "Autos",
+      "english": "car",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Auf der Straße parken viele Autos.",
+      "exampleTranslation": "Many cars are parked on the street."
+    },
+    {
+      "article": "der",
+      "word": "Apfel",
+      "plural": "Äpfel",
+      "english": "apple",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Ich kaufe zwei Kilo Äpfel auf dem Markt.",
+      "exampleTranslation": "I buy two kilos of apples at the market."
+    },
+    {
+      "article": "die",
+      "word": "Stadt",
+      "plural": "Städte",
+      "english": "city",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Berlin und Wien sind europäische Städte.",
+      "exampleTranslation": "Berlin and Vienna are European cities."
+    }
+  ],
+  "readingPassage": {
+    "title": "Einkaufen auf dem Wochenmarkt (Shopping at the Weekly Market)",
+    "germanText": "Am Samstag besuchen viele Familien den Wochenmarkt in Freiburg. Die Händler verkaufen frische Äpfel, Birnen und Orangen. An einem Stand probieren Kunden verschiedene Brote und Brötchen. Zwei Studentinnen kaufen Gemüse für das Wochenende. Alle Verkäufer sind sehr freundlich und die Preise sind fair.",
+    "englishSummary": "On Saturday, many families visit the weekly market in Freiburg. The vendors sell fresh apples, pears, and oranges. At one stall, customers try different breads and bread rolls. Two female students buy vegetables for the weekend. All sellers are very friendly and the prices are fair.",
+    "glossary": [
+      {"word": "Wochenmarkt", "meaning": "weekly farmers market", "grammarNote": "der Markt (Pl. die Märkte)"},
+      {"word": "Händler", "meaning": "merchants / vendors", "grammarNote": "Plural of der Händler (Type 5: no ending)"},
+      {"word": "Studentinnen", "meaning": "female students", "grammarNote": "die Studentin → die Studentinnen"}
+    ],
+    "comprehensionQuestions": [
+      {
+        "question": "What is the plural of 'die Birne' (pear) used in the text?",
+        "options": ["Birner", "Birnen", "Birnes", "Birne"],
+        "correctIndex": 1,
+        "explanation": "The text states: '...frische Äpfel, Birnen und Orangen' (feminine in -e takes -n: die Birnen)."
+      },
+      {
+        "question": "What plural mechanism does 'das Brötchen' follow?",
+        "options": ["Adds -er", "Adds -s", "Takes zero ending (die Brötchen)", "Adds -en"],
+        "correctIndex": 2,
+        "explanation": "Diminutives ending in -chen undergo no change in the plural: das Brötchen → die Brötchen."
+      }
+    ]
+  },
+  "listeningDialogue": {
+    "title": "Im Supermarkt (At the Supermarket)",
+    "speakers": ["Kassierer", "Herr Weber"],
+    "lines": [
+      {"speaker": "Kassierer", "text": "Guten Tag! Haben Sie eine Kundenkarte?", "translation": "Good day! Do you have a loyalty card?"},
+      {"speaker": "Herr Weber", "text": "Nein, leider nicht. Ich habe hier fünf Äpfel und zwei Flaschen Wasser.", "translation": "No, unfortunately not. I have five apples here and two bottles of water."},
+      {"speaker": "Kassierer", "text": "Brauchen Sie noch Tüten für den Einkauf?", "translation": "Do you still need bags for the groceries?"},
+      {"speaker": "Herr Weber", "text": "Nein danke, ich habe schon zwei Taschen dabei.", "translation": "No thank you, I already have two bags with me."}
+    ],
+    "questions": [
+      {
+        "question": "What plural noun is used for multiple bottles?",
+        "options": ["Flasches", "Flaschen", "Fläsche", "Flascher"],
+        "correctIndex": 1,
+        "explanation": "Herr Weber says: 'zwei Flaschen Wasser' (die Flasche → die Flaschen)."
+      }
+    ]
+  },
+  "production": {
+    "writing": {
+      "prompt": "Write a shopping list of 5 grocery items in the plural with quantities (e.g. 3 apples, 2 bottles of milk, 4 bread rolls), then write two sentences describing what you are buying.",
+      "guidelines": [
+        "Use distinct plural patterns (e.g. -n, -s, umlaut, -er)",
+        "Example list: 3 Äpfel, 2 Flaschen Milch, 4 Brötchen, 2 Dosen Tomaten",
+        "Formulate complete sentences: 'Ich kaufe...'"
+      ],
+      "sampleResponse": "Meine Einkaufsliste: drei Äpfel, zwei Flaschen Milch, vier Brötchen und zwei Kilo Kartoffeln. Heute kaufe ich diese Lebensmittel im Supermarkt. Die Kinder essen gern Äpfel.",
+      "selfCheckRubric": [
+        "Did you use the correct plural ending for each item (Äpfel, Flaschen, Brötchen, Kartoffeln)?",
+        "Are all German nouns capitalized?",
+        "Did you conjugate the verb correctly for plural subjects (die Kinder essen)?"
+      ]
+    },
+    "speaking": {
+      "prompt": "Practice plural pronunciation by speaking this sentence:",
+      "targetSentence": "In den Zimmern stehen vier Tische und acht Stühle.",
+      "translation": "In the rooms stand four tables and eight chairs.",
+      "phoneticTips": "Pronounce the umlaut in 'Stühle' with rounded lips: /ˈʃtyːlə/."
+    }
+  },
+  "unitTest": {
+    "passingScore": 80,
+    "questions": [
+      {
+        "id": "u05-test-1",
+        "type": "multiple_choice",
+        "instruction": "Test 1: What is the definite article for ALL German nouns in the plural?",
+        "prompt": "In the Nominative case, all plural nouns take which article?",
+        "target": "die",
+        "options": ["der", "die", "das", "den"],
+        "explanation": "All plural nouns use the article 'die' in the Nominative case: die Männer, die Frauen, die Kinder.",
+        "grammarTopic": "Plural Articles"
+      },
+      {
+        "id": "u05-test-2",
+        "type": "fill_in_blank",
+        "instruction": "Test 2: Complete the plural form of 'das Bild' (picture):",
+        "prompt": "An der Wand hängen viele schöne ___ . (das Bild)",
+        "target": "Bilder",
+        "acceptableAnswers": ["Bilder", "die Bilder"],
+        "explanation": "'das Bild' forms its plural with '-er': die Bilder.",
+        "grammarTopic": "Neuter Plurals"
+      },
+      {
+        "id": "u05-test-3",
+        "type": "fill_in_blank",
+        "instruction": "Test 3: Form the plural of female profession 'die Lehrerin':",
+        "prompt": "In unserer Schule arbeiten zwanzig ___ . (die Lehrerin)",
+        "target": "Lehrerinnen",
+        "acceptableAnswers": ["Lehrerinnen", "die Lehrerinnen"],
+        "explanation": "Female professions in '-in' double the 'n' in plural: die Lehrerinnen.",
+        "grammarTopic": "Female Plurals"
+      },
+      {
+        "id": "u05-test-4",
+        "type": "multiple_choice",
+        "instruction": "Test 4: Plural of 'das Auto':",
+        "prompt": "What is the plural of 'das Auto'?",
+        "target": "die Autos",
+        "options": ["die Autoen", "die Autos", "die Autö", "die Auter"],
+        "explanation": "Nouns ending in vowels other than -e take '-s': die Autos.",
+        "grammarTopic": "Plural in -s"
+      },
+      {
+        "id": "u05-test-5",
+        "type": "multiple_choice",
+        "instruction": "Test 5: Plural of 'der Stuhl' (chair):",
+        "prompt": "Choose the correct plural form of 'der Stuhl':",
+        "target": "die Stühle",
+        "options": ["die Stuhlen", "die Stühle", "die Stuhls", "die Stühler"],
+        "explanation": "'der Stuhl' takes an umlaut and the -e ending: die Stühle.",
+        "grammarTopic": "Masculine Plurals"
+      }
+    ]
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "id": "unit-01",
+  "level": "A2",
+  "number": 1,
+  "title": "The Dative Case: Indirect Objects & Dative Verbs",
+  "subtitle": "Master the third case: article shifts (dem/der/dem/den + -n), dative pronouns, and dative verbs",
+  "grammarFocus": [
+    "Dative Function (Indirect Object / Beneficiary / 'Wem?')",
+    "Dative Articles (dem, der, dem, den + -n)",
+    "Dative Personal Pronouns (mir, dir, ihm, ihr, uns, euch, ihnen, Ihnen)",
+    "Dative-Governing Verbs (helfen, danken, gefallen, gehören, schmecken)",
+    "Double Object Word Order (Dativ before Akkusativ with nouns)"
+  ],
+  "estimatedMinutes": 50,
+  "concept": {
+    "title": "The Dative Case: The Realm of the Indirect Object",
+    "explanation": "Having mastered the Nominative (the doer) and Accusative (the direct target), we now enter the **Dative Case** (Der Dativ). The Dative identifies the **recipient, beneficiary, or affected party** of an action, answering the question <rule>Wem?</rule> (To/for whom?).\n\n### 1. Dative Article Declension\nIn the Dative, articles shift dramatically:\n- **Maskulin**: <nom>der</nom> Mann → <dat>dem</dat> Mann / *einem* Mann / *keinem* Mann\n- **Feminin**: <nom>die</nom> Frau → <dat>der</dat> Frau / *einer* Frau / *keiner* Frau (Notice: feminine becomes 'der'!)\n- **Neutrum**: <nom>das</nom> Kind → <dat>dem</dat> Kind / *einem* Kind / *keinem* Kind\n- **Plural**: <nom>die</nom> Kinder → <dat>den</dat> Kind<rule>-ern</rule> / *keinen* Kind<rule>-ern</rule>\n  - <rule>The Dative Plural -n Rule</rule>: In the Dative plural, ALL nouns must add an **-n** ending, unless the plural already ends in -n or -s!\n\n### 2. Dative Personal Pronouns\nPersonal pronouns have dedicated dative forms:\n- <nom>ich</nom> → <dat>mir</dat> (to/for me)\n- <nom>du</nom> → <dat>dir</dat> (to/for you)\n- <nom>er</nom> → <dat>ihm</dat> (to/for him)\n- <nom>sie</nom> → <dat>ihr</dat> (to/for her)\n- <nom>es</nom> → <dat>ihm</dat> (to/for it)\n- <nom>wir</nom> → <dat>uns</dat> (to/for us)\n- <nom>ihr</nom> → <dat>euch</rule> (to/for you all)\n- <nom>sie / Sie</nom> → <dat>ihnen / Ihnen</dat> (to/for them / You formal)\n\n### 3. Verbs that Strictly Demand the Dative (Dativ-Verben)\nSome German verbs do NOT take an accusative direct object; they strictly require their object to be in the **Dative case**:\n- <rule>helfen</rule> (to help): *Ich helfe <dat>dir</dat>.* (NEVER *'Ich helfe dich'*!)\n- <rule>danken</rule> (to thank): *Wir danken <dat>Ihnen</dat>.* (We thank you.)\n- <rule>gefallen</rule> (to please / like): *Das Bild gefällt <dat>mir</dat> gut.* (I like the picture.)\n- <rule>gehören</rule> (to belong to): *Das Buch gehört <dat>dem Lehrer</dat>.*\n- <rule>schmecken</rule> (to taste good to): *Die Pizza schmeckt <dat>den Kindern</dat>.*\n- <rule>passen</rule> (to fit / suit): *Der Termin passt <dat>mir</dat> gut.*\n\n### 4. Double Object Word Order (Dativ vor Akkusativ)\nWhen a sentence contains both a dative noun object and an accusative noun object, the <rule>Dative noun object ALWAYS precedes the Accusative noun object</rule>:\n- *Der Vater gibt <dat>dem Sohn</dat> (Dativ) <akk>den Schlüssel</akk> (Akkusativ).*",
+    "tables": [
+      {
+        "caption": "Complete Definite & Indefinite Article Matrix across 3 Cases",
+        "headers": ["Case", "Masculine", "Feminine", "Neuter", "Plural"],
+        "rows": [
+          ["Nominativ", "<nom>der</nom> / ein", "<nom>die</nom> / eine", "<nom>das</nom> / ein", "<nom>die</nom> / keine"],
+          ["Akkusativ", "<akk>den</akk> / einen", "<akk>die</akk> / eine", "<akk>das</akk> / ein", "<akk>die</akk> / keine"],
+          ["Dativ", "<dat>dem</dat> / einem", "<dat>der</dat> / einer", "<dat>dem</dat> / einem", "<dat>den</dat> / keinen (+n)"]
+        ]
+      }
+    ],
+    "deepDives": [
+      {
+        "title": "Feminine 'die' becomes 'der' in Dative!",
+        "content": "Beginners are often shocked when they see: 'Ich gebe <dat>der</dat> Frau das Buch'. They think 'der' is masculine! In the Dative case, feminine definite articles take '-er' ('der'). Look at the case function: if a feminine noun is receiving something or following a dative preposition (mit der Bahn), it is 'der Frau', 'einer Frau'.",
+        "warning": true
+      }
+    ]
+  },
+  "workedExamples": [
+    {
+      "german": "Der Kellner bringt dem Gast die Rechnung.",
+      "english": "The waiter brings the guest the bill.",
+      "breakdown": [
+        {"part": "Der Kellner", "role": "Subject (Nom. Masc.)", "caseType": "nom"},
+        {"part": "bringt", "role": "Verb (Pos 2)", "caseType": "verb"},
+        {"part": "dem Gast", "role": "Indirect Object (Dat. Masc.)", "caseType": "dat", "explanation": "der Gast becomes dem Gast in Dative; stands before the accusative object"},
+        {"part": "die Rechnung", "role": "Direct Object (Akk. Fem.)", "caseType": "akk", "explanation": "What is being brought: the bill"}
+      ]
+    },
+    {
+      "german": "Wie gefällt dir mein neues Auto? — Es gefällt mir sehr gut!",
+      "english": "How do you like my new car? — I like it very much!",
+      "breakdown": [
+        {"part": "Wie gefällt", "role": "Interrogative + Dative Verb", "caseType": "verb"},
+        {"part": "dir", "role": "Dative Pronoun (to you)", "caseType": "dat"},
+        {"part": "mein neues Auto", "role": "Grammatical Subject (Nom. Neut.)", "caseType": "nom", "explanation": "In 'gefallen', the item liked is the subject!"},
+        {"part": "mir", "role": "Dative Pronoun (to me)", "caseType": "dat"}
+      ]
+    }
+  ],
+  "guidedPractice": [
+    {
+      "id": "a2-u01-e1",
+      "type": "fill_in_blank",
+      "instruction": "Insert the dative article for feminine 'die Lehrerin':",
+      "prompt": "Der Student dankt ___ Lehrerin für die Unterstützung. (die)",
+      "target": "der",
+      "acceptableAnswers": ["der"],
+      "explanation": "'danken' requires the dative case. The dative form of feminine 'die' is 'der': der Lehrerin.",
+      "grammarTopic": "Dative Feminine"
+    },
+    {
+      "id": "a2-u01-e2",
+      "type": "multiple_choice",
+      "instruction": "Select the correct dative personal pronoun:",
+      "prompt": "Kannst du ___ bitte helfen? (ich → ?)",
+      "target": "mir",
+      "options": ["mich", "mir", "meiner", "ich"],
+      "explanation": "'helfen' strictly demands the Dative case: Kannst du mir helfen?",
+      "grammarTopic": "Dative Pronouns"
+    },
+    {
+      "id": "a2-u01-e3",
+      "type": "fill_in_blank",
+      "instruction": "Apply the dative plural -n rule to 'die Kinder':",
+      "prompt": "Die Großmutter erzählt den ___ eine schöne Geschichte. (Kinder)",
+      "target": "Kindern",
+      "acceptableAnswers": ["Kindern"],
+      "explanation": "In the dative plural, nouns must add '-n': den Kindern.",
+      "grammarTopic": "Dative Plural -n"
+    },
+    {
+      "id": "a2-u01-e4",
+      "type": "sentence_reorder",
+      "instruction": "Arrange with the correct object order (Dative before Accusative):",
+      "prompt": "The teacher gives the student the book.",
+      "tokens": ["Der", "Lehrer", "gibt", "dem", "Schüler", "das", "Buch."],
+      "target": "Der Lehrer gibt dem Schüler das Buch.",
+      "explanation": "Dative noun object ('dem Schüler') stands before the accusative noun object ('das Buch').",
+      "grammarTopic": "Object Word Order"
+    },
+    {
+      "id": "a2-u01-e5",
+      "type": "error_spotting",
+      "instruction": "Spot the case error after the dative verb 'helfen':",
+      "prompt": "Click the incorrect pronoun:",
+      "target": "dich",
+      "errorSpotting": {
+        "tokens": ["Ich", "helfe", "dich", "gerne", "beim", "Umzug."],
+        "errorIndex": 2,
+        "correctedToken": "dir",
+        "explanation": "'helfen' governs the DATIVE case, not accusative! The correct pronoun is 'dir': 'Ich helfe dir gerne...'"
+      },
+      "explanation": "Dative verb 'helfen' strictly requires 'dir', never 'dich'.",
+      "grammarTopic": "Dative Verb Error"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "helfen",
+      "english": "to help (governs Dative)",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Ich helfe meinem Vater im Garten.",
+      "exampleTranslation": "I am helping my father in the garden."
+    },
+    {
+      "word": "danken",
+      "english": "to thank (governs Dative)",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Wir danken Ihnen für Ihre Hilfe.",
+      "exampleTranslation": "We thank you for your help."
+    },
+    {
+      "word": "gefallen",
+      "english": "to appeal to / be pleasing to",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Wie gefällt Ihnen die Stadt?",
+      "exampleTranslation": "How do you like the city?"
+    },
+    {
+      "word": "gehören",
+      "english": "to belong to (governs Dative)",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Wem gehört dieses Auto?",
+      "exampleTranslation": "Whom does this car belong to?"
+    },
+    {
+      "word": "schmecken",
+      "english": "to taste good to (governs Dative)",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Das Essen schmeckt den Gästen ausgezeichnet.",
+      "exampleTranslation": "The food tastes excellent to the guests."
+    },
+    {
+      "article": "das",
+      "word": "Geschenk",
+      "plural": "Geschenke",
+      "english": "gift / present",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Er schenkt seiner Mutter ein Buch.",
+      "exampleTranslation": "He gives his mother a book as a gift."
+    }
+  ],
+  "readingPassage": {
+    "title": "Eine Geburtstagsüberraschung (A Birthday Surprise)",
+    "germanText": "Heute feiert Frau Wagner ihren 50. Geburtstag. Ihre Kollegen haben ihr eine wunderbare Überraschung vorbereitet. Der Abteilungsleiter gratuliert der Jubilarin und überreicht ihr einen großen Blumenstrauß. Die Kollegen schenken ihr einen Reisegutschein für ein Wochenende in Wien. Frau Wagner dankt dem ganzen Team mit Tränen in den Augen: 'Dieses Geschenk gefällt mir unglaublich gut!' Am Nachmittag schmeckt allen Mitarbeitern die Geburtstagstorte.",
+    "englishSummary": "Today Mrs. Wagner celebrates her 50th birthday. Her colleagues prepared a wonderful surprise for her. The department head congratulates the celebrant and presents her with a large bouquet of flowers. The colleagues gift her a travel voucher for a weekend in Vienna. Mrs. Wagner thanks the entire team with tears in her eyes: 'I like this gift incredibly well!' In the afternoon, the birthday cake tastes delicious to all employees.",
+    "glossary": [
+      {"word": "Jubilarin", "meaning": "celebrant (female)", "grammarNote": "gratulieren + Dative: gratuliert der Jubilarin"},
+      {"word": "überreicht", "meaning": "hands over / presents", "grammarNote": "überreichen + Dative pronoun (ihr)"},
+      {"word": "schenken", "meaning": "to gift", "grammarNote": "schenken + Dat. (ihr) + Akk. (einen Gutschein)"}
+    ],
+    "comprehensionQuestions": [
+      {
+        "question": "What case is triggered by 'gratulieren' in 'Der Abteilungsleiter gratuliert der Jubilarin'?",
+        "options": ["Nominative", "Accusative", "Dative (der Jubilarin)", "Genitive"],
+        "correctIndex": 2,
+        "explanation": "'gratulieren' strictly requires the dative case: der Jubilarin (fem. dative)."
+      },
+      {
+        "question": "In 'Dieses Geschenk gefällt mir unglaublich gut', what grammatical function does 'Dieses Geschenk' have?",
+        "options": [
+          "It is the direct object",
+          "It is the grammatical subject (Nominative)",
+          "It is dative",
+          "It is an adverb"
+        ],
+        "correctIndex": 1,
+        "explanation": "With 'gefallen', the item that pleases is the grammatical subject in Nominative; the person who likes it is in the Dative ('mir')."
+      }
+    ]
+  },
+  "listeningDialogue": {
+    "title": "Im italienischen Restaurant (In the Italian Restaurant)",
+    "speakers": ["Kellner", "Gast"],
+    "lines": [
+      {"speaker": "Kellner", "text": "Guten Abend! Hat Ihnen das Essen geschmeckt?", "translation": "Good evening! Did you enjoy the food (did the food taste good to you)?"},
+      {"speaker": "Gast", "text": "Ja, vielen Dank! Die Pasta hat mir ausgezeichnet geschmeckt.", "translation": "Yes, thank you very much! The pasta tasted excellent to me."},
+      {"speaker": "Kellner", "text": "Kann ich Ihnen noch ein Dessert oder einen Espresso bringen?", "translation": "Can I bring you a dessert or an espresso?"},
+      {"speaker": "Gast", "text": "Bringen Sie mir bitte einen Espresso und die Rechnung.", "translation": "Please bring me an espresso and the bill."}
+    ],
+    "questions": [
+      {
+        "question": "Which dative pronoun does the waiter use to address the customer formally?",
+        "options": ["dir", "ihr", "Ihnen (formal Dative)", "uns"],
+        "correctIndex": 2,
+        "explanation": "The waiter asks: 'Hat Ihnen das Essen geschmeckt?' and 'Kann ich Ihnen... bringen?'"
+      }
+    ]
+  },
+  "production": {
+    "writing": {
+      "prompt": "Write a short thank-you note to a friend or host family describing a dinner or stay. Use at least three dative-governing verbs (helfen, danken, gefallen, schmecken, gehören) with appropriate dative articles or pronouns (dir, Ihnen, der Familie, etc.).",
+      "guidelines": [
+        "Use 'Ich danke dir / Ihnen für...'",
+        "Use 'Das Essen hat mir... geschmeckt'",
+        "Use 'Das Wochenende hat mir sehr gut gefallen'",
+        "Pay strict attention to dative endings"
+      ],
+      "sampleResponse": "Liebe Familie Becker, ich danke Ihnen von Herzen für das wunderbare Wochenende in Freiburg. Ihre gemütliche Wohnung hat mir sehr gut gefallen. Das Abendessen am Samstag hat mir ausgezeichnet geschmeckt. Vielen Dank auch dafür, dass Sie mir beim Koffer getragen haben! Herzliche Grüße, Alex",
+      "selfCheckRubric": [
+        "Did you use 'Ihnen' / 'dir' after 'danken'?",
+        "Did you use 'mir' after 'schmecken' and 'gefallen'?",
+        "Are all German nouns capitalized?"
+      ]
+    },
+    "speaking": {
+      "prompt": "Practice the rhythm of dative expressions by speaking this sentence aloud:",
+      "targetSentence": "Ich danke Ihnen für die Einladung und das Essen schmeckt mir ausgezeichnet.",
+      "translation": "I thank you for the invitation and the food tastes excellent to me.",
+      "phoneticTips": "Pronounce 'Ihnen' with a long closed /iː/ and 'ausgezeichnet' with crisp dental articulation: /ˈaʊ̯sɡəˌtsaɪ̯çnət/."
+    }
+  },
+  "unitTest": {
+    "passingScore": 80,
+    "questions": [
+      {
+        "id": "a2-u01-test-1",
+        "type": "multiple_choice",
+        "instruction": "Test 1: What is the dative definite article for feminine nouns?",
+        "prompt": "In the Dative case, 'die Frau' becomes:",
+        "target": "der Frau",
+        "options": ["die Frau", "den Frau", "der Frau", "dem Frau"],
+        "explanation": "Feminine definite article in the Dative is 'der': der Frau.",
+        "grammarTopic": "Dative Feminine"
+      },
+      {
+        "id": "a2-u01-test-2",
+        "type": "fill_in_blank",
+        "instruction": "Test 2: Supply the dative pronoun for 'er':",
+        "prompt": "Das Buch gehört ___ . (er → ?)",
+        "target": "ihm",
+        "acceptableAnswers": ["ihm"],
+        "explanation": "'gehören' takes dative. 3rd person masculine dative is 'ihm'.",
+        "grammarTopic": "Dative Pronouns"
+      },
+      {
+        "id": "a2-u01-test-3",
+        "type": "multiple_choice",
+        "instruction": "Test 3: Double object word order with nouns:",
+        "prompt": "Which sentence has the correct German object order?",
+        "target": "Der Vater kauft dem Kind ein Fahrrad.",
+        "options": [
+          "Der Vater kauft ein Fahrrad dem Kind.",
+          "Der Vater kauft dem Kind ein Fahrrad.",
+          "Der Vater dem Kind kauft ein Fahrrad.",
+          "Der Vater kauft das Kind ein Fahrrad."
+        ],
+        "explanation": "With two noun objects, Dative ('dem Kind') strictly precedes Accusative ('ein Fahrrad').",
+        "grammarTopic": "Object Word Order"
+      },
+      {
+        "id": "a2-u01-test-4",
+        "type": "fill_in_blank",
+        "instruction": "Test 4: Apply the dative plural -n rule:",
+        "prompt": "Ich helfe den alten ___ über die Straße. (die Männer)",
+        "target": "Männern",
+        "acceptableAnswers": ["Männern"],
+        "explanation": "Dative plural requires an extra '-n': den alten Männern.",
+        "grammarTopic": "Dative Plural -n"
+      },
+      {
+        "id": "a2-u01-test-5",
+        "type": "multiple_choice",
+        "instruction": "Test 5: Dative governing verb check:",
+        "prompt": "Which of these verbs requires the Dative case?",
+        "target": "helfen",
+        "options": ["sehen", "kaufen", "helfen", "finden"],
+        "explanation": "'helfen' strictly demands the Dative: Ich helfe dir.",
+        "grammarTopic": "Dative Verbs"
+      }
+    ]
+  }
+}

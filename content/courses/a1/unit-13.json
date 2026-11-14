@@ -1,0 +1,279 @@
+{
+  "id": "unit-13",
+  "level": "A1",
+  "number": 13,
+  "title": "The Imperative Mood (Commands & Polite Requests)",
+  "subtitle": "Form commands for 'du', 'ihr', and 'Sie', and soften tone with 'bitte' and 'mal'",
+  "grammarFocus": ["Imperative for 'du' (Dropping -st & Pronoun)", "Imperative for 'ihr' (Dropping Pronoun)", "Formal Imperative for 'Sie' (Inversion)", "Stem-Vowel Rules in the Imperative", "Softening Particles (bitte, mal, doch)"],
+  "estimatedMinutes": 40,
+  "concept": {
+    "title": "Directing Action: The Three Imperative Registers",
+    "explanation": "Because German distinguishes between familiar singular (*du*), familiar plural (*ihr*), and formal address (*Sie*), there are three distinct grammatical forms for direct commands and instructions.\n\n### 1. The Informal Singular: 'du' Form\nTo form a command for one friend, child, or family member:\n1. Start with the present tense 'du' form (e.g. *du machst*).\n2. Drop the pronoun **du**.\n3. Drop the personal ending **-st**:\n   - *du machst* → <rule>Mach!</rule> (Do! / Make!)\n   - *du kommst* → <rule>Komm!</rule> (Come!)\n   - *du trinkst* → <rule>Trink!</rule> (Drink!)\n\n**Stem-Vowel Shifts in 'du' Imperative**:\n- **e → i / ie changes REMAIN**: *du sprichst* → <rule>Sprich!</rule> / *du liest* → <rule>Lies!</rule> / *du gibst* → <rule>Gib!</rule>\n- **a → ä changes are DROPPED!**: *du fährst* → <rule>Fahr!</rule> (NEVER *Fähr!*) / *du schläfst* → <rule>Schlaf!</rule>\n- Stems ending in **-t, -d, or -m/-n** add an **-e**: *du arbeitest* → <rule>Arbeite!</rule> / *du wartest* → <rule>Warte!</rule>\n- The verb *sein*: <rule>Sei!</rule> (*Sei ruhig!* = Be quiet!)\n\n### 2. The Informal Plural: 'ihr' Form\nAddressing two or more friends is wonderfully simple: <rule>take the normal present tense form for 'ihr' and simply drop the pronoun 'ihr'</rule>:\n- *ihr macht* → <rule>Macht!</rule>\n- *ihr kommt* → <rule>Kommt!</rule>\n- *ihr wartet* → <rule>Wartet!</rule>\n- The verb *sein*: <rule>Seid!</rule> (*Seid pünktlich!* = Be on time!)\n\n### 3. The Formal Register: 'Sie' Form\nAddressing strangers, customers, or colleagues requires maintaining the pronoun 'Sie' with verb-first inversion:\n- <rule>Kommen Sie!</rule> (Please come!)\n- <rule>Nehmen Sie Platz!</rule> (Please have a seat!)\n- The verb *sein*: <rule>Seien Sie!</rule> (*Seien Sie bitte vorsichtig!*)\n\n### 4. Softening Imperatives: 'bitte' and 'mal'\nA bare imperative in German (*Komm!*, *Warte!*) can sound aggressive. Native speakers routinely soften requests using <rule>bitte</rule> (please) and the modal particle <rule>mal</rule> (just / for a moment):\n- *Komm bitte mal her.* (Come here for a second, please.)\n- *Warten Sie bitte einen Moment.* (Please wait a moment.)",
+    "tables": [
+      {
+        "caption": "The Three Imperative Forms Across Core Verbs",
+        "headers": ["Infinitive", "du (Informal Sg.)", "ihr (Informal Pl.)", "Sie (Formal)"],
+        "rows": [
+          ["machen", "Mach!", "Macht!", "Machen Sie!"],
+          ["kommen", "Komm!", "Kommt!", "Kommen Sie!"],
+          ["sprechen (e→i)", "Sprich!", "Sprecht!", "Sprechen Sie!"],
+          ["lesen (e→ie)", "Lies!", "Lest!", "Lesen Sie!"],
+          ["fahren (a→ä dropped)", "Fahr!", "Fahrt!", "Fahren Sie!"],
+          ["arbeiten (stem in -t)", "Arbeite!", "Arbeitet!", "Arbeiten Sie!"],
+          ["sein (irregular)", "Sei!", "Seid!", "Seien Sie!"]
+        ]
+      }
+    ],
+    "deepDives": [
+      {
+        "title": "Achtung: Never Put an Umlaut on 'Fahr!'",
+        "content": "A very frequent mistake: saying 'Fähr langsamer!'. In German, umlaut mutations on the letter 'a' (fahren, schlafen, tragen) NEVER carry over into the imperative! It is strictly: Fahr! Schlaf gut! Trag das!",
+        "warning": true
+      }
+    ]
+  },
+  "workedExamples": [
+    {
+      "german": "Lies bitte den Text laut vor!",
+      "english": "Please read the text aloud! (addressed to 'du')",
+      "breakdown": [
+        {"part": "Lies", "role": "Imperative Verb (Pos 1)", "caseType": "verb", "explanation": "lesen (e→ie mutation maintained; -st and 'du' dropped)"},
+        {"part": "bitte", "role": "Polite Particle"},
+        {"part": "den Text", "role": "Accusative Direct Object (Masc.)", "caseType": "akk"},
+        {"part": "laut", "role": "Adverb of Manner"},
+        {"part": "vor", "role": "Separable Prefix (vorlesen)", "caseType": "prefix", "explanation": "Prefix lands at the end of the command"}
+      ]
+    },
+    {
+      "german": "Nehmen Sie bitte Platz, Herr Schmidt!",
+      "english": "Please take a seat, Mr. Schmidt!",
+      "breakdown": [
+        {"part": "Nehmen", "role": "Inverted Formal Verb", "caseType": "verb"},
+        {"part": "Sie", "role": "Formal Subject Pronoun", "caseType": "nom"},
+        {"part": "bitte", "role": "Politeness Marker"},
+        {"part": "Platz", "role": "Object ('Platz nehmen' = have a seat)"},
+        {"part": "Herr Schmidt", "role": "Formal Vocative Address"}
+      ]
+    }
+  ],
+  "guidedPractice": [
+    {
+      "id": "a1-u13-e1",
+      "type": "fill_in_blank",
+      "instruction": "Form the 'du' imperative for 'warten' (remember stem ending in -t):",
+      "prompt": "___ bitte hier auf mich! (warten)",
+      "target": "Warte",
+      "acceptableAnswers": ["Warte", "warte"],
+      "explanation": "Because the stem ends in -t, an '-e' is added: Warte!",
+      "grammarTopic": "Imperative for du"
+    },
+    {
+      "id": "a1-u13-e2",
+      "type": "multiple_choice",
+      "instruction": "Choose the correct 'du' imperative for 'fahren' (drive):",
+      "prompt": "Which is the correct command telling a friend to drive slower?",
+      "target": "Fahr langsamer!",
+      "options": ["Fahr langsamer!", "Fähr langsamer!", "Fahre du langsamer!", "Fahrt langsamer!"],
+      "explanation": "Umlaut shifts on 'a' are dropped in the imperative: 'Fahr!' (never 'Fähr!').",
+      "grammarTopic": "Umlaut in Imperative"
+    },
+    {
+      "id": "a1-u13-e3",
+      "type": "fill_in_blank",
+      "instruction": "Form the 'du' command for 'sprechen' (watch the vowel shift):",
+      "prompt": "___ bitte etwas lauter! (sprechen)",
+      "target": "Sprich",
+      "acceptableAnswers": ["Sprich", "sprich"],
+      "explanation": "The e → i shift is retained in the imperative: Sprich!",
+      "grammarTopic": "Vowel Shift Imperative"
+    },
+    {
+      "id": "a1-u13-e4",
+      "type": "sentence_reorder",
+      "instruction": "Arrange into a formal command addressed to 'Sie':",
+      "prompt": "Please open the window.",
+      "tokens": ["Öffnen", "Sie", "bitte", "das", "Fenster!"],
+      "target": "Öffnen Sie bitte das Fenster!",
+      "explanation": "Formal commands start with Verb + Sie: Öffnen Sie bitte das Fenster!",
+      "grammarTopic": "Formal Imperative"
+    },
+    {
+      "id": "a1-u13-e5",
+      "type": "multiple_choice",
+      "instruction": "Form the imperative of 'sein' for a group of friends (ihr):",
+      "prompt": "You tell your friends: 'Be quiet!'",
+      "target": "Seid leise!",
+      "options": ["Sei leise!", "Seid leise!", "Seien Sie leise!", "Sind leise!"],
+      "explanation": "For 'ihr', the imperative of 'sein' is 'Seid!': Seid leise!",
+      "grammarTopic": "Imperative of sein"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "warten",
+      "english": "to wait",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Warte bitte einen Augenblick!",
+      "exampleTranslation": "Wait a moment, please!"
+    },
+    {
+      "word": "öffnen",
+      "english": "to open",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Öffnen Sie bitte die Tür!",
+      "exampleTranslation": "Please open the door!"
+    },
+    {
+      "word": "schließen",
+      "english": "to close / shut",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Schließ bitte das Fenster!",
+      "exampleTranslation": "Please close the window!"
+    },
+    {
+      "word": "leise",
+      "english": "quiet / quietly",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "Seid bitte leise in der Bibliothek!",
+      "exampleTranslation": "Please be quiet in the library!"
+    },
+    {
+      "word": "helfen",
+      "english": "to help",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Hilf mir bitte bei dieser Übung!",
+      "exampleTranslation": "Please help me with this exercise!"
+    },
+    {
+      "word": "bitte",
+      "english": "please / you are welcome",
+      "partOfSpeech": "phrase",
+      "exampleSentence": "Kommen Sie bitte herein!",
+      "exampleTranslation": "Please come in!"
+    }
+  ],
+  "readingPassage": {
+    "title": "Kochanleitung für Apfelkuchen (Apple Cake Recipe Instructions)",
+    "germanText": "Rezept für einen einfachen deutschen Apfelkuchen:\n1. Nimm vier frische Äpfel und schäle sie gründlich!\n2. Schneide die Äpfel in kleine Stücke.\n3. Gib 200 Gramm Mehl, 100 Gramm Zucker und zwei Eier in eine Schüssel.\n4. Rühre den Teig gut um!\n5. Heize den Ofen auf 180 Grad vor und backe den Kuchen 45 Minuten lang.\n6. Lass den Kuchen abkühlen und serviere ihn mit Schlagsahne. Guten Appetit!",
+    "englishSummary": "Recipe for a simple German apple cake:\n1. Take four fresh apples and peel them thoroughly!\n2. Cut the apples into small pieces.\n3. Put 200 grams of flour, 100 grams of sugar, and two eggs into a bowl.\n4. Stir the batter well!\n5. Preheat the oven to 180 degrees and bake the cake for 45 minutes.\n6. Let the cake cool down and serve it with whipped cream. Enjoy your meal!",
+    "glossary": [
+      {"word": "Nimm", "meaning": "Take! (Imperative of nehmen)", "grammarNote": "nehmen has e→i mutation: du nimmst → Nimm!"},
+      {"word": "Gib", "meaning": "Give! / Put! (Imperative of geben)", "grammarNote": "geben has e→i mutation: du gibst → Gib!"},
+      {"word": "Heize vor", "meaning": "Preheat! (vorheizen)", "grammarNote": "Separable verb in imperative"}
+    ],
+    "comprehensionQuestions": [
+      {
+        "question": "What is the imperative form of 'nehmen' (to take) used in step 1?",
+        "options": ["Nehme!", "Nimm!", "Nehmt!", "Nehmen!"],
+        "correctIndex": 1,
+        "explanation": "'nehmen' undergoes an e → i mutation: du nimmst → 'Nimm!'."
+      },
+      {
+        "question": "Why does step 4 say 'Rühre den Teig gut um!' with 'um' at the end?",
+        "options": [
+          "Because 'umrühren' is a separable verb and the prefix moves to the end of the command",
+          "Because 'um' is a preposition meaning around",
+          "Because of cake",
+          "Because it is an exclamation"
+        ],
+        "correctIndex": 0,
+        "explanation": "'umrühren' is a separable verb; in the imperative, the prefix detaches and stands at the very end."
+      }
+    ]
+  },
+  "listeningDialogue": {
+    "title": "Im Deutschunterricht (In the German Classroom)",
+    "speakers": ["Lehrerin", "Schüler"],
+    "lines": [
+      {"speaker": "Lehrerin", "text": "Guten Morgen alle zusammen! Schlagt bitte eure Bücher auf Seite 24 auf!", "translation": "Good morning everyone! Please open your books to page 24!"},
+      {"speaker": "Schüler", "text": "Welche Übung machen wir, Frau Sommer?", "translation": "Which exercise are we doing, Mrs. Sommer?"},
+      {"speaker": "Lehrerin", "text": "Lest zuerst den kurzen Text und beantwortet dann die Fragen zu zweit!", "translation": "First read the short text and then answer the questions in pairs!"},
+      {"speaker": "Lehrerin", "text": "Florian, sprich bitte lauter, man kann dich hinten nicht hören!", "translation": "Florian, please speak louder, one cannot hear you in the back!"}
+    ],
+    "questions": [
+      {
+        "question": "Which imperative form does the teacher use when addressing the whole class (ihr)?",
+        "options": ["Schlag!", "Schlagt!", "Schlagen Sie!", "Schlagen!"],
+        "correctIndex": 1,
+        "explanation": "Addressing the group of students (ihr), she uses: 'Schlagt bitte eure Bücher... auf!'"
+      }
+    ]
+  },
+  "production": {
+    "writing": {
+      "prompt": "Write a list of four instructions or advice for someone starting to learn German (or a recipe for tea). Use different imperative forms: one for 'du', one for 'ihr', and two for 'Sie'. Use 'bitte' and 'mal' to soften the tone.",
+      "guidelines": [
+        "Include a 'du' command with e→i mutation (e.g. Lies jeden Tag!, Sprich Deutsch!)",
+        "Include an 'ihr' command (e.g. Lernt regelmäßig!)",
+        "Include formal 'Sie' commands (e.g. Hören Sie Podcasts!, Schreiben Sie Sätze!)"
+      ],
+      "sampleResponse": "Ratschläge für Deutschlerner: 1. Sprich bitte jeden Tag ein paar Sätze auf Deutsch! 2. Lernt fleißig die Artikel zusammen mit den Nomen! 3. Hören Sie regelmäßig deutsche Radiosendungen! 4. Machen Sie bitte jeden Tag eine kurze Übung!",
+      "selfCheckRubric": [
+        "Did you drop -st for 'du' (Sprich!)?",
+        "Did you keep -t for 'ihr' (Lernt!)?",
+        "Did you invert Verb + Sie for formal commands (Hören Sie, Machen Sie)?"
+      ]
+    },
+    "speaking": {
+      "prompt": "Practice natural imperative cadence by speaking this sentence:",
+      "targetSentence": "Sprich bitte etwas langsamer und lies den Satz noch einmal vor!",
+      "translation": "Please speak a little slower and read the sentence aloud once more!",
+      "phoneticTips": "Articulate 'Sprich' with a clean soft Ich-Laut (/ʃpʁɪç/) and 'vor' firmly at the end."
+    }
+  },
+  "unitTest": {
+    "passingScore": 80,
+    "questions": [
+      {
+        "id": "u13-test-1",
+        "type": "multiple_choice",
+        "instruction": "Test 1: How is the 'du' imperative formed for regular verbs?",
+        "prompt": "To form the 'du' imperative from the present tense 'du machst':",
+        "target": "Drop 'du' and drop '-st' (Mach!)",
+        "options": ["Keep 'du' and add -en", "Drop 'du' and drop '-st' (Mach!)", "Add -t to the stem", "Invert 'du' and verb"],
+        "explanation": "Drop the pronoun 'du' and the ending '-st': du machst → Mach!",
+        "grammarTopic": "Imperative for du"
+      },
+      {
+        "id": "u13-test-2",
+        "type": "fill_in_blank",
+        "instruction": "Test 2: Form the 'du' command for 'geben' (e→i mutation):",
+        "prompt": "___ mir bitte das Buch! (geben)",
+        "target": "Gib",
+        "acceptableAnswers": ["Gib", "gib"],
+        "explanation": "'geben' undergoes e → i: du gibst → Gib!",
+        "grammarTopic": "Vowel Shift Imperative"
+      },
+      {
+        "id": "u13-test-3",
+        "type": "multiple_choice",
+        "instruction": "Test 3: Imperative of 'sein' for 'du':",
+        "prompt": "You tell your friend: 'Be quiet!'",
+        "target": "Sei ruhig!",
+        "options": ["Bist ruhig!", "Sei ruhig!", "Seid ruhig!", "Seien ruhig!"],
+        "explanation": "The 'du' imperative of 'sein' is 'Sei!': Sei ruhig!",
+        "grammarTopic": "Imperative of sein"
+      },
+      {
+        "id": "u13-test-4",
+        "type": "sentence_reorder",
+        "instruction": "Test 4: Assemble into a polite formal command:",
+        "prompt": "Please take a seat, Mrs. Weber.",
+        "tokens": ["Nehmen", "Sie", "bitte", "Platz,", "Frau", "Weber!"],
+        "target": "Nehmen Sie bitte Platz, Frau Weber!",
+        "explanation": "Formal command: Nehmen (Verb) + Sie (Pronoun) + bitte Platz...",
+        "grammarTopic": "Formal Imperative"
+      },
+      {
+        "id": "u13-test-5",
+        "type": "fill_in_blank",
+        "instruction": "Test 5: Form the 'ihr' command for 'kommen':",
+        "prompt": "Kinder, ___ bitte schnell zum Essen! (kommen)",
+        "target": "Kommt",
+        "acceptableAnswers": ["Kommt", "kommt"],
+        "explanation": "Addressing children (ihr), the command is 'Kommt!': Kommt bitte schnell!",
+        "grammarTopic": "Imperative for ihr"
+      }
+    ]
+  }
+}

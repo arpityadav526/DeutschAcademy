@@ -1,0 +1,57 @@
+{
+  "id": "connectors",
+  "title": "Connectors & Word Order (Konnektoren & Satzbau)",
+  "level": "A1-B2",
+  "summary": "Connectors link sentences and clauses. In German, connectors belong to three strict grammatical classes that determine where the conjugated verb must be placed: Position 0 (coordinating), Position 1 with inversion (adverbial), or Verb-Final (subordinating).",
+  "tables": [
+    {
+      "title": "Class 1: Coordinating Conjunctions (Position 0 - ADUSO)",
+      "description": "These 5 connectors take Position 0. The word order in the clause that follows is standard Main Clause (Subject + Verb-Second).",
+      "headers": ["Connector", "Meaning", "Example", "Word Order"],
+      "rows": [
+        ["aber", "but", "Ich bin müde, aber ich lerne weiter.", "aber (Pos 0) + ich (Pos 1) + lerne (Pos 2)"],
+        ["denn", "because / for", "Er kommt nicht, denn er ist krank.", "denn (Pos 0) + er (Pos 1) + ist (Pos 2)"],
+        ["und", "and", "Sie liest ein Buch und er kocht.", "und (Pos 0) + er (Pos 1) + kocht (Pos 2)"],
+        ["sondern", "but rather (after negation)", "Er trinkt keinen Tee, sondern er trinkt Kaffee.", "sondern (Pos 0) + er (Pos 1) + trinkt (Pos 2)"],
+        ["oder", "or", "Kommen Sie heute oder kommen Sie morgen?", "oder (Pos 0) + kommen (Pos 1) + Sie..."]
+      ]
+    },
+    {
+      "title": "Class 2: Subordinating Conjunctions (Verb-Final / Nebensatz)",
+      "description": "These conjunctions send the conjugated verb all the way to the very end of the subordinate clause.",
+      "headers": ["Connector", "Meaning", "Example", "Word Order"],
+      "rows": [
+        ["weil", "because", "Ich bleibe zu Hause, weil ich krank <verb>bin</verb>.", "Verb 'bin' at the very end"],
+        ["dass", "that", "Ich weiß, dass du fleißig <verb>lernst</verb>.", "Verb 'lernst' at the end"],
+        ["wenn", "if / when (repeated)", "Wenn es <verb>regnet</verb>, nehme ich einen Schirm.", "Verb 'regnet' at end; main clause inverts ('nehme ich')"],
+        ["ob", "whether / if", "Er fragt, ob der Zug pünktlich <verb>abfährt</verb>.", "Verb 'abfährt' at end"],
+        ["obwohl", "although", "Obwohl er wenig Zeit <verb>hat</verb>, hilft er mir.", "Verb 'hat' at end"],
+        ["während", "while / whereas", "Während sie <verb>liest</verb>, schläft er.", "Verb 'liest' at end"]
+      ]
+    },
+    {
+      "title": "Class 3: Adverbial Connectors (Position 1 with Inversion)",
+      "description": "These act as adverbs in Position 1. The conjugated verb immediately follows in Position 2, kicking the subject to Position 3.",
+      "headers": ["Connector", "Meaning", "Example", "Word Order"],
+      "rows": [
+        ["deshalb / darum", "therefore", "Er ist krank, deshalb <verb>bleibt</verb> er im Bett.", "deshalb (Pos 1) + bleibt (Pos 2) + er (Pos 3)"],
+        ["trotzdem", "nevertheless / anyway", "Es regnet, trotzdem <verb>gehen</verb> wir spazieren.", "trotzdem (Pos 1) + gehen (Pos 2) + wir (Pos 3)"],
+        ["dann", "then", "Zuerst frühstücke ich, dann <verb>gehe</verb> ich zur Arbeit.", "dann (Pos 1) + gehe (Pos 2) + ich (Pos 3)"],
+        ["sonst", "otherwise", "Beeil dich, sonst <verb>verpassen</verb> wir den Bus.", "sonst (Pos 1) + verpassen (Pos 2) + wir (Pos 3)"]
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "name": "The Comma Rule with Subordinate Clauses",
+      "explanation": "In German, all subordinate clauses (Nebensätze) MUST be separated from the main clause by a comma. Furthermore, when a sentence begins with a Nebensatz, the main clause that follows must begin immediately with its conjugated verb (Inversion).",
+      "examples": [
+        {
+          "german": "Weil ich müde bin, <verb>gehe</verb> ich ins Bett.",
+          "english": "Because I am tired, I go to bed.",
+          "breakdown": "The entire Nebensatz acts as Position 1; therefore the main clause must start with the verb 'gehe' in Position 2"
+        }
+      ]
+    }
+  ]
+}

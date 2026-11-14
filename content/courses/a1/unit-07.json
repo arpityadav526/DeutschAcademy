@@ -1,0 +1,286 @@
+{
+  "id": "unit-07",
+  "level": "A1",
+  "number": 7,
+  "title": "Forming Questions: W-Fragen & Ja/Nein-Fragen",
+  "subtitle": "Formulate open and closed questions and master the affirmative particle 'doch'",
+  "grammarFocus": ["W-Fragen (Interrogative Pronouns: wer, was, wo, woher, wohin, wie, warum, wann)", "Ja/Nein-Fragen (Verb in Position 1)", "The Power of 'doch'"],
+  "estimatedMinutes": 40,
+  "concept": {
+    "title": "The Mechanics of German Interrogatives",
+    "explanation": "German questions fall into two syntactic categories: open questions requiring specific information (W-Fragen) and closed questions requiring a yes/no response (Ja/Nein-Fragen).\n\n### 1. W-Fragen (Open Questions)\nIn a W-Frage, the question word occupies **Position 1**, and the conjugated verb MUST occupy **Position 2**:\n- <rule>Wer</rule> = Who? (Subject Nominative: *Wer ist das?*)\n- <rule>Was</rule> = What? (*Was machst du?*)\n- <rule>Wo</rule> = Where? (Static location: *Wo wohnst du?*)\n- <rule>Woher</rule> = Where from? (Origin: *Woher kommen Sie?*)\n- <rule>Wohin</rule> = Where to? (Destination: *Wohin gehst du?*)\n- <rule>Wann</rule> = When? (*Wann beginnt der Kurs?*)\n- <rule>Warum</rule> / <rule>Wieso</rule> = Why? (*Warum lernst du Deutsch?*)\n- <rule>Wie</rule> = How? (*Wie heißt du?*, *Wie geht es dir?*)\n\n### 2. Ja/Nein-Fragen (Closed Questions)\nIn closed yes/no questions, the sentence begins with the **conjugated verb in Position 1**:\n- *<verb>Kommst</verb> <nom>du</nom> aus Spanien?* (Verb Pos 1 + Subject Pos 2)\n- *<verb>Haben</verb> <nom>Sie</nom> einen Moment Zeit?*\n- *<verb>Trinkst</verb> <nom>du</nom> gern Tee?*\n\n### 3. The Brilliant German Word: 'Doch'\nEnglish struggles with answering negative questions ('You don't eat meat?' -> 'Yes? No?'). German has a dedicated word: <rule>doch</rule>!\n- Question: *Kommst du nicht mit?* (Are you not coming along?)\n  - Answer 'Nein': *Nein, ich bleibe hier.* (Confirming the negative: I am not coming.)\n  - Answer 'Doch': *Doch! Ich komme mit!* (Contradicting the negative: Yes I AM coming!)",
+    "tables": [
+      {
+        "caption": "Question Word Taxonomy (W-Fragen)",
+        "headers": ["Question Word", "Core Meaning", "Typical Verb Pairing", "Example Question"],
+        "rows": [
+          ["Wer?", "Who? (Subject)", "sein, kommen", "Wer ist der neue Lehrer?"],
+          ["Was?", "What? (Object / Action)", "machen, kaufen, trinken", "Was kaufst du heute?"],
+          ["Wo?", "Where? (Static Location)", "wohnen, sein, liegen", "Wo ist die Bibliothek?"],
+          ["Wohin?", "Where to? (Movement)", "gehen, fahren, reisen", "Wohin fahrt ihr am Freitag?"],
+          ["Woher?", "Where from? (Origin)", "kommen, stammen", "Woher kommen Ihre Eltern?"],
+          ["Wann?", "When? (Time)", "beginnen, ankommen", "Wann kommt der Zug an?"],
+          ["Wie?", "How?", "heißen, finden", "Wie gefällt Ihnen Berlin?"]
+        ]
+      }
+    ],
+    "deepDives": [
+      {
+        "title": "Wo vs. Wohin vs. Woher",
+        "content": "English frequently uses 'where' for all directions ('Where are you going?'). German distinguishes sharply: 'Wo' is static location (Wo bist du?), 'Wohin' is directional toward a destination (Wohin gehst du?), and 'Woher' is origin away from a place (Woher kommst du?).",
+        "warning": false
+      }
+    ]
+  },
+  "workedExamples": [
+    {
+      "german": "Wohin fahrt ihr in den Sommerferien?",
+      "english": "Where are you all traveling in the summer holidays?",
+      "breakdown": [
+        {"part": "Wohin", "role": "Interrogative (Destination Direction)", "explanation": "Demands movement/destination"},
+        {"part": "fahrt", "role": "Conjugated Verb (Pos 2)", "caseType": "verb", "explanation": "Conjugated for 'ihr' (no stem mutation!)"},
+        {"part": "ihr", "role": "Subject Pronoun (Pos 3)", "caseType": "nom"},
+        {"part": "in den Sommerferien", "role": "Time Phrase"}
+      ]
+    },
+    {
+      "german": "Hast du kein Deutschbuch? — Doch, ich habe eins!",
+      "english": "Don't you have a German book? — Yes, I do (have one)!",
+      "breakdown": [
+        {"part": "Hast", "role": "Verb in Position 1", "caseType": "verb", "explanation": "Forms closed question"},
+        {"part": "du", "role": "Subject"},
+        {"part": "kein Deutschbuch", "role": "Negative Accusative Object"},
+        {"part": "Doch", "role": "Affirmative contradiction to negative premise", "explanation": "Rejects the negative assumption"}
+      ]
+    }
+  ],
+  "guidedPractice": [
+    {
+      "id": "a1-u07-e1",
+      "type": "multiple_choice",
+      "instruction": "Select the correct question word for asking about destination:",
+      "prompt": "___ gehst du heute Nachmittag? — In die Stadt.",
+      "target": "Wohin",
+      "options": ["Wo", "Wohin", "Woher", "Wann"],
+      "explanation": "Asking about movement toward a destination requires 'Wohin?': Wohin gehst du?",
+      "grammarTopic": "W-Fragen"
+    },
+    {
+      "id": "a1-u07-e2",
+      "type": "sentence_reorder",
+      "instruction": "Construct a closed yes/no question starting with the verb:",
+      "prompt": "Do you speak German?",
+      "tokens": ["Sprichst", "du", "Deutsch?"],
+      "target": "Sprichst du Deutsch?",
+      "explanation": "In Ja/Nein questions, the verb 'Sprichst' must be in Position 1: Sprichst du Deutsch?",
+      "grammarTopic": "Ja/Nein-Fragen"
+    },
+    {
+      "id": "a1-u07-e3",
+      "type": "multiple_choice",
+      "instruction": "Choose the correct response using 'doch':",
+      "prompt": "Lernst du nicht für die Prüfung? (Aren't you studying for the exam?)",
+      "target": "Doch, ich lerne den ganzen Tag!",
+      "options": [
+        "Ja, ich lerne nicht.",
+        "Doch, ich lerne den ganzen Tag!",
+        "Nein, ich lerne sehr viel.",
+        "Bitte, ich lerne."
+      ],
+      "explanation": "To contradict a negative question affirmatively ('Yes I AM!'), German strictly uses 'Doch!'.",
+      "grammarTopic": "Doch"
+    },
+    {
+      "id": "a1-u07-e4",
+      "type": "fill_in_blank",
+      "instruction": "Fill in the missing question word for origin:",
+      "prompt": "___ kommen Sie, Frau Wagner? — Aus Wien.",
+      "target": "Woher",
+      "acceptableAnswers": ["Woher"],
+      "explanation": "Origin is asked with 'Woher?': Woher kommen Sie?",
+      "grammarTopic": "W-Fragen"
+    },
+    {
+      "id": "a1-u07-e5",
+      "type": "transformation",
+      "instruction": "Transform this statement into a closed Yes/No question:",
+      "prompt": "Transform into question:",
+      "transformationRule": {
+        "from": "Sie trinken gern Kaffee.",
+        "to": "Trinken Sie gern Kaffee?",
+        "baseSentence": "Sie trinken gern Kaffee."
+      },
+      "target": "Trinken Sie gern Kaffee?",
+      "explanation": "Move the verb 'Trinken' to Position 1: Trinken Sie gern Kaffee?",
+      "grammarTopic": "Question Transformation"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "wer",
+      "english": "who",
+      "partOfSpeech": "pronoun",
+      "exampleSentence": "Wer ist an der Tür?",
+      "exampleTranslation": "Who is at the door?"
+    },
+    {
+      "word": "was",
+      "english": "what",
+      "partOfSpeech": "pronoun",
+      "exampleSentence": "Was machst du heute?",
+      "exampleTranslation": "What are you doing today?"
+    },
+    {
+      "word": "wo",
+      "english": "where (location)",
+      "partOfSpeech": "adverb",
+      "exampleSentence": "Wo ist der Bahnhof?",
+      "exampleTranslation": "Where is the train station?"
+    },
+    {
+      "word": "woher",
+      "english": "where from",
+      "partOfSpeech": "adverb",
+      "exampleSentence": "Woher kommt dieser Wein?",
+      "exampleTranslation": "Where does this wine come from?"
+    },
+    {
+      "word": "wohin",
+      "english": "where to",
+      "partOfSpeech": "adverb",
+      "exampleSentence": "Wohin fahrt ihr am Wochenende?",
+      "exampleTranslation": "Where are you going on the weekend?"
+    },
+    {
+      "word": "doch",
+      "english": "yes indeed (contradicting negative)",
+      "partOfSpeech": "adverb",
+      "exampleSentence": "Kommst du nicht mit? — Doch!",
+      "exampleTranslation": "Aren't you coming? — Yes I am!"
+    }
+  ],
+  "readingPassage": {
+    "title": "Interview mit einer Studentin (Interview with a Student)",
+    "germanText": "Journalist: Guten Tag! Darf ich Ihnen ein paar Fragen stellen? Wie heißen Sie und woher kommen Sie?\nElena: Guten Tag! Ich heiße Elena und komme aus Griechenland.\nJournalist: Und was studieren Sie hier in München?\nElena: Ich studiere Architektur an der Technischen Universität.\nJournalist: Sprechen Sie zu Hause kein Deutsch?\nElena: Doch! Meine Mitbewohnerin kommt aus Österreich. Wir sprechen jeden Tag Deutsch.",
+    "englishSummary": "Journalist: Good day! May I ask you a few questions? What is your name and where do you come from?\nElena: Good day! My name is Elena and I come from Greece.\nJournalist: And what do you study here in Munich?\nElena: I study architecture at the Technical University.\nJournalist: Don't you speak German at home?\nElena: Yes indeed! My flatmate comes from Austria. We speak German every day.",
+    "glossary": [
+      {"word": "Fragen stellen", "meaning": "to ask questions", "grammarNote": "die Frage"},
+      {"word": "Mitbewohnerin", "meaning": "female flatmate / roommate", "grammarNote": "die Mitbewohnerin"},
+      {"word": "doch", "meaning": "on the contrary / yes indeed", "grammarNote": "contradicts 'kein Deutsch'"}
+    ],
+    "comprehensionQuestions": [
+      {
+        "question": "What question word does the journalist use to ask for Elena's field of study?",
+        "options": ["Woher", "Wohin", "Was", "Wer"],
+        "correctIndex": 2,
+        "explanation": "The journalist asks: 'Und was studieren Sie hier in München?'"
+      },
+      {
+        "question": "Why does Elena answer with 'Doch!' to the question 'Sprechen Sie zu Hause kein Deutsch?'",
+        "options": [
+          "Because she does not speak German",
+          "Because she is angry",
+          "Because she contradicts the negative question affirmatively (she DOES speak German)",
+          "Because she speaks Greek"
+        ],
+        "correctIndex": 2,
+        "explanation": "'Doch' is used to contradict a negative assertion or negative question: she DOES speak German with her Austrian roommate."
+      }
+    ]
+  },
+  "listeningDialogue": {
+    "title": "Am Bahnhofsschalter (At the Train Station Counter)",
+    "speakers": ["Reisender", "Bahnbeamtin"],
+    "lines": [
+      {"speaker": "Reisender", "text": "Entschuldigung, wann fährt der nächste Zug nach Berlin?", "translation": "Excuse me, when does the next train to Berlin depart?"},
+      {"speaker": "Bahnbeamtin", "text": "Der ICE fährt um 14:25 Uhr von Gleis 7 ab.", "translation": "The ICE departs at 2:25 PM from platform 7."},
+      {"speaker": "Reisender", "text": "Muss ich in Hannover umsteigen?", "translation": "Do I have to change trains in Hanover?"},
+      {"speaker": "Bahnbeamtin", "text": "Nein, das ist ein direkter Zug ohne Umstieg.", "translation": "No, that is a direct train without transfers."}
+    ],
+    "questions": [
+      {
+        "question": "What kind of question is 'Muss ich in Hannover umsteigen?'",
+        "options": ["A W-Frage", "A Ja/Nein-Frage with verb in Position 1", "An indirect question", "An exclamation"],
+        "correctIndex": 1,
+        "explanation": "The sentence begins with the modal verb 'Muss' in Position 1, making it a closed Ja/Nein question."
+      }
+    ]
+  },
+  "production": {
+    "writing": {
+      "prompt": "You are interviewing a new colleague. Formulate four different questions: two W-Fragen (using 'Woher', 'Was', or 'Wo') and two Ja/Nein-Fragen (using 'Haben Sie...', 'Wohnen Sie...', etc.).",
+      "guidelines": [
+        "Use formal address 'Sie'",
+        "Ensure W-Fragen have the verb in Position 2",
+        "Ensure Ja/Nein-Fragen start with the verb in Position 1"
+      ],
+      "sampleResponse": "1. Woher kommen Sie? 2. Was arbeiten Sie gern in Ihrer Freizeit? 3. Wohnen Sie schon lange in dieser Stadt? 4. Haben Sie heute Nachmittag Zeit für einen Kaffee?",
+      "selfCheckRubric": [
+        "Did you capitalize formal 'Sie'?",
+        "Did you put the verb in Position 1 for the yes/no questions?",
+        "Did you conjugate the verbs properly with -en for 'Sie'?"
+      ]
+    },
+    "speaking": {
+      "prompt": "Practice clear question intonation by speaking this sentence aloud:",
+      "targetSentence": "Entschuldigung, wo ist der Bahnhof und wann fährt der Zug ab?",
+      "translation": "Excuse me, where is the train station and when does the train depart?",
+      "phoneticTips": "Maintain a natural falling intonation on W-questions in German: 'wo ist der Bahnhof' (falling at the end)."
+    }
+  },
+  "unitTest": {
+    "passingScore": 80,
+    "questions": [
+      {
+        "id": "u07-test-1",
+        "type": "multiple_choice",
+        "instruction": "Test 1: Where does the verb go in a Ja/Nein question?",
+        "prompt": "In a closed yes/no question, the conjugated verb stands in:",
+        "target": "Position 1",
+        "options": ["Position 1", "Position 2", "The end of the sentence", "Position 3"],
+        "explanation": "Ja/Nein questions start with the conjugated verb in Position 1: 'Kommst du morgen?'",
+        "grammarTopic": "Ja/Nein-Fragen"
+      },
+      {
+        "id": "u07-test-2",
+        "type": "fill_in_blank",
+        "instruction": "Test 2: Complete the question word:",
+        "prompt": "___ ist das? — Das ist mein Freund Lukas.",
+        "target": "Wer",
+        "acceptableAnswers": ["Wer"],
+        "explanation": "Asking about a person (subject) uses 'Wer?' (Who?): Wer ist das?",
+        "grammarTopic": "W-Fragen"
+      },
+      {
+        "id": "u07-test-3",
+        "type": "multiple_choice",
+        "instruction": "Test 3: Contradicting a negative question:",
+        "prompt": "Hast du kein Auto? (You want to answer: Yes I DO have one!)",
+        "target": "Doch, ich habe ein Auto.",
+        "options": ["Ja, ich habe kein Auto.", "Doch, ich habe ein Auto.", "Nein, ich habe ein Auto.", "Bitte, ein Auto."],
+        "explanation": "'Doch' is the correct affirmative contradiction to a negative question.",
+        "grammarTopic": "Doch"
+      },
+      {
+        "id": "u07-test-4",
+        "type": "sentence_reorder",
+        "instruction": "Test 4: Arrange into a correct W-Frage:",
+        "prompt": "When does the German course begin?",
+        "tokens": ["Wann", "beginnt", "der", "Deutschkurs?"],
+        "target": "Wann beginnt der Deutschkurs?",
+        "explanation": "Wann (Pos 1) + beginnt (Pos 2) + der Deutschkurs (Subject).",
+        "grammarTopic": "W-Fragen Word Order"
+      },
+      {
+        "id": "u07-test-5",
+        "type": "multiple_choice",
+        "instruction": "Test 5: Differentiating Wo, Wohin, Woher:",
+        "prompt": "Which question asks about the origin of a person?",
+        "target": "Woher kommen Sie?",
+        "options": ["Wo wohnen Sie?", "Wohin gehen Sie?", "Woher kommen Sie?", "Wann kommen Sie?"],
+        "explanation": "'Woher' specifically queries provenance/origin: Woher kommen Sie?",
+        "grammarTopic": "W-Fragen"
+      }
+    ]
+  }
+}

@@ -1,0 +1,499 @@
+{
+  "levels": [
+    {
+      "id": "A1",
+      "name": "A1: Breakthrough / Beginner",
+      "description": "Establish absolute foundational competence: German phonetics, basic syntax, gender rules, core verbs, sentence structure, negation, numbers, and the distinction between Nominative and Accusative cases.",
+      "estimatedHours": 80,
+      "color": "blue",
+      "units": [
+        {
+          "id": "unit-01",
+          "number": 1,
+          "title": "Alphabet, Pronunciation & German Phonetics",
+          "description": "Master German sounds: Umlauts (ä, ö, ü), the Eszett (ß), consonant blends (ch, sch, sp, st), vowel length rules, and diphthongs (ei, ie, eu).",
+          "grammarFocus": ["Phonetics", "Alphabet", "Diphthongs", "Spelling Rules"],
+          "vocabularyTheme": "Letters, spellings, international words, greeting sounds",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-02",
+          "number": 2,
+          "title": "Greetings, Personal Pronouns & Regular Verb Conjugation",
+          "description": "Learn to introduce yourself, greet formally and informally, use subject pronouns (ich, du, er/sie/es, wir, ihr, sie/Sie), and conjugate regular present-tense verbs.",
+          "grammarFocus": ["Personal Pronouns", "Regular Verb Conjugation", "Present Tense (Präsens)", "Formal vs. Informal Address"],
+          "vocabularyTheme": "Greetings, origin countries, professions, languages",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-03",
+          "number": 3,
+          "title": "Irregular Present Tense Verbs & Auxiliaries (sein & haben)",
+          "description": "Master the irregular backbone of German: sein (to be) and haben (to have), plus stem vowel changes (e→i, e→ie, a→ä).",
+          "grammarFocus": ["Auxiliary Verbs (sein/haben)", "Stem-Vowel Changes", "Irregular Conjugation Patterns"],
+          "vocabularyTheme": "Daily activities, states of being, personal traits",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-04",
+          "number": 4,
+          "title": "Nouns, Articles (der/die/das) & Gender Strategies",
+          "description": "Demystify grammatical gender. Learn why every German noun has a biological or grammatical gender, suffix rules (-ung, -heit, -chen), and indefinite articles (ein/eine).",
+          "grammarFocus": ["Definite Articles (der/die/das)", "Indefinite Articles (ein/eine)", "Gender Clues & Suffixes", "Compound Nouns"],
+          "vocabularyTheme": "Classroom objects, everyday items, house & furniture",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-05",
+          "number": 5,
+          "title": "Plural Forms of German Nouns",
+          "description": "Conquer the 5 plural patterns (-e, -er, -en/-n, -s, no ending) and umlaut mutations. Learn the rules that make plurals predictable.",
+          "grammarFocus": ["Plural Formations", "Umlaut Shifts in Plurals", "Plural Articles (die)"],
+          "vocabularyTheme": "Food, groceries, city locations, family members",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-06",
+          "number": 6,
+          "title": "German Word Order: The Verb-Second (V2) Rule",
+          "description": "The golden rule of German syntax: the conjugated verb is always in position 2 in statements, regardless of what comes first (inversion).",
+          "grammarFocus": ["Verb-Second (V2) Rule", "Inversion (Fronting Adverbials)", "Sentence Bracket (Satzklammer) Basics"],
+          "vocabularyTheme": "Time expressions, daily routines, transitional phrases",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-07",
+          "number": 7,
+          "title": "Forming Questions: W-Fragen & Ja/Nein-Fragen",
+          "description": "Construct open questions with interrogatives (wer, was, wo, wohin, woher, wie, warum, wann) and closed yes/no questions with verb-first syntax.",
+          "grammarFocus": ["W-Fragen (Question Words)", "Ja/Nein-Fragen (Verb-First Position)", "Doch (Affirmative Response to Negatives)"],
+          "vocabularyTheme": "Biographical questions, travel queries, directions",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-08",
+          "number": 8,
+          "title": "Negation: 'nicht' vs. 'kein'",
+          "description": "Never confuse negation again: use 'kein' to negate nouns with indefinite or zero articles, and 'nicht' to negate verbs, adjectives, adverbs, and definite nouns.",
+          "grammarFocus": ["kein / keine / keinen", "nicht Position Rules", "Negating Sentences vs. Elements"],
+          "vocabularyTheme": "Preferences, dislikes, dietary restrictions, corrections",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-09",
+          "number": 9,
+          "title": "Numbers, Time, Dates & Calendar",
+          "description": "Cardinal and ordinal numbers, official 24-hour vs. colloquial 12-hour time (vor/nach/viertel/halb), days, months, and date prepositions (am, um, im).",
+          "grammarFocus": ["Cardinal & Ordinal Numbers", "Telling Time (Offiziell & Umgangssprachlich)", "Temporal Prepositions (um, am, im)"],
+          "vocabularyTheme": "Schedule, appointments, dates, seasons, clock time",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-10",
+          "number": 10,
+          "title": "The Cases: Nominative and Accusative",
+          "description": "Understand case as grammatical role: Nominative for subject, Accusative for direct object. Master the change of masculine 'der' to 'den' and accusative personal pronouns.",
+          "grammarFocus": ["Nominative vs. Accusative", "Accusative Articles (den/einen/keinen)", "Accusative Personal Pronouns (mich, dich, ihn...)", "Accusative Prepositions (bis, durch, für, gegen, ohne, um)"],
+          "vocabularyTheme": "Shopping, food & drinks, hobbies, daily purchases",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-11",
+          "number": 11,
+          "title": "Modal Verbs & Dual-Verb Sentence Brackets",
+          "description": "Express ability, obligation, permission, and desire with the 6 modal verbs (können, müssen, wollen, dürfen, sollen, möchten) and place the infinitive at the sentence end.",
+          "grammarFocus": ["Modal Verb Conjugation", "Sentence Bracket (Satzklammer: Modal at V2, Infinitive at End)", "Nuances of Sollen vs. Müssen"],
+          "vocabularyTheme": "Rules, duties, free-time abilities, doctor's visits",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-12",
+          "number": 12,
+          "title": "Separable and Inseparable Verbs",
+          "description": "Understand why German verbs split: stressed separable prefixes (auf-, an-, ab-, mit-, ein-, aus-) migrate to the end of the clause in main sentences, while inseparable prefixes (be-, ver-, zer-, ent-, er-, ge-) never split.",
+          "grammarFocus": ["Trennbare Verben (Separable Prefixes)", "Untrennbare Verben (Inseparable Prefixes)", "Prefix Movement in Present Tense & Modal Combinations"],
+          "vocabularyTheme": "Daily routines (aufstehen, einkaufen, anrufen, aufräumen)",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-13",
+          "number": 13,
+          "title": "The Imperative Mood (Commands & Requests)",
+          "description": "Form direct commands and polite requests for du (informal singular), ihr (informal plural), and Sie (formal), plus polite softening with 'bitte' and 'mal'.",
+          "grammarFocus": ["Imperative for 'du' (Dropping -st & Pronoun)", "Imperative for 'ihr'", "Formal Imperative 'Sie'", "Stem Vowel Change Exceptions in Imperative"],
+          "vocabularyTheme": "Directions, recipes, instructions, classroom commands",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-14",
+          "number": 14,
+          "title": "A1 Capstone Review & Mastery Benchmark",
+          "description": "Synthesize all A1 grammar and vocabulary in comprehensive integrative drills, end-of-level evaluation, and certified A1 diagnostic testing.",
+          "grammarFocus": ["Integrated Case & Conjugation Review", "Error Spotting", "Multi-Sentence Production", "Listening & Reading Diagnostic"],
+          "vocabularyTheme": "Comprehensive A1 vocabulary integration",
+          "lessonsCount": 5
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "name": "A2: Elementary / Foundation Builder",
+      "description": "Expand expressive capability: indirect objects with Dative case, two-way prepositions, past narratives with Perfekt & Präteritum, reflexive verbs, and introductory subordinate clauses.",
+      "estimatedHours": 100,
+      "color": "amber",
+      "units": [
+        {
+          "id": "unit-01",
+          "number": 1,
+          "title": "The Dative Case: Indirect Objects & Dative Verbs",
+          "description": "Master the third German case: identify who receives the action. Articles (dem/der/dem/den + -n), dative pronouns (mir/dir/ihm/ihr/uns/euch/ihnen/Ihnen), and verbs that strictly govern Dative (helfen, danken, gefallen, gehören, schmecken).",
+          "grammarFocus": ["Dative Articles & Declension", "Dative Personal Pronouns", "Verbs Requiring Dative", "Word Order with Accusative & Dative Objects"],
+          "vocabularyTheme": "Giving gifts, helping, opinions, restaurant compliments",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-02",
+          "number": 2,
+          "title": "Two-Way Prepositions (Wechselpräpositionen)",
+          "description": "The golden rule of spatial prepositions (an, auf, hinter, in, neben, über, unter, vor, zwischen): Wohin? (Motion/Direction) takes Accusative; Wo? (Static Location) takes Dative.",
+          "grammarFocus": ["9 Two-Way Prepositions", "Akkusativ vs. Dativ Rule (Wohin? vs. Wo?)", "Position Verbs vs. Action Verbs (stehen/stellen, liegen/legen, sitzen/setzen, hängen)"],
+          "vocabularyTheme": "Furniture, room layout, moving, city orientation",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-03",
+          "number": 3,
+          "title": "The Perfekt Tense: Conversational Past",
+          "description": "Speak about the past naturally using haben or sein + Partizip II. Master regular verbs (ge-...-t), irregular verbs (ge-...-en), separable/inseparable participles, and the sein-movement criteria.",
+          "grammarFocus": ["Auxiliary Choice (haben vs. sein)", "Partizip II Formation Rules", "Sentence Bracket with Participles"],
+          "vocabularyTheme": "Past vacations, yesterday's activities, career milestones",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-04",
+          "number": 4,
+          "title": "Präteritum of Sein, Haben & Modal Verbs",
+          "description": "Learn when to use the simple past instead of Perfekt in spoken German: war, hatte, and modal past forms (konnte, musste, wollte, durfte, sollte).",
+          "grammarFocus": ["Präteritum of sein & haben", "Präteritum of Modal Verbs", "Past Tense Contrast in Conversation"],
+          "vocabularyTheme": "Childhood memories, past obligations, historical facts",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-05",
+          "number": 5,
+          "title": "Reflexive Verbs & Pronouns",
+          "description": "Express actions done to oneself: echte and unechte Reflexivverben (sich freuen, sich waschen, sich interessieren) with accusative and dative reflexive pronouns.",
+          "grammarFocus": ["Reflexive Pronouns (mich/mir, dich/dir...)", "Accusative vs. Dative Reflexives", "Prepositional Reflexive Verbs (sich freuen auf/über)"],
+          "vocabularyTheme": "Personal feelings, health, hygiene, interests",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-06",
+          "number": 6,
+          "title": "Subordinate Clauses: 'weil', 'dass', 'wenn', 'ob'",
+          "description": "German syntax shift: subordinate clauses send the conjugated verb straight to the very end of the clause. Master causal (weil), factual (dass), conditional/temporal (wenn), and indirect (ob) clauses.",
+          "grammarFocus": ["Nebensatz Word Order (Verb-Final)", "Subordinating Conjunctions (weil, dass, wenn, ob)", "Comma Rules & Inversion in the Main Clause"],
+          "vocabularyTheme": "Expressing reasons, conditions, certainty, and doubt",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-07",
+          "number": 7,
+          "title": "Comparison of Adjectives & Adverbs",
+          "description": "Compare items and qualities with the comparative (-er + als) and superlative (am -sten), including irregular forms (gern/lieber/am liebsten, viel/mehr/am meisten, gut/besser/am besten).",
+          "grammarFocus": ["Comparative Form & 'als'", "Superlative Form & 'am ...-sten'", "Equivalence with 'so ... wie'", "Umlaut Shifts in Monosyllabic Adjectives"],
+          "vocabularyTheme": "Product comparisons, lifestyle choices, cities, weather",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-08",
+          "number": 8,
+          "title": "Adjective Endings: Introduction & Basic Schemes",
+          "description": "Learn the logic of German adjective endings: after definite articles (der/die/das - weak endings) and indefinite articles (ein/eine - mixed endings) in Nominative and Accusative.",
+          "grammarFocus": ["Weak Declension (Typ 1: nach bestimmtem Artikel)", "Mixed Declension (Typ 2: nach unbestimmtem Artikel)", "Predictable Endings Scheme"],
+          "vocabularyTheme": "Clothing, fashion, shopping descriptions, colors",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-09",
+          "number": 9,
+          "title": "Possessive Articles across Cases",
+          "description": "Decline possessive determiners (mein, dein, sein, ihr, unser, euer, ihr/Ihr) across Nominative, Accusative, and Dative.",
+          "grammarFocus": ["Possessive Declension Matrix", "The Irregularities of 'euer' (eure, eurem)", "Possession in Context"],
+          "vocabularyTheme": "Family relations, belongings, workplace colleagues",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-10",
+          "number": 10,
+          "title": "Combined Pronoun Order & Double Objects",
+          "description": "What happens when both an accusative object and a dative object appear in one sentence? Master the rule: noun dative precedes noun accusative, but pronoun accusative precedes pronoun dative.",
+          "grammarFocus": ["Object Word Order (Dativ vor Akkusativ bei Nomen)", "Pronoun Rule (Akkusativ vor Dativ bei Pronomen)", "Replacement of Nouns with Pronouns"],
+          "vocabularyTheme": "Giving, sending, explaining, office communications",
+          "lessonsCount": 5
+        }
+      ]
+    },
+    {
+      "id": "B1",
+      "name": "B1: Intermediate / Independent Speaker",
+      "description": "Attain conversational fluency and grammatical independence: full adjective declension, genitive, narrative past (Präteritum), Konjunktiv II, passive voice, relative clauses, and infinitive constructions.",
+      "estimatedHours": 120,
+      "color": "emerald",
+      "units": [
+        {
+          "id": "unit-01",
+          "number": 1,
+          "title": "Complete Adjective Declension (All 3 Schemes across 4 Cases)",
+          "description": "Master the complete matrix: Weak declension (after der/die/das), Mixed declension (after ein/kein/possessive), and Strong declension (no article preceding).",
+          "grammarFocus": ["Weak, Mixed, and Strong Declension", "Genitive & Dative Adjective Endings", "Parallel Adjective Rules"],
+          "vocabularyTheme": "Art, architecture, descriptions of nature and people",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-02",
+          "number": 2,
+          "title": "The Genitive Case & Genitive Prepositions",
+          "description": "The fourth case: expressing possession, relationship, and academic phrasing with des/der/des/der + -(e)s, plus prepositions: wegen, während, trotz, (an)statt.",
+          "grammarFocus": ["Genitive Noun Endings (-(e)s)", "Genitive Prepositions (trotz, wegen, während, statt)", "Dative Colloquial Replacement vs. Written Genitive"],
+          "vocabularyTheme": "News reports, legal contexts, formal announcements",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-03",
+          "number": 3,
+          "title": "The Narrative Past (Präteritum) of Full Verbs",
+          "description": "Read German novels, news, and official accounts comfortably: regular weak verb endings (-te, -test, -te...) and strong irregular ablaut changes (ging, kam, sah, schrieb).",
+          "grammarFocus": ["Weak vs. Strong Präteritum Formation", "Ablaut Vowel Shift Patterns", "Stylistic Use: Spoken Perfekt vs. Written Präteritum"],
+          "vocabularyTheme": "Biographies, historical chronicles, literary excerpts",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-04",
+          "number": 4,
+          "title": "Plusquamperfekt & Temporal Subordinating Connectors",
+          "description": "Express events that occurred before another past event using hatte/war + Partizip II, connected by 'nachdem', 'bevor', 'seitdem', and 'während'.",
+          "grammarFocus": ["Plusquamperfekt Construction", "Tense Sequence (Vorzeitigkeit: nachdem + Plusquamperfekt, Präteritum)", "Temporal Connectors"],
+          "vocabularyTheme": "Investigative reports, timelines, sequencing life events",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-05",
+          "number": 5,
+          "title": "Futur I: Future Plans, Predictions & Assumptions",
+          "description": "Use werden + Infinitiv to express firm intentions, future forecasts, and present assumptions ('Er wird wohl krank sein').",
+          "grammarFocus": ["Conjugation of 'werden'", "Futur I vs. Präsens with Time Marker", "Expressing Probability with Futur I"],
+          "vocabularyTheme": "Technology trends, future predictions, climate changes",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-06",
+          "number": 6,
+          "title": "Relative Clauses (Relativsätze)",
+          "description": "Add detail to nouns using relative pronouns (der, die, das, dessen, deren, denen) in Nominative, Accusative, Dative, and with governing prepositions.",
+          "grammarFocus": ["Relative Pronoun Declension", "Prepositional Relative Clauses ('das Buch, über das...')", "Genitive Relative Pronouns (dessen, deren)"],
+          "vocabularyTheme": "Defining objects, describing people, specialized professions",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-07",
+          "number": 7,
+          "title": "Konjunktiv II: Wishes, Politeness & Hypotheticals",
+          "description": "Express unreal situations, polite requests, and daydreaming: würde + Infinitiv, hätte, wäre, and modal forms (könnte, müsste, dürfte, sollte).",
+          "grammarFocus": ["Subjunctive II Formations", "Irreal Conditionals (Wenn ich reich wäre, würde ich...)", "Polite Requests & Indirect Inquiries"],
+          "vocabularyTheme": "Hypothetical dilemmas, dreams, negotiation, customer service",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-08",
+          "number": 8,
+          "title": "Passive Voice: The Process Passive (Vorgangspassiv)",
+          "description": "Shift focus from agent to action: werden + Partizip II across Präsens, Präteritum, and Perfekt, with agent attribution using 'von' (+ Dat) and 'durch' (+ Akk).",
+          "grammarFocus": ["Vorgangspassiv Structure Across Tenses", "Agent Marker 'von' (Person/Agency) vs. 'durch' (Means/Instrument)", "Passiv with Modal Verbs"],
+          "vocabularyTheme": "Manufacturing, scientific discoveries, news reports",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-09",
+          "number": 9,
+          "title": "Infinitive Clauses with 'zu'",
+          "description": "Connect ideas without repeating subjects: clauses with 'zu + Infinitiv', fixed constructions (um...zu for purpose, ohne...zu, anstatt...zu), and verb triggers (planen, versuchen, hoffen).",
+          "grammarFocus": ["Infinitive with 'zu' Structure", "Separable Verbs with '-zu-' (einzukaufen)", "Final Clauses: 'um ... zu' vs. 'damit'"],
+          "vocabularyTheme": "Goals, intentions, career plans, resolutions",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-10",
+          "number": 10,
+          "title": "Two-Part Connectors (Doppelkonnektoren)",
+          "description": "Elevate your sentence structure: 'sowohl ... als auch', 'nicht nur ... sondern auch', 'weder ... noch', 'entweder ... oder', and 'zwar ... aber'.",
+          "grammarFocus": ["Correlative Conjunctions", "Punctuation Rules", "Agreement & Word Order with Two-Part Connectors"],
+          "vocabularyTheme": "Nuanced arguments, debates, comparisons of pros & cons",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-11",
+          "number": 11,
+          "title": "Verbs with Fixed Prepositions (Verben mit Präpositionen)",
+          "description": "The keystone of intermediate German: verbs that require specific prepositions and cases (warten auf + Akk, träumen von + Dat, sich erinnern an + Akk), plus prepositional adverbs (worauf / darauf).",
+          "grammarFocus": ["Fixed Preposition + Case Collocations", "Pronominal Adverbs (da(r)- + Preposition)", "Interrogative Compounds (wo(r)- + Preposition)"],
+          "vocabularyTheme": "Feelings, relationships, projects, expectations",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-12",
+          "number": 12,
+          "title": "Indirect Questions & Complex Subordinate Clauses",
+          "description": "Form elegant polite questions in professional situations ('Könnten Sie mir sagen, wann...'), embed multiple clauses, and avoid word-order traps.",
+          "grammarFocus": ["Embedded Questions with 'ob' and W-words", "Multiple Clause Stacking", "Register in Formal Inquiries"],
+          "vocabularyTheme": "Customer service, professional emails, official interviews",
+          "lessonsCount": 5
+        }
+      ]
+    },
+    {
+      "id": "B2",
+      "name": "B2: Upper-Intermediate / Professional Fluency",
+      "description": "Achieve professional and academic precision: indirect speech (Konjunktiv I), condition/state passive (Zustandspassiv), extended participial attributes, nominalisation, formal letter writing, and debate argumentation.",
+      "estimatedHours": 140,
+      "color": "indigo",
+      "units": [
+        {
+          "id": "unit-01",
+          "number": 1,
+          "title": "Indirect Speech & Konjunktiv I",
+          "description": "Report statements objectively in news and legal contexts using Konjunktiv I forms (er habe gesagt, sie seien informiert), with Konjunktiv II replacements when ambiguous.",
+          "grammarFocus": ["Konjunktiv I Formations", "Reported Speech in Journalism", "Replacement with Konjunktiv II"],
+          "vocabularyTheme": "Press briefings, news reporting, courtroom testimonies",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-02",
+          "number": 2,
+          "title": "Passive Variants & Zustandspassiv",
+          "description": "Contrast process with finished state: Zustandspassiv (sein + Partizip II), and passive alternatives (man, sich lassen, sein + zu + Infinitiv, -bar/-lich suffixes).",
+          "grammarFocus": ["Zustandspassiv vs. Vorgangspassiv", "Passiversatzformen ('Das lässt sich machen', 'Es ist zu beachten')", "Adjective Suffixes with Passive Meaning"],
+          "vocabularyTheme": "Technical manuals, regulations, product warranties",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-03",
+          "number": 3,
+          "title": "Extended Participial Attributes",
+          "description": "Condense relative clauses into sophisticated pre-nominal modifiers using Partizip I (active/simultaneous) and Partizip II (passive/completed): 'die von dem Ausschuss getroffene Entscheidung'.",
+          "grammarFocus": ["Partizip I (-end) & Partizip II as Attributes", "Extended Participial Phrases Preceding Nouns", "Decentering & Unpacking Extended Attributes into Relative Clauses"],
+          "vocabularyTheme": "Academic papers, economic analyses, legal documents",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-04",
+          "number": 4,
+          "title": "Nominalisation (Nominalstil vs. Verbalstil)",
+          "description": "Master German official and academic style (Behördendeutsch): convert clauses and verbal actions into dense noun phrases using prepositions (durch, bei, infolge, zur).",
+          "grammarFocus": ["Suffixes for Nominalisation (-ung, -heit, -keit, -schaft)", "Converting Nebensätze into Prepositional Noun Phrases", "Appropriate Register Use"],
+          "vocabularyTheme": "Official correspondence, government forms, business reports",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-05",
+          "number": 5,
+          "title": "Advanced Connectors & Nuanced Sentence Linkage",
+          "description": "Master sophisticated logical transitions: concessive (obwohl, obgleich, wenngleich, trotzdem, dessen ungeachtet), modal (indem, dadurch dass), and consecutive (sodass, infolgedessen, folglich).",
+          "grammarFocus": ["Subordinating vs. Adverbial vs. Coordinating Connectors", "Word Order Shifts by Connector Class", "Punctuation & Stylistic Rhythm"],
+          "vocabularyTheme": "Academic debate, scientific discourse, analytical essays",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-06",
+          "number": 6,
+          "title": "Formal and Academic Register (Sprachregister)",
+          "description": "Distinguish between everyday colloquialisms, standard speech, and elevated academic register (Gehobene Sprache). Choose precise vocabulary over generic terms.",
+          "grammarFocus": ["Register Taxonomy & Nuance", "Precise Verb Substitutions (e.g., darstellen instead of zeigen)", "Hedging & Modesty Formulas in Academic German"],
+          "vocabularyTheme": "Academic presentations, formal inquiries, higher education",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-07",
+          "number": 7,
+          "title": "Professional Correspondence: Formal Letters & Emails",
+          "description": "Draft standard-compliant formal communications: Betreffzeile, formal salutations, structured complaints (Beschwerdebrief), job applications (Bewerbungsschreiben), and polite demands.",
+          "grammarFocus": ["DIN 5008 Layout Conventions", "Formal Salutations & Closings (Sehr geehrte Damen und Herren, Mit freundlichen Grüßen)", "Diplomatic Assertion Formulas"],
+          "vocabularyTheme": "Job applications, consumer complaints, administrative petitions",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-08",
+          "number": 8,
+          "title": "Argumentation, Debate & Opinion Writing",
+          "description": "Structure convincing German essays and debates (Erörterung): theses, arguments, counter-arguments, synthesis, and transitional rhetoric.",
+          "grammarFocus": ["Structuring an Argument (These, Begründung, Beispiel)", "Rhetorical Questioning & Counter-Positioning", "Balanced Synthesis Formulations"],
+          "vocabularyTheme": "Societal debates, environmental policy, digital transformation",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-09",
+          "number": 9,
+          "title": "Idiomatic Expressions, Collocations & Metaphors",
+          "description": "Decipher and naturally employ common German idioms (Redewendungen) and metaphorical expressions indispensable for native-level comprehension.",
+          "grammarFocus": ["Idiomatic Syntax & Invariability", "Metaphorical Mappings in Everyday German", "Register Constraints of Idioms"],
+          "vocabularyTheme": "Colloquial German idioms, business idioms, cultural expressions",
+          "lessonsCount": 5
+        }
+      ]
+    },
+    {
+      "id": "C1",
+      "name": "C1: Advanced / Mastery Extension",
+      "description": "Bonus advanced modules for effortless mastery: complex syntax, modal particles, noun-verb collocations (Funktionsverbgefüge), stylistic eloquence, and academic synthesis.",
+      "estimatedHours": 160,
+      "color": "rose",
+      "units": [
+        {
+          "id": "unit-01",
+          "number": 1,
+          "title": "Complex Syntax & Elliptical Structures",
+          "description": "Master verb-first conditionals without 'wenn' ('Hätte ich das gewusst, wäre...'), concessive inversions, and elliptical clauses for stylistic punch.",
+          "grammarFocus": ["Uneingeleitete Konditionalsätze", "Concessive Inversions with 'so + Adjektiv... auch'", "Elliptical Coordination"],
+          "vocabularyTheme": "Literary analysis, editorial journalism, rhetorical speeches",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-02",
+          "number": 2,
+          "title": "Modal Particles (Modalpartikeln): Pragmatic Nuance",
+          "description": "The soul of natural German: decipher and employ untranslatable particles that signal attitude and tone: 'ja', 'doch', 'mal', 'halt', 'eben', 'wohl', 'eh', 'schon'.",
+          "grammarFocus": ["Modal Particle Function & Placement in the Mittelfeld", "Tone Modulation: Softening vs. Sharpening", "Contrastive Contexts for 'doch' and 'ja'"],
+          "vocabularyTheme": "Natural conversational debate, negotiation, psychological nuance",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-03",
+          "number": 3,
+          "title": "Noun-Verb Collocations (Funktionsverbgefüge)",
+          "description": "The hallmark of C1/C2 German: replacing simple verbs with idiomatic noun-preposition-verb collocations: 'zur Verfügung stellen', 'in Betracht ziehen', 'Kritik üben an'.",
+          "grammarFocus": ["FVG Taxonomy (Causative vs. Inchoative vs. Passive)", "Prepositional Governance in FVG", "Nominal Modification in Collocations"],
+          "vocabularyTheme": "Politics, diplomacy, enterprise management, high-level policy",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-04",
+          "number": 4,
+          "title": "Discourse Markers, Cohesion & Textual Flow",
+          "description": "Weave complex arguments with seamless rhetorical coherence: advance signposting, cataphoric reference, and syntactic cohesion.",
+          "grammarFocus": ["Macro-Syntactic Cohesion", "Cataphora & Anaphora in Advanced German", "Stylistic Rhythm & Periodicity"],
+          "vocabularyTheme": "Monographs, dissertations, executive summaries, keynote addresses",
+          "lessonsCount": 5
+        },
+        {
+          "id": "unit-05",
+          "number": 5,
+          "title": "Advanced Reading, Critical Listening & Nuance Detection",
+          "description": "Interpret irony, subtext, subtle bias, and register shifts in German literature, philosophical essays, and high-level political debates.",
+          "grammarFocus": ["Subtext & Irony Decoding", "Stylistic Archaism vs. Neologism", "Critical Linguistic Analysis"],
+          "vocabularyTheme": "Philosophy, German intellectual history, cultural commentary",
+          "lessonsCount": 5
+        }
+      ]
+    }
+  ]
+}

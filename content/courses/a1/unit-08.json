@@ -1,0 +1,290 @@
+{
+  "id": "unit-08",
+  "level": "A1",
+  "number": 8,
+  "title": "Negation: 'nicht' vs. 'kein'",
+  "subtitle": "Eliminate confusion between negating nouns ('kein') and negating verbs/elements ('nicht')",
+  "grammarFocus": ["Rules for 'kein' (Indefinite & Zero-Article Nouns)", "Rules for 'nicht' (Verbs, Adjectives, Definite Nouns, Prepositions)", "Position of 'nicht' (End of clause vs. Preceding element)"],
+  "estimatedMinutes": 45,
+  "concept": {
+    "title": "The Decisive Choice: When to Use 'kein' vs. 'nicht'",
+    "explanation": "German has two distinct words for negation: <rule>kein</rule> and <rule>nicht</rule>. Mixing them up is one of the most common beginner errors. The rule is simple and absolute.\n\n### 1. When to Use 'kein' (The Noun Negator)\nUse <rule>kein-</rule> ONLY when negating a noun that in the positive would have:\n- An **indefinite article** (*ein / eine*):\n  - *Ich habe ein Auto.* → *Ich habe <rule>kein</rule> Auto.*\n  - *Das ist eine Frage.* → *Das ist <rule>keine</rule> Frage.*\n- A **zero article** (no article at all, e.g. mass nouns, abstract concepts):\n  - *Ich habe Zeit.* → *Ich habe <rule>keine</rule> Zeit.*\n  - *Er trinkt Kaffee.* → *Er trinkt <rule>keinen</rule> Kaffee.*\n\n*kein-* declines exactly like *ein* (ein/eine/ein in Nom; einen/eine/ein in Akk), plus it has a plural form: *keine* (e.g. *keine Bücher*).\n\n### 2. When to Use 'nicht' (Everything Else!)\nUse <rule>nicht</rule> for all other types of negation:\n1. **Verbs** (actions): *Ich schlafe <rule>nicht</rule>.* / *Wir verstehen das <rule>nicht</rule>.*\n2. **Adjectives & Adverbs**: *Das Buch ist <rule>nicht</rule> teuer.* / *Er fährt <rule>nicht</rule> schnell.*\n3. **Nouns with a Definite Article** (*der, die, das*): *Das ist <rule>nicht</rule> der richtige Schlüssel.*\n4. **Proper Names**: *Das ist <rule>nicht</rule> Florian.*\n5. **Possessive Determiners**: *Das ist <rule>nicht</rule> mein Fahrrad.*\n6. **Prepositional Phrases**: *Ich wohne <rule>nicht</rule> in Hamburg.*\n\n### 3. The Position of 'nicht'\n- To negate the **entire action/clause**, *nicht* goes as far toward the **end of the sentence** as possible: *Ich kenne diesen Mann <rule>nicht</rule>.*\n- To negate a **specific element**, *nicht* stands **directly before** that element: *Ich fahre <rule>nicht</rule> heute nach Köln, sondern morgen.*",
+    "tables": [
+      {
+        "caption": "Decision Matrix: 'nicht' vs. 'kein'",
+        "headers": ["Target of Negation", "Use", "Positive Equivalent", "Negated Sentence"],
+        "rows": [
+          ["Noun with 'ein'", "kein-", "Ich habe ein Ticket.", "Ich habe <rule>kein</rule> Ticket."],
+          ["Noun with zero-article", "kein-", "Ich habe Hunger.", "Ich habe <rule>keinen</rule> Hunger."],
+          ["Plural noun without article", "keine", "Wir haben Kinder.", "Wir haben <rule>keine</rule> Kinder."],
+          ["Verb / Action", "nicht", "Ich rauche.", "Ich rauche <rule>nicht</rule>."],
+          ["Adjective", "nicht", "Das Hotel ist teuer.", "Das Hotel ist <rule>nicht</rule> teuer."],
+          ["Noun with 'der/die/das'", "nicht", "Das ist der Chef.", "Das ist <rule>nicht</rule> der Chef."],
+          ["Prepositional phrase", "nicht", "Er kommt aus Berlin.", "Er kommt <rule>nicht</rule> aus Berlin."]
+        ]
+      }
+    ],
+    "deepDives": [
+      {
+        "title": "Achtung: Nouns with 'der' Take 'nicht', NOT 'kein'!",
+        "content": "A common mistake: 'Ich habe keinen das Schlüssel.' This is completely ungrammatical in German! If a definite article or possessive is present (der, die, das, mein, dein), you MUST use 'nicht': 'Ich habe den Schlüssel nicht.' / 'Das ist nicht mein Schlüssel.'",
+        "warning": true
+      }
+    ]
+  },
+  "workedExamples": [
+    {
+      "german": "Ich trinke gern Tee, aber ich trinke keinen Kaffee.",
+      "english": "I like drinking tea, but I drink no coffee.",
+      "breakdown": [
+        {"part": "Ich trinke gern Tee", "role": "Main Clause 1"},
+        {"part": "aber", "role": "Conjunction (Pos 0)"},
+        {"part": "ich trinke", "role": "Subject + Verb (Pos 2)"},
+        {"part": "keinen Kaffee", "role": "Negative Direct Object (Akk. Masc.)", "caseType": "akk", "explanation": "'Kaffee' is masculine; zero-article in positive, so it takes 'keinen' in accusative"}
+      ]
+    },
+    {
+      "german": "Das Restaurant ist heute leider nicht geöffnet.",
+      "english": "Unfortunately, the restaurant is not open today.",
+      "breakdown": [
+        {"part": "Das Restaurant", "role": "Subject (Nom. Neut.)", "caseType": "nom"},
+        {"part": "ist", "role": "Verb (Pos 2)", "caseType": "verb"},
+        {"part": "heute leider", "role": "Time + Adverbial"},
+        {"part": "nicht geöffnet", "role": "Negated Participle/Adjective", "explanation": "'nicht' stands directly before the predicate adjective 'geöffnet'"}
+      ]
+    }
+  ],
+  "guidedPractice": [
+    {
+      "id": "a1-u08-e1",
+      "type": "multiple_choice",
+      "instruction": "Decide whether 'nicht' or 'kein' is required:",
+      "prompt": "Ich habe ___ Hunger. (Hunger is an uncounted noun without an article)",
+      "target": "keinen",
+      "options": ["nicht", "kein", "keinen", "nichts"],
+      "explanation": "'der Hunger' is a masculine noun without an article. In the accusative direct object role, it takes 'keinen': Ich habe keinen Hunger.",
+      "grammarTopic": "kein with Zero Article"
+    },
+    {
+      "id": "a1-u08-e2",
+      "type": "multiple_choice",
+      "instruction": "Choose the correct negation for an adjective:",
+      "prompt": "Der Deutschkurs ist ___ schwer. (The German course is not difficult.)",
+      "target": "nicht",
+      "options": ["nicht", "kein", "keine", "keinen"],
+      "explanation": "Adjectives (schwer) are always negated with 'nicht': nicht schwer.",
+      "grammarTopic": "nicht with Adjectives"
+    },
+    {
+      "id": "a1-u08-e3",
+      "type": "fill_in_blank",
+      "instruction": "Insert the correct form of 'kein' or 'nicht':",
+      "prompt": "Wir haben heute leider ___ Zeit für ein Gespräch.",
+      "target": "keine",
+      "acceptableAnswers": ["keine"],
+      "explanation": "'die Zeit' is a feminine noun without an article. Feminine takes 'keine': keine Zeit.",
+      "grammarTopic": "kein vs. nicht"
+    },
+    {
+      "id": "a1-u08-e4",
+      "type": "error_spotting",
+      "instruction": "Identify the ungrammatical negation:",
+      "prompt": "Click the incorrect word:",
+      "target": "kein",
+      "errorSpotting": {
+        "tokens": ["Das", "ist", "kein", "mein", "Buch."],
+        "errorIndex": 2,
+        "correctedToken": "nicht",
+        "explanation": "Nouns with possessive pronouns (mein) cannot take 'kein'! The correct sentence is: 'Das ist nicht mein Buch.'"
+      },
+      "explanation": "Use 'nicht' when negating possessive pronouns or definite articles.",
+      "grammarTopic": "nicht with Possessives"
+    },
+    {
+      "id": "a1-u08-e5",
+      "type": "sentence_reorder",
+      "instruction": "Arrange the words to state that you do not understand the teacher:",
+      "prompt": "I do not understand the teacher.",
+      "tokens": ["Ich", "verstehe", "den", "Lehrer", "nicht."],
+      "target": "Ich verstehe den Lehrer nicht.",
+      "explanation": "To negate the entire verbal clause, 'nicht' is positioned at the very end.",
+      "grammarTopic": "Position of nicht"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "nicht",
+      "english": "not",
+      "partOfSpeech": "adverb",
+      "exampleSentence": "Das ist nicht richtig.",
+      "exampleTranslation": "That is not correct."
+    },
+    {
+      "word": "kein",
+      "english": "no / not any (noun negation)",
+      "partOfSpeech": "pronoun",
+      "exampleSentence": "Ich habe kein Geld dabei.",
+      "exampleTranslation": "I have no money with me."
+    },
+    {
+      "article": "der",
+      "word": "Hunger",
+      "english": "hunger",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Ich habe großen Hunger.",
+      "exampleTranslation": "I am very hungry (I have big hunger)."
+    },
+    {
+      "article": "der",
+      "word": "Durst",
+      "english": "thirst",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Hast du Durst?",
+      "exampleTranslation": "Are you thirsty?"
+    },
+    {
+      "word": "verstehen",
+      "english": "to understand",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Ich verstehe diesen Satz nicht.",
+      "exampleTranslation": "I do not understand this sentence."
+    },
+    {
+      "word": "teuer",
+      "english": "expensive",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "Das Hotel ist gar nicht teuer.",
+      "exampleTranslation": "The hotel is not at all expensive."
+    }
+  ],
+  "readingPassage": {
+    "title": "Missverständnisse im Restaurant (Misunderstandings in the Restaurant)",
+    "germanText": "Herr Krause sitzt im Restaurant 'Zur Post'. Der Kellner kommt und fragt: 'Möchten Sie die Speisekarte?' Herr Krause antwortet: 'Nein danke, ich habe keinen Hunger. Aber ich habe großen Durst.' Der Kellner bringt eine Cola, aber Herr Krause sagt: 'Entschuldigung, das ist nicht meine Bestellung. Ich trinke keine Cola, ich möchte ein Mineralwasser ohne Kohlensäure.' Der Kellner entschuldigt sich: 'Kein Problem, ich bringe sofort das richtige Wasser!'",
+    "englishSummary": "Mr. Krause is sitting in the restaurant 'Zur Post'. The waiter comes and asks: 'Would you like the menu?' Mr. Krause answers: 'No thank you, I am not hungry. But I am very thirsty.' The waiter brings a cola, but Mr. Krause says: 'Excuse me, that is not my order. I don't drink cola, I would like still mineral water.' The waiter apologizes: 'No problem, I will bring the correct water right away!'",
+    "glossary": [
+      {"word": "Speisekarte", "meaning": "menu", "grammarNote": "die Speisekarte"},
+      {"word": "Bestellung", "meaning": "order", "grammarNote": "die Bestellung (fem. -ung)"},
+      {"word": "Kohlensäure", "meaning": "carbonation / fizz", "grammarNote": "ohne Kohlensäure = still water"}
+    ],
+    "comprehensionQuestions": [
+      {
+        "question": "Why does Herr Krause say 'ich habe keinen Hunger' instead of 'ich habe nicht Hunger'?",
+        "options": [
+          "Because Hunger is an adjective",
+          "Because 'der Hunger' is a masculine noun without an article",
+          "Because 'nicht' is forbidden with haben",
+          "Because he is in a restaurant"
+        ],
+        "correctIndex": 1,
+        "explanation": "'Hunger' is a noun used with zero article; hence it is negated with 'kein-' (in accusative: keinen Hunger)."
+      },
+      {
+        "question": "Why is 'nicht' used in 'das ist nicht meine Bestellung'?",
+        "options": [
+          "Because 'meine' is a possessive pronoun",
+          "Because 'Bestellung' is not a noun",
+          "Because 'kein' cannot be used in questions",
+          "Because it is an informal sentence"
+        ],
+        "correctIndex": 0,
+        "explanation": "Nouns accompanied by possessive determiners (meine Bestellung) are negated with 'nicht', never with 'kein'."
+      }
+    ]
+  },
+  "listeningDialogue": {
+    "title": "Am Ticketschalter (At the Ticket Counter)",
+    "speakers": ["Kundin", "Mitarbeiter"],
+    "lines": [
+      {"speaker": "Kundin", "text": "Guten Tag, fährt dieser Zug nach Frankfurt?", "translation": "Good day, does this train go to Frankfurt?"},
+      {"speaker": "Mitarbeiter", "text": "Nein, dieser Zug fährt nicht nach Frankfurt, sondern nach Stuttgart.", "translation": "No, this train does not go to Frankfurt, but to Stuttgart."},
+      {"speaker": "Kundin", "text": "Habe ich noch Zeit für den ICE um 11 Uhr?", "translation": "Do I still have time for the ICE at 11 o'clock?"},
+      {"speaker": "Mitarbeiter", "text": "Leider haben Sie keine Zeit mehr, der ICE fährt gerade ab.", "translation": "Unfortunately you have no time left, the ICE is departing right now."}
+    ],
+    "questions": [
+      {
+        "question": "Why does the employee say 'keine Zeit mehr'?",
+        "options": ["Because time is money", "Because 'die Zeit' is a feminine noun without an article", "Because Zeit is plural", "Because of Frankfurt"],
+        "correctIndex": 1,
+        "explanation": "'Zeit' is a feminine noun used here without an article, requiring 'keine Zeit'."
+      }
+    ]
+  },
+  "production": {
+    "writing": {
+      "prompt": "Write four contrasting sentences stating what you do NOT do, eat, or have, contrasted with what you DO (e.g. 'Ich trinke keinen Kaffee, sondern Tee', 'Ich wohne nicht in Berlin, sondern in Hamburg').",
+      "guidelines": [
+        "Include at least one sentence using 'kein-' with a noun",
+        "Include at least one sentence using 'nicht' with an adjective or verb",
+        "Include at least one sentence using 'nicht' with a prepositional place phrase",
+        "Use 'sondern' (but rather) to contrast after the negative"
+      ],
+      "sampleResponse": "Ich trinke keinen Kaffee, sondern Tee. Ich wohne nicht in Berlin, sondern in München. Diese Übung ist nicht schwer, sondern sehr logisch. Ich habe heute kein Auto, deshalb fahre ich mit dem Fahrrad.",
+      "selfCheckRubric": [
+        "Did you use 'kein/keine/keinen' exclusively for nouns without definite articles?",
+        "Did you use 'nicht' for adjectives, verbs, and prepositional phrases?",
+        "Did you use 'sondern' directly after the comma to introduce the positive alternative?"
+      ]
+    },
+    "speaking": {
+      "prompt": "Practice clear negation pronunciation by speaking this sentence:",
+      "targetSentence": "Das ist nicht mein Auto und ich habe heute leider keine Zeit.",
+      "translation": "That is not my car and unfortunately I have no time today.",
+      "phoneticTips": "Pronounce the final 't' in 'nicht' crisply, followed by a clear soft 'ch' sound (/nɪçt/)."
+    }
+  },
+  "unitTest": {
+    "passingScore": 80,
+    "questions": [
+      {
+        "id": "u08-test-1",
+        "type": "multiple_choice",
+        "instruction": "Test 1: Choose the correct negation for 'Auto':",
+        "prompt": "Er hat ___ Auto. (He has no car.)",
+        "target": "kein",
+        "options": ["nicht", "kein", "keine", "keinen"],
+        "explanation": "'das Auto' is neuter. In accusative, the neuter form is 'kein': kein Auto.",
+        "grammarTopic": "kein with Neuter Nouns"
+      },
+      {
+        "id": "u08-test-2",
+        "type": "fill_in_blank",
+        "instruction": "Test 2: Negate the verb/action:",
+        "prompt": "Ich verstehe diese Grammatikregel ___ .",
+        "target": "nicht",
+        "acceptableAnswers": ["nicht"],
+        "explanation": "To negate the action/verb, 'nicht' is placed at the end of the sentence: verstehe... nicht.",
+        "grammarTopic": "nicht with Verbs"
+      },
+      {
+        "id": "u08-test-3",
+        "type": "multiple_choice",
+        "instruction": "Test 3: Negating a noun with a definite article:",
+        "prompt": "Das ist ___ der richtige Bus nach Potsdam.",
+        "target": "nicht",
+        "options": ["nicht", "kein", "keine", "keinen"],
+        "explanation": "Nouns with definite articles ('der Bus') are strictly negated with 'nicht': nicht der richtige Bus.",
+        "grammarTopic": "nicht with Definite Articles"
+      },
+      {
+        "id": "u08-test-4",
+        "type": "fill_in_blank",
+        "instruction": "Test 4: Negate 'Hunger' (der Hunger):",
+        "prompt": "Danke, ich möchte nichts essen, ich habe ___ Hunger.",
+        "target": "keinen",
+        "acceptableAnswers": ["keinen"],
+        "explanation": "'der Hunger' is masculine direct object in accusative: keinen Hunger.",
+        "grammarTopic": "Accusative kein"
+      },
+      {
+        "id": "u08-test-5",
+        "type": "sentence_reorder",
+        "instruction": "Test 5: Arrange the sentence with correct negation placement:",
+        "prompt": "The hotel is not expensive.",
+        "tokens": ["Das", "Hotel", "ist", "nicht", "teuer."],
+        "target": "Das Hotel ist nicht teuer.",
+        "explanation": "'nicht' stands directly before the predicate adjective 'teuer'.",
+        "grammarTopic": "Position of nicht"
+      }
+    ]
+  }
+}

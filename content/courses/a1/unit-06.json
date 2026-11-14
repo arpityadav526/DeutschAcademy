@@ -1,0 +1,285 @@
+{
+  "id": "unit-06",
+  "level": "A1",
+  "number": 6,
+  "title": "German Word Order: The Verb-Second (V2) Rule",
+  "subtitle": "Master the architectural backbone of German syntax: the immutable V2 position",
+  "grammarFocus": ["The Verb-Second (V2) Law", "Inversion (Fronting Adverbials)", "Position 1 (Vorfeld)", "Time-Manner-Place (TeKaMoLo) Intro"],
+  "estimatedMinutes": 45,
+  "concept": {
+    "title": "The Golden Rule of German Syntax: Verb in Position 2",
+    "explanation": "In English, word order is relatively rigid: Subject + Verb + Object (e.g. 'Tomorrow I will go'). In German, sentence structure is flexible, but governed by one non-negotiable law: <rule>In every standard declarative main clause, the conjugated verb MUST occupy exactly Position 2</rule>.\n\n### 1. Position 1 (Das Vorfeld)\nPosition 1 can hold **any single grammatical element** (not just a single word, but an entire concept):\n- The Subject: <nom>Ich</nom> <verb>trinke</verb> heute Kaffee.\n- A Time Expression: *Heute* <verb>trinke</verb> <nom>ich</nom> Kaffee.\n- A Location Expression: *Im Café* <verb>trinke</verb> <nom>ich</nom> Kaffee.\n- An Object (for emphasis): *Kaffee* <verb>trinke</verb> <nom>ich</nom> heute gern.\n\n### 2. Inversion: What happens when the Subject isn't First?\nNotice what happened in the examples above! When an adverb of time or place takes Position 1, the conjugated verb remains anchored in Position 2. Therefore, the subject <nom>ich</nom> is pushed immediately to **Position 3**!\n- English: *Tomorrow I am flying to Berlin.* (Time + Subject + Verb)\n- German: *Morgen <verb>fliege</verb> <nom>ich</nom> nach Berlin.* (Time + Verb + Subject) — NEVER *'Morgen ich fliege'*!\n\n### 3. Elements that occupy Position 0 (ADUSO)\nThe five coordinating conjunctions (<rule>aber, denn, und, sondern, oder</rule>) occupy **Position 0**. They do NOT count toward the V2 position:\n- *Ich bin müde* (Clause 1), *<rule>aber</rule> (Pos 0) <nom>ich</nom> (Pos 1) <verb>lerne</verb> (Pos 2) Deutsch.*",
+    "tables": [
+      {
+        "caption": "Demonstration of the Verb-Second (V2) Anchor",
+        "headers": ["Position 1 (Vorfeld)", "Position 2 (Finite Verb)", "Position 3 (Subject / Mittelfeld)", "Rest of Sentence"],
+        "rows": [
+          ["<nom>Wir</nom> (Subject)", "<verb>fahren</verb>", "morgen", "nach Wien."],
+          ["Morgen (Time)", "<verb>fahren</verb>", "<nom>wir</nom>", "nach Wien."],
+          ["Nach Wien (Place)", "<verb>fahren</verb>", "<nom>wir</nom>", "morgen."],
+          ["Am Wochenende (Time)", "<verb>besucht</verb>", "<nom>David</nom>", "seine Großeltern."]
+        ]
+      }
+    ],
+    "deepDives": [
+      {
+        "title": "A Multi-Word Phrase Still Counts as 'Position 1'!",
+        "content": "A frequent learner misconception is that 'Position 1' means 'Word 1'. In German, 'Position 1' means the first grammatical constituent. For example, 'Jeden Samstag um zehn Uhr' (Every Saturday at ten o'clock) is one unified time phrase. The entire phrase occupies Position 1, and the verb immediately follows in Position 2: 'Jeden Samstag um zehn Uhr <verb>gehe</verb> ich einkaufen.'",
+        "warning": false
+      }
+    ]
+  },
+  "workedExamples": [
+    {
+      "german": "Heute lerne ich fleißig Grammatik.",
+      "english": "Today I am diligently studying grammar.",
+      "breakdown": [
+        {"part": "Heute", "role": "Position 1 (Adverb of Time)"},
+        {"part": "lerne", "role": "Position 2 (Conjugated Verb)", "caseType": "verb", "explanation": "V2 anchor rule"},
+        {"part": "ich", "role": "Position 3 (Subject Pronoun)", "caseType": "nom", "explanation": "Inverted behind verb"},
+        {"part": "fleißig Grammatik", "role": "Manner + Object"}
+      ]
+    },
+    {
+      "german": "In Berlin gibt es viele historische Museen.",
+      "english": "In Berlin there are many historical museums.",
+      "breakdown": [
+        {"part": "In Berlin", "role": "Position 1 (Location Phrase)"},
+        {"part": "gibt", "role": "Position 2 (Conjugated Verb 'geben')", "caseType": "verb"},
+        {"part": "es", "role": "Position 3 (Impersonal Subject)", "caseType": "nom"},
+        {"part": "viele historische Museen", "role": "Accusative Direct Object", "caseType": "akk"}
+      ]
+    }
+  ],
+  "guidedPractice": [
+    {
+      "id": "a1-u06-e1",
+      "type": "sentence_reorder",
+      "instruction": "Front the time adverb 'Morgen' and build the sentence with correct V2 order:",
+      "prompt": "Tomorrow we travel to Munich.",
+      "tokens": ["Morgen", "fahren", "wir", "nach", "München."],
+      "target": "Morgen fahren wir nach München.",
+      "explanation": "Because 'Morgen' is in Position 1, the verb 'fahren' must be in Position 2, followed by subject 'wir' in Position 3.",
+      "grammarTopic": "V2 Inversion"
+    },
+    {
+      "id": "a1-u06-e2",
+      "type": "multiple_choice",
+      "instruction": "Select the grammatically correct German word order:",
+      "prompt": "Which sentence follows the German V2 rule?",
+      "target": "Heute Abend koche ich für meine Freunde.",
+      "options": [
+        "Heute Abend ich koche für meine Freunde.",
+        "Heute Abend koche ich für meine Freunde.",
+        "Ich heute Abend koche für meine Freunde.",
+        "Koche heute Abend ich für meine Freunde."
+      ],
+      "explanation": "In German, fronting 'Heute Abend' requires the verb 'koche' in Position 2: 'Heute Abend koche ich...'",
+      "grammarTopic": "V2 Rule"
+    },
+    {
+      "id": "a1-u06-e3",
+      "type": "error_spotting",
+      "instruction": "Spot the word order error in this sentence:",
+      "prompt": "Click the misplaced word:",
+      "target": "wir",
+      "errorSpotting": {
+        "tokens": ["Am", "Sonntag", "wir", "gehen", "in", "den", "Park."],
+        "errorIndex": 2,
+        "correctedToken": "gehen",
+        "explanation": "The subject 'wir' cannot sit between Position 1 ('Am Sonntag') and the verb! The verb 'gehen' must be in Position 2: 'Am Sonntag gehen wir in den Park.'"
+      },
+      "explanation": "Position 1 is 'Am Sonntag'. Position 2 MUST be the verb 'gehen'.",
+      "grammarTopic": "V2 Error Spotting"
+    },
+    {
+      "id": "a1-u06-e4",
+      "type": "transformation",
+      "instruction": "Transform this sentence so that it begins with the time word 'Jetzt':",
+      "prompt": "Start with 'Jetzt':",
+      "transformationRule": {
+        "from": "Ich lerne jetzt Deutsch.",
+        "to": "Jetzt lerne ich Deutsch.",
+        "baseSentence": "Ich lerne jetzt Deutsch."
+      },
+      "target": "Jetzt lerne ich Deutsch.",
+      "explanation": "Fronting 'Jetzt' pushes the subject 'ich' to Position 3: Jetzt lerne ich Deutsch.",
+      "grammarTopic": "Inversion Transformation"
+    },
+    {
+      "id": "a1-u06-e5",
+      "type": "fill_in_blank",
+      "instruction": "Insert the verb in Position 2:",
+      "prompt": "In Österreich ___ man Deutsch. (sprechen)",
+      "target": "spricht",
+      "acceptableAnswers": ["spricht"],
+      "explanation": "Position 1 is 'In Österreich'. Position 2 is the conjugated verb: 'spricht' (man takes 3rd person singular).",
+      "grammarTopic": "V2 Conjugation"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "heute",
+      "english": "today",
+      "partOfSpeech": "adverb",
+      "exampleSentence": "Heute habe ich viel Zeit.",
+      "exampleTranslation": "Today I have a lot of time."
+    },
+    {
+      "word": "morgen",
+      "english": "tomorrow",
+      "partOfSpeech": "adverb",
+      "exampleSentence": "Morgen arbeiten wir nicht.",
+      "exampleTranslation": "Tomorrow we do not work."
+    },
+    {
+      "word": "jetzt",
+      "english": "now",
+      "partOfSpeech": "adverb",
+      "exampleSentence": "Jetzt beginnt der Unterricht.",
+      "exampleTranslation": "Now the lesson begins."
+    },
+    {
+      "word": "oft",
+      "english": "often",
+      "partOfSpeech": "adverb",
+      "exampleSentence": "Oft trinke ich Kaffee am Morgen.",
+      "exampleTranslation": "Often I drink coffee in the morning."
+    },
+    {
+      "word": "manchmal",
+      "english": "sometimes",
+      "partOfSpeech": "adverb",
+      "exampleSentence": "Manchmal kocht mein Vater am Wochenende.",
+      "exampleTranslation": "Sometimes my father cooks on the weekend."
+    },
+    {
+      "article": "der",
+      "word": "Abend",
+      "plural": "Abende",
+      "english": "evening",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Am Abend lese ich ein Buch.",
+      "exampleTranslation": "In the evening I read a book."
+    }
+  ],
+  "readingPassage": {
+    "title": "Ein Tag im Leben von Felix (A Day in Felix's Life)",
+    "germanText": "Um sieben Uhr klingelt der Wecker. Zuerst trinkt Felix einen starken Kaffee. Dann liest er die Nachrichten auf seinem Smartphone. Um acht Uhr verlässt er das Haus und fährt mit dem Bus zur Arbeit. Am Nachmittag trifft er Kollegen im Konferenzraum. Am Abend kocht Felix mit seiner Freundin ein leckeres Abendessen.",
+    "englishSummary": "At seven o'clock the alarm rings. First, Felix drinks a strong coffee. Then he reads the news on his smartphone. At eight o'clock he leaves the house and rides the bus to work. In the afternoon he meets colleagues in the conference room. In the evening Felix cooks a delicious dinner with his girlfriend.",
+    "glossary": [
+      {"word": "Zuerst", "meaning": "first / at first", "grammarNote": "Adverb in Position 1"},
+      {"word": "Dann", "meaning": "then", "grammarNote": "Adverb in Position 1"},
+      {"word": "verlässt", "meaning": "leaves", "grammarNote": "verlassen (e→ä shift)"}
+    ],
+    "comprehensionQuestions": [
+      {
+        "question": "In the sentence 'Dann liest er die Nachrichten', what occupies Position 2?",
+        "options": ["Dann", "liest (the verb)", "er (the subject)", "die Nachrichten"],
+        "correctIndex": 1,
+        "explanation": "In standard German main clauses, the conjugated verb ('liest') strictly occupies Position 2."
+      },
+      {
+        "question": "What does Felix do at eight o'clock?",
+        "options": ["He drinks coffee", "He cooks dinner", "He leaves the house and takes the bus to work", "He sleeps"],
+        "correctIndex": 2,
+        "explanation": "The text states: 'Um acht Uhr verlässt er das Haus und fährt mit dem Bus zur Arbeit.'"
+      }
+    ]
+  },
+  "listeningDialogue": {
+    "title": "Wochenendpläne (Weekend Plans)",
+    "speakers": ["Hannah", "Markus"],
+    "lines": [
+      {"speaker": "Hannah", "text": "Was machst du am Samstag, Markus?", "translation": "What are you doing on Saturday, Markus?"},
+      {"speaker": "Markus", "text": "Am Samstag fahre ich mit dem Fahrrad an den Wannsee.", "translation": "On Saturday I am riding my bicycle to the Wannsee lake."},
+      {"speaker": "Hannah", "text": "Und was machst du am Sonntag?", "translation": "And what are you doing on Sunday?"},
+      {"speaker": "Markus", "text": "Am Sonntag besuche ich meine Eltern in Potsdam.", "translation": "On Sunday I am visiting my parents in Potsdam."}
+    ],
+    "questions": [
+      {
+        "question": "Which word order does Markus use in 'Am Sonntag besuche ich meine Eltern'?",
+        "options": ["Subject + Verb + Object", "Time + Verb + Subject (Inversion)", "Verb + Subject + Object", "Object + Subject + Verb"],
+        "correctIndex": 1,
+        "explanation": "'Am Sonntag' is in Pos 1, followed by verb 'besuche' in Pos 2 and subject 'ich' in Pos 3."
+      }
+    ]
+  },
+  "production": {
+    "writing": {
+      "prompt": "Write a short schedule of your typical Sunday. Start at least three sentences with time expressions (e.g. 'Am Morgen...', 'Um 12 Uhr...', 'Am Nachmittag...', 'Am Abend...') to practice the V2 inversion rule.",
+      "guidelines": [
+        "Every sentence starting with a time expression MUST place the verb in Position 2",
+        "The subject ('ich') must follow immediately in Position 3",
+        "Write at least 4 sentences"
+      ],
+      "sampleResponse": "Am Sonntag schlafe ich lange. Um zehn Uhr frühstücke ich gemütlich mit meiner Familie. Am Nachmittag gehe ich im Wald spazieren. Am Abend koche ich Pasta und lese ein Buch.",
+      "selfCheckRubric": [
+        "Did you place the verb in Position 2 after every time expression (e.g. Am Sonntag schlafe ich)?",
+        "Is the subject in Position 3 directly after the verb?",
+        "Are all German nouns capitalized (Sonntag, Familie, Nachmittag, Wald, Abend, Pasta, Buch)?"
+      ]
+    },
+    "speaking": {
+      "prompt": "Practice natural cadence with fronted adverbial inversion by speaking this sentence:",
+      "targetSentence": "Jeden Morgen trinke ich eine Tasse Kaffee und lese die Zeitung.",
+      "translation": "Every morning I drink a cup of coffee and read the newspaper.",
+      "phoneticTips": "Keep 'Jeden Morgen' as one fluid unit, followed directly by 'trinke ich'."
+    }
+  },
+  "unitTest": {
+    "passingScore": 80,
+    "questions": [
+      {
+        "id": "u06-test-1",
+        "type": "multiple_choice",
+        "instruction": "Test 1: What is the mandatory position of the conjugated verb in a German declarative sentence?",
+        "prompt": "In standard German main clauses, the conjugated verb MUST occupy which position?",
+        "target": "Position 2",
+        "options": ["Position 1", "Position 2", "The very end of the sentence", "Position 3"],
+        "explanation": "The V2 rule is the foundational law of German main clauses: the conjugated verb always sits in Position 2.",
+        "grammarTopic": "V2 Law"
+      },
+      {
+        "id": "u06-test-2",
+        "type": "sentence_reorder",
+        "instruction": "Test 2: Arrange the words starting with 'Heute':",
+        "prompt": "Today I learn German.",
+        "tokens": ["Heute", "lerne", "ich", "Deutsch."],
+        "target": "Heute lerne ich Deutsch.",
+        "explanation": "Heute (Pos 1) + lerne (Pos 2) + ich (Pos 3) + Deutsch.",
+        "grammarTopic": "V2 Inversion"
+      },
+      {
+        "id": "u06-test-3",
+        "type": "multiple_choice",
+        "instruction": "Test 3: Coordinating conjunctions (aber, denn, und, sondern, oder) occupy which position?",
+        "prompt": "Which position do ADUSO connectors take in sentence counting?",
+        "target": "Position 0 (they do not count)",
+        "options": ["Position 0 (they do not count)", "Position 1", "Position 2", "Position 3"],
+        "explanation": "ADUSO conjunctions occupy Position 0 and do not trigger inversion.",
+        "grammarTopic": "Coordinating Conjunctions"
+      },
+      {
+        "id": "u06-test-4",
+        "type": "smart_translation",
+        "instruction": "Test 4: Translate with correct German word order starting with 'Am Wochenende':",
+        "prompt": "On the weekend we visit our grandparents.",
+        "target": "Am Wochenende besuchen wir unsere Großeltern.",
+        "acceptableAnswers": ["Am Wochenende besuchen wir unsere Grosseltern."],
+        "explanation": "Am Wochenende (Pos 1) + besuchen (Pos 2) + wir (Pos 3).",
+        "grammarTopic": "Word Order"
+      },
+      {
+        "id": "u06-test-5",
+        "type": "fill_in_blank",
+        "instruction": "Test 5: Supply the correct word order:",
+        "prompt": "Morgen ___ nach München. (fahren / wir)",
+        "target": "fahren wir",
+        "acceptableAnswers": ["fahren wir"],
+        "explanation": "Inverted order: verb 'fahren' + subject 'wir'.",
+        "grammarTopic": "V2 Inversion"
+      }
+    ]
+  }
+}

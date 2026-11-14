@@ -1,0 +1,281 @@
+{
+  "id": "unit-04",
+  "level": "A1",
+  "number": 4,
+  "title": "Nouns, Articles (der/die/das) & Gender Strategies",
+  "subtitle": "Decode German grammatical gender with reliable suffix heuristics and compound rules",
+  "grammarFocus": ["Definite Articles (der, die, das)", "Indefinite Articles (ein, eine)", "Negative Articles (kein, keine)", "Reliable Suffix Gender Clues", "The Compound Noun Rule (Komposita)"],
+  "estimatedMinutes": 45,
+  "concept": {
+    "title": "Demystifying German Gender: Systematic Suffix Strategies",
+    "explanation": "Every German noun possesses an inherent grammatical gender: <nom>der</nom> (Maskulinum), <nom>die</nom> (Femininum), or <nom>das</nom> (Neutrum). Do not try to guess gender by philosophical qualities (e.g. why 'das Mädchen' is neuter). Instead, rely on **morphological suffixes** and **word-formation patterns**.\n\n### 1. Reliable Feminine Suffixes (99% Predictable)\nNouns ending with the following suffixes are virtually ALWAYS <nom>die</nom>:\n- <rule>-ung</rule>: *die Zeitung* (newspaper), *die Wohnung* (apartment), *die Übung* (exercise)\n- <rule>-heit / -keit</rule>: *die Freiheit* (freedom), *die Möglichkeit* (possibility)\n- <rule>-schaft</rule>: *die Freundschaft* (friendship), *die Mannschaft* (team)\n- <rule>-tät</rule>: *die Universität* (university), *die Qualität* (quality)\n- <rule>-ion</rule>: *die Station* (station), *die Information* (information)\n- <rule>-ie</rule>: *die Biologie*, *die Energie*\n- <rule>-ei</rule>: *die Bäckerei* (bakery), *die Polizei* (police)\n\n### 2. Reliable Neuter Suffixes (99% Predictable)\nNouns ending with these suffixes are virtually ALWAYS <nom>das</nom>:\n- <rule>-chen / -lein</rule> (diminutives): *das Mädchen* (girl), *das Brötchen* (bread roll)\n- <rule>-ment</rule>: *das Dokument* (document), *das Instrument* (instrument)\n- <rule>-um</rule>: *das Museum* (museum), *das Zentrum* (center)\n- <rule>Nominalized Infinitives</rule> (verbs turned into nouns): *das Essen* (food/eating), *das Leben* (life)\n\n### 3. Reliable Masculine Suffixes & Categories\n- Male persons and professions: *der Mann*, *der Arzt*, *der Lehrer*\n- Days, months, seasons, compass points: *der Montag*, *der Juli*, *der Sommer*, *der Norden*\n- Suffixes: <rule>-ismus</rule> (*der Optimismus*), <rule>-or</rule> (*der Motor*), <rule>-ling</rule> (*der Schmetterling*)\n- Most nouns derived from verb stems without an ending: *der Flug* (from fliegen), *der Beginn* (from beginnen)\n\n### 4. The Compound Noun Rule (Das letzte Wort entscheidet!)\nGerman forms compound nouns by welding words together. The rule is absolute: <rule>The VERY LAST noun in the chain determines the grammatical gender and plural of the whole word</rule>!\n- *die Hand* (hand) + *der Schuh* (shoe) = <nom>der Handschuh</nom> (glove)\n- *das Haus* (house) + *die Tür* (door) = <nom>die Haustür</nom> (front door)",
+    "tables": [
+      {
+        "caption": "Articles in Nominative Case",
+        "headers": ["Gender", "Definite (The)", "Indefinite (A / An)", "Negative (No / None)"],
+        "rows": [
+          ["Maskulinum", "<nom>der</nom> Tisch", "ein Tisch", "kein Tisch"],
+          ["Femininum", "<nom>die</nom> Lampe", "eine Lampe", "keine Lampe"],
+          ["Neutrum", "<nom>das</nom> Buch", "ein Buch", "kein Buch"],
+          ["Plural", "<nom>die</nom> Bücher", "— (keine)", "keine Bücher"]
+        ]
+      }
+    ],
+    "deepDives": [
+      {
+        "title": "Why is 'das Mädchen' Neuter?",
+        "content": "A famous puzzle for learners: why is a young girl referred to as 'das' instead of 'die'? Because in German, morphology trumps biology! The suffix '-chen' is a diminutive that strictly makes ANY word grammatically neuter, regardless of biological sex (e.g. die Magd → das Mädchen; das Brot → das Brötchen).",
+        "warning": false
+      }
+    ]
+  },
+  "workedExamples": [
+    {
+      "german": "Die Universitätsbibliothek hat ein neues Buch.",
+      "english": "The university library has a new book.",
+      "breakdown": [
+        {"part": "Die Universitätsbibliothek", "role": "Subject (Nom. Fem.)", "caseType": "nom", "explanation": "Compound: Universität + Bibliothek; 'die Bibliothek' is feminine (-thek), so the whole compound is feminine"},
+        {"part": "hat", "role": "Verb (haben)", "caseType": "verb"},
+        {"part": "ein neues Buch", "role": "Direct Object (Akk. Neut.)", "caseType": "akk", "explanation": "'das Buch' is neuter"}
+      ]
+    },
+    {
+      "german": "Das ist keine Übung, das ist ein Test.",
+      "english": "That is not an exercise, that is a test.",
+      "breakdown": [
+        {"part": "Das ist", "role": "Demonstrative Subject + Verb"},
+        {"part": "keine Übung", "role": "Negative Predicate Noun (Fem.)", "explanation": "'-ung' makes 'Übung' feminine, requiring 'keine'"},
+        {"part": "das ist", "role": "Clause 2"},
+        {"part": "ein Test", "role": "Predicate Noun (Masc.)", "explanation": "'der Test' takes 'ein'"}
+      ]
+    }
+  ],
+  "guidedPractice": [
+    {
+      "id": "a1-u04-e1",
+      "type": "multiple_choice",
+      "instruction": "Select the correct article based on the noun's suffix:",
+      "prompt": "What article belongs to 'Rechnung' (bill/invoice)?",
+      "target": "die",
+      "options": ["der", "die", "das"],
+      "explanation": "Nouns ending in the suffix '-ung' are always feminine: die Rechnung.",
+      "grammarTopic": "Noun Suffixes"
+    },
+    {
+      "id": "a1-u04-e2",
+      "type": "multiple_choice",
+      "instruction": "Determine the gender of the compound noun:",
+      "prompt": "What article belongs to 'Apfelsaft' (apple juice: der Apfel + der Saft)?",
+      "target": "der",
+      "options": ["der", "die", "das"],
+      "explanation": "The last element 'der Saft' determines the gender: der Apfelsaft.",
+      "grammarTopic": "Compound Nouns"
+    },
+    {
+      "id": "a1-u04-e3",
+      "type": "fill_in_blank",
+      "instruction": "Complete with the correct indefinite article (ein or eine):",
+      "prompt": "Das ist ___ Bäckerei. (bakery)",
+      "target": "eine",
+      "acceptableAnswers": ["eine"],
+      "explanation": "Nouns ending in '-ei' are feminine (die Bäckerei), so the indefinite article is 'eine'.",
+      "grammarTopic": "Indefinite Articles"
+    },
+    {
+      "id": "a1-u04-e4",
+      "type": "multiple_choice",
+      "instruction": "Determine the gender of 'Museum':",
+      "prompt": "Which definite article precedes 'Museum'?",
+      "target": "das",
+      "options": ["der", "die", "das"],
+      "explanation": "Nouns of Latin origin ending in '-um' are consistently neuter: das Museum, das Zentrum, das Datum.",
+      "grammarTopic": "Noun Suffixes"
+    },
+    {
+      "id": "a1-u04-e5",
+      "type": "sentence_reorder",
+      "instruction": "Reorder the words to state that this is not an apartment:",
+      "prompt": "This is not an apartment.",
+      "tokens": ["Das", "ist", "keine", "Wohnung."],
+      "target": "Das ist keine Wohnung.",
+      "explanation": "'die Wohnung' is feminine (-ung), so the negative article in nominative is 'keine'.",
+      "grammarTopic": "Negative Articles"
+    }
+  ],
+  "vocabulary": [
+    {
+      "article": "die",
+      "word": "Wohnung",
+      "plural": "Wohnungen",
+      "english": "apartment / flat",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Die Wohnung ist groß und hell.",
+      "exampleTranslation": "The apartment is large and bright."
+    },
+    {
+      "article": "die",
+      "word": "Zeitung",
+      "plural": "Zeitungen",
+      "english": "newspaper",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Ich lese jeden Tag die Zeitung.",
+      "exampleTranslation": "I read the newspaper every day."
+    },
+    {
+      "article": "das",
+      "word": "Mädchen",
+      "plural": "Mädchen",
+      "english": "girl",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Das Mädchen spielt im Park.",
+      "exampleTranslation": "The girl is playing in the park."
+    },
+    {
+      "article": "das",
+      "word": "Zentrum",
+      "plural": "Zentren",
+      "english": "center / downtown",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Das Zentrum der Stadt ist historisch.",
+      "exampleTranslation": "The city center is historic."
+    },
+    {
+      "article": "der",
+      "word": "Tisch",
+      "plural": "Tische",
+      "english": "table",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Der Tisch steht im Wohnzimmer.",
+      "exampleTranslation": "The table is in the living room."
+    },
+    {
+      "article": "die",
+      "word": "Universität",
+      "plural": "Universitäten",
+      "english": "university",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Die Universität Heidelberg ist sehr alt.",
+      "exampleTranslation": "Heidelberg University is very old."
+    }
+  ],
+  "readingPassage": {
+    "title": "Eine neue Wohnung in Köln (A New Apartment in Cologne)",
+    "germanText": "Herr Sommer sucht eine neue Wohnung. Heute besichtigt er ein Apartment im Zentrum. Die Wohnung hat drei Zimmer, eine moderne Küche und einen Balkon. Die Lage ist ideal: Eine Bäckerei und eine Haltestelle sind direkt vor der Haustür. Das Gebäude ist alt, aber die Qualität der Renovierung ist ausgezeichnet.",
+    "englishSummary": "Mr. Sommer is looking for a new apartment. Today he views an apartment in the center. The apartment has three rooms, a modern kitchen, and a balcony. The location is ideal: A bakery and a stop are directly in front of the front door. The building is old, but the quality of the renovation is excellent.",
+    "glossary": [
+      {"word": "besichtigt", "meaning": "views / visits", "grammarNote": "besichtigen (verb)"},
+      {"word": "Haltestelle", "meaning": "transit stop", "grammarNote": "die Haltestelle"},
+      {"word": "Haustür", "meaning": "front door", "grammarNote": "das Haus + die Tür = die Haustür"}
+    ],
+    "comprehensionQuestions": [
+      {
+        "question": "What gender is 'Bäckerei' according to the passage?",
+        "options": ["Masculine (der)", "Feminine (die)", "Neuter (das)", "Plural"],
+        "correctIndex": 1,
+        "explanation": "The text states: 'Eine Bäckerei...' because nouns ending in -ei are feminine."
+      },
+      {
+        "question": "Why is the compound noun 'Haustür' feminine?",
+        "options": ["Because 'Haus' is feminine", "Because all compounds are feminine", "Because the final word 'Tür' is feminine (die Tür)", "Because it ends in -r"],
+        "correctIndex": 2,
+        "explanation": "In German compound nouns, the last component ('die Tür') determines the gender of the entire word."
+      }
+    ]
+  },
+  "listeningDialogue": {
+    "title": "Im Möbelgeschäft (In the Furniture Store)",
+    "speakers": ["Kunde", "Verkäuferin"],
+    "lines": [
+      {"speaker": "Kunde", "text": "Entschuldigung, wie viel kostet der Tisch dort?", "translation": "Excuse me, how much does the table over there cost?"},
+      {"speaker": "Verkäuferin", "text": "Der Holztisch kostet 180 Euro. Das ist ein Angebot.", "translation": "The wooden table costs 180 euros. That is a special offer."},
+      {"speaker": "Kunde", "text": "Und haben Sie auch eine passende Lampe?", "translation": "And do you also have a matching lamp?"},
+      {"speaker": "Verkäuferin", "text": "Ja natürlich, die Stehlampe hier passt perfekt.", "translation": "Yes of course, the floor lamp here fits perfectly."}
+    ],
+    "questions": [
+      {
+        "question": "What gender is 'Angebot' (offer)?",
+        "options": ["der", "die", "das", "keine"],
+        "correctIndex": 2,
+        "explanation": "The salesperson says: 'Das ist ein Angebot' (das Angebot is neuter)."
+      }
+    ]
+  },
+  "production": {
+    "writing": {
+      "prompt": "List four objects in your room or office. Write full German sentences stating what each object is and use the correct article and suffix reasoning.",
+      "guidelines": [
+        "Include one feminine noun ending in -ung or -tät",
+        "Include one neuter noun (e.g. das Buch, das Zimmer, das Fenster)",
+        "Include one compound noun (e.g. der Schreibtisch, die Kaffeemaschine)",
+        "Use 'Das ist ein...' or 'Das ist eine...'"
+      ],
+      "sampleResponse": "Das ist ein Schreibtisch. 'Schreibtisch' ist maskulin, weil 'der Tisch' maskulin ist. Das ist eine Zeitung. 'Zeitung' ist feminin wegen der Endung -ung. Das ist ein Buch. Und das ist keine alte Lampe, sondern eine neue Lampe.",
+      "selfCheckRubric": [
+        "Did you correctly use 'ein' for masculine/neuter and 'eine' for feminine?",
+        "Did you capitalize all nouns?",
+        "Did you apply the compound noun rule (last noun dictates gender)?"
+      ]
+    },
+    "speaking": {
+      "prompt": "Demonstrate noun gender and articles by reading this sentence clearly:",
+      "targetSentence": "Die Zeitung liegt auf dem Tisch und das Mädchen liest ein Buch.",
+      "translation": "The newspaper is lying on the table and the girl is reading a book.",
+      "phoneticTips": "Pronounce 'Zeitung' with a crisp initial 'ts' sound, and 'Mädchen' with a clean 'ch' soft Ich-Laut (/ˈmɛːtçən/)."
+    }
+  },
+  "unitTest": {
+    "passingScore": 80,
+    "questions": [
+      {
+        "id": "u04-test-1",
+        "type": "multiple_choice",
+        "instruction": "Test 1: What gender is guaranteed by the suffix '-schaft'?",
+        "prompt": "Nouns ending in '-schaft' (e.g. Freundschaft, Mannschaft) are:",
+        "target": "die (Feminine)",
+        "options": ["der (Masculine)", "die (Feminine)", "das (Neuter)"],
+        "explanation": "'-schaft' is a 100% reliable feminine suffix: die Freundschaft, die Mannschaft.",
+        "grammarTopic": "Noun Suffixes"
+      },
+      {
+        "id": "u04-test-2",
+        "type": "fill_in_blank",
+        "instruction": "Test 2: Complete with the correct definite article for 'Kugelschreiber' (ballpoint pen):",
+        "prompt": "Wo ist ___ Kugelschreiber? (writing instrument from schreiben)",
+        "target": "der",
+        "acceptableAnswers": ["der"],
+        "explanation": "Instruments ending in '-er' derived from verb agents are masculine: der Kugelschreiber.",
+        "grammarTopic": "Definite Articles"
+      },
+      {
+        "id": "u04-test-3",
+        "type": "multiple_choice",
+        "instruction": "Test 3: Compound Noun Gender Rule:",
+        "prompt": "In the compound noun 'das Wörterbuch' (dictionary: die Wörter + das Buch), which word determines the gender?",
+        "target": "das Buch (the final noun)",
+        "options": ["die Wörter (the first noun)", "das Buch (the final noun)", "Compound nouns have no gender", "Both nouns equally"],
+        "explanation": "The last noun always dictates gender: das Buch → das Wörterbuch.",
+        "grammarTopic": "Compound Nouns"
+      },
+      {
+        "id": "u04-test-4",
+        "type": "fill_in_blank",
+        "instruction": "Test 4: Use the negative article 'kein' or 'keine':",
+        "prompt": "Ich habe ___ Zeit für eine Pause. (die Zeit)",
+        "target": "keine",
+        "acceptableAnswers": ["keine"],
+        "explanation": "'Zeit' is feminine (die Zeit), so the negative article in nominative/accusative is 'keine'.",
+        "grammarTopic": "Negative Articles"
+      },
+      {
+        "id": "u04-test-5",
+        "type": "multiple_choice",
+        "instruction": "Test 5: Diminutives ending in '-chen' are always:",
+        "prompt": "What article applies to diminutive nouns ending in '-chen' (Mädchen, Brötchen, Häuschen)?",
+        "target": "das (Neuter)",
+        "options": ["der", "die", "das"],
+        "explanation": "All diminutives with '-chen' or '-lein' are grammatically neuter.",
+        "grammarTopic": "Noun Suffixes"
+      }
+    ]
+  }
+}

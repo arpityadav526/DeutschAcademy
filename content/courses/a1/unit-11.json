@@ -1,0 +1,299 @@
+{
+  "id": "unit-11",
+  "level": "A1",
+  "number": 11,
+  "title": "Modal Verbs & Dual-Verb Sentence Brackets",
+  "subtitle": "Conjugate the 6 modal verbs and master the Satzklammer (modal at V2, infinitive at end)",
+  "grammarFocus": ["The 6 Modals (können, müssen, wollen, dürfen, sollen, möchten)", "Identical 1st & 3rd Person Singular Rule", "The Sentence Bracket (Satzklammer: V2 Modal + End Infinitive)", "Nuances of Sollen vs. Müssen vs. Dürfen"],
+  "estimatedMinutes": 50,
+  "concept": {
+    "title": "Modal Verbs & The Satzklammer: German's Syntactic Clamp",
+    "explanation": "Modal verbs modify the mood of an action (ability, permission, necessity, desire). In German, modal verbs trigger one of the most distinctive features of German syntax: <rule>The Sentence Bracket (Die Satzklammer)</rule>.\n\n### 1. The Conjugation Anomaly (ich = er/sie/es)\nEvery modal verb shares two unique morphological characteristics:\n1. The vowel changes in all singular forms (except *sollen* and *möchten*).\n2. <rule>The 1st person ('ich') and 3rd person singular ('er / sie / es') have NO ENDING and are completely identical</rule>:\n   - *ich kann* / *er kann* (NOT 'er kannt'!)\n   - *ich muss* / *sie muss*\n   - *ich will* / *er will*\n   - *ich darf* / *sie darf*\n   - *ich soll* / *er soll*\n   - *ich möchte* / *sie möchte*\n\n### 2. The Sentence Bracket (Die Satzklammer)\nWhen a modal verb is combined with a main action verb in a main clause:\n- The **conjugated modal verb** takes **Position 2** (Left Bracket).\n- The **main verb in the infinitive** is banished to the **VERY END of the sentence** (Right Bracket).\n- All objects, time phrases, and prepositional phrases are packed inside the middle field (*das Mittelfeld*):\n  - English: *I must call my mother today.* (Modal + Main Verb + Object + Time)\n  - German: *Ich <verb>muss</verb> [heute meine Mutter] <verb>anrufen</verb>.* (Modal at Pos 2 ... Infinitive at End)\n\n### 3. Meanings & Semantic Distinctions\n- <rule>können</rule>: Ability or possibility (*Ich kann schwimmen*).\n- <rule>müssen</rule>: Absolute physical or logical necessity (*Ich muss schlafen*).\n- <rule>dürfen</rule>: Permission (*Hier darf man parken*). With negation, it expresses **strict prohibition**: *Hier darf man nicht rauchen* (You are NOT allowed to smoke!).\n- <rule>sollen</rule>: External expectation, doctor's advice, moral duty (*Der Arzt sagt, ich soll viel Wasser trinken*).\n- <rule>wollen</rule>: Strong firm will / determination (*Ich will diese Prüfung bestehen*).\n- <rule>möchten</rule>: Polite wish / request (*Ich möchte einen Kaffee*).",
+    "tables": [
+      {
+        "caption": "Complete Conjugation Table of the 6 Modal Verbs",
+        "headers": ["Pronoun", "können (can)", "müssen (must)", "wollen (want)", "dürfen (may)", "sollen (should)", "möchten (would like)"],
+        "rows": [
+          ["ich", "kann", "muss", "will", "darf", "soll", "möchte"],
+          ["du", "kannst", "musst", "willst", "darfst", "sollst", "möchtest"],
+          ["er / sie / es", "kann", "muss", "will", "darf", "soll", "möchte"],
+          ["wir", "können", "müssen", "wollen", "dürfen", "sollen", "möchten"],
+          ["ihr", "könnt", "müsst", "wollt", "dürft", "sollt", "möchtet"],
+          ["sie / Sie", "können", "müssen", "wollen", "dürfen", "sollen", "möchten"]
+        ]
+      }
+    ],
+    "deepDives": [
+      {
+        "title": "Never Add a 't' to 'er' in Modals!",
+        "content": "Beginners frequently say 'er kannt' or 'er willt' by analogy with regular verbs. Remember: the 3rd person singular of all modal verbs has ZERO ending. It is always: er kann, er muss, er will, er darf, er soll, er möchte.",
+        "warning": true
+      }
+    ]
+  },
+  "workedExamples": [
+    {
+      "german": "Wir können heute Abend leider nicht ins Theater gehen.",
+      "english": "Unfortunately, we cannot go to the theater this evening.",
+      "breakdown": [
+        {"part": "Wir", "role": "Subject Pronoun", "caseType": "nom"},
+        {"part": "können", "role": "Modal Verb in Position 2 (Left Bracket)", "caseType": "verb"},
+        {"part": "heute Abend leider nicht", "role": "Time + Adverbial + Negation (Mittelfeld)"},
+        {"part": "ins Theater", "role": "Directional Prepositional Phrase (Mittelfeld)"},
+        {"part": "gehen", "role": "Infinitive Main Verb at the Very End (Right Bracket)", "caseType": "verb", "explanation": "Completes the Satzklammer"}
+      ]
+    },
+    {
+      "german": "Hier darf man nicht fotografieren.",
+      "english": "One is not allowed to take photographs here (Photography prohibited).",
+      "breakdown": [
+        {"part": "Hier", "role": "Position 1 (Location Adverb)"},
+        {"part": "darf", "role": "Position 2 (Modal Verb 'dürfen')", "caseType": "verb", "explanation": "Conjugated for impersonal pronoun 'man'"},
+        {"part": "man", "role": "Position 3 (Impersonal Subject)", "caseType": "nom"},
+        {"part": "nicht", "role": "Negation Particle"},
+        {"part": "fotografieren", "role": "Infinitive at the sentence end", "caseType": "verb"}
+      ]
+    }
+  ],
+  "guidedPractice": [
+    {
+      "id": "a1-u11-e1",
+      "type": "fill_in_blank",
+      "instruction": "Conjugate the modal verb 'können' for 'er' (watch out: no -t ending!):",
+      "prompt": "Lukas ___ sehr gut Klavier spielen. (können)",
+      "target": "kann",
+      "acceptableAnswers": ["kann"],
+      "explanation": "The 3rd person singular of 'können' is 'kann' (identical to 'ich kann').",
+      "grammarTopic": "Modal Conjugation"
+    },
+    {
+      "id": "a1-u11-e2",
+      "type": "sentence_reorder",
+      "instruction": "Assemble the sentence with the infinitive verb at the very end (Satzklammer):",
+      "prompt": "I must study for the exam today.",
+      "tokens": ["Ich", "muss", "heute", "für", "die", "Prüfung", "lernen."],
+      "target": "Ich muss heute für die Prüfung lernen.",
+      "explanation": "Modal 'muss' at Position 2; main infinitive 'lernen' at the very end.",
+      "grammarTopic": "Sentence Bracket"
+    },
+    {
+      "id": "a1-u11-e3",
+      "type": "multiple_choice",
+      "instruction": "Select the correct modal to express prohibition (not allowed):",
+      "prompt": "Im Krankenhaus ___ man nicht laut sprechen.",
+      "target": "darf",
+      "options": ["will", "muss", "darf", "soll"],
+      "explanation": "'nicht dürfen' expresses prohibition ('not allowed to / forbidden'): darf man nicht laut sprechen.",
+      "grammarTopic": "dürfen vs. müssen"
+    },
+    {
+      "id": "a1-u11-e4",
+      "type": "transformation",
+      "instruction": "Rephrase using the modal verb 'wollen' (to want):",
+      "prompt": "Rephrase with 'wollen':",
+      "transformationRule": {
+        "from": "Ich fahre nach Berlin.",
+        "to": "Ich will nach Berlin fahren.",
+        "baseSentence": "Ich fahre nach Berlin."
+      },
+      "target": "Ich will nach Berlin fahren.",
+      "explanation": "Modal 'will' at Position 2, infinitive 'fahren' moved to the end.",
+      "grammarTopic": "Modal Transformation"
+    },
+    {
+      "id": "a1-u11-e5",
+      "type": "error_spotting",
+      "instruction": "Identify the misplaced infinitive verb:",
+      "prompt": "Click the verb placed in the wrong position:",
+      "target": "bleiben",
+      "errorSpotting": {
+        "tokens": ["Wir", "müssen", "bleiben", "heute", "zu", "Hause."],
+        "errorIndex": 2,
+        "correctedToken": "heute",
+        "explanation": "In a modal sentence, the infinitive MUST go to the very end of the clause: 'Wir müssen heute zu Hause bleiben.'"
+      },
+      "explanation": "The infinitive 'bleiben' must stand at the very end of the sentence.",
+      "grammarTopic": "Sentence Bracket"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "können",
+      "english": "can / to be able to",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Kannst du Deutsch sprechen?",
+      "exampleTranslation": "Can you speak German?"
+    },
+    {
+      "word": "müssen",
+      "english": "must / to have to",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Ich muss jetzt nach Hause gehen.",
+      "exampleTranslation": "I have to go home now."
+    },
+    {
+      "word": "wollen",
+      "english": "to want (strong intention)",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Wir wollen im Sommer verreisen.",
+      "exampleTranslation": "We want to travel in the summer."
+    },
+    {
+      "word": "dürfen",
+      "english": "may / to be permitted to",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Darf ich Sie etwas fragen?",
+      "exampleTranslation": "May I ask you something?"
+    },
+    {
+      "word": "sollen",
+      "english": "should / to be supposed to",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Was soll ich tun?",
+      "exampleTranslation": "What should I do?"
+    },
+    {
+      "word": "möchten",
+      "english": "would like (polite desire)",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Was möchten Sie trinken?",
+      "exampleTranslation": "What would you like to drink?"
+    }
+  ],
+  "readingPassage": {
+    "title": "Regeln im Studentenwohnheim (Student Dormitory Rules)",
+    "germanText": "Liebe Bewohnerinnen und Bewohner! Bitte beachten Sie unsere Hausordnung: Ab 22:00 Uhr müssen alle Bewohner die Nachtruhe einhalten. Man darf im gesamten Gebäude nicht rauchen. Wenn Sie Gäste einladen möchten, müssen Sie die Rezeption vorher informieren. Fahrräder dürfen Sie nur im Fahrradkeller abstellen, nicht im Hausflur. Bei Fragen können Sie jederzeit das Büro anrufen.",
+    "englishSummary": "Dear residents! Please observe our house rules: From 10:00 PM onwards, all residents must observe quiet hours. One is not permitted to smoke in the entire building. If you would like to invite guests, you must inform the reception beforehand. Bicycles may only be parked in the bicycle cellar, not in the hallway. For questions, you can call the office at any time.",
+    "glossary": [
+      {"word": "Nachtruhe", "meaning": "quiet hours / silence at night", "grammarNote": "die Nachtruhe"},
+      {"word": "einhalten", "meaning": "to observe / adhere to", "grammarNote": "infinitive at the end"},
+      {"word": "abstellen", "meaning": "to park / set down", "grammarNote": "infinitive at the end"}
+    ],
+    "comprehensionQuestions": [
+      {
+        "question": "What does the sentence 'Man darf im gesamten Gebäude nicht rauchen' mean?",
+        "options": [
+          "Smoking is encouraged",
+          "Smoking is strictly prohibited throughout the entire building",
+          "You must smoke outside at 10 PM",
+          "Only residents can smoke"
+        ],
+        "correctIndex": 1,
+        "explanation": "'nicht dürfen' expresses strict prohibition: smoking is forbidden."
+      },
+      {
+        "question": "Where does the main verb 'anrufen' stand in 'Bei Fragen können Sie jederzeit das Büro anrufen'?",
+        "options": ["Position 1", "Position 2", "Position 3", "At the very end of the sentence"],
+        "correctIndex": 3,
+        "explanation": "Because 'können' is the modal verb in Position 2, the main infinitive 'anrufen' is positioned at the very end."
+      }
+    ]
+  },
+  "listeningDialogue": {
+    "title": "Beim Arzt (At the Doctor's Office)",
+    "speakers": ["Ärztin", "Herr Koch"],
+    "lines": [
+      {"speaker": "Ärztin", "text": "Guten Tag, Herr Koch. Was fehlt Ihnen denn?", "translation": "Good day, Mr. Koch. What is troubling you?"},
+      {"speaker": "Herr Koch", "text": "Ich habe starke Halsschmerzen und Fieber.", "translation": "I have a severe sore throat and fever."},
+      {"speaker": "Ärztin", "text": "Sie haben eine Grippe. Sie müssen drei Tage im Bett bleiben und Sie sollen viel Tee trinken.", "translation": "You have the flu. You must stay in bed for three days and you should drink a lot of tea."},
+      {"speaker": "Herr Koch", "text": "Darf ich morgen zur Arbeit gehen?", "translation": "Am I allowed to go to work tomorrow?"},
+      {"speaker": "Ärztin", "text": "Nein, auf keinen Fall! Sie dürfen absolut nicht arbeiten.", "translation": "No, definitely not! You are absolutely not allowed to work."}
+    ],
+    "questions": [
+      {
+        "question": "What modal verb does the doctor use to prescribe staying in bed as a strict medical necessity?",
+        "options": ["können", "müssen (Sie müssen im Bett bleiben)", "wollen", "möchten"],
+        "correctIndex": 1,
+        "explanation": "The doctor says: 'Sie müssen drei Tage im Bett bleiben.'"
+      }
+    ]
+  },
+  "production": {
+    "writing": {
+      "prompt": "Write five rules or guidelines for your workplace or study group using at least four different modal verbs (müssen, dürfen, können, sollen, wollen). Pay strict attention to sending the infinitive to the very end of each sentence.",
+      "guidelines": [
+        "Use 'Man muss...' (one must / necessity)",
+        "Use 'Man darf nicht...' (prohibition)",
+        "Use 'Hier kann man...' (possibility)",
+        "Use 'Wir sollen...' (recommendation / duty)"
+      ],
+      "sampleResponse": "In unserer Bibliothek gibt es klare Regeln: 1. Man muss leise sprechen. 2. Man darf hier keine heißen Speisen essen. 3. Studenten können kostenloses WLAN nutzen. 4. Man soll Bücher nach zwei Wochen zurückgeben. 5. Wir wollen konzentriert arbeiten.",
+      "selfCheckRubric": [
+        "Is the conjugated modal verb in Position 2 in every sentence?",
+        "Is the main infinitive verb at the very end of each clause (sprechen, essen, nutzen, zurückgeben, arbeiten)?",
+        "Did you conjugate the 3rd person singular modals without an ending (z.B. man muss, man darf, man soll, man kann)?"
+      ]
+    },
+    "speaking": {
+      "prompt": "Practice the German sentence bracket by speaking this sentence aloud:",
+      "targetSentence": "Ich muss heute lange arbeiten und kann leider nicht zur Party kommen.",
+      "translation": "I have to work late today and unfortunately cannot come to the party.",
+      "phoneticTips": "Maintain voice momentum across the bracket: 'muss heute lange arbeiten' ... 'kann leider nicht zur Party kommen'."
+    }
+  },
+  "unitTest": {
+    "passingScore": 80,
+    "questions": [
+      {
+        "id": "u11-test-1",
+        "type": "multiple_choice",
+        "instruction": "Test 1: What is the rule for 1st and 3rd person singular in modal verbs?",
+        "prompt": "In modal verbs (können, müssen, etc.), how do the 'ich' and 'er/sie/es' forms behave?",
+        "target": "They have no personal ending and are identical (ich kann = er kann)",
+        "options": [
+          "They have regular -e and -t endings",
+          "They have no personal ending and are identical (ich kann = er kann)",
+          "Only 'er' has an ending",
+          "They are both completely irregular with -st"
+        ],
+        "explanation": "In all modal verbs, 'ich' and 'er/sie/es' share the exact same stem with zero ending: ich muss, er muss.",
+        "grammarTopic": "Modal Conjugation"
+      },
+      {
+        "id": "u11-test-2",
+        "type": "fill_in_blank",
+        "instruction": "Test 2: Insert the correct form of 'wollen' for 'er':",
+        "prompt": "Lukas ___ im nächsten Jahr Medizin studieren. (wollen)",
+        "target": "will",
+        "acceptableAnswers": ["will"],
+        "explanation": "3rd person singular of 'wollen' is 'will' (never 'willt'): er will.",
+        "grammarTopic": "wollen Conjugation"
+      },
+      {
+        "id": "u11-test-3",
+        "type": "sentence_reorder",
+        "instruction": "Test 3: Assemble the modal sentence with Satzklammer:",
+        "prompt": "Can you speak German fluently?",
+        "tokens": ["Kannst", "du", "fließend", "Deutsch", "sprechen?"],
+        "target": "Kannst du fließend Deutsch sprechen?",
+        "explanation": "Modal in Position 1 (question) and infinitive 'sprechen' at the very end.",
+        "grammarTopic": "Sentence Bracket Question"
+      },
+      {
+        "id": "u11-test-4",
+        "type": "multiple_choice",
+        "instruction": "Test 4: Expressing prohibition:",
+        "prompt": "Which sentence means 'Smoking is forbidden here'?",
+        "target": "Hier darf man nicht rauchen.",
+        "options": [
+          "Hier muss man nicht rauchen.",
+          "Hier darf man nicht rauchen.",
+          "Hier soll man rauchen.",
+          "Hier kann man rauchen."
+        ],
+        "explanation": "'nicht dürfen' expresses prohibition ('not allowed to'): Hier darf man nicht rauchen.",
+        "grammarTopic": "dürfen vs. müssen"
+      },
+      {
+        "id": "u11-test-5",
+        "type": "fill_in_blank",
+        "instruction": "Test 5: Place the main verb in the correct position:",
+        "prompt": "Wir möchten heute Abend einen Film ___ . (sehen)",
+        "target": "sehen",
+        "acceptableAnswers": ["sehen"],
+        "explanation": "The main verb goes to the end of the sentence in its infinitive form: 'sehen'.",
+        "grammarTopic": "Sentence Bracket"
+      }
+    ]
+  }
+}

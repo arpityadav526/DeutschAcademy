@@ -1,0 +1,68 @@
+{
+  "id": "cases",
+  "title": "The Four German Cases (Die vier Fälle)",
+  "level": "A1-B1",
+  "summary": "German uses four grammatical cases to indicate the role of each noun in a sentence: Nominativ (Subject), Akkusativ (Direct Object), Dativ (Indirect Object / Beneficiary), and Genitiv (Possession / Relation).",
+  "tables": [
+    {
+      "title": "Definite Articles (Bestimmte Artikel: the)",
+      "description": "Notice how masculine changes in every single case (der → den → dem → des). Feminine and plural share '-er' in dative/genitive.",
+      "headers": ["Case", "Masculine (mask.)", "Feminine (fem.)", "Neuter (neut.)", "Plural (pl.)"],
+      "rows": [
+        ["Nominativ (Subject / Who?)", "<nom>der</nom> Mann", "<nom>die</nom> Frau", "<nom>das</nom> Kind", "<nom>die</nom> Kinder"],
+        ["Akkusativ (Direct Object / Whom?)", "<akk>den</akk> Mann", "<akk>die</akk> Frau", "<akk>das</akk> Kind", "<akk>die</akk> Kinder"],
+        ["Dativ (Indirect Object / To whom?)", "<dat>dem</dat> Mann", "<dat>der</dat> Frau", "<dat>dem</dat> Kind", "<dat>den</dat> Kindern (+n)"],
+        ["Genitiv (Possession / Whose?)", "<gen>des</gen> Mannes (+es)", "<gen>der</gen> Frau", "<gen>des</gen> Kindes (+es)", "<gen>der</gen> Kinder"]
+      ]
+    },
+    {
+      "title": "Indefinite Articles (Unbestimmte Artikel: a / an)",
+      "description": "There is no plural form for 'ein'. Use 'keine' or zero-article for plural.",
+      "headers": ["Case", "Masculine", "Feminine", "Neuter", "Negative Plural (kein-)"],
+      "rows": [
+        ["Nominativ", "ein Mann", "eine Frau", "ein Kind", "keine Kinder"],
+        ["Akkusativ", "einen Mann", "eine Frau", "ein Kind", "keine Kinder"],
+        ["Dativ", "einem Mann", "einer Frau", "einem Kind", "keinen Kindern (+n)"],
+        ["Genitiv", "eines Mannes", "einer Frau", "eines Kindes", "keiner Kinder"]
+      ]
+    },
+    {
+      "title": "Personal Pronouns across Cases (Personalpronomen)",
+      "description": "Personal pronouns replace specific nouns and change form according to case.",
+      "headers": ["Nominativ", "Akkusativ", "Dativ", "English Equivalent"],
+      "rows": [
+        ["ich", "mich", "mir", "I / me / to me"],
+        ["du", "dich", "dir", "you / you / to you (informal sg.)"],
+        ["er", "ihn", "ihm", "he / him / to him"],
+        ["sie", "sie", "ihr", "she / her / to her"],
+        ["es", "es", "ihm", "it / it / to it"],
+        ["wir", "uns", "uns", "we / us / to us"],
+        ["ihr", "euch", "euch", "you all / to you all (informal pl.)"],
+        ["sie / Sie", "sie / Sie", "ihnen / Ihnen", "they / them / Formal You"]
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "name": "Case Trigger Hierarchy",
+      "explanation": "Case is assigned in a strict priority: 1) Preposition (overrules everything), 2) Verb governing (e.g. danken + Dativ), 3) Syntactic function (Subject = Nominativ, Direct Object = Akkusativ).",
+      "examples": [
+        {
+          "german": "Ich sehe den Mann.",
+          "english": "I see the man.",
+          "breakdown": "sehen takes an accusative direct object → der Mann becomes den Mann"
+        },
+        {
+          "german": "Ich helfe dem Mann.",
+          "english": "I help the man.",
+          "breakdown": "helfen is a dative verb → der Mann becomes dem Mann"
+        },
+        {
+          "german": "Ich gehe mit dem Mann.",
+          "english": "I walk with the man.",
+          "breakdown": "The preposition 'mit' strictly demands Dative, regardless of the verb"
+        }
+      ]
+    }
+  ]
+}

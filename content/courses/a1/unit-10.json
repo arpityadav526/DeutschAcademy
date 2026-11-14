@@ -1,0 +1,290 @@
+{
+  "id": "unit-10",
+  "level": "A1",
+  "number": 10,
+  "title": "The Cases: Nominative and Accusative",
+  "subtitle": "Master direct objects, the masculine accusative shift (den/einen), and accusative prepositions",
+  "grammarFocus": ["Nominative (Subject / Who is acting)", "Accusative (Direct Object / Who is receiving the action)", "The Masculine Shift: der → den, ein → einen, kein → keinen", "Accusative Personal Pronouns (mich, dich, ihn...)", "Accusative Prepositions (bis, durch, für, gegen, ohne, um)"],
+  "estimatedMinutes": 50,
+  "concept": {
+    "title": "Cases as Functional Role Markers: Nominative vs. Accusative",
+    "explanation": "In English, word order tells you who does what ('The dog bites the man' vs 'The man bites the dog'). In German, <rule>case markings on the articles and pronouns</rule> reveal the grammatical role of every noun, regardless of word order.\n\n### 1. Nominativ: The Subject (Der Täter)\nThe Nominative case answers the question **Wer oder was?** (Who or what is performing the action or being described by *sein/werden*):\n- <nom>Der Hund</nom> <verb>schläft</verb>. (Who sleeps? The dog.)\n- <nom>Das Buch</nom> <verb>ist</verb> interessant.\n\n### 2. Akkusativ: The Direct Object (Das Ziel)\nThe Accusative case answers the question **Wen oder was?** (Whom or what does the subject see, buy, eat, love, or influence?):\n- <nom>Ich</nom> <verb>sehe</verb> <akk>den Hund</akk>. (Whom do I see? The dog.)\n\n### 3. The Miracle of the Accusative: ONLY Masculine Changes!\nHere is the great relief for German learners: in the transition from Nominative to Accusative, <rule>feminine, neuter, and plural nouns DO NOT CHANGE AT ALL</rule>! Only the masculine gender shifts:\n- Maskulin: <nom>der</nom> Tisch → <akk>den</akk> Tisch / <nom>ein</nom> Tisch → <akk>einen</akk> Tisch / <nom>kein</nom> → <akk>keinen</akk>\n- Feminin: <nom>die</nom> Lampe → <akk>die</akk> Lampe / <nom>eine</nom> Lampe → <akk>eine</akk> Lampe (IDENTICAL)\n- Neutrum: <nom>das</nom> Buch → <akk>das</akk> Buch / <nom>ein</nom> Buch → <akk>ein</akk> Buch (IDENTICAL)\n- Plural: <nom>die</nom> Tische → <akk>die</akk> Tische / <nom>keine</nom> → <akk>keine</akk> (IDENTICAL)\n\n### 4. Accusative Personal Pronouns\n- <nom>ich</nom> → <akk>mich</akk> (me)\n- <nom>du</nom> → <akk>dich</akk> (you)\n- <nom>er</nom> → <akk>ihn</akk> (him — masculine change again!)\n- <nom>sie</nom> → <akk>sie</akk> (her)\n- <nom>es</nom> → <akk>es</akk> (it)\n- <nom>wir</nom> → <akk>uns</akk> (us)\n- <nom>ihr</nom> → <akk>euch</akk> (you all)\n- <nom>sie / Sie</nom> → <akk>sie / Sie</akk> (them / You formal)\n\n### 5. Accusative Prepositions (DOGFU / FUDGE)\nThe following prepositions strictly force the accusative case, even without a verb: <rule>durch, für, gegen, ohne, um, bis</rule>:\n- *Das Geschenk ist <rule>für</rule> <akk>den Vater</akk>.* (NOT der Vater!)",
+    "tables": [
+      {
+        "caption": "Comparison of Nominative vs. Accusative Articles",
+        "headers": ["Case", "Masculine", "Feminine", "Neuter", "Plural"],
+        "rows": [
+          ["Nominativ (Subject)", "<nom>der</nom> / ein / kein", "<nom>die</nom> / eine / keine", "<nom>das</nom> / ein / kein", "<nom>die</nom> / keine"],
+          ["Akkusativ (Direct Object)", "<akk>den</akk> / <akk>einen</akk> / <akk>keinen</akk>", "<akk>die</akk> / <akk>eine</akk> / <akk>keine</akk>", "<akk>das</akk> / <akk>ein</akk> / <akk>kein</akk>", "<akk>die</akk> / <akk>keine</akk>"]
+        ]
+      }
+    ],
+    "deepDives": [
+      {
+        "title": "Verbs of Being (sein, werden, bleiben) take NOMINATIVE, not Accusative!",
+        "content": "English speakers frequently treat 'sein' (to be) as a regular verb taking an object. In German, 'sein' acts as an equals sign (=). Both sides of 'sein' remain strictly in the Nominative case: 'Er ist <nom>ein guter Lehrer</nom>' (NOT einen guten Lehrer!).",
+        "warning": true
+      }
+    ]
+  },
+  "workedExamples": [
+    {
+      "german": "Der Mann kauft den teuren Fernseher für seinen Sohn.",
+      "english": "The man buys the expensive television for his son.",
+      "breakdown": [
+        {"part": "Der Mann", "role": "Subject (Nom. Masc.)", "caseType": "nom", "explanation": "Performing the buying action"},
+        {"part": "kauft", "role": "Verb in Position 2", "caseType": "verb"},
+        {"part": "den teuren Fernseher", "role": "Direct Object (Akk. Masc.)", "caseType": "akk", "explanation": "der Fernseher shifts to den Fernseher in accusative"},
+        {"part": "für seinen Sohn", "role": "Prepositional Object (Akk. Masc.)", "caseType": "akk", "explanation": "'für' strictly governs accusative: sein Sohn → seinen Sohn"}
+      ]
+    },
+    {
+      "german": "Ich liebe dich und du liebst mich.",
+      "english": "I love you and you love me.",
+      "breakdown": [
+        {"part": "Ich", "role": "Subject 1", "caseType": "nom"},
+        {"part": "liebe", "role": "Verb 1", "caseType": "verb"},
+        {"part": "dich", "role": "Accusative Pronoun", "caseType": "akk", "explanation": "du → dich"},
+        {"part": "und", "role": "Conjunction (Pos 0)"},
+        {"part": "du", "role": "Subject 2", "caseType": "nom"},
+        {"part": "liebst", "role": "Verb 2", "caseType": "verb"},
+        {"part": "mich", "role": "Accusative Pronoun", "caseType": "akk", "explanation": "ich → mich"}
+      ]
+    }
+  ],
+  "guidedPractice": [
+    {
+      "id": "a1-u10-e1",
+      "type": "fill_in_blank",
+      "instruction": "Insert the correct accusative article for masculine 'Kaffee' (der Kaffee):",
+      "prompt": "Möchten Sie ___ Kaffee? (einen / ein / eine)",
+      "target": "einen",
+      "acceptableAnswers": ["einen"],
+      "explanation": "'Kaffee' is masculine (der Kaffee). In the accusative direct object position, 'ein' becomes 'einen'.",
+      "grammarTopic": "Accusative Masculine"
+    },
+    {
+      "id": "a1-u10-e2",
+      "type": "multiple_choice",
+      "instruction": "Identify which case is required after the preposition 'ohne':",
+      "prompt": "Ich gehe ohne ___ neuen Schirm. (der Schirm)",
+      "target": "den",
+      "options": ["der", "den", "dem", "des"],
+      "explanation": "The preposition 'ohne' strictly demands the Accusative case: ohne den neuen Schirm.",
+      "grammarTopic": "Accusative Prepositions"
+    },
+    {
+      "id": "a1-u10-e3",
+      "type": "fill_in_blank",
+      "instruction": "Complete with the correct accusative personal pronoun (er → ?):",
+      "prompt": "Kennst du Lukas? — Ja, ich kenne ___ gut.",
+      "target": "ihn",
+      "acceptableAnswers": ["ihn"],
+      "explanation": "The accusative form of the 3rd person masculine pronoun 'er' is 'ihn'.",
+      "grammarTopic": "Accusative Pronouns"
+    },
+    {
+      "id": "a1-u10-e4",
+      "type": "sentence_reorder",
+      "instruction": "Construct the sentence showing Nominative subject and Accusative object:",
+      "prompt": "The teacher buys the book.",
+      "tokens": ["Der", "Lehrer", "kauft", "das", "Buch."],
+      "target": "Der Lehrer kauft das Buch.",
+      "explanation": "Der Lehrer (Subject Nominative) + kauft (V2) + das Buch (Direct Object Accusative).",
+      "grammarTopic": "Nominative vs. Accusative"
+    },
+    {
+      "id": "a1-u10-e5",
+      "type": "error_spotting",
+      "instruction": "Identify the incorrect case ending:",
+      "prompt": "Click the incorrect article:",
+      "target": "der",
+      "errorSpotting": {
+        "tokens": ["Ich", "suche", "der", "Schlüssel", "von", "meiner", "Wohnung."],
+        "errorIndex": 2,
+        "correctedToken": "den",
+        "explanation": "'Schlüssel' is the direct object of 'suchen'. Masculine accusative requires 'den', not 'der': 'Ich suche den Schlüssel...'"
+      },
+      "explanation": "Direct objects of 'suchen' require accusative. 'der Schlüssel' must become 'den Schlüssel'.",
+      "grammarTopic": "Accusative Case Error"
+    }
+  ],
+  "vocabulary": [
+    {
+      "article": "der",
+      "word": "Schlüssel",
+      "plural": "Schlüssel",
+      "english": "key",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Ich habe den Schlüssel verloren.",
+      "exampleTranslation": "I have lost the key."
+    },
+    {
+      "article": "der",
+      "word": "Koffer",
+      "plural": "Koffer",
+      "english": "suitcase",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Er packt den großen Koffer.",
+      "exampleTranslation": "He packs the large suitcase."
+    },
+    {
+      "word": "suchen",
+      "english": "to search / look for",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Wen suchst du?",
+      "exampleTranslation": "Whom are you looking for?"
+    },
+    {
+      "word": "finden",
+      "english": "to find",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Ich finde meinen Pass nicht.",
+      "exampleTranslation": "I cannot find my passport."
+    },
+    {
+      "word": "ohne",
+      "english": "without (strictly takes Accusative)",
+      "partOfSpeech": "preposition",
+      "exampleSentence": "Ohne dich gehe ich nicht ins Kino.",
+      "exampleTranslation": "Without you I am not going to the cinema."
+    },
+    {
+      "word": "für",
+      "english": "for (strictly takes Accusative)",
+      "partOfSpeech": "preposition",
+      "exampleSentence": "Das Geschenk ist für meinen Bruder.",
+      "exampleTranslation": "The gift is for my brother."
+    }
+  ],
+  "readingPassage": {
+    "title": "Vergessen am Flughafen (Forgotten at the Airport)",
+    "germanText": "Thomas steht am Flughafen Frankfurt und hat ein Problem: Er sucht seinen Reisepass. Er öffnet den schwarzen Rucksack, aber er findet den Pass nicht. Seine Frau fragt: 'Hast du den Koffer kontrolliert?' Thomas antwortet nervös: 'Ja, ich habe den Koffer zweimal durchsucht. Ohne den Pass darf ich nicht fliegen!' Plötzlich lacht seine Frau: 'Schau mal in deine Jackentasche!' Da steckt er: Er hat den Pass die ganze Zeit in der Tasche.",
+    "englishSummary": "Thomas stands at Frankfurt Airport and has a problem: He is looking for his passport. He opens the black backpack, but he does not find the passport. His wife asks: 'Did you check the suitcase?' Thomas answers nervously: 'Yes, I searched the suitcase twice. Without the passport I am not allowed to fly!' Suddenly his wife laughs: 'Look in your jacket pocket!' There it is: He had the passport in his pocket the whole time.",
+    "glossary": [
+      {"word": "Reisepass", "meaning": "passport", "grammarNote": "der Pass → den Pass (Akk. Masc.)"},
+      {"word": "Rucksack", "meaning": "backpack", "grammarNote": "der Rucksack → den Rucksack (Akk. Masc.)"},
+      {"word": "ohne den Pass", "meaning": "without the passport", "grammarNote": "ohne demands Accusative"}
+    ],
+    "comprehensionQuestions": [
+      {
+        "question": "Why does the text say 'Er öffnet den schwarzen Rucksack' instead of 'der schwarze Rucksack'?",
+        "options": [
+          "Because Rucksack is feminine",
+          "Because Rucksack is the direct object (Accusative) of the verb 'öffnen'",
+          "Because Rucksack is plural",
+          "Because of Frankfurt"
+        ],
+        "correctIndex": 1,
+        "explanation": "'der Rucksack' is masculine and functions as the direct object of 'öffnen', changing 'der' to 'den'."
+      },
+      {
+        "question": "Which case is triggered by the preposition 'ohne' in 'Ohne den Pass'?",
+        "options": ["Nominative", "Accusative", "Dative", "Genitive"],
+        "correctIndex": 1,
+        "explanation": "'ohne' strictly requires the Accusative case."
+      }
+    ]
+  },
+  "listeningDialogue": {
+    "title": "Im Kaufhaus (In the Department Store)",
+    "speakers": ["Verkäufer", "Kunde"],
+    "lines": [
+      {"speaker": "Verkäufer", "text": "Kann ich Ihnen helfen? Suchen Sie etwas Bestimmtes?", "translation": "Can I help you? Are you looking for something specific?"},
+      {"speaker": "Kunde", "text": "Ja bitte, ich suche einen warmen Wintermantel.", "translation": "Yes please, I am looking for a warm winter coat."},
+      {"speaker": "Verkäufer", "text": "Wir haben diesen Mantel hier in Dunkelblau. Möchten Sie ihn anprobieren?", "translation": "We have this coat here in dark blue. Would you like to try it on?"},
+      {"speaker": "Kunde", "text": "Sehr gern. Ich probiere ihn sofort an.", "translation": "Very gladly. I will try it on immediately."}
+    ],
+    "questions": [
+      {
+        "question": "Why does the customer say 'einen warmen Wintermantel' instead of 'ein warmer Wintermantel'?",
+        "options": [
+          "Because 'Wintermantel' is masculine (der Mantel) and is the direct object of 'suchen'",
+          "Because it is winter",
+          "Because Mantel is feminine",
+          "Because of an error"
+        ],
+        "correctIndex": 0,
+        "explanation": "'der Mantel' is masculine and receives the accusative direct object ending '-en': einen warmen Wintermantel."
+      }
+    ]
+  },
+  "production": {
+    "writing": {
+      "prompt": "Describe a shopping trip. Name at least three items you are buying or looking for (one masculine, one feminine, one neuter), using verbs that take the accusative case (kaufen, suchen, brauchen, möchten). Highlight the masculine accusative shift.",
+      "guidelines": [
+        "Include a masculine noun with 'einen' or 'den' (e.g. den Tisch, einen Mantel, den Kuchen)",
+        "Include a feminine noun with 'eine' or 'die' (e.g. eine Jacke, die Zeitung)",
+        "Include a neuter noun with 'ein' or 'das' (e.g. ein Buch, das Hemd)",
+        "Use 'für + Accusative' at least once"
+      ],
+      "sampleResponse": "Heute gehe ich ins Einkaufszentrum. Ich suche einen neuen Computer für mein Studium. Meine Schwester braucht eine warme Jacke und ein Buch für die Schule. Ich kaufe auch ein Geschenk für meinen Vater: einen schönen Schal.",
+      "selfCheckRubric": [
+        "Did you change masculine 'ein' to 'einen' (einen neuen Computer, einen schönen Schal)?",
+        "Did feminine and neuter nouns retain their regular forms (eine Jacke, ein Buch)?",
+        "Did 'für' correctly take accusative (für mein Studium, für meinen Vater)?"
+      ]
+    },
+    "speaking": {
+      "prompt": "Practice the masculine accusative shift by speaking this sentence aloud:",
+      "targetSentence": "Ich suche den Schlüssel und kaufe einen neuen Schreibtisch für meinen Sohn.",
+      "translation": "I am looking for the key and buying a new desk for my son.",
+      "phoneticTips": "Articulate the final '-en' syllables clearly: 'den Schlüssel', 'einen neuen Schreibtisch', 'für meinen Sohn'."
+    }
+  },
+  "unitTest": {
+    "passingScore": 80,
+    "questions": [
+      {
+        "id": "u10-test-1",
+        "type": "multiple_choice",
+        "instruction": "Test 1: Which gender changes its definite article in the Accusative case?",
+        "prompt": "Between Nominative and Accusative, which gender shifts its article?",
+        "target": "Masculine only (der → den)",
+        "options": ["Masculine only (der → den)", "Feminine only (die → der)", "Neuter only (das → dem)", "All genders change"],
+        "explanation": "Only masculine changes in the Accusative: der → den, ein → einen, kein → keinen.",
+        "grammarTopic": "Accusative Shift"
+      },
+      {
+        "id": "u10-test-2",
+        "type": "fill_in_blank",
+        "instruction": "Test 2: Complete with the accusative pronoun for 'er':",
+        "prompt": "Wo ist dein Bruder? Ich sehe ___ nirgends.",
+        "target": "ihn",
+        "acceptableAnswers": ["ihn"],
+        "explanation": "The accusative pronoun for 'er' is 'ihn'.",
+        "grammarTopic": "Accusative Pronouns"
+      },
+      {
+        "id": "u10-test-3",
+        "type": "multiple_choice",
+        "instruction": "Test 3: Select the correct article after 'für':",
+        "prompt": "Das ist ein Geschenk für ___ Vater. (der Vater)",
+        "target": "den",
+        "options": ["der", "den", "dem", "des"],
+        "explanation": "'für' strictly requires the Accusative case: für den Vater.",
+        "grammarTopic": "Accusative Prepositions"
+      },
+      {
+        "id": "u10-test-4",
+        "type": "fill_in_blank",
+        "instruction": "Test 4: Insert the correct indefinite article for 'Tee' (der Tee):",
+        "prompt": "Ich möchte bitte ___ schwarzen Tee.",
+        "target": "einen",
+        "acceptableAnswers": ["einen"],
+        "explanation": "Direct object of 'möchte' is accusative: der Tee → einen schwarzen Tee.",
+        "grammarTopic": "Accusative Articles"
+      },
+      {
+        "id": "u10-test-5",
+        "type": "sentence_reorder",
+        "instruction": "Test 5: Arrange into a correct German sentence:",
+        "prompt": "Without the key I cannot open the door.",
+        "tokens": ["Ohne", "den", "Schlüssel", "kann", "ich", "die", "Tür", "nicht", "öffnen."],
+        "target": "Ohne den Schlüssel kann ich die Tür nicht öffnen.",
+        "explanation": "'Ohne den Schlüssel' (Akkusativ) in Position 1 + modal verb 'kann' in Position 2.",
+        "grammarTopic": "Accusative & Sentence Bracket"
+      }
+    ]
+  }
+}

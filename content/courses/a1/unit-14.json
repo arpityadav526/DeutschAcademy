@@ -1,0 +1,305 @@
+{
+  "id": "unit-14",
+  "level": "A1",
+  "number": 14,
+  "title": "A1 Capstone Review & Mastery Benchmark",
+  "subtitle": "Synthesize all A1 grammatical systems and verify readiness for CEFR A2 progression",
+  "grammarFocus": [
+    "Integrative Case Review (Nominativ vs. Akkusativ)",
+    "Verb Architecture (Regular, Irregular, Auxiliaries)",
+    "Sentence Bracket (Satzklammer with Modals & Separable Verbs)",
+    "Syntactic Inversion & V2 Rule",
+    "Negation & Interrogative Mastery"
+  ],
+  "estimatedMinutes": 60,
+  "concept": {
+    "title": "The Unified A1 Grammar Synthesis",
+    "explanation": "Congratulations on reaching the capstone unit of Level A1! At this stage, you have acquired all foundational structural pillars of the German language. Before advancing to the Dative case and subordinate clauses of A2, we consolidate all systems into a single mental framework.\n\n### The 5 Architectural Pillars of A1\n\n1. **Gender & Case Identification**:\n   - Every German noun has a gender: <nom>der</nom>, <nom>die</nom>, or <nom>das</nom>.\n   - The subject is always in the **Nominative** case.\n   - The direct object is in the **Accusative** case.\n   - Only the **masculine gender** changes in the accusative: *der* → *den*, *ein* → *einen*, *kein* → *keinen*.\n\n2. **Verb Conjugation & Stem Mutations**:\n   - Regular personal endings: *-e, -st, -t, -en, -t, -en*.\n   - The two auxiliary pillars: *haben* and *sein*.\n   - Strong verbs mutate their stem vowels (*e → i*, *e → ie*, *a → ä*) exclusively in the 2nd (*du*) and 3rd person singular (*er/sie/es*).\n\n3. **Word Order & The V2 Rule**:\n   - In declarative main clauses, the conjugated verb is permanently anchored in **Position 2**.\n   - If a time or place expression takes Position 1, the subject steps to Position 3 (**Inversion**).\n   - ADUSO conjunctions (*aber, denn, und, sondern, oder*) occupy **Position 0**.\n\n4. **The Sentence Bracket (Die Satzklammer)**:\n   - **Modal Verbs**: Conjugated modal at Position 2, infinitive main verb at the very end.\n   - **Separable Verbs**: Conjugated verb stem at Position 2, separable prefix at the very end.\n\n5. **Precision in Negation & Questions**:\n   - Use *kein-* for nouns with indefinite or zero articles.\n   - Use *nicht* for verbs, adjectives, adverbs, and nouns with definite articles.\n   - Contradict negative questions with the affirmative particle *doch*!\n   - Use *um* for clock time, *am* for days/dates, and *im* for months/seasons.",
+    "tables": [
+      {
+        "caption": "The Complete A1 Case & Determiner Grid",
+        "headers": ["Case & Function", "Masculine", "Feminine", "Neuter", "Plural"],
+        "rows": [
+          ["Nominativ (Subject / Wer?)", "<nom>der</nom> / ein / kein", "<nom>die</nom> / eine / keine", "<nom>das</nom> / ein / kein", "<nom>die</nom> / keine"],
+          ["Akkusativ (Direct Object / Wen?)", "<akk>den</akk> / <akk>einen</akk> / <akk>keinen</akk>", "<akk>die</akk> / <akk>eine</akk> / <akk>keine</akk>", "<akk>das</akk> / <akk>ein</akk> / <akk>kein</akk>", "<akk>die</akk> / <akk>keine</akk>"]
+        ]
+      }
+    ],
+    "deepDives": [
+      {
+        "title": "A1 to A2 Readiness Milestone",
+        "content": "To be truly ready for A2, you must produce these A1 structures automatically, without pausing to translate from your native language. If you score 80% or higher on the Capstone Evaluation below, you have successfully attained the CEFR A1 Breakthrough standard!",
+        "warning": false
+      }
+    ]
+  },
+  "workedExamples": [
+    {
+      "german": "Jeden Morgen muss ich um halb sieben aufstehen, aber heute darf ich lange schlafen.",
+      "english": "Every morning I have to get up at half past six, but today I am allowed to sleep in.",
+      "breakdown": [
+        {"part": "Jeden Morgen", "role": "Time constituent in Position 1", "caseType": "akk"},
+        {"part": "muss", "role": "Modal Verb in Position 2", "caseType": "verb"},
+        {"part": "ich", "role": "Subject in Position 3", "caseType": "nom"},
+        {"part": "um halb sieben", "role": "Clock Time Phrase (6:30)"},
+        {"part": "aufstehen", "role": "Infinitive at end of Clause 1", "caseType": "verb"},
+        {"part": "aber", "role": "Coordinating Conjunction (Position 0)"},
+        {"part": "heute", "role": "Position 1 of Clause 2"},
+        {"part": "darf", "role": "Modal Verb in Position 2", "caseType": "verb"},
+        {"part": "ich", "role": "Subject in Position 3", "caseType": "nom"},
+        {"part": "lange schlafen", "role": "Adverb + Infinitive at sentence end", "caseType": "verb"}
+      ]
+    }
+  ],
+  "guidedPractice": [
+    {
+      "id": "a1-u14-e1",
+      "type": "fill_in_blank",
+      "instruction": "Identify the direct object case: fill in the masculine accusative article:",
+      "prompt": "Der Student sucht ___ neuen Computer. (der Computer)",
+      "target": "den",
+      "acceptableAnswers": ["den"],
+      "explanation": "'der Computer' is the masculine direct object in accusative: den neuen Computer.",
+      "grammarTopic": "Accusative Masculine"
+    },
+    {
+      "id": "a1-u14-e2",
+      "type": "sentence_reorder",
+      "instruction": "Arrange into an inverted declarative sentence with a separable verb:",
+      "prompt": "Tomorrow I will call you.",
+      "tokens": ["Morgen", "rufe", "ich", "dich", "an."],
+      "target": "Morgen rufe ich dich an.",
+      "explanation": "Morgen (Pos 1) + rufe (Verb Pos 2) + ich (Subject Pos 3) + dich (Object) + an (Prefix at end).",
+      "grammarTopic": "Inversion & Separable Verbs"
+    },
+    {
+      "id": "a1-u14-e3",
+      "type": "multiple_choice",
+      "instruction": "Choose the correct negation:",
+      "prompt": "Haben Sie ein Auto? — Nein, ich habe ___ Auto.",
+      "target": "kein",
+      "options": ["nicht", "kein", "keine", "keinen"],
+      "explanation": "'das Auto' is neuter. The negative article for an indefinite neuter noun is 'kein'.",
+      "grammarTopic": "Negation"
+    },
+    {
+      "id": "a1-u14-e4",
+      "type": "transformation",
+      "instruction": "Transform into an imperative addressed to 'du':",
+      "prompt": "Transform 'Du sprichst leise' into a command:",
+      "transformationRule": {
+        "from": "Du sprichst leise.",
+        "to": "Sprich leise!",
+        "baseSentence": "Du sprichst leise."
+      },
+      "target": "Sprich leise!",
+      "explanation": "Drop 'du' and '-st', keeping the e → i shift: 'Sprich leise!'",
+      "grammarTopic": "Imperative"
+    },
+    {
+      "id": "a1-u14-e5",
+      "type": "multiple_choice",
+      "instruction": "Temporal preposition check:",
+      "prompt": "Der Zug kommt ___ 14:15 Uhr ___ Gleis 3 an.",
+      "target": "um",
+      "options": ["am", "im", "um", "zu"],
+      "explanation": "Clock time is always introduced with 'um': um 14:15 Uhr.",
+      "grammarTopic": "Temporal Prepositions"
+    }
+  ],
+  "vocabulary": [
+    {
+      "article": "der",
+      "word": "Alltag",
+      "english": "daily routine / everyday life",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Mein Alltag in Deutschland ist sehr interessant.",
+      "exampleTranslation": "My everyday life in Germany is very interesting."
+    },
+    {
+      "article": "die",
+      "word": "Prüfung",
+      "plural": "Prüfungen",
+      "english": "examination / test",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Ich habe die A1-Prüfung bestanden!",
+      "exampleTranslation": "I passed the A1 exam!"
+    },
+    {
+      "word": "bestehen",
+      "english": "to pass (an exam)",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Wir wollen die Prüfung mit Erfolg bestehen.",
+      "exampleTranslation": "We want to pass the exam successfully."
+    },
+    {
+      "article": "das",
+      "word": "Ziel",
+      "plural": "Ziele",
+      "english": "goal / target / destination",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Mein Ziel ist das B2-Zertifikat.",
+      "exampleTranslation": "My goal is the B2 certificate."
+    },
+    {
+      "word": "erfolgreich",
+      "english": "successful / successfully",
+      "partOfSpeech": "adjective",
+      "exampleSentence": "Sie lernen sehr erfolgreich Deutsch.",
+      "exampleTranslation": "You are learning German very successfully."
+    },
+    {
+      "word": "weitergehen",
+      "english": "to continue / go on",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Jetzt geht es mit Niveau A2 weiter!",
+      "exampleTranslation": "Now it continues with Level A2!"
+    }
+  ],
+  "readingPassage": {
+    "title": "Mein erstes Jahr in Deutschland (My First Year in Germany)",
+    "germanText": "Vor einem Jahr bin ich nach Berlin gekommen. Am Anfang war alles neu und nicht einfach: Ich konnte kaum Deutsch sprechen und verstand die Schilder am Bahnhof nicht. Aber ich habe jeden Tag gelernt. Jeden Morgen bin ich früh aufgestanden, habe die Zeitung gelesen und viele Vokabeln wiederholt. Heute habe ich viele deutsche Freunde, arbeite in einem Architekturbüro und kann mich ohne Probleme verständigen. Nun freue ich mich auf die nächsten Schritte!",
+    "englishSummary": "A year ago I arrived in Berlin. In the beginning everything was new and not easy: I could hardly speak German and didn't understand the signs at the train station. But I studied every day. Every morning I got up early, read the newspaper, and reviewed many vocabulary words. Today I have many German friends, work at an architecture office, and can communicate without problems. Now I am looking forward to the next steps!",
+    "glossary": [
+      {"word": "Schilder", "meaning": "signs", "grammarNote": "Plural of das Schild"},
+      {"word": "verständigen", "meaning": "to communicate / make oneself understood", "grammarNote": "reflexive/verb"},
+      {"word": "wiederholt", "meaning": "reviewed / repeated", "grammarNote": "wiederholen"}
+    ],
+    "comprehensionQuestions": [
+      {
+        "question": "What difficulty did the author face in the beginning?",
+        "options": [
+          "He had no apartment",
+          "He could hardly speak German and didn't understand the signs",
+          "He didn't like Berlin",
+          "He was sick"
+        ],
+        "correctIndex": 1,
+        "explanation": "The text states: 'Ich konnte kaum Deutsch sprechen und verstand die Schilder am Bahnhof nicht.'"
+      },
+      {
+        "question": "What is the author's situation today?",
+        "options": [
+          "He returned home",
+          "He works in an architecture office and communicates without problems",
+          "He is still looking for work",
+          "He stopped learning German"
+        ],
+        "correctIndex": 1,
+        "explanation": "The text states: '...arbeite in einem Architekturbüro und kann mich ohne Probleme verständigen.'"
+      }
+    ]
+  },
+  "listeningDialogue": {
+    "title": "Erfolg bei der Zertifikatsprüfung (Success in the Exam)",
+    "speakers": ["Prüfer", "Kandidatin"],
+    "lines": [
+      {"speaker": "Prüfer", "text": "Herzlichen Glückwunsch, Frau Rossi! Sie haben die A1-Prüfung mit 92 Punkten bestanden.", "translation": "Congratulations, Mrs. Rossi! You passed the A1 exam with 92 points."},
+      {"speaker": "Kandidatin", "text": "Vielen Dank! Das freut mich riesig. War mein Sprechteil gut?", "translation": "Thank you very much! That makes me very happy. Was my speaking portion good?"},
+      {"speaker": "Prüfer", "text": "Ausgezeichnet! Ihre Satzstruktur und Ihre Verbendungen waren fast fehlerfrei. Wann möchten Sie mit A2 weitermachen?", "translation": "Excellent! Your sentence structure and verb endings were almost error-free. When would you like to continue with A2?"},
+      {"speaker": "Kandidatin", "text": "Direkt nächsten Monat! Mein Ziel ist das Goethe-Zertifikat B2.", "translation": "Directly next month! My goal is the Goethe-Zertifikat B2."}
+    ],
+    "questions": [
+      {
+        "question": "What score did Frau Rossi achieve on her A1 examination?",
+        "options": ["80 points", "92 points", "75 points", "100 points"],
+        "correctIndex": 1,
+        "explanation": "The examiner explicitly states: '...mit 92 Punkten bestanden.'"
+      }
+    ]
+  },
+  "production": {
+    "writing": {
+      "prompt": "Write a comprehensive A1 capstone profile of yourself (5 to 8 sentences). Combine greetings, where you come from and live, your profession/studies, your daily routine with times and separable verbs, what you must or want to do, and your goal for learning German.",
+      "guidelines": [
+        "Include at least one sentence with V2 inversion (e.g. 'Morgens stehe ich um...')",
+        "Include at least one sentence with an accusative direct object (e.g. 'Ich kaufe einen...')",
+        "Include at least one modal verb with Satzklammer (e.g. 'Ich will fließend Deutsch sprechen')",
+        "Include correct temporal prepositions (um, am, im)"
+      ],
+      "sampleResponse": "Guten Tag! Mein Name ist Julian und ich komme aus Madrid. Jetzt wohne ich in Berlin und lerne fleißig Deutsch. Jeden Morgen stehe ich um sieben Uhr auf und trinke einen starken Kaffee. Am Vormittag arbeite ich als Grafikdesigner. Ich muss jeden Tag viele E-Mails auf Deutsch schreiben. Am Wochenende treffe ich meine Freunde im Park oder besuche ein Museum. Mein großes Ziel ist das B2-Niveau!",
+      "selfCheckRubric": [
+        "Did you place the conjugated verb in Position 2 in all declarative sentences?",
+        "Did you use the accusative shift for masculine nouns (einen starken Kaffee)?",
+        "Are all German nouns capitalized throughout?",
+        "Did you correctly use the Satzklammer for modal and separable verbs?"
+      ]
+    },
+    "speaking": {
+      "prompt": "Demonstrate complete A1 spoken mastery by speaking this capstone sentence aloud:",
+      "targetSentence": "Ich lerne seit drei Monaten Deutsch und kann jetzt einfache Gespräche führen.",
+      "translation": "I have been learning German for three months and can now hold simple conversations.",
+      "phoneticTips": "Pronounce 'Gespräche' with an open rounded 'ä' sound (/ɡəˈʃpʁɛːçə/) and 'führen' with a pure umlaut 'ü' (/ˈfyːʁən/)."
+    }
+  },
+  "unitTest": {
+    "passingScore": 80,
+    "questions": [
+      {
+        "id": "u14-test-1",
+        "type": "fill_in_blank",
+        "instruction": "Test 1: Supply the accusative article for 'Schlüssel' (der Schlüssel):",
+        "prompt": "Ich habe ___ Schlüssel in der Tasche. (der)",
+        "target": "den",
+        "acceptableAnswers": ["den"],
+        "explanation": "'der Schlüssel' is masculine direct object in accusative: den Schlüssel.",
+        "grammarTopic": "Accusative Case"
+      },
+      {
+        "id": "u14-test-2",
+        "type": "multiple_choice",
+        "instruction": "Test 2: Where does the main infinitive go in a modal verb sentence?",
+        "prompt": "In the sentence 'Wir müssen heute die Hausaufgaben ___', where does 'machen' go?",
+        "target": "machen (at the very end of the sentence)",
+        "options": [
+          "machen (at the very end of the sentence)",
+          "right behind müssen",
+          "in Position 1",
+          "it is omitted"
+        ],
+        "explanation": "The Satzklammer demands that the infinitive 'machen' stands at the very end.",
+        "grammarTopic": "Sentence Bracket"
+      },
+      {
+        "id": "u14-test-3",
+        "type": "fill_in_blank",
+        "instruction": "Test 3: Invert the word order starting with 'Heute':",
+        "prompt": "Heute ___ wir nach Hamburg. (fahren)",
+        "target": "fahren",
+        "acceptableAnswers": ["fahren"],
+        "explanation": "V2 rule: Position 1 is 'Heute', Position 2 MUST be the verb 'fahren', followed by subject 'wir'.",
+        "grammarTopic": "V2 Inversion"
+      },
+      {
+        "id": "u14-test-4",
+        "type": "multiple_choice",
+        "instruction": "Test 4: Negating nouns without an article:",
+        "prompt": "Hast du Zeit? — Nein, ich habe ___ Zeit.",
+        "target": "keine",
+        "options": ["nicht", "keine", "kein", "keinen"],
+        "explanation": "'die Zeit' is feminine used with zero-article, requiring 'keine'.",
+        "grammarTopic": "Negation"
+      },
+      {
+        "id": "u14-test-5",
+        "type": "sentence_reorder",
+        "instruction": "Test 5: Assemble the separable verb question:",
+        "prompt": "When do you get up tomorrow?",
+        "tokens": ["Wann", "stehst", "du", "morgen", "auf?"],
+        "target": "Wann stehst du morgen auf?",
+        "explanation": "Wann (Pos 1) + stehst (Verb Pos 2) + du (Subject Pos 3) + morgen + auf (Prefix at end).",
+        "grammarTopic": "Separable Verb Question"
+      },
+      {
+        "id": "u14-test-6",
+        "type": "fill_in_blank",
+        "instruction": "Test 6: Form the imperative for 'du' from 'sprechen':",
+        "prompt": "___ bitte Deutsch mit mir! (sprechen)",
+        "target": "Sprich",
+        "acceptableAnswers": ["Sprich", "sprich"],
+        "explanation": "The 'du' command retains the e → i vowel shift: 'Sprich!'",
+        "grammarTopic": "Imperative"
+      }
+    ]
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "id": "unit-12",
+  "level": "A1",
+  "number": 12,
+  "title": "Separable and Inseparable Verbs",
+  "subtitle": "Understand why German verbs split: the stress rule, prefix behavior, and modal interactions",
+  "grammarFocus": ["Separable Prefixes (Trennbare Verben: auf-, an-, ab-, ein-, aus-, mit-, fern-)", "Inseparable Prefixes (Untrennbare Verben: be-, ver-, zer-, ent-, er-, ge-, miss-)", "Prefix Movement in Present Tense Main Clauses", "Separable Verbs with Modal Verb Sentence Brackets"],
+  "estimatedMinutes": 45,
+  "concept": {
+    "title": "The Splitting Phenomenon: Trennbare vs. Untrennbare Verben",
+    "explanation": "One of the most fascinating features of German is the ability to attach prefixes to base verbs to fundamentally alter their meaning. For example, *stehen* means 'to stand', but *aufstehen* means 'to get up / stand up', and *verstehen* means 'to understand'.\n\n### 1. The Acoustic Stress Rule (The Secret Key)\nWhether a prefix splits or stays attached depends entirely on **word stress**:\n- <rule>Separable Prefixes are STRESSED</rule> (the vocal emphasis falls heavily on the prefix): ***auf***-stehen, ***an***-rufen, ***ein***-kaufen, ***mit***-kommen.\n- <rule>Inseparable Prefixes are UNSTRESSED</rule> (the vocal emphasis stays on the base verb): be-***zah***-len, ver-***ste***-hen, er-***zäh***-len.\n\n### 2. The Behavior of Separable Verbs (Trennbare Verben)\nIn standard present-tense main clauses, the conjugated stem occupies **Position 2**, while the separable prefix is kicked all the way to the **very end of the sentence**:\n- Infinitive: *aufstehen* (to get up)\n  - *Ich <verb>stehe</verb> jeden Morgen um 6 Uhr <prefix>auf</prefix>.*\n- Infinitive: *einkaufen* (to grocery shop)\n  - *Wir <verb>kaufen</verb> heute im Supermarkt <prefix>ein</prefix>.*\n- Infinitive: *anrufen* (to call on phone)\n  - *Er <verb>ruft</verb> seine Großmutter <prefix>an</prefix>.*\n\n### 3. Inseparable Prefixes (Untrennbare Verben: Be-ver-zer-ent-er-ge)\nThe prefixes <rule>be-, ver-, zer-, ent-, er-, ge-, miss-</rule> NEVER split under any circumstances:\n- *verstehen*: *Ich <verb>verstehe</verb> dich gut.* (NEVER *'Ich stehe dich ver'!*)\n- *bezahlen*: *Der Chef <verb>bezahlt</verb> die Rechnung.*\n\n### 4. What Happens with a Modal Verb?\nWhen a modal verb is in Position 2, the separable verb moves to the end of the clause in its **unsplit, complete infinitive form**:\n- *Ich <verb>muss</verb> morgen früh <verb>aufstehen</verb>.* (Reunited at the end!)",
+    "tables": [
+      {
+        "caption": "Separable vs. Inseparable Prefix Taxonomy",
+        "headers": ["Type", "Stress", "Common Prefixes", "Core Examples"],
+        "rows": [
+          ["Separable (Trennbare)", "STRESSED", "ab-, an-, auf-, aus-, ein-, mit-, vor-, zu-, fern-", "aufstehen, anrufen, einkaufen, mitkommen, fernsehen"],
+          ["Inseparable (Untrennbar)", "UNSTRESSED", "be-, ver-, zer-, ent-, er-, ge-, miss-", "bezahlen, verstehen, zerstören, entscheiden, erzählen"]
+        ]
+      }
+    ],
+    "deepDives": [
+      {
+        "title": "Mnemonic for Inseparable Prefixes",
+        "content": "Memorize the classic rhythm: 'be-ver-zer-ent-er-ge' (add 'miss-'). If a verb starts with any of these prefixes, it will NEVER split in the present, past, or future tenses, and it does not take 'ge-' in its past participle (bezahlt, verstanden).",
+        "warning": false
+      }
+    ]
+  },
+  "workedExamples": [
+    {
+      "german": "Lisa ruft jeden Abend ihre Eltern an.",
+      "english": "Lisa calls her parents every evening.",
+      "breakdown": [
+        {"part": "Lisa", "role": "Subject", "caseType": "nom"},
+        {"part": "ruft", "role": "Conjugated Verb Stem (Pos 2)", "caseType": "verb", "explanation": "stem of anrufen"},
+        {"part": "jeden Abend", "role": "Time Phrase (Akk.)"},
+        {"part": "ihre Eltern", "role": "Direct Object (Akk. Pl.)", "caseType": "akk"},
+        {"part": "an", "role": "Separable Prefix at Sentence End", "caseType": "prefix", "explanation": "detaches and completes the sentence bracket"}
+      ]
+    },
+    {
+      "german": "Wann stehst du am Sonntag auf?",
+      "english": "When do you get up on Sunday?",
+      "breakdown": [
+        {"part": "Wann", "role": "Interrogative (Pos 1)"},
+        {"part": "stehst", "role": "Conjugated Verb Stem (Pos 2)", "caseType": "verb"},
+        {"part": "du", "role": "Subject (Pos 3)", "caseType": "nom"},
+        {"part": "am Sonntag", "role": "Time Phrase"},
+        {"part": "auf", "role": "Separable Prefix at End", "caseType": "prefix"}
+      ]
+    }
+  ],
+  "guidedPractice": [
+    {
+      "id": "a1-u12-e1",
+      "type": "fill_in_blank",
+      "instruction": "Complete the separable verb 'aufstehen' (to get up):",
+      "prompt": "Ich stehe jeden Morgen um sechs Uhr ___ .",
+      "target": "auf",
+      "acceptableAnswers": ["auf"],
+      "explanation": "The separable prefix of 'aufstehen' is 'auf', which moves to the very end of the main clause.",
+      "grammarTopic": "Separable Prefix Placement"
+    },
+    {
+      "id": "a1-u12-e2",
+      "type": "multiple_choice",
+      "instruction": "Identify which of the following verbs is INSEPARABLE (never splits):",
+      "prompt": "Which verb never splits its prefix?",
+      "target": "verstehen",
+      "options": ["aufmachen", "einkaufen", "verstehen", "mitkommen"],
+      "explanation": "Verbs with the prefix 'ver-' are inseparable and never split: Ich verstehe dich.",
+      "grammarTopic": "Inseparable Verbs"
+    },
+    {
+      "id": "a1-u12-e3",
+      "type": "sentence_reorder",
+      "instruction": "Arrange the words with the separable prefix at the very end:",
+      "prompt": "We are grocery shopping in the supermarket today.",
+      "tokens": ["Wir", "kaufen", "heute", "im", "Supermarkt", "ein."],
+      "target": "Wir kaufen heute im Supermarkt ein.",
+      "explanation": "Verb stem 'kaufen' at Position 2, prefix 'ein' at the very end.",
+      "grammarTopic": "Separable Verb Word Order"
+    },
+    {
+      "id": "a1-u12-e4",
+      "type": "transformation",
+      "instruction": "Combine the sentence with the modal verb 'müssen':",
+      "prompt": "Combine with 'Ich muss...':",
+      "transformationRule": {
+        "from": "Ich stehe um sechs Uhr auf.",
+        "to": "Ich muss um sechs Uhr aufstehen.",
+        "baseSentence": "Ich stehe um sechs Uhr auf."
+      },
+      "target": "Ich muss um sechs Uhr aufstehen.",
+      "explanation": "With a modal verb, the separable verb reunites at the end as a single infinitive: 'aufstehen'.",
+      "grammarTopic": "Modal with Separable Verb"
+    },
+    {
+      "id": "a1-u12-e5",
+      "type": "error_spotting",
+      "instruction": "Spot the ungrammatical verb splitting:",
+      "prompt": "Click the incorrect separated word:",
+      "target": "stehe",
+      "errorSpotting": {
+        "tokens": ["Ich", "stehe", "diese", "deutsche", "Regel", "ver."],
+        "errorIndex": 1,
+        "correctedToken": "verstehe",
+        "explanation": "'verstehen' has an inseparable prefix 'ver-'. It NEVER splits! The correct sentence is: 'Ich verstehe diese deutsche Regel.'"
+      },
+      "explanation": "'ver-' is an inseparable prefix and must remain attached to the verb stem: verstehe.",
+      "grammarTopic": "Inseparable Verb Error"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "aufstehen",
+      "english": "to get up / stand up",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Wann stehst du morgens auf?",
+      "exampleTranslation": "When do you get up in the morning?"
+    },
+    {
+      "word": "einkaufen",
+      "english": "to shop / grocery shop",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Ich kaufe samstags im Supermarkt ein.",
+      "exampleTranslation": "I shop in the supermarket on Saturdays."
+    },
+    {
+      "word": "anrufen",
+      "english": "to call (by telephone)",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Ich rufe dich heute Abend an.",
+      "exampleTranslation": "I will call you this evening."
+    },
+    {
+      "word": "fernsehen",
+      "english": "to watch TV",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Sieht er gern am Abend fern?",
+      "exampleTranslation": "Does he like to watch TV in the evening?"
+    },
+    {
+      "word": "mitkommen",
+      "english": "to come along / join",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Kommst du mit ins Kino?",
+      "exampleTranslation": "Are you coming along to the cinema?"
+    },
+    {
+      "word": "verstehen",
+      "english": "to understand (inseparable)",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Ich verstehe jedes Wort.",
+      "exampleTranslation": "I understand every word."
+    }
+  ],
+  "readingPassage": {
+    "title": "Morgens bei Familie Hoffmann (Mornings with the Hoffmanns)",
+    "germanText": "Bei den Hoffmanns beginnt der Tag früh. Um 6:30 Uhr steht Herr Hoffmann auf und macht das Radio an. Frau Hoffmann bereitet das Frühstück vor. Die Kinder wachen um sieben Uhr auf und ziehen sich schnell an. Um viertel vor acht verlässt die ganze Familie das Haus. Herr Hoffmann bringt die Kinder zur Schule und fährt dann zur Arbeit.",
+    "englishSummary": "With the Hoffmanns, the day begins early. At 6:30 AM Mr. Hoffmann gets up and turns on the radio. Mrs. Hoffmann prepares breakfast. The children wake up at seven o'clock and get dressed quickly. At 7:45 AM the whole family leaves the house. Mr. Hoffmann brings the children to school and then drives to work.",
+    "glossary": [
+      {"word": "macht an", "meaning": "turns on", "grammarNote": "anmachen (separable)"},
+      {"word": "bereitet vor", "meaning": "prepares", "grammarNote": "vorbereiten (separable)"},
+      {"word": "wachen auf", "meaning": "wake up", "grammarNote": "aufwachen (separable)"},
+      {"word": "ziehen an", "meaning": "get dressed", "grammarNote": "anziehen (separable)"}
+    ],
+    "comprehensionQuestions": [
+      {
+        "question": "What does Herr Hoffmann do at 6:30 AM?",
+        "options": [
+          "He leaves the house",
+          "He gets up and turns on the radio (steht auf und macht an)",
+          "He sleeps",
+          "He drives to work"
+        ],
+        "correctIndex": 1,
+        "explanation": "The text states: 'Um 6:30 Uhr steht Herr Hoffmann auf und macht das Radio an.'"
+      },
+      {
+        "question": "Why does 'verlässt' not split in 'Um viertel vor acht verlässt die ganze Familie das Haus'?",
+        "options": [
+          "Because ver- is an inseparable prefix",
+          "Because it is late",
+          "Because it is plural",
+          "Because of Haus"
+        ],
+        "correctIndex": 0,
+        "explanation": "'verlassen' starts with 'ver-', an inseparable prefix that never detaches."
+      }
+    ]
+  },
+  "listeningDialogue": {
+    "title": "Verabredung zum Kino (Movie Date Invitation)",
+    "speakers": ["Tim", "Laura"],
+    "lines": [
+      {"speaker": "Tim", "text": "Hallo Laura! Wir gehen heute Abend ins Kino. Kommst du mit?", "translation": "Hello Laura! We are going to the cinema tonight. Are you coming along?"},
+      {"speaker": "Laura", "text": "Sehr gern! Wann fängt der Film an?", "translation": "Very gladly! When does the movie begin?"},
+      {"speaker": "Tim", "text": "Der Film fängt um 20:15 Uhr an. Wir holen dich um halb acht ab.", "translation": "The movie begins at 8:15 PM. We will pick you up at 7:30 PM."},
+      {"speaker": "Laura", "text": "Perfekt! Dann ziehe ich mich schnell um und warte auf euch.", "translation": "Perfect! Then I will quickly change clothes and wait for you all."}
+    ],
+    "questions": [
+      {
+        "question": "Which two separable verbs are used by Tim in his lines?",
+        "options": [
+          "gehen and warten",
+          "mitkommen, anfangen, and abholen",
+          "umziehen and anziehen",
+          "sprechen and hören"
+        ],
+        "correctIndex": 1,
+        "explanation": "Tim uses 'mitkommen' (Kommst du mit?), 'anfangen' (fängt an), and 'abholen' (holen ab)."
+      }
+    ]
+  },
+  "production": {
+    "writing": {
+      "prompt": "Write a description of your morning and evening routine using at least three separable verbs (e.g. aufstehen, anziehen, anrufen, einkaufen, fernsehen) and one inseparable verb (e.g. verstehen, bezahlen, beginnen).",
+      "guidelines": [
+        "In present-tense main clauses, send the separable prefix to the very end of the sentence",
+        "Keep the inseparable verb united in Position 2",
+        "State at least 4 sentences"
+      ],
+      "sampleResponse": "Jeden Werktag stehe ich um sieben Uhr auf. Zuerst frühstücke ich und ziehe mich warm an. Am Nachmittag kaufe ich im Supermarkt frisches Gemüse ein. Am Abend bezahle ich meine Rechnungen und sehe manchmal fern.",
+      "selfCheckRubric": [
+        "Did you place the separable prefix at the very end (auf, an, ein, fern)?",
+        "Did the inseparable verb 'bezahle' remain whole in Position 2?",
+        "Are all German nouns capitalized?"
+      ]
+    },
+    "speaking": {
+      "prompt": "Practice the rhythm of separable prefix sentences by speaking this sentence aloud:",
+      "targetSentence": "Ich stehe jeden Morgen früh auf und rufe meine Mutter an.",
+      "translation": "I get up early every morning and call my mother.",
+      "phoneticTips": "Stress the prefixes clearly at the end: '...früh AUF' and '...meine Mutter AN'."
+    }
+  },
+  "unitTest": {
+    "passingScore": 80,
+    "questions": [
+      {
+        "id": "u12-test-1",
+        "type": "multiple_choice",
+        "instruction": "Test 1: Where does the separable prefix go in a present-tense statement?",
+        "prompt": "In a standard main clause (Präsens), the separable prefix goes to:",
+        "target": "The very end of the clause",
+        "options": ["Position 1", "Position 2 right behind the verb stem", "The very end of the clause", "Before the subject"],
+        "explanation": "The prefix separates from the verb and lands at the very end of the clause.",
+        "grammarTopic": "Separable Prefix Rule"
+      },
+      {
+        "id": "u12-test-2",
+        "type": "fill_in_blank",
+        "instruction": "Test 2: Complete the sentence with the prefix of 'anrufen':",
+        "prompt": "Lukas ruft morgen seine Schwester ___ .",
+        "target": "an",
+        "acceptableAnswers": ["an"],
+        "explanation": "Infinitive: anrufen → Lukas ruft ... an.",
+        "grammarTopic": "anrufen Prefix"
+      },
+      {
+        "id": "u12-test-3",
+        "type": "multiple_choice",
+        "instruction": "Test 3: Inseparable prefix recognition:",
+        "prompt": "Which prefix NEVER detaches from the verb?",
+        "target": "be- (bezahlen)",
+        "options": ["auf- (aufstehen)", "ein- (einkaufen)", "be- (bezahlen)", "aus- (aussteigen)"],
+        "explanation": "'be-' is one of the 7 inseparable prefixes (be-, ver-, zer-, ent-, er-, ge-, miss-).",
+        "grammarTopic": "Inseparable Prefixes"
+      },
+      {
+        "id": "u12-test-4",
+        "type": "sentence_reorder",
+        "instruction": "Test 4: Assemble the question with separable verb 'mitkommen':",
+        "prompt": "Are you coming along to the cinema tonight?",
+        "tokens": ["Kommst", "du", "heute", "Abend", "mit?"],
+        "target": "Kommst du heute Abend mit?",
+        "explanation": "Kommst (Verb stem Pos 1) + du (Pos 2) + heute Abend + mit (Prefix at end).",
+        "grammarTopic": "Separable Question"
+      },
+      {
+        "id": "u12-test-5",
+        "type": "transformation",
+        "instruction": "Test 5: Rephrase with the modal verb 'können':",
+        "prompt": "Combine with 'Ich kann...':",
+        "transformationRule": {
+          "from": "Ich kaufe morgen ein.",
+          "to": "Ich kann morgen einkaufen.",
+          "baseSentence": "Ich kaufe morgen ein."
+        },
+        "target": "Ich kann morgen einkaufen.",
+        "explanation": "With a modal verb in Position 2, the separable verb stands at the end as an intact infinitive: 'einkaufen'.",
+        "grammarTopic": "Modal with Separable Verb"
+      }
+    ]
+  }
+}

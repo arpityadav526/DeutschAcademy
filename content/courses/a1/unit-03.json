@@ -1,0 +1,285 @@
+{
+  "id": "unit-03",
+  "level": "A1",
+  "number": 3,
+  "title": "Irregular Present Tense Verbs & Auxiliaries (sein & haben)",
+  "subtitle": "Master the irregular pillars of German and stem-vowel mutations",
+  "grammarFocus": ["Auxiliary 'sein' (to be)", "Auxiliary 'haben' (to have)", "Stem-Vowel Change e → i (helfen, sprechen, geben)", "Stem-Vowel Change e → ie (sehen, lesen)", "Stem-Vowel Change a → ä (fahren, schlafen)"],
+  "estimatedMinutes": 45,
+  "concept": {
+    "title": "The Irregular Pillars: sein, haben & Vowel Shifts",
+    "explanation": "German strong verbs undergo stem-vowel changes in the present tense. Fortunately, this change follows an ironclad rule: <rule>the vowel shift occurs ONLY in the 2nd person singular ('du') and 3rd person singular ('er / sie / es')</rule>. The plural forms (wir, ihr, sie/Sie) and 'ich' never mutate!\n\n### 1. The Super-Irregulars: 'sein' and 'haben'\n- **sein** (to be) is completely irregular: <nom>ich</nom> <verb>bin</verb>, <nom>du</nom> <verb>bist</verb>, <nom>er/sie/es</nom> <verb>ist</verb>, <nom>wir</nom> <verb>sind</verb>, <nom>ihr</nom> <verb>seid</verb>, <nom>sie/Sie</nom> <verb>sind</verb>.\n- **haben** (to have) drops the 'b' in du and er/sie/es: <nom>ich</nom> <verb>habe</verb>, <nom>du</nom> <verb>hast</verb>, <nom>er/sie/es</nom> <verb>hat</verb>, <nom>wir</nom> <verb>haben</verb>, <nom>ihr</nom> <verb>habt</verb>, <nom>sie/Sie</nom> <verb>haben</verb>.\n\n### 2. The 3 Classic Vowel Shifts\n1. **e → i**: *sprechen* (to speak), *helfen* (to help), *geben* (to give), *treffen* (to meet)\n   - *ich spreche* vs. *du spr<rule>i</rule>chst*, *er spr<rule>i</rule>cht* (Plural: *wir sprechen, ihr sprecht, sie sprechen*)\n2. **e → ie**: *sehen* (to see), *lesen* (to read)\n   - *ich sehe* vs. *du s<rule>ie</rule>hst*, *sie s<rule>ie</rule>ht*\n   - *ich lese* vs. *du l<rule>ie</rule>st*, *er l<rule>ie</rule>st*\n3. **a → ä**: *fahren* (to drive/travel), *schlafen* (to sleep), *tragen* (to carry/wear)\n   - *ich fahre* vs. *du f<rule>ä</rule>hrst*, *er f<rule>ä</rule>hrt*",
+    "tables": [
+      {
+        "caption": "Irregular Conjugation Matrix: sein, haben, sprechen, sehen, fahren",
+        "headers": ["Pronoun", "sein", "haben", "sprechen (e→i)", "sehen (e→ie)", "fahren (a→ä)"],
+        "rows": [
+          ["ich", "bin", "habe", "spreche", "sehe", "fahre"],
+          ["du", "bist", "hast", "sprichst", "siehst", "fährst"],
+          ["er / sie / es", "ist", "hat", "spricht", "sieht", "fährt"],
+          ["wir", "sind", "haben", "sprechen", "sehen", "fahren"],
+          ["ihr", "seid", "habt", "sprecht", "seht", "fahrt"],
+          ["sie / Sie", "sind", "haben", "sprechen", "sehen", "fahren"]
+        ]
+      }
+    ],
+    "deepDives": [
+      {
+        "title": "Watch Out for 'ihr'!",
+        "content": "English speakers frequently make the mistake of mutating the vowel on 'ihr' (e.g. saying 'ihr fahrt' with an umlaut or 'ihr sprecht' with an 'i'). Remember: 'ihr' NEVER mutates! It always uses the standard infinitive stem: ihr fahrt, ihr sprecht, ihr seht.",
+        "warning": true
+      }
+    ]
+  },
+  "workedExamples": [
+    {
+      "german": "Er spricht sehr gut Deutsch und liest jeden Tag die Zeitung.",
+      "english": "He speaks German very well and reads the newspaper every day.",
+      "breakdown": [
+        {"part": "Er", "role": "Subject Pronoun (3rd sg.)", "caseType": "nom"},
+        {"part": "spricht", "role": "Irregular Verb (sprechen)", "caseType": "verb", "explanation": "e → i stem mutation for 'er'"},
+        {"part": "sehr gut Deutsch", "role": "Adverbial + Language Object"},
+        {"part": "und", "role": "Conjunction (Pos 0)"},
+        {"part": "liest", "role": "Irregular Verb (lesen)", "caseType": "verb", "explanation": "e → ie stem mutation for 'er'"},
+        {"part": "jeden Tag", "role": "Temporal Adverbial (Time)"},
+        {"part": "die Zeitung", "role": "Accusative Object (Newspaper)", "caseType": "akk"}
+      ]
+    },
+    {
+      "german": "Fährst du am Wochenende nach Hamburg?",
+      "english": "Are you driving to Hamburg on the weekend?",
+      "breakdown": [
+        {"part": "Fährst", "role": "Irregular Verb in Pos 1", "caseType": "verb", "explanation": "a → ä mutation for 'du'; Verb in Pos 1 creates a Yes/No question"},
+        {"part": "du", "role": "Subject", "caseType": "nom"},
+        {"part": "am Wochenende", "role": "Time Phrase"},
+        {"part": "nach Hamburg", "role": "Directional Destination"}
+      ]
+    }
+  ],
+  "guidedPractice": [
+    {
+      "id": "a1-u03-e1",
+      "type": "fill_in_blank",
+      "instruction": "Insert the mutated form of 'sprechen' for 'du':",
+      "prompt": "Welche Sprachen ___ du? (sprechen)",
+      "target": "sprichst",
+      "acceptableAnswers": ["sprichst"],
+      "explanation": "'sprechen' mutates e → i in 2nd person singular: du sprichst.",
+      "grammarTopic": "Stem-Vowel Change"
+    },
+    {
+      "id": "a1-u03-e2",
+      "type": "multiple_choice",
+      "instruction": "Select the correct form of 'sein' for 'ihr':",
+      "prompt": "___ ihr heute Abend zu Hause?",
+      "target": "Seid",
+      "options": ["Bist", "Sind", "Seid", "Ist"],
+      "explanation": "The 2nd person plural form of 'sein' is 'ihr seid'.",
+      "grammarTopic": "Auxiliary sein"
+    },
+    {
+      "id": "a1-u03-e3",
+      "type": "fill_in_blank",
+      "instruction": "Conjugate 'fahren' for 'er' (watch out for the umlaut):",
+      "prompt": "Lukas ___ jeden Morgen mit der U-Bahn zur Universität.",
+      "target": "fährt",
+      "acceptableAnswers": ["fährt"],
+      "explanation": "'fahren' mutates a → ä in 3rd person singular: er fährt.",
+      "grammarTopic": "Stem-Vowel Change"
+    },
+    {
+      "id": "a1-u03-e4",
+      "type": "error_spotting",
+      "instruction": "Identify the misspelled verb in this sentence:",
+      "prompt": "Click the incorrect verb form:",
+      "target": "seht",
+      "errorSpotting": {
+        "tokens": ["Maria", "sieht", "einen", "Film", "und", "ihr", "sieht", "auch", "fern."],
+        "errorIndex": 6,
+        "correctedToken": "seht",
+        "explanation": "For 'ihr', verbs do NOT mutate! The correct form is 'ihr seht', not 'ihr sieht'."
+      },
+      "explanation": "Stem-vowel shifts occur only for du and er/sie/es. The form for 'ihr' must be 'seht'.",
+      "grammarTopic": "Irregular Verbs"
+    },
+    {
+      "id": "a1-u03-e5",
+      "type": "sentence_reorder",
+      "instruction": "Construct a correct question with verb-first order:",
+      "prompt": "Do you have time tomorrow?",
+      "tokens": ["Hast", "du", "morgen", "Zeit?"],
+      "target": "Hast du morgen Zeit?",
+      "explanation": "Closed questions start with the conjugated verb: Hast du morgen Zeit?",
+      "grammarTopic": "Auxiliary haben"
+    }
+  ],
+  "vocabulary": [
+    {
+      "word": "sein",
+      "english": "to be",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Wir sind sehr glücklich hier.",
+      "exampleTranslation": "We are very happy here."
+    },
+    {
+      "word": "haben",
+      "english": "to have",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Ich habe eine Frage.",
+      "exampleTranslation": "I have a question."
+    },
+    {
+      "word": "sprechen",
+      "english": "to speak",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Er spricht fließend Deutsch und Englisch.",
+      "exampleTranslation": "He speaks German and English fluently."
+    },
+    {
+      "word": "sehen",
+      "english": "to see / watch",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Siehst du den Fernsehturm?",
+      "exampleTranslation": "Do you see the TV tower?"
+    },
+    {
+      "word": "fahren",
+      "english": "to drive / ride / travel",
+      "partOfSpeech": "verb",
+      "exampleSentence": "Fährst du mit dem Zug?",
+      "exampleTranslation": "Are you traveling by train?"
+    },
+    {
+      "article": "die",
+      "word": "Zeit",
+      "plural": "Zeiten",
+      "english": "time",
+      "partOfSpeech": "noun",
+      "exampleSentence": "Hast du heute Zeit?",
+      "exampleTranslation": "Do you have time today?"
+    }
+  ],
+  "readingPassage": {
+    "title": "Ein normaler Tag bei Familie Berg (A Normal Day with the Berg Family)",
+    "germanText": "Herr Berg ist Lehrer. Er hat viel Arbeit, aber er liest gern Bücher. Frau Berg arbeitet in einer Bank. Jeden Morgen fährt sie mit dem Fahrrad zur Arbeit. Ihr Sohn Tim ist sieben Jahre alt. Er spricht schon ein bisschen Englisch und hilft oft seiner Mutter in der Küche. Am Abend sind alle zusammen zu Hause.",
+    "englishSummary": "Mr. Berg is a teacher. He has a lot of work, but he likes reading books. Mrs. Berg works at a bank. Every morning she rides her bicycle to work. Their son Tim is seven years old. He already speaks a little English and often helps his mother in the kitchen. In the evening, everyone is home together.",
+    "glossary": [
+      {"word": "Lehrer", "meaning": "teacher", "grammarNote": "der Lehrer"},
+      {"word": "Fahrrad", "meaning": "bicycle", "grammarNote": "das Fahrrad"},
+      {"word": "hilft", "meaning": "helps", "grammarNote": "helfen (e→i mutation)"}
+    ],
+    "comprehensionQuestions": [
+      {
+        "question": "How does Frau Berg travel to work each morning?",
+        "options": ["By bus", "By train", "By bicycle (mit dem Fahrrad)", "By car"],
+        "correctIndex": 2,
+        "explanation": "The passage states: 'Jeden Morgen fährt sie mit dem Fahrrad zur Arbeit.'"
+      },
+      {
+        "question": "What is the irregular 3rd person singular form of 'helfen' used for Tim?",
+        "options": ["helft", "hilft", "helfen", "helt"],
+        "correctIndex": 1,
+        "explanation": "The text states: '...und hilft oft seiner Mutter' (helfen undergoes e → i mutation)."
+      }
+    ]
+  },
+  "listeningDialogue": {
+    "title": "Verabredung zum Kaffee (Meeting for Coffee)",
+    "speakers": ["Jonas", "Lena"],
+    "lines": [
+      {"speaker": "Jonas", "text": "Hallo Lena! Hast du heute Nachmittag Zeit?", "translation": "Hello Lena! Do you have time this afternoon?"},
+      {"speaker": "Lena", "text": "Leider nein, Jonas. Ich fahre heute nach Potsdam zu meiner Tante.", "translation": "Unfortunately no, Jonas. I am driving to Potsdam today to visit my aunt."},
+      {"speaker": "Jonas", "text": "Schade! Und wie sieht es morgen aus?", "translation": "Too bad! And how does tomorrow look?"},
+      {"speaker": "Lena", "text": "Morgen ist super. Da habe ich frei!", "translation": "Tomorrow is great. I have the day off then!"}
+    ],
+    "questions": [
+      {
+        "question": "Why can Lena not meet Jonas today?",
+        "options": ["She is sick", "She drives to Potsdam to her aunt", "She has to work", "She has no car"],
+        "correctIndex": 1,
+        "explanation": "Lena explains: 'Ich fahre heute nach Potsdam zu meiner Tante.'"
+      }
+    ]
+  },
+  "production": {
+    "writing": {
+      "prompt": "Describe your daily routine using at least three irregular verbs (e.g. fahren, lesen, sprechen, sehen, haben, sein).",
+      "guidelines": [
+        "Include what time you have breakfast or start work",
+        "Mention how you travel (fahren) to work or school",
+        "Use 'lesen' or 'sprechen' to describe an activity"
+      ],
+      "sampleResponse": "Ich bin Student in Wien. Jeden Morgen fahre ich mit der Straßenbahn zur Universität. Dort spreche ich viel Deutsch mit meinen Kommilitonen. Am Abend lese ich Fachbücher und sehe manchmal fern.",
+      "selfCheckRubric": [
+        "Did you conjugate irregular verbs correctly for 'ich' (fahre, spreche, lese, sehe)?",
+        "Are all nouns capitalized (Student, Wien, Straßenbahn, Universität, Deutsch, Kommilitonen, Abend, Fachbücher)?",
+        "Did you keep the verb in Position 2 in each main sentence?"
+      ]
+    },
+    "speaking": {
+      "prompt": "Practice the stem-vowel mutations by speaking this sentence aloud:",
+      "targetSentence": "Er spricht drei Sprachen und fährt jeden Tag mit dem Zug.",
+      "translation": "He speaks three languages and travels every day by train.",
+      "phoneticTips": "Pay attention to the short crisp 'i' in 'spricht' (/ʃpʁɪçt/) and the rounded 'ä' in 'fährt' (/fɛːɐ̯t/)."
+    }
+  },
+  "unitTest": {
+    "passingScore": 80,
+    "questions": [
+      {
+        "id": "u03-test-1",
+        "type": "fill_in_blank",
+        "instruction": "Test 1: Conjugate 'sehen' for 'du':",
+        "prompt": "___ du den Hund dort? (sehen)",
+        "target": "Siehst",
+        "acceptableAnswers": ["Siehst", "siehst"],
+        "explanation": "'sehen' undergoes an e → ie stem change for du: du siehst.",
+        "grammarTopic": "Stem-Vowel Change"
+      },
+      {
+        "id": "u03-test-2",
+        "type": "multiple_choice",
+        "instruction": "Test 2: Which pronoun triggers a stem vowel shift in German?",
+        "prompt": "Stem vowel shifts occur for which group of pronouns?",
+        "target": "du and er/sie/es only",
+        "options": ["All singular pronouns (ich, du, er)", "du and er/sie/es only", "ihr and wir only", "All pronouns"],
+        "explanation": "Stem-vowel mutations occur exclusively in 2nd and 3rd person singular (du, er/sie/es).",
+        "grammarTopic": "Stem Mutation Rules"
+      },
+      {
+        "id": "u03-test-3",
+        "type": "fill_in_blank",
+        "instruction": "Test 3: Supply the correct form of 'haben' for 'ihr':",
+        "prompt": "___ ihr heute eure Bücher dabei? (haben)",
+        "target": "Habt",
+        "acceptableAnswers": ["Habt", "habt"],
+        "explanation": "The 2nd person plural of 'haben' is 'ihr habt'.",
+        "grammarTopic": "Auxiliary haben"
+      },
+      {
+        "id": "u03-test-4",
+        "type": "transformation",
+        "instruction": "Test 4: Change the subject from 'Ich' to 'Er':",
+        "prompt": "Change subject to 'Er':",
+        "transformationRule": {
+          "from": "Ich fahre nach Köln.",
+          "to": "Er fährt nach Köln.",
+          "baseSentence": "Ich fahre nach Köln."
+        },
+        "target": "Er fährt nach Köln.",
+        "explanation": "Changing from 'ich fahre' to 'er' requires the a → ä shift: 'Er fährt nach Köln.'",
+        "grammarTopic": "Stem-Vowel Change"
+      },
+      {
+        "id": "u03-test-5",
+        "type": "multiple_choice",
+        "instruction": "Test 5: Conjugate 'lesen' for 'er':",
+        "prompt": "Der Professor ___ einen wichtigen wissenschaftlichen Artikel.",
+        "target": "liest",
+        "options": ["lest", "liest", "leset", "leist"],
+        "explanation": "'lesen' changes e → ie: er liest.",
+        "grammarTopic": "Stem-Vowel Change"
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "adjective-endings",
+  "title": "Adjective Declension Matrix (Adjektivdeklination)",
+  "level": "A2-B1",
+  "summary": "Adjectives placed before a noun take an ending based on three variables: 1) What kind of article precedes it (Definite, Indefinite, or No article), 2) The gender/number of the noun, and 3) The grammatical case.",
+  "tables": [
+    {
+      "title": "Typ 1: Weak Declension (After Definite Article: der, die, das)",
+      "description": "Rule of thumb: In the 'pocket' (Nominativ m/f/n and Akkusativ f/n), the ending is '-e'. Everywhere else, it is '-en'.",
+      "headers": ["Case", "Masculine", "Feminine", "Neuter", "Plural"],
+      "rows": [
+        ["Nominativ", "der alt<rule>-e</rule> Mann", "die neu<rule>-e</rule> Schule", "das klein<rule>-e</rule> Kind", "die alt<rule>-en</rule> Bücher"],
+        ["Akkusativ", "den alt<rule>-en</rule> Mann", "die neu<rule>-e</rule> Schule", "das klein<rule>-e</rule> Kind", "die alt<rule>-en</rule> Bücher"],
+        ["Dativ", "dem alt<rule>-en</rule> Mann", "der neu<rule>-en</rule> Schule", "dem klein<rule>-en</rule> Kind", "den alt<rule>-en</rule> Büchern"],
+        ["Genitiv", "des alt<rule>-en</rule> Mannes", "der neu<rule>-en</rule> Schule", "des klein<rule>-en</rule> Kindes", "der alt<rule>-en</rule> Bücher"]
+      ]
+    },
+    {
+      "title": "Typ 2: Mixed Declension (After Indefinite Article: ein, kein, mein...)",
+      "description": "When the article lacks a distinct case marker (ein Mann, ein Kind), the adjective must provide it (-er, -es).",
+      "headers": ["Case", "Masculine", "Feminine", "Neuter", "Plural (keine/meine)"],
+      "rows": [
+        ["Nominativ", "ein alt<rule>-er</rule> Mann", "eine neu<rule>-e</rule> Schule", "ein klein<rule>-es</rule> Kind", "keine alt<rule>-en</rule> Bücher"],
+        ["Akkusativ", "einen alt<rule>-en</rule> Mann", "eine neu<rule>-e</rule> Schule", "ein klein<rule>-es</rule> Kind", "keine alt<rule>-en</rule> Bücher"],
+        ["Dativ", "einem alt<rule>-en</rule> Mann", "einer neu<rule>-en</rule> Schule", "einem klein<rule>-en</rule> Kind", "keinen alt<rule>-en</rule> Büchern"],
+        ["Genitiv", "eines alt<rule>-en</rule> Mannes", "einer neu<rule>-en</rule> Schule", "eines klein<rule>-en</rule> Kindes", "keiner alt<rule>-en</rule> Bücher"]
+      ]
+    },
+    {
+      "title": "Typ 3: Strong Declension (No Article Preceding)",
+      "description": "With no article, the adjective takes the ending of the definite article (with genitive m/n exception: -en).",
+      "headers": ["Case", "Masculine", "Feminine", "Neuter", "Plural"],
+      "rows": [
+        ["Nominativ", "gut<rule>-er</rule> Kaffee", "frisch<rule>-e</rule> Milch", "kalt<rule>-es</rule> Wasser", "rot<rule>-e</rule> Äpfel"],
+        ["Akkusativ", "gut<rule>-en</rule> Kaffee", "frisch<rule>-e</rule> Milch", "kalt<rule>-es</rule> Wasser", "rot<rule>-e</rule> Äpfel"],
+        ["Dativ", "gut<rule>-em</rule> Kaffee", "frisch<rule>-er</rule> Milch", "kalt<rule>-em</rule> Wasser", "rot<rule>-en</rule> Äpfeln"],
+        ["Genitiv", "gut<rule>-en</rule> Kaffees", "frisch<rule>-er</rule> Milch", "kalt<rule>-en</rule> Wassers", "rot<rule>-er</rule> Äpfel"]
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "name": "The Marker Principle",
+      "explanation": "German demands that gender and case be clearly signaled on a noun phrase. If the determiner doesn't show it (e.g. ein in Nominativ masculine), the adjective must show it with '-er'. If the determiner already signals it (der), the adjective rests with a weak '-e'.",
+      "examples": [
+        {
+          "german": "Hier steht ein groß<rule>-er</rule> Tisch.",
+          "english": "Here stands a big table.",
+          "breakdown": "'ein' has no ending, so the adjective carries the masculine nominative marker '-er'"
+        },
+        {
+          "german": "Hier steht der groß<rule>-e</rule> Tisch.",
+          "english": "Here stands the big table.",
+          "breakdown": "'der' already shows masculine nominative, so the adjective takes weak '-e'"
+        }
+      ]
+    }
+  ]
+}
