@@ -5,6 +5,9 @@ import { ExerciseItem } from "@/lib/types";
 import { ExerciseContainer } from "../exercises/ExerciseContainer";
 import { CheckCircle, AlertTriangle, RotateCcw, ArrowRight, ShieldCheck } from "lucide-react";
 import Link from "next/link";
+import { RegionScene, type RegionKey } from "@/components/illustrations/RegionScenes";
+import { PassportStamp } from "@/components/journey/JourneyUI";
+import { Ampelmann } from "@/components/journey/JourneyUI";
 
 interface UnitReviewTestProps {
   unitTitle: string;
@@ -69,18 +72,19 @@ export function UnitReviewTest({
       <div className="rounded-xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm space-y-6">
         <div className="border-b border-slate-200 pb-4 text-center sm:text-left">
           <div className="text-xs uppercase tracking-wider font-semibold text-slate-500 mb-1">
-            Unit {unitNumber} Mastery Evaluation
+            Ankunft · Kapitel {unitNumber} · {unitTitle}
           </div>
           <h2 className="text-2xl font-bold text-slate-900 tracking-tight">
-            {passed ? "Unit Mastery Achieved" : "Benchmark Score Not Reached"}
+            {passed ? "Ihr Zug fährt weiter" : "Noch nicht angekommen"}
           </h2>
         </div>
 
+        {passed && !nextUnitId && <div className="arrival-landscape" data-region={({A1:"koeln",A2:"schwarzwald",B1:"berlin",B2:"alpen"} as Record<string,RegionKey>)[level] || "alpen"}><RegionScene region={({A1:"koeln",A2:"schwarzwald",B1:"berlin",B2:"alpen"} as Record<string,RegionKey>)[level] || "alpen"} className="arrival-scene"/><div className="arrival-copy"><p>ANKUNFT · NÄCHSTE REGION</p><h3>{({A1:"Rhein & Köln",A2:"Schwarzwald",B1:"Berlin",B2:"Alpen & Zugspitze"} as Record<string,string>)[level] || "Zugspitze"}</h3><PassportStamp region={level} label="BESTANDEN"/></div></div>}
         {/* Score indicator */}
         <div className="flex flex-col sm:flex-row items-center justify-between p-6 rounded-lg bg-slate-50 border border-slate-200 gap-4">
           <div className="flex items-center gap-4">
             <div
-              className={`w-16 h-16 rounded-full flex items-center justify-center font-bold text-2xl border-2 ${
+              className={`w-16 h-16 flex items-center justify-center font-bold text-2xl border-2 ${
                 passed
                   ? "bg-emerald-50 text-emerald-800 border-emerald-500"
                   : "bg-amber-50 text-amber-800 border-amber-500"
@@ -93,7 +97,7 @@ export function UnitReviewTest({
                 {correctCount} of {questions.length} Questions Correct
               </div>
               <div className="text-xs text-slate-500">
-                Passing benchmark: 80% required to advance to next unit
+                Passing benchmark: 80 % für die nächste Station
               </div>
             </div>
           </div>
@@ -101,13 +105,13 @@ export function UnitReviewTest({
           <div className="text-sm font-medium text-slate-700">
             {passed ? (
               <span className="inline-flex items-center gap-1.5 text-emerald-700 font-semibold">
-                <ShieldCheck className="w-5 h-5 text-emerald-600" />
-                Curriculum Requirement Satisfied
+                <Ampelmann state="correct" />
+                Reisepass abgestempelt · Kapitel bestanden
               </span>
             ) : (
               <span className="inline-flex items-center gap-1.5 text-amber-700 font-semibold">
                 <AlertTriangle className="w-5 h-5 text-amber-600" />
-                Targeted review recommended
+                Verspätung · Thema noch einmal prüfen
               </span>
             )}
           </div>
@@ -117,7 +121,7 @@ export function UnitReviewTest({
         {failedAnswers.length > 0 && (
           <div className="space-y-3">
             <div className="text-sm font-semibold text-slate-900">
-              Diagnostic Analysis: Topics Requiring Reinforcement
+              Verspätete Themen · Wiederholung empfohlen
             </div>
             <div className="space-y-2">
               {failedAnswers.map((item, idx) => (
@@ -148,23 +152,23 @@ export function UnitReviewTest({
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg border border-slate-300 hover:bg-slate-50 text-slate-800 text-sm font-medium transition-colors cursor-pointer"
           >
             <RotateCcw className="w-4 h-4 text-slate-500" />
-            <span>Retake Evaluation</span>
+            <span>Kapitel noch einmal üben</span>
           </button>
 
           {passed && nextUnitId ? (
             <Link
               href={`/learn/${level.toLowerCase()}/${nextUnitId}`}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold transition-colors shadow-sm"
+              className="btn btn-primary"
             >
-              <span>Advance to Next Unit</span>
+              <span>Weiter zur nächsten Station</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           ) : (
             <Link
               href={`/dashboard`}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white text-sm font-semibold transition-colors shadow-sm"
+              className="btn btn-primary"
             >
-              <span>Back to Dashboard</span>
+              <span>Zum Reiseplan</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           )}
@@ -183,7 +187,7 @@ export function UnitReviewTest({
             Unit {unitNumber} Mastery Test: {unitTitle}
           </h3>
           <p className="text-xs text-slate-500">
-            Pass with 80% or higher to demonstrate conceptual mastery.
+            Ab 80 % gilt diese Station als erreicht.
           </p>
         </div>
         <div className="text-xs font-mono bg-slate-100 text-slate-700 px-3 py-1 rounded">

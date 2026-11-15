@@ -42,16 +42,16 @@ export function GrammarHandbookClient({ topics }: GrammarHandbookClientProps) {
           type="text"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          placeholder="Search grammar rules, prepositions, case endings (e.g. 'dative', 'Wechselpräpositionen', 'adjective endings', 'V2')..."
+          placeholder="Suchen: Fälle, Präpositionen, Endungen, Wortstellung …"
           className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-slate-300 bg-white text-sm text-slate-900 focus:outline-none focus:border-slate-800 shadow-xs"
         />
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+      <div className="grammar-index-layout">
         {/* Topic navigation tabs */}
-        <div className="lg:col-span-1 space-y-1.5">
+        <div className="grammar-index">
           <div className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider px-2">
-            Handbook Topics ({filteredTopics.length})
+            Register · Themen ({filteredTopics.length})
           </div>
           {filteredTopics.map((topic) => {
             const isSelected = activeTopic?.id === topic.id;
@@ -60,10 +60,10 @@ export function GrammarHandbookClient({ topics }: GrammarHandbookClientProps) {
                 key={topic.id}
                 type="button"
                 onClick={() => setSelectedTopicId(topic.id)}
-                className={`w-full text-left p-3 rounded-lg border transition-all cursor-pointer ${
+                className={`grammar-index-tab w-full text-left p-3 cursor-pointer ${
                   isSelected
-                    ? "bg-slate-900 text-white border-slate-900 shadow-sm"
-                    : "bg-white text-slate-700 border-slate-200 hover:border-slate-300 hover:bg-slate-50"
+                    ? "selected"
+                    : ""
                 }`}
               >
                 <div className="flex items-center justify-between text-xs mb-1">
@@ -84,7 +84,7 @@ export function GrammarHandbookClient({ topics }: GrammarHandbookClientProps) {
         </div>
 
         {/* Selected Topic Content */}
-        <div className="lg:col-span-3 space-y-8">
+        <div className="grammar-content space-y-8">
           {activeTopic ? (
             <div className="space-y-8">
               {/* Overview Card */}
@@ -107,7 +107,7 @@ export function GrammarHandbookClient({ topics }: GrammarHandbookClientProps) {
                 <div className="space-y-6">
                   <div className="flex items-center gap-2 text-sm font-bold text-slate-900 uppercase tracking-wider">
                     <Table className="w-4 h-4 text-slate-500" />
-                    <span>Reference Matrices</span>
+                    <span>Tabellen · Übersicht</span>
                   </div>
 
                   {activeTopic.tables.map((tb, idx) => (
@@ -115,7 +115,7 @@ export function GrammarHandbookClient({ topics }: GrammarHandbookClientProps) {
                       key={idx}
                       className="rounded-xl border border-slate-200 overflow-hidden shadow-xs bg-white"
                     >
-                      <div className="p-4 bg-slate-50 border-b border-slate-200 space-y-0.5">
+                      <div className="p-4 bg-panel-rich border-b border-rule space-y-0.5">
                         <h3 className="text-sm font-bold text-slate-900">
                           {tb.title}
                         </h3>
@@ -126,7 +126,7 @@ export function GrammarHandbookClient({ topics }: GrammarHandbookClientProps) {
                         )}
                       </div>
                       <div className="overflow-x-auto">
-                        <table className="min-w-full divide-y divide-slate-200 text-xs sm:text-sm">
+                        <table className="journey-table min-w-full text-sm">
                           <thead className="bg-slate-100">
                             <tr>
                               {tb.headers.map((h, hIdx) => (
@@ -170,7 +170,7 @@ export function GrammarHandbookClient({ topics }: GrammarHandbookClientProps) {
                 <div className="space-y-4">
                   <div className="flex items-center gap-2 text-sm font-bold text-slate-900 uppercase tracking-wider">
                     <Lightbulb className="w-4 h-4 text-amber-500" />
-                    <span>Core Grammar Mechanics</span>
+                    <span>Regeln · Mechanik</span>
                   </div>
 
                   <div className="space-y-4">
@@ -189,7 +189,7 @@ export function GrammarHandbookClient({ topics }: GrammarHandbookClientProps) {
                         {rule.examples && rule.examples.length > 0 && (
                           <div className="space-y-2 pt-2 border-t border-slate-100">
                             <div className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider">
-                              Illustrative Examples:
+                              Beispiele:
                             </div>
                             {rule.examples.map((ex, exIdx) => (
                               <div
@@ -204,7 +204,7 @@ export function GrammarHandbookClient({ topics }: GrammarHandbookClientProps) {
                                 </div>
                                 {ex.breakdown && (
                                   <div className="text-[11px] text-indigo-700">
-                                    Mechanism: {ex.breakdown}
+                                    Merke: {ex.breakdown}
                                   </div>
                                 )}
                               </div>
@@ -219,7 +219,7 @@ export function GrammarHandbookClient({ topics }: GrammarHandbookClientProps) {
             </div>
           ) : (
             <div className="p-12 text-center text-slate-500 text-sm bg-white rounded-xl border border-slate-200">
-              No matching grammar topics found for &ldquo;{searchTerm}&rdquo;. Try searching for &ldquo;case&rdquo;, &ldquo;verb&rdquo;, &ldquo;preposition&rdquo;, or &ldquo;connectors&rdquo;.
+              Keine passende Regel für &ldquo;{searchTerm}&rdquo;. Prüfen Sie einen anderen Suchbegriff.
             </div>
           )}
         </div>

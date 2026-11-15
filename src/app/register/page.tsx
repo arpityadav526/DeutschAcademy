@@ -40,16 +40,16 @@ export default function RegisterPage() {
   };
 
   return (
-    <div className="max-w-md mx-auto px-4 py-16 space-y-6">
+    <div className="book-page ticket-register space-y-6">
       <div className="text-center space-y-2">
-        <div className="w-10 h-10 rounded-lg bg-slate-900 text-white flex items-center justify-center font-serif font-bold text-lg mx-auto shadow-sm">
+        <div className="ticket-logo mx-auto">
           D
         </div>
         <h1 className="text-2xl font-bold text-slate-900 font-serif">
-          Create Learner Profile
+          Reisepass beantragen
         </h1>
         <p className="text-xs text-slate-500">
-          Begin your structured German journey with persistent progress tracking.
+          Legen Sie Ihren Reisepass an, bevor Sie die erste Station erreichen.
         </p>
       </div>
 
@@ -64,7 +64,7 @@ export default function RegisterPage() {
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-1">
             <label className="text-xs font-semibold text-slate-700">
-              Full Name
+              Name im Reisepass
             </label>
             <input
               type="text"
@@ -78,7 +78,7 @@ export default function RegisterPage() {
 
           <div className="space-y-1">
             <label className="text-xs font-semibold text-slate-700">
-              Email Address
+              E-Mail-Adresse
             </label>
             <input
               type="email"
@@ -92,7 +92,7 @@ export default function RegisterPage() {
 
           <div className="space-y-1">
             <label className="text-xs font-semibold text-slate-700">
-              Password (min. 6 characters)
+              Passwort (mindestens 6 Zeichen)
             </label>
             <input
               type="password"
@@ -108,17 +108,17 @@ export default function RegisterPage() {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 disabled:opacity-40 text-white text-xs font-semibold shadow-sm transition-all flex items-center justify-center gap-2 cursor-pointer"
+            className="btn btn-primary w-full justify-center"
           >
             {isLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : null}
-            <span>Register & Start Learning</span>
+            <span>Reisepass anlegen</span>
           </button>
         </form>
 
         <div className="pt-2 border-t border-slate-100 text-center text-xs text-slate-600">
-          Already have an account?{" "}
-          <Link href="/login" className="font-semibold text-indigo-700 hover:underline">
-            Sign in
+          Schon unterwegs?{" "}
+          <Link href="/login" className="font-bold text-nordseeblau hover:underline">
+            Anmelden
           </Link>
         </div>
       </div>

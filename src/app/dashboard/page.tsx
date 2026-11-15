@@ -2,6 +2,7 @@ import React from "react";
 import { getCurrentUser } from "@/lib/session";
 import { prisma } from "@/lib/db";
 import { getCurriculum } from "@/lib/content";
+import { AltitudeMeter, DepartureBoard, RouteMap, PassportStamp, Wegweiser } from "@/components/journey/JourneyUI";
 import Link from "next/link";
 
 export default async function DashboardPage() {
@@ -56,60 +57,47 @@ export default async function DashboardPage() {
     };
   });
 
+  const currentLevel = (user?.currentLevel || "A1").toUpperCase();
+  const currentRegion = ({ A1: "hamburg", A2: "koeln", B1: "schwarzwald", B2: "berlin", C1: "alpen" } as const)[currentLevel as "A1" | "A2" | "B1" | "B2" | "C1"] || "hamburg";
+  const altitude = ({ A1: 0, A2: 37, B1: 1493, B2: 2400, C1: 2962 } as const)[currentLevel as "A1" | "A2" | "B1" | "B2" | "C1"] || 0;
+  const journeyProgress = Math.round((altitude / 2962) * 100);
+
   return (
-    <div className="book-page space-y-10 py-10">
+    <div className="book-page space-y-10 py-10" data-region={currentRegion}>
       {/* Studienbuch header */}
       <header className="border-b border-rule pb-5">
         <p className="running-head">
-          <span>Studienbuch · Studienlog</span>
+          <span>Reiseplan · Studienbuch</span>
           <span>Heute: {new Date().toLocaleDateString("de-DE")}</span>
         </p>
         <h1 className="text-2xl sm:text-3xl font-bold text-ink tracking-tight font-serif mt-5">
-          Ihr Studienbuch
+          Ihr Reiseplan
         </h1>
         <p className="text-sm text-ink-soft mt-1 max-w-2xl">
-          A quiet record of where you stand: today&apos;s Wiederholung, weak spots to revisit,
-          and the curriculum as a table of contents. Nothing here shouts — it just informs.
+          Your route through Germany: today&apos;s departures, topics to revisit, current station and the height still ahead.
         </p>
       </header>
 
-      {/* Today's line — like a diary entry */}
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
-        <div className="space-y-1">
-          <span className="margin-note-label">Aktuelles Niveau</span>
-          <div className="text-3xl font-serif font-bold text-ink tabular-nums">
-            {user?.currentLevel || "A1"}
-          </div>
-          <p className="text-xs text-ink-soft">
-            Based on unit mastery and diagnostic evaluations
-          </p>
-        </div>
-        <div className="space-y-1">
-          <span className="margin-note-label">Heute fällig</span>
-          <div className="text-3xl font-serif font-bold text-ink tabular-nums">
-            {dueReviewCount}
-          </div>
-          <p className="text-xs text-ink-soft">
-            Karten und Sätze zur Wiederholung (SM-2-Intervall)
-          </p>
-        </div>
-        <div className="space-y-1">
-          <span className="margin-note-label">A1 bestanden</span>
-          <div className="text-3xl font-serif font-bold text-ink tabular-nums">
-            {levelStats.find((l) => l.levelId === "A1")?.percentage || 0}
-            <span className="text-lg text-ink-soft"> %</span>
-          </div>
-          <p className="text-xs text-ink-soft">
-            {levelStats.find((l) => l.levelId === "A1")?.completedUnits || 0} von 14 Kapiteln
-            mit ≥ 80 % bestanden
-          </p>
+      <section className="journey-dashboard-top">
+        <RouteMap active={currentRegion} />
+        <AltitudeMeter altitude={altitude} progress={journeyProgress} />
+        <div className="journey-today">
+          <div className="space-y-1"><span className="margin-note-label">Aktuelle Station</span><div className="text-3xl font-bold text-ink">{currentLevel}</div><p className="text-xs text-ink-soft">{altitude.toLocaleString("de-DE")} m · Reisestrecke {journeyProgress} %</p></div>
+          <div className="space-y-1"><span className="margin-note-label">Heute fällig</span><div className="text-3xl font-bold text-ink">{dueReviewCount}</div><p className="text-xs text-ink-soft">Karten und Sätze zur Wiederholung</p></div>
+          <div className="space-y-1"><span className="margin-note-label">A1 angekommen</span><div className="text-3xl font-bold text-ink">{levelStats.find((l) => l.levelId === "A1")?.completedUnits || 0}<span className="text-base"> / 14</span></div><p className="text-xs text-ink-soft">Kapitel bestanden</p></div>
         </div>
       </section>
 
-      {/* Curriculum as table of contents with progress marks */}
+      <section className="space-y-4">
+        <h2 className="text-lg font-bold text-ink font-serif">Abfahrt · Heute</h2>
+        <DepartureBoard rows={dueReviewCount ? [{ title: "Wiederholung · " + dueReviewCount + " fällige Karten", track: "3", time: "pünktlich", status: "Abfahrt" }, { title: "Grammatik wiederholen", track: "2", time: "bereit", status: "Einfahrt" }] : [{ title: "Keine fälligen Wiederholungen", track: "—", time: "frei", status: "Pünktlich" }]} />
+        {dueReviewCount > 0 && <Link href="/review" className="btn btn-primary">Zum Gleis · Wiederholung öffnen →</Link>}
+      </section>
+
+      {/* Curriculum as route schedule */}
       <section className="space-y-4">
         <div className="border-b border-rule pb-2 flex items-baseline justify-between">
-          <h2 className="text-lg font-bold text-ink font-serif">Fortschritt im Lehrplan</h2>
+          <h2 className="text-lg font-bold text-ink font-serif">Fahrplan · Stationen</h2>
           <span className="eyebrow">80 % pro Kapitel</span>
         </div>
 
@@ -131,7 +119,7 @@ export default async function DashboardPage() {
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <div className="space-y-4">
           <div className="border-b border-rule pb-2 flex items-baseline justify-between">
-            <h2 className="text-lg font-bold text-ink font-serif">Schwachstellen</h2>
+            <h2 className="text-lg font-bold text-ink font-serif">Verspätungen · Themen zur Wiederholung</h2>
             <Link
               href="/grammar"
               className="text-xs text-tintenblau hover:underline underline-offset-4"
@@ -166,8 +154,7 @@ export default async function DashboardPage() {
               ))
             ) : (
               <div className="margin-note">
-                No recurring weak spots recorded yet. Mistakes during unit tests and
-                exercises are automatically collected here for targeted revision.
+                No delays logged. When a grammar rule needs more practice, it will appear here as a station to revisit.
               </div>
             )}
           </div>
@@ -221,11 +208,11 @@ export default async function DashboardPage() {
         </div>
       </section>
 
-      <div className="pt-2">
-        <Link href="/review" className="btn btn-primary">
-          Wiederholung beginnen ({dueReviewCount} fällig)
-        </Link>
-      </div>
+      <section className="passport-preview">
+        <div><p className="eyebrow">Reisepass · Ihre bisherigen Ankünfte</p><h2>Stempel gesammelt</h2><p>Nach bestandenen Kapiteln wartet ein neuer Eintrag für Ihren Reisepass.</p></div>
+        <div className="passport-stamps-row">{levelStats.filter((level) => level.completedUnits > 0).map((level) => <PassportStamp key={level.levelId} region={level.levelId} label="BESTANDEN" />)}{!levelStats.some((level) => level.completedUnits > 0) && <PassportStamp region="HAMBURG" label="ERSTE STATION" />}</div>
+        <Wegweiser label="Reisepass ansehen" href="/reisepass" />
+      </section>
     </div>
   );
 }

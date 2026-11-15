@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Source_Serif_4, Hanken_Grotesk, UnifrakturCook } from "next/font/google";
+import { Source_Serif_4, Barlow_Condensed, UnifrakturCook } from "next/font/google";
 import { Header } from "@/components/navigation/Header";
 
 const serifReading = Source_Serif_4({
@@ -9,8 +9,9 @@ const serifReading = Source_Serif_4({
   variable: "--font-reading",
 });
 
-const groteskUI = Hanken_Grotesk({
+const wayfinding = Barlow_Condensed({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
   display: "swap",
   variable: "--font-interface",
 });
@@ -36,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <body
-        className={`min-h-full flex flex-col bg-paper text-ink font-sans ${serifReading.variable} ${groteskUI.variable} ${frakturWordmark.variable}`}
+        className={`min-h-full flex flex-col bg-paper text-ink font-sans ${serifReading.variable} ${wayfinding.variable} ${frakturWordmark.variable}`}
       >
         <Header />
         <main className="flex-1">{children}</main>

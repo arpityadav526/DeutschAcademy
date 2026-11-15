@@ -54,10 +54,10 @@ export function GrammarText({ content, className = "" }: GrammarHighlightProps) 
           elements.push(
             <span
               key={`nom-${keyCounter++}`}
-              className="inline-block px-1.5 py-0.5 mx-0.5 rounded font-medium bg-blue-50 text-blue-800 border border-blue-200 text-sm"
-              title="Nominativ (Subject)"
+              className="grammar-inline case-nom"
+              title="Nominativ (Nom.)"
             >
-              {text}
+              {text}<span className="case-tag">Nom.</span>
             </span>
           );
           break;
@@ -65,8 +65,8 @@ export function GrammarText({ content, className = "" }: GrammarHighlightProps) 
           elements.push(
             <span
               key={`akk-${keyCounter++}`}
-              className="inline-block px-1.5 py-0.5 mx-0.5 rounded font-medium bg-red-50 text-red-800 border border-red-200 text-sm"
-              title="Akkusativ (Direct Object)"
+              className="grammar-inline case-akk"
+              title="Akkusativ (Akk.)"
             >
               {text}
             </span>
@@ -76,8 +76,8 @@ export function GrammarText({ content, className = "" }: GrammarHighlightProps) 
           elements.push(
             <span
               key={`dat-${keyCounter++}`}
-              className="inline-block px-1.5 py-0.5 mx-0.5 rounded font-medium bg-amber-50 text-amber-800 border border-amber-200 text-sm"
-              title="Dativ (Indirect Object / Static Location)"
+              className="grammar-inline case-dat"
+              title="Dativ (Dat.)"
             >
               {text}
             </span>
@@ -87,8 +87,8 @@ export function GrammarText({ content, className = "" }: GrammarHighlightProps) 
           elements.push(
             <span
               key={`gen-${keyCounter++}`}
-              className="inline-block px-1.5 py-0.5 mx-0.5 rounded font-medium bg-emerald-50 text-emerald-800 border border-emerald-200 text-sm"
-              title="Genitiv (Possession / Relation)"
+              className="grammar-inline case-gen"
+              title="Genitiv (Gen.)"
             >
               {text}
             </span>
@@ -98,8 +98,8 @@ export function GrammarText({ content, className = "" }: GrammarHighlightProps) 
           elements.push(
             <span
               key={`verb-${keyCounter++}`}
-              className="inline-block px-1.5 py-0.5 mx-0.5 rounded font-semibold bg-purple-50 text-purple-800 border border-purple-200 text-sm underline decoration-purple-400 decoration-2"
-              title="Verb Position"
+              className="verb-pos"
+              title="Verbposition — Verbzweitstellung / Verbendstellung"
             >
               {text}
             </span>
@@ -109,7 +109,7 @@ export function GrammarText({ content, className = "" }: GrammarHighlightProps) 
           elements.push(
             <span
               key={`pref-${keyCounter++}`}
-              className="inline-block px-1.5 py-0.5 mx-0.5 rounded font-medium bg-fuchsia-50 text-fuchsia-800 border border-fuchsia-200 text-sm"
+              className="grammar-inline grammar-prefix"
               title="Separable Verb Prefix"
             >
               {text}
@@ -120,7 +120,7 @@ export function GrammarText({ content, className = "" }: GrammarHighlightProps) 
           elements.push(
             <span
               key={`rule-${keyCounter++}`}
-              className="inline-block px-2 py-0.5 mx-1 font-mono text-xs rounded bg-slate-100 text-slate-800 border border-slate-300 font-semibold"
+              className="grammar-rule-mark"
             >
               {text}
             </span>

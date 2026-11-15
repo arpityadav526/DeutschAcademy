@@ -185,25 +185,25 @@ export default function PlacementTestPage() {
     ).length;
 
     return (
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12 space-y-8">
+      <div className="book-page fare-inspection space-y-8" data-region="berlin">
         <div className="rounded-xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm space-y-6">
           <div className="border-b border-slate-200 pb-4">
             <span className="text-xs font-mono font-bold uppercase tracking-wider text-slate-500">
-              Diagnostic Placement Evaluation
+              Fahrkartenkontrolle · Einstufung
             </span>
             <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-serif mt-1">
-              Recommended Placement: Level {placement.recommendedLevel}
+              Startbahnhof empfohlen · {placement.recommendedLevel}
             </h1>
           </div>
 
           <div className="p-5 rounded-lg bg-slate-50 border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="flex items-center gap-4">
-              <div className="w-16 h-16 rounded-full bg-slate-900 text-white font-mono font-bold text-2xl flex items-center justify-center shrink-0">
+              <div className="w-16 h-16 bg-ubahn text-ink font-mono font-bold text-2xl flex items-center justify-center shrink-0 border-2 border-ink">
                 {placement.recommendedLevel}
               </div>
               <div className="space-y-1">
                 <div className="text-sm font-bold text-slate-900">
-                  Diagnostic Score: {totalCorrect} / {PLACEMENT_QUESTIONS.length} Questions Correct
+                  Fahrkartenkontrolle: {totalCorrect} / {PLACEMENT_QUESTIONS.length} Fragen richtig
                 </div>
                 <div className="text-xs text-slate-600 leading-relaxed">
                   {placement.rationale}
@@ -215,21 +215,21 @@ export default function PlacementTestPage() {
           {/* Action Choice */}
           <div className="space-y-3 pt-2">
             <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
-              Choose Your Path Forward:
+              Bitte wählen Sie Ihren Startbahnhof:
             </div>
             <div className="flex flex-col sm:flex-row items-center gap-3">
               <Link
                 href={`/learn/${placement.recommendedLevel.toLowerCase()}/${placement.recommendedUnit}`}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm transition-colors shadow-sm"
+                className="btn btn-primary"
               >
-                <span>Accept Placement: Start at {placement.recommendedLevel}</span>
+                <span>Fahrkarte lösen · Start in {placement.recommendedLevel}</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
                 href="/learn/a1/unit-01"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg border border-slate-300 hover:bg-slate-100 text-slate-700 font-medium text-sm transition-colors"
               >
-                <span>Start at A1 Unit 1 Anyway</span>
+                <span>Doch lieber in Hamburg starten</span>
               </Link>
             </div>
           </div>
@@ -237,7 +237,7 @@ export default function PlacementTestPage() {
           {/* Review of all answers */}
           <div className="pt-6 border-t border-slate-200 space-y-4">
             <h3 className="text-sm font-bold text-slate-900 uppercase tracking-wider">
-              Question Diagnostics & Feedback
+              Prüfvermerk · Antworten
             </h3>
             <div className="space-y-3">
               {PLACEMENT_QUESTIONS.map((q, idx) => {
@@ -246,7 +246,7 @@ export default function PlacementTestPage() {
                 return (
                   <div
                     key={q.id}
-                    className={`p-3.5 rounded-lg border text-xs space-y-1 ${
+                    className={`fare-result text-sm space-y-1 ${
                       isCorrect
                         ? "bg-emerald-50/50 border-emerald-200"
                         : "bg-red-50/50 border-red-200"
@@ -282,7 +282,7 @@ export default function PlacementTestPage() {
                 className="inline-flex items-center gap-1.5 text-xs text-slate-500 hover:text-slate-800 cursor-pointer"
               >
                 <RotateCcw className="w-3.5 h-3.5" />
-                <span>Retake Placement Exam</span>
+                <span>Kontrolle wiederholen</span>
               </button>
             </div>
           </div>
@@ -295,18 +295,18 @@ export default function PlacementTestPage() {
   const selected = selectedAnswers[currentIndex];
 
   return (
-    <div className="max-w-2xl mx-auto px-4 sm:px-6 py-12 space-y-6">
+    <div className="book-page fare-inspection space-y-6" data-region="berlin">
       <div className="border-b border-slate-200 pb-3 flex items-center justify-between">
         <div>
           <span className="text-xs font-mono font-bold uppercase tracking-wider text-slate-500">
-            Adaptive Placement Examination
+            Fahrkartenkontrolle · Startbahnhof
           </span>
           <h1 className="text-xl font-bold text-slate-900 font-serif">
-            Question {currentIndex + 1} of {PLACEMENT_QUESTIONS.length}
+            Frage {currentIndex + 1} von {PLACEMENT_QUESTIONS.length}
           </h1>
         </div>
         <div className="px-2.5 py-1 rounded bg-slate-100 text-slate-800 font-mono text-xs font-semibold">
-          Level Tier: {currentQ.level}
+          Streckenklasse: {currentQ.level}
         </div>
       </div>
 
@@ -323,7 +323,7 @@ export default function PlacementTestPage() {
                 key={optIdx}
                 type="button"
                 onClick={() => handleSelect(optIdx)}
-                className={`w-full p-3.5 rounded-lg border text-left text-sm transition-all cursor-pointer flex items-center justify-between ${
+                className={`fare-option w-full p-3.5 text-left text-base transition-all cursor-pointer flex items-center justify-between ${
                   isSelected
                     ? "border-slate-900 bg-slate-100 font-semibold text-slate-900 ring-1 ring-slate-900"
                     : "border-slate-200 hover:border-slate-400 bg-white text-slate-800"
@@ -343,18 +343,18 @@ export default function PlacementTestPage() {
             href="/learn/a1/unit-01"
             className="text-xs text-slate-500 hover:text-slate-800"
           >
-            Skip test and start at A1 Unit 1 →
+            Ohne Kontrolle in Hamburg einsteigen →
           </Link>
 
           <button
             type="button"
             onClick={handleNext}
             disabled={selected === undefined}
-            className="px-5 py-2 rounded-md bg-slate-900 hover:bg-slate-800 disabled:opacity-40 text-white text-xs font-semibold shadow-sm transition-all cursor-pointer"
+            className="btn btn-primary"
           >
             {currentIndex + 1 === PLACEMENT_QUESTIONS.length
-              ? "Complete Diagnostic"
-              : "Next Question"}
+              ? "Kontrolle beenden"
+              : "Nächste Frage"}
           </button>
         </div>
       </div>

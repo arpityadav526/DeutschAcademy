@@ -51,18 +51,18 @@ export default function ExamPrepPage() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
+    <div className="book-page exam-rail space-y-6" data-region="berlin">
       {/* Header */}
       <div className="border-b border-slate-200 pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2">
             <Award className="w-6 h-6 text-indigo-700" />
             <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-serif">
-              Goethe-Zertifikat Exam Preparation Lab
+              Fahrkartenkontrolle · Goethe-Zertifikat
             </h1>
           </div>
           <p className="text-xs sm:text-sm text-slate-500 mt-1">
-            Official test-format practice sets for B1 and B2 certifications: Lesen, Hören, Schreiben, and Sprechen.
+            Prüfungstraining für B1 und B2 · Lesen, Hören, Schreiben und Sprechen.
           </p>
         </div>
 
@@ -180,7 +180,7 @@ export default function ExamPrepPage() {
               className="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-slate-100 text-slate-800 text-xs font-semibold hover:bg-slate-200"
             >
               <Play className="w-3 h-3 text-emerald-600" />
-              <span>Start Timed Exam</span>
+              <span>Prüfungszeit starten</span>
             </button>
           )}
         </div>

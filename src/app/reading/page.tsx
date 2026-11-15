@@ -26,16 +26,16 @@ export default function ReadingLibraryPage() {
   ];
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+    <div className="book-page reading-library space-y-8">
       <div className="border-b border-slate-200 pb-4">
         <div className="flex items-center gap-2">
           <FileText className="w-5 h-5 text-indigo-700" />
           <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-serif">
-            Graded Reading Lab (Leseverstehen)
+            Lesesaal · Leseverstehen
           </h1>
         </div>
         <p className="text-xs sm:text-sm text-slate-500 mt-1">
-          Graded, authentic German texts across CEFR levels with interactive word glosses and sentence saving for spaced repetition.
+          Texts to read on your journey, from the first station onward.
         </p>
       </div>
 
@@ -46,9 +46,9 @@ export default function ReadingLibraryPage() {
               <span>{item.unitTitle}</span>
               <Link
                 href={item.unitLink}
-                className="text-indigo-700 hover:text-indigo-900 inline-flex items-center gap-1 font-medium"
+                className="text-tintenblau hover:underline inline-flex items-center gap-1 font-medium"
               >
-                <span>Go to full unit lesson</span>
+                <span>Zur ganzen Lektion</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>

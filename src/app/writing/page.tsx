@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Sparkles, CheckSquare, Send, BookOpen, GraduationCap, Loader2 } from "lucide-react";
+import { Postcard, Wegweiser } from "@/components/journey/JourneyUI";
 
 interface WritingPrompt {
   id: string;
@@ -132,21 +133,22 @@ export default function WritingStudioPage() {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
+    <div className="book-page writing-journey space-y-6" data-region="berlin">
       <div className="border-b border-slate-200 pb-4">
         <div className="flex items-center gap-2">
           <GraduationCap className="w-6 h-6 text-indigo-700" />
           <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight font-serif">
-            Writing Practice Studio (Schreibwerkstatt)
+            Postkarten aus Berlin · Schreibwerkstatt
           </h1>
         </div>
         <p className="text-xs sm:text-sm text-slate-500 mt-1">
-          Craft structured German essays and correspondence across CEFR levels. Features Claude AI grammatical analysis with automated self-check fallbacks.
+          Write a letter, a postcard, or a considered essay. Leave room in the margin for corrections.
         </p>
       </div>
 
+      <Postcard region="berlin" greeting="Guten Tag aus Berlin!">Wählen Sie eine Aufgabe, schreiben Sie eine Nachricht und prüfen Sie anschließend die Grammatik.</Postcard>
       {/* Level / Prompt Selector */}
-      <div className="grid grid-cols-1 sm:grid-cols-4 gap-2.5">
+      <div className="writing-level-selector">
         {WRITING_PROMPTS.map((p) => {
           const isSelected = p.id === activePrompt.id;
           return (
@@ -161,7 +163,7 @@ export default function WritingStudioPage() {
               }`}
             >
               <div className="text-[10px] font-mono uppercase font-bold tracking-wider mb-0.5 opacity-80">
-                Level {p.level}
+                Streckenklasse · {p.level}
               </div>
               <div className="text-xs font-bold truncate">{p.title}</div>
             </button>
@@ -174,7 +176,7 @@ export default function WritingStudioPage() {
         <div className="border-b border-slate-100 pb-3">
           <div className="flex items-center gap-2">
             <span className="px-2 py-0.5 rounded bg-slate-100 text-slate-800 text-xs font-mono font-bold">
-              {activePrompt.level} Assignment
+              {activePrompt.level} · Aufgabe
             </span>
             <h2 className="text-lg font-bold text-slate-900 font-serif">
               {activePrompt.title}
@@ -188,14 +190,14 @@ export default function WritingStudioPage() {
         {/* Prompt Card */}
         <div className="p-4 bg-slate-50 rounded-lg border border-slate-200 space-y-2">
           <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
-            Assignment Prompt:
+            Aufgabenstellung:
           </div>
           <div className="text-sm font-serif font-bold text-slate-900">
             {activePrompt.prompt}
           </div>
           <div className="pt-2 border-t border-slate-200/60 space-y-1">
             <div className="text-[11px] font-semibold text-slate-600 uppercase tracking-wider">
-              Stylistic & Grammatical Guidelines:
+              Hinweise für Stil und Grammatik:
             </div>
             <ul className="list-disc list-inside text-xs text-slate-600 space-y-0.5">
               {activePrompt.guidelines.map((g, idx) => (
@@ -208,13 +210,13 @@ export default function WritingStudioPage() {
         {/* Writing input */}
         <div className="space-y-2">
           <label className="text-xs font-semibold text-slate-700">
-            Your German Composition:
+            Ihre Postkarte / Ihr Brief:
           </label>
           <textarea
             rows={8}
             value={userText}
             onChange={(e) => setUserText(e.target.value)}
-            placeholder="Write your text here in natural German..."
+            placeholder="Schreiben Sie Ihre Nachricht auf Deutsch …"
             className="w-full p-4 font-serif text-sm text-slate-900 rounded-lg border border-slate-300 focus:border-slate-800 focus:outline-none shadow-inner leading-relaxed resize-y"
           />
         </div>
@@ -222,21 +224,21 @@ export default function WritingStudioPage() {
         {/* Action Button */}
         <div className="flex justify-between items-center pt-2">
           <div className="text-xs text-slate-400 font-mono">
-            {userText.split(/\s+/).filter(Boolean).length} words
+            {userText.split(/\s+/).filter(Boolean).length} Wörter
           </div>
 
           <button
             type="button"
             onClick={handleEvaluate}
             disabled={!userText.trim() || isLoading}
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 disabled:opacity-40 text-white text-xs font-semibold shadow-sm transition-all cursor-pointer"
+            className="btn btn-primary"
           >
             {isLoading ? (
               <Loader2 className="w-4 h-4 animate-spin text-white" />
             ) : (
-              <Sparkles className="w-4 h-4 text-amber-400" />
+              <span className="font-bold">✎</span>
             )}
-            <span>{isLoading ? "Analyzing..." : "Evaluate Writing"}</span>
+            <span>{isLoading ? "Wird geprüft …" : "Text korrigieren lassen"}</span>
           </button>
         </div>
 
@@ -244,8 +246,8 @@ export default function WritingStudioPage() {
         {feedback && (
           <div className="p-5 rounded-lg bg-indigo-50/70 border border-indigo-200 space-y-2 animate-in fade-in">
             <div className="font-bold text-indigo-950 text-sm flex items-center gap-2">
-              <Sparkles className="w-4 h-4 text-indigo-600" />
-              <span>Diagnostic Feedback & Evaluation Report</span>
+              <span className="margin-red">✎</span>
+              <span>Randkorrektur · Lehrerhinweis</span>
             </div>
             <div className="text-xs sm:text-sm text-slate-800 whitespace-pre-line leading-relaxed font-sans">
               {feedback}
@@ -256,8 +258,8 @@ export default function WritingStudioPage() {
         {/* Self-check checklist */}
         <div className="p-4 bg-slate-50 rounded-lg border border-slate-200 space-y-2.5">
           <div className="text-xs font-semibold text-slate-800 flex items-center gap-1.5">
-            <CheckSquare className="w-4 h-4 text-slate-600" />
-            <span>Self-Correction Diagnostic Rubric:</span>
+            <CheckSquare className="w-4 h-4 text-tannengruen" />
+            <span>Selbstkontrolle:</span>
           </div>
           <div className="space-y-1.5">
             {activePrompt.selfCheckRubric.map((item, idx) => (

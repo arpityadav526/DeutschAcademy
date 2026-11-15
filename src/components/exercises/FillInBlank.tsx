@@ -30,8 +30,8 @@ export function FillInBlank({ exercise, onSubmitResult, isSubmitted }: ExerciseP
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
-      <div className="text-sm font-medium text-slate-700">
-        {exercise.instruction}
+      <div className="text-sm font-semibold text-ink-soft">
+        Übung · {exercise.instruction}
       </div>
 
       <div className="bg-slate-50 p-4 rounded-lg border border-slate-200 text-base sm:text-lg text-slate-900 leading-relaxed font-serif">
@@ -43,8 +43,8 @@ export function FillInBlank({ exercise, onSubmitResult, isSubmitted }: ExerciseP
               value={value}
               onChange={(e) => setValue(e.target.value)}
               disabled={isSubmitted}
-              placeholder="?"
-              className="inline-block mx-1.5 px-3 py-1 text-center font-sans font-medium text-base rounded border-2 border-slate-300 focus:border-slate-800 focus:outline-none bg-white min-w-[120px] shadow-inner transition-colors"
+              placeholder="…"
+              className="journey-blank inline-block mx-1.5 px-2 py-0.5 text-center min-w-[120px]"
               autoFocus
             />
             {parts[1]}
@@ -57,8 +57,8 @@ export function FillInBlank({ exercise, onSubmitResult, isSubmitted }: ExerciseP
               value={value}
               onChange={(e) => setValue(e.target.value)}
               disabled={isSubmitted}
-              placeholder="Enter German answer..."
-              className="w-full px-3 py-2 text-base rounded border-2 border-slate-300 focus:border-slate-800 focus:outline-none bg-white shadow-inner"
+              placeholder="Deutsche Antwort hier …"
+              className="journey-blank w-full px-2 py-2 text-lg"
               autoFocus
             />
           </div>
@@ -67,7 +67,7 @@ export function FillInBlank({ exercise, onSubmitResult, isSubmitted }: ExerciseP
 
       {exercise.contextSentence && (
         <div className="text-xs text-slate-500 italic">
-          Context hint: {exercise.contextSentence}
+          Hinweis: {exercise.contextSentence}
         </div>
       )}
 
@@ -76,9 +76,9 @@ export function FillInBlank({ exercise, onSubmitResult, isSubmitted }: ExerciseP
           <button
             type="submit"
             disabled={!value.trim()}
-            className="px-5 py-2 rounded-md bg-slate-900 hover:bg-slate-800 disabled:opacity-40 text-white text-sm font-semibold transition-all cursor-pointer shadow-sm"
+            className="btn btn-primary"
           >
-            Check Answer
+            Antwort prüfen
           </button>
         </div>
       )}

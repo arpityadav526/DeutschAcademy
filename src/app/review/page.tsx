@@ -13,6 +13,7 @@ import {
   Loader2,
 } from "lucide-react";
 import { AudioButton } from "@/components/lesson/AudioButton";
+import { DepartureBoard, Postcard } from "@/components/journey/JourneyUI";
 
 interface SRSReviewItem {
   id: string;
@@ -76,7 +77,7 @@ export default function ReviewPage() {
 
   if (loading) {
     return (
-      <div className="max-w-2xl mx-auto px-4 py-24 text-center space-y-3">
+      <div className="book-page max-w-2xl py-24 text-center space-y-3">
         <Loader2 className="w-8 h-8 animate-spin text-slate-800 mx-auto" />
         <div className="text-sm font-medium text-slate-600">
           Loading your daily spaced repetition queue...
@@ -94,12 +95,12 @@ export default function ReviewPage() {
         </div>
         <div className="space-y-2">
           <h1 className="text-2xl font-bold text-slate-900 font-serif">
-            Daily Review Queue Complete
+            Abfahrtstafel · Heute erledigt
           </h1>
           <p className="text-sm text-slate-600 leading-relaxed max-w-md mx-auto">
             {reviewedCount > 0
-              ? `You have reviewed ${reviewedCount} items today according to the SuperMemo-2 interval algorithm.`
-              : "You have no pending spaced repetition cards due right now. Items are scheduled as you study units and save sentences."}
+              ? `You reviewed ${reviewedCount} cards today. They are now scheduled for another departure.`
+              : "No cards are due. New review cards are scheduled as you study lessons and save sentences."}
           </p>
         </div>
 
@@ -108,14 +109,14 @@ export default function ReviewPage() {
             href="/learn/a1/unit-01"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-5 py-2.5 rounded-lg bg-slate-900 text-white text-xs font-semibold hover:bg-slate-800 shadow-sm"
           >
-            <span>Continue Curriculum Lessons</span>
+            <span>Weiterlernen · A1</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </Link>
           <Link
             href="/dashboard"
             className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-5 py-2.5 rounded-lg border border-slate-300 text-slate-700 text-xs font-semibold hover:bg-slate-100"
           >
-            <span>View Progress Dashboard</span>
+            <span>Reiseplan ansehen</span>
           </Link>
         </div>
       </div>
@@ -125,17 +126,17 @@ export default function ReviewPage() {
   const current = items[currentIndex];
 
   return (
-    <div className="max-w-2xl mx-auto px-4 sm:px-6 py-10 space-y-6">
+    <div className="book-page max-w-3xl py-10 space-y-6">
       {/* Review Header */}
       <div className="border-b border-slate-200 pb-3 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <Brain className="w-5 h-5 text-indigo-700" />
           <h1 className="text-lg font-bold text-slate-900">
-            Spaced Repetition Review (SM-2)
+            Wiederholung · Abfahrt
           </h1>
         </div>
         <div className="text-xs font-mono bg-slate-100 px-2.5 py-1 rounded text-slate-700 font-semibold">
-          {currentIndex + 1} of {items.length} Due
+          {currentIndex + 1} von {items.length} fällig
         </div>
       </div>
 
@@ -143,24 +144,24 @@ export default function ReviewPage() {
       <div className="rounded-xl border border-slate-200 bg-white p-6 sm:p-8 shadow-sm space-y-6">
         <div className="flex items-center justify-between text-xs text-slate-500 border-b border-slate-100 pb-2">
           <span className="font-semibold text-slate-700 uppercase tracking-wider text-[10px]">
-            Contextual Sentence Recall
+            Karteikarte · Satz im Kontext
           </span>
           <span className="font-mono text-slate-600 bg-slate-100 px-2 py-0.5 rounded">
-            Topic: {current.grammarTopic}
+            Thema: {current.grammarTopic}
           </span>
         </div>
 
         {/* Prompt */}
         <div className="space-y-2">
           <div className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
-            Sentence in Context:
+            Aufgabe · Satz ergänzen:
           </div>
           <div className="text-xl font-serif text-slate-900 leading-relaxed font-medium">
             {current.prompt}
           </div>
           {current.translation && (
             <div className="text-xs text-slate-500 italic">
-              Meaning: &ldquo;{current.translation}&rdquo;
+              Bedeutung: &ldquo;{current.translation}&rdquo;
             </div>
           )}
         </div>
@@ -171,20 +172,20 @@ export default function ReviewPage() {
             <button
               type="button"
               onClick={() => setIsRevealed(true)}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-slate-900 text-white text-xs font-semibold hover:bg-slate-800 transition-all cursor-pointer shadow-sm"
+              className="btn btn-primary"
             >
               <Eye className="w-4 h-4" />
-              <span>Reveal Correct German Target</span>
+              <span>Lösung anzeigen</span>
             </button>
           </div>
         ) : (
           /* Revealed state */
-          <div className="space-y-6 pt-4 border-t border-slate-200 animate-in fade-in">
+          <div className="space-y-6 pt-4 border-t border-rule fade-in">
             <div className="p-4 rounded-lg bg-emerald-50/70 border border-emerald-200 space-y-2">
               <div className="flex items-start justify-between gap-2">
                 <div>
                   <div className="text-[11px] font-semibold text-emerald-800 uppercase tracking-wider">
-                    Target German Form:
+                    Lösung:
                   </div>
                   <div className="text-xl font-serif font-bold text-emerald-950 mt-0.5">
                     {current.answer}
@@ -195,7 +196,7 @@ export default function ReviewPage() {
 
               {current.explanation && (
                 <div className="text-xs text-emerald-900 pt-1 border-t border-emerald-200/60 leading-relaxed">
-                  <strong>Grammar Rationale: </strong>
+                  <strong>Regel: </strong>
                   {current.explanation}
                 </div>
               )}
@@ -204,7 +205,7 @@ export default function ReviewPage() {
             {/* SM-2 Recall Rating Buttons */}
             <div className="space-y-2">
               <div className="text-xs font-semibold text-slate-600 text-center">
-                Rate your recall difficulty (SM-2 interval scheduling):
+                Wie sicher erinnern Sie sich?
               </div>
               <div className="grid grid-cols-4 gap-2">
                 <button
@@ -212,8 +213,8 @@ export default function ReviewPage() {
                   onClick={() => handleGrade(1)}
                   className="p-2.5 rounded-lg border border-red-200 bg-red-50 hover:bg-red-100 text-red-900 text-xs font-medium transition-colors cursor-pointer"
                 >
-                  <div className="font-bold">Blackout</div>
-                  <div className="text-[10px] text-red-700">1 day reset</div>
+                  <div className="font-bold">Nicht gewusst</div>
+                  <div className="text-[10px] text-red-700">morgen erneut</div>
                 </button>
 
                 <button
@@ -221,8 +222,8 @@ export default function ReviewPage() {
                   onClick={() => handleGrade(2)}
                   className="p-2.5 rounded-lg border border-amber-200 bg-amber-50 hover:bg-amber-100 text-amber-900 text-xs font-medium transition-colors cursor-pointer"
                 >
-                  <div className="font-bold">Hard</div>
-                  <div className="text-[10px] text-amber-700">Repeat soon</div>
+                  <div className="font-bold">Schwierig</div>
+                  <div className="text-[10px] text-amber-700">bald wieder</div>
                 </button>
 
                 <button
@@ -230,8 +231,8 @@ export default function ReviewPage() {
                   onClick={() => handleGrade(4)}
                   className="p-2.5 rounded-lg border border-blue-200 bg-blue-50 hover:bg-blue-100 text-blue-900 text-xs font-medium transition-colors cursor-pointer"
                 >
-                  <div className="font-bold">Good</div>
-                  <div className="text-[10px] text-blue-700">Normal interval</div>
+                  <div className="font-bold">Gewusst</div>
+                  <div className="text-[10px] text-blue-700">nach Plan</div>
                 </button>
 
                 <button
@@ -239,8 +240,8 @@ export default function ReviewPage() {
                   onClick={() => handleGrade(5)}
                   className="p-2.5 rounded-lg border border-emerald-200 bg-emerald-50 hover:bg-emerald-100 text-emerald-900 text-xs font-medium transition-colors cursor-pointer"
                 >
-                  <div className="font-bold">Flawless</div>
-                  <div className="text-[10px] text-emerald-700">Extended gap</div>
+                  <div className="font-bold">Sicher</div>
+                  <div className="text-[10px] text-emerald-700">längere Pause</div>
                 </button>
               </div>
             </div>

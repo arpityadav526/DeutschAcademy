@@ -131,8 +131,8 @@ export function UnitClientWrapper({
         </div>
       )}
 
-      {/* Navigation tabs */}
-      <div className="border-b border-slate-200 overflow-x-auto scrollbar-none">
+      {/* Navigation tabs · station signposts */}
+      <div className="lesson-tab-rail overflow-x-auto scrollbar-none">
         <nav className="flex space-x-1 sm:space-x-2 min-w-max pb-1">
           {tabs.map((tab) => {
             const Icon = tab.icon;
@@ -142,11 +142,7 @@ export function UnitClientWrapper({
                 key={tab.id}
                 type="button"
                 onClick={() => setActiveTab(tab.id as any)}
-                className={`inline-flex items-center gap-2 px-3 py-2 text-xs sm:text-sm font-semibold border-b-2 transition-colors cursor-pointer ${
-                  active
-                    ? "border-slate-900 text-slate-900 bg-slate-100/50 rounded-t"
-                    : "border-transparent text-slate-500 hover:text-slate-800 hover:border-slate-300"
-                }`}
+                className={`lesson-tab ${active ? "active" : ""}`}
               >
                 <Icon className={`w-4 h-4 ${active ? "text-slate-900" : "text-slate-400"}`} />
                 <span>{tab.label}</span>
@@ -170,9 +166,9 @@ export function UnitClientWrapper({
               <button
                 type="button"
                 onClick={() => setActiveTab("examples")}
-                className="inline-flex items-center gap-1.5 px-4 py-2 bg-slate-900 text-white rounded-md text-xs font-semibold hover:bg-slate-800 cursor-pointer shadow-sm"
+                className="btn btn-primary"
               >
-                <span>Continue to Worked Examples</span>
+                <span>Weiter zu den Beispielen</span>
                 <ChevronRight className="w-4 h-4" />
               </button>
             </div>
@@ -189,14 +185,14 @@ export function UnitClientWrapper({
                 className="inline-flex items-center gap-1.5 px-4 py-2 border border-slate-300 text-slate-700 rounded-md text-xs font-semibold hover:bg-slate-50 cursor-pointer"
               >
                 <ChevronLeft className="w-4 h-4" />
-                <span>Back to Theory</span>
+                <span>Zur Theorie</span>
               </button>
               <button
                 type="button"
                 onClick={() => setActiveTab("practice")}
-                className="inline-flex items-center gap-1.5 px-4 py-2 bg-slate-900 text-white rounded-md text-xs font-semibold hover:bg-slate-800 cursor-pointer shadow-sm"
+                className="btn btn-primary"
               >
-                <span>Begin Guided Practice</span>
+                <span>Übung beginnen</span>
                 <ChevronRight className="w-4 h-4" />
               </button>
             </div>
@@ -208,25 +204,14 @@ export function UnitClientWrapper({
             <div className="border-b border-slate-200 pb-2 flex items-center justify-between">
               <div>
                 <h3 className="text-lg font-semibold text-slate-900 tracking-tight">
-                  Guided Practice Drills
+                  Übung · Geführtes Training
                 </h3>
                 <p className="text-xs text-slate-500">
-                  Step-by-step reinforcement with instant explanatory feedback.
+                  Schritt für Schritt üben; jede Rückmeldung erklärt die Regel.
                 </p>
               </div>
-              <div className="flex items-center gap-1.5">
-                {unit.guidedPractice.map((_, idx) => (
-                  <div
-                    key={idx}
-                    className={`w-2.5 h-2.5 rounded-full ${
-                      idx === practiceIndex
-                        ? "bg-slate-900 ring-2 ring-slate-400"
-                        : idx < completedPracticeCount
-                        ? "bg-emerald-500"
-                        : "bg-slate-200"
-                    }`}
-                  />
-                ))}
+              <div className="practice-stations" aria-label={`Übung ${practiceIndex + 1} von ${unit.guidedPractice.length}`}>
+                {unit.guidedPractice.map((_, idx) => <span key={idx} className={idx === practiceIndex ? "current" : idx < completedPracticeCount ? "passed" : ""}>{idx + 1}</span>)}
               </div>
             </div>
 
@@ -252,14 +237,14 @@ export function UnitClientWrapper({
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 border border-slate-300 text-slate-700 disabled:opacity-40 rounded text-xs font-medium cursor-pointer"
               >
                 <ChevronLeft className="w-3.5 h-3.5" />
-                <span>Previous Drill</span>
+                <span>Vorherige Übung</span>
               </button>
               <button
                 type="button"
                 onClick={() => setActiveTab("vocab")}
-                className="inline-flex items-center gap-1.5 px-4 py-2 bg-slate-900 text-white rounded-md text-xs font-semibold hover:bg-slate-800 cursor-pointer shadow-sm"
+                className="btn btn-primary"
               >
-                <span>Proceed to Thematic Vocabulary</span>
+                <span>Weiter zum Wortschatz</span>
                 <ChevronRight className="w-4 h-4" />
               </button>
             </div>
@@ -279,14 +264,14 @@ export function UnitClientWrapper({
                 className="inline-flex items-center gap-1.5 px-4 py-2 border border-slate-300 text-slate-700 rounded-md text-xs font-semibold hover:bg-slate-50 cursor-pointer"
               >
                 <ChevronLeft className="w-4 h-4" />
-                <span>Back to Practice</span>
+                <span>Zur Übung</span>
               </button>
               <button
                 type="button"
                 onClick={() => setActiveTab("immersion")}
-                className="inline-flex items-center gap-1.5 px-4 py-2 bg-slate-900 text-white rounded-md text-xs font-semibold hover:bg-slate-800 cursor-pointer shadow-sm"
+                className="btn btn-primary"
               >
-                <span>Reading & Listening Lab</span>
+                <span>Lese- und Hörsaal</span>
                 <ChevronRight className="w-4 h-4" />
               </button>
             </div>
@@ -311,14 +296,14 @@ export function UnitClientWrapper({
                 className="inline-flex items-center gap-1.5 px-4 py-2 border border-slate-300 text-slate-700 rounded-md text-xs font-semibold hover:bg-slate-50 cursor-pointer"
               >
                 <ChevronLeft className="w-4 h-4" />
-                <span>Back to Vocabulary</span>
+                <span>Zum Wortschatz</span>
               </button>
               <button
                 type="button"
                 onClick={() => setActiveTab("production")}
-                className="inline-flex items-center gap-1.5 px-4 py-2 bg-slate-900 text-white rounded-md text-xs font-semibold hover:bg-slate-800 cursor-pointer shadow-sm"
+                className="btn btn-primary"
               >
-                <span>Active Production Studio</span>
+                <span>Schreiben & Sprechen</span>
                 <ChevronRight className="w-4 h-4" />
               </button>
             </div>
@@ -335,14 +320,14 @@ export function UnitClientWrapper({
                 className="inline-flex items-center gap-1.5 px-4 py-2 border border-slate-300 text-slate-700 rounded-md text-xs font-semibold hover:bg-slate-50 cursor-pointer"
               >
                 <ChevronLeft className="w-4 h-4" />
-                <span>Back to Reading/Listening</span>
+                <span>Zu Lesen & Hören</span>
               </button>
               <button
                 type="button"
                 onClick={() => setActiveTab("test")}
-                className="inline-flex items-center gap-1.5 px-4 py-2 bg-slate-900 text-white rounded-md text-xs font-semibold hover:bg-slate-800 cursor-pointer shadow-sm"
+                className="btn btn-primary"
               >
-                <span>Take Unit Mastery Test</span>
+                <span>Kapitelkontrolle starten</span>
                 <ChevronRight className="w-4 h-4" />
               </button>
             </div>
@@ -371,7 +356,7 @@ export function UnitClientWrapper({
             className="inline-flex items-center gap-1 hover:text-slate-900 font-medium"
           >
             <ChevronLeft className="w-4 h-4" />
-            <span>Previous Unit</span>
+            <span>Vorherige Station</span>
           </Link>
         ) : (
           <div />
@@ -382,7 +367,7 @@ export function UnitClientWrapper({
             href={`/learn/${unit.level.toLowerCase()}/${nextUnitId}`}
             className="inline-flex items-center gap-1 hover:text-slate-900 font-medium"
           >
-            <span>Next Unit</span>
+            <span>Nächste Station</span>
             <ChevronRight className="w-4 h-4" />
           </Link>
         )}

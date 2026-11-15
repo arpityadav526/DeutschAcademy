@@ -8,7 +8,7 @@ import { GraduationCap, ArrowRight, Loader2, AlertCircle } from "lucide-react";
 export default function LoginPage() {
   const router = useRouter();
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [password, setPasswort] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -39,16 +39,16 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="max-w-md mx-auto px-4 py-16 space-y-6">
+    <div className="book-page ticket-login space-y-6">
       <div className="text-center space-y-2">
-        <div className="w-10 h-10 rounded-lg bg-slate-900 text-white flex items-center justify-center font-serif font-bold text-lg mx-auto shadow-sm">
+        <div className="ticket-logo mx-auto">
           D
         </div>
         <h1 className="text-2xl font-bold text-slate-900 font-serif">
-          Sign In to DeutschAcademy
+          Fahrkarte bitte · Anmelden
         </h1>
         <p className="text-xs text-slate-500">
-          Save your spaced repetition intervals, test scores, and weak-spot diagnostics.
+          Ihre Reise, gespeicherte Karten und Stempel sind hier sicher verwahrt.
         </p>
       </div>
 
@@ -63,7 +63,7 @@ export default function LoginPage() {
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="space-y-1">
             <label className="text-xs font-semibold text-slate-700">
-              Email Address
+              E-Mail-Adresse
             </label>
             <input
               type="email"
@@ -77,13 +77,13 @@ export default function LoginPage() {
 
           <div className="space-y-1">
             <label className="text-xs font-semibold text-slate-700">
-              Password
+              Passwort
             </label>
             <input
               type="password"
               required
               value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={(e) => setPasswort(e.target.value)}
               placeholder="••••••••"
               className="w-full px-3 py-2 text-sm rounded border border-slate-300 focus:outline-none focus:border-slate-800"
             />
@@ -92,17 +92,17 @@ export default function LoginPage() {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 disabled:opacity-40 text-white text-xs font-semibold shadow-sm transition-all flex items-center justify-center gap-2 cursor-pointer"
+            className="btn btn-primary w-full justify-center"
           >
             {isLoading ? <Loader2 className="w-4 h-4 animate-spin" /> : null}
-            <span>Sign In</span>
+            <span>Anmelden</span>
           </button>
         </form>
 
         <div className="pt-2 border-t border-slate-100 text-center text-xs text-slate-600">
-          Don&apos;t have an account yet?{" "}
-          <Link href="/register" className="font-semibold text-indigo-700 hover:underline">
-            Register here
+          Noch keinen Reisepass?{" "}
+          <Link href="/register" className="font-bold text-nordseeblau hover:underline">
+            Reisepass anlegen
           </Link>
         </div>
       </div>

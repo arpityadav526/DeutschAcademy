@@ -54,14 +54,14 @@ export function MultipleChoice({
             isSubmitted && isSelected && !isTarget;
 
           let btnClass =
-            "border-slate-200 bg-white hover:border-slate-400 text-slate-800";
+            "border-rule bg-panel hover:border-ink text-ink";
 
           if (isSelected && !isSubmitted) {
-            btnClass = "border-slate-900 bg-slate-100 font-semibold text-slate-900 ring-1 ring-slate-900";
+            btnClass = "border-ink bg-panel-rich font-semibold text-ink";
           } else if (isTarget) {
-            btnClass = "border-emerald-500 bg-emerald-50 text-emerald-900 font-semibold ring-1 ring-emerald-500";
+            btnClass = "border-moos bg-panel-rich text-tannengruen font-semibold highlight-ending";
           } else if (isWrongSelection) {
-            btnClass = "border-red-400 bg-red-50 text-red-900 line-through ring-1 ring-red-400";
+            btnClass = "border-signalrot bg-panel-rich text-signalrot rotstift-strike";
           }
 
           return (
@@ -70,7 +70,7 @@ export function MultipleChoice({
               type="button"
               onClick={() => handleSelect(option)}
               disabled={isSubmitted}
-              className={`p-3.5 rounded-lg border text-left text-sm transition-all cursor-pointer shadow-sm flex items-center justify-between ${btnClass}`}
+              className={`p-3.5 rounded-sm border-2 text-left text-base transition-all cursor-pointer flex items-center justify-between ${btnClass}`}
             >
               <span>{option}</span>
               <span className="text-xs font-mono text-slate-400 ml-2">
@@ -87,9 +87,9 @@ export function MultipleChoice({
             type="button"
             onClick={handleSubmit}
             disabled={!selectedOption}
-            className="px-5 py-2 rounded-md bg-slate-900 hover:bg-slate-800 disabled:opacity-40 text-white text-sm font-semibold transition-all cursor-pointer shadow-sm"
+            className="btn btn-primary"
           >
-            Check Answer
+            Antwort prüfen
           </button>
         </div>
       )}
