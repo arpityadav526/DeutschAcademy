@@ -2,9 +2,338 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Papier (light, default) */
+  --paper: #f4efe6;
+  --paper-deep: #ebe4d6;
+  --rule: #cfc6b3;
+  --ink: #1b1a17;
+  --ink-soft: #5c574d;
+  --tintenblau: #1f3a5f;
+  --rotstift: #a8321f;
+  --moos: #4f6b3a;
+  --textmarker: #f2d95c;
+
+  /* Grammar colour-coding (muted ink tones) */
+  --case-nom: #1f3a5f; /* tintenblau */
+  --case-akk: #a8321f; /* rotstift */
+  --case-dat: #765b27; /* umbra */
+  --case-gen: #4f6b3a; /* moos */
+  --case-verb: #1b1a17; /* ink — verb marked by double underline */
+  --case-prefix: #4a3b5c; /* muted plum */
+
+  --font-reading: "Source Serif 4", Georgia, serif;
+  --font-interface: "Hanken Grotesk", "Avenir Next", sans-serif;
+  --font-fraktur: "UnifrakturCook", serif;
+}
+
+.nacht {
+  --paper: #181714;
+  --paper-deep: #201e19;
+  --rule: #3a362c;
+  --ink: #e8e1d2;
+  --ink-soft: #b0a893;
+  --tintenblau: #8db4d8;
+  --rotstift: #d9796a;
+  --moos: #9db98a;
+  --textmarker: #8a7a2e;
+  --case-nom: #8db4d8;
+  --case-akk: #d9796a;
+  --case-dat: #c9ab6e;
+  --case-gen: #9db98a;
+  --case-verb: #e8e1d2;
+  --case-prefix: #b7a3c9;
+}
+
 @layer base {
+  html {
+    background: var(--paper);
+  }
   body {
-    @apply text-slate-900 bg-slate-50;
+    color: var(--ink);
+    background-color: var(--paper);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.035'/%3E%3C/svg%3E");
+    font-family: var(--font-interface);
     font-feature-settings: "rlig" 1, "calt" 1;
   }
+  h1, h2, h3, h4, .font-serif { font-family: var(--font-reading); }
+  p { color: inherit; }
+  a, button, input, textarea, select {
+    transition: color 160ms ease-out, background-color 160ms ease-out, border-color 160ms ease-out, opacity 160ms ease-out;
+  }
+  :focus-visible {
+    outline: 2px solid var(--tintenblau) !important;
+    outline-offset: 3px;
+  }
+  ::selection {
+    color: var(--ink);
+    background: color-mix(in srgb, var(--textmarker) 40%, transparent);
+  }
+  ::placeholder { color: var(--ink-soft); opacity: 0.7; }
+}
+
+/* Existing utility classes now draw from the printed palette. */
+@layer utilities {
+  .text-slate-900,.text-slate-800,.text-gray-900,.text-gray-800 { color: var(--ink) !important; }
+  .text-slate-700,.text-slate-600,.text-slate-500,.text-slate-400,.text-gray-700,.text-gray-600,.text-gray-500,.text-gray-400 { color: var(--ink-soft) !important; }
+  .text-indigo-900,.text-indigo-800,.text-indigo-700,.text-indigo-950,.text-blue-700,.text-blue-600,.text-indigo-500 { color: var(--tintenblau) !important; }
+  .text-amber-700,.text-amber-600,.text-red-600,.text-red-700,.text-red-900,.text-red-950,.text-red-500 { color: var(--rotstift) !important; }
+  .text-emerald-700,.text-green-700,.text-green-600,.text-emerald-900,.text-emerald-950,.text-emerald-800 { color: var(--moos) !important; }
+  .text-purple-800,.text-purple-900,.text-purple-700,.text-fuchsia-800,.text-fuchsia-700 { color: var(--case-prefix) !important; }
+  .bg-white,.bg-slate-50,.bg-gray-50 { background-color: var(--paper) !important; }
+  .bg-slate-100,.bg-gray-100 { background-color: var(--paper-deep) !important; }
+  .bg-slate-900,.bg-slate-800,.bg-indigo-700 { background-color: var(--tintenblau) !important; }
+  .bg-blue-50,.bg-amber-50,.bg-emerald-50,.bg-red-50,.bg-indigo-50 { background-color: color-mix(in srgb, var(--paper-deep) 70%, var(--paper)) !important; }
+  .bg-emerald-100,.bg-red-100,.bg-amber-100,.bg-blue-100,.bg-indigo-100 { background-color: color-mix(in srgb, var(--paper-deep) 60%, var(--paper)) !important; }
+  .bg-slate-200,.bg-gray-200 { background-color: var(--rule) !important; }
+  .border-slate-100,.border-slate-200,.border-slate-300,.border-gray-200,.border-gray-300 { border-color: var(--rule) !important; }
+  .hover\:bg-slate-50:hover,.hover\:bg-slate-100:hover,.hover\:bg-slate-200:hover { background-color: var(--paper-deep) !important; }
+  .hover\:bg-slate-800:hover,.hover\:bg-slate-900:hover { background-color: color-mix(in srgb, var(--tintenblau) 85%, var(--ink)) !important; }
+  .shadow-xs,.shadow-sm,.shadow,.shadow-md,.shadow-lg,.shadow-xl { box-shadow: none !important; }
+}
+
+/* ————————————————————————————————————————
+   Buchsatz (book typography) primitives
+———————————————————————————————————————— */
+
+.book-page { max-width: 74rem; margin-inline: auto; padding: 2.5rem 1.5rem; }
+
+.eyebrow {
+  color: var(--ink-soft);
+  font: 600 .68rem var(--font-interface);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.smallcaps {
+  font-variant: small-caps;
+  letter-spacing: .08em;
+}
+
+/* Kapitel running head */
+.running-head {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: .6rem;
+  color: var(--ink-soft);
+  font: 600 .72rem var(--font-interface);
+  letter-spacing: .1em; text-transform: uppercase;
+}
+
+/* Numbered reference-grammar paragraph: § 3.2 */
+.paragraph-num {
+  color: var(--tintenblau);
+  font: 600 .82rem var(--font-interface);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: .04em;
+  white-space: nowrap;
+}
+
+.reading-copy {
+  max-width: 65ch;
+  font: 1.19rem/1.65 var(--font-reading);
+}
+.german-example {
+  font-family: var(--font-reading);
+  font-size: 1.22rem;
+  line-height: 1.55;
+}
+.german-translation {
+  color: var(--ink-soft);
+  font-style: italic;
+  font-size: .95rem;
+}
+
+/* Tufte-style margin note */
+.margin-note {
+  border-left: 1px solid var(--rule);
+  padding: .2rem 0 .2rem 1rem;
+  color: var(--ink-soft);
+  font: .88rem/1.55 var(--font-reading);
+}
+.margin-note-label {
+  color: var(--ink-soft);
+  font: 600 .62rem var(--font-interface);
+  letter-spacing: .14em; text-transform: uppercase;
+}
+
+/* Printed-book tables */
+.book-table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.book-table th {
+  background: var(--paper-deep);
+  font: 600 .72rem var(--font-interface);
+  letter-spacing: .06em; text-transform: uppercase;
+  text-align: left;
+  border-bottom: 1px solid var(--rule);
+}
+.book-table th, .book-table td {
+  padding: .65rem .8rem;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+.book-table tbody tr:last-child td { border-bottom: none; }
+
+/* Workbook answer lines */
+.exercise-line {
+  border: 0;
+  border-bottom: 1px dotted var(--ink-soft);
+  border-radius: 0;
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--font-reading);
+}
+.exercise-line:focus { outline: none; border-bottom-color: var(--tintenblau); }
+.exercise-line::placeholder { color: var(--ink-soft); opacity: .55; }
+
+/* Textmarker highlight swipe (~40% highlighter) */
+.highlight-ending {
+  background: linear-gradient(to top, color-mix(in srgb, var(--textmarker) 40%, transparent) 55%, transparent 55%);
+  padding: 0 .1em;
+}
+
+/* Hand-drawn-feel underline */
+.hand-underline {
+  text-decoration: underline;
+  text-decoration-color: var(--tintenblau);
+  text-decoration-thickness: 2px;
+  text-decoration-style: solid;
+  text-underline-offset: .18em;
+  text-decoration-skip-ink: none;
+}
+
+/* Grammar gender cues: colour + distinct underline */
+.gender-der { color: var(--tintenblau); text-decoration: underline; text-decoration-style: solid; text-decoration-thickness: 2px; text-underline-offset: .15em; }
+.gender-die { color: var(--rotstift); text-decoration: underline; text-decoration-style: double; text-underline-offset: .15em; }
+.gender-das { color: var(--moos); text-decoration: underline; text-decoration-style: wavy; text-underline-offset: .18em; }
+
+/* Case abbreviation tags: colour + letter */
+.case-tag {
+  display: inline-block;
+  font: 600 .6rem var(--font-interface);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  padding: .05rem .3rem;
+  vertical-align: super;
+  margin-left: .25rem;
+}
+.case-nom { color: var(--case-nom); }
+.case-akk { color: var(--case-akk); }
+.case-dat { color: var(--case-dat); }
+.case-gen { color: var(--case-gen); }
+
+/* Verb position marker */
+.verb-pos { text-decoration: underline double; text-decoration-thickness: 1.5px; text-underline-offset: .15em; font-weight: 600; }
+
+/* Red-pencil correction strike */
+.rotstift-strike {
+  position: relative;
+  color: var(--rotstift);
+}
+.rotstift-strike::after {
+  content: "";
+  position: absolute; left: -2%; right: -2%;
+  top: 52%;
+  height: 1.5px;
+  background: var(--rotstift);
+  transform: rotate(-1.2deg);
+  border-radius: 1px;
+  pointer-events: none;
+}
+
+/* Teacher's margin note in red pencil */
+.margin-red {
+  color: var(--rotstift);
+  font-family: var(--font-reading);
+  font-style: italic;
+  font-size: .9rem;
+  line-height: 1.5;
+}
+
+/* Quiet moss tick */
+.moos-tick { color: var(--moos); font-weight: 600; }
+
+/* BESTANDEN rubber stamp */
+.stamp {
+  display: inline-block;
+  border: 2.5px solid var(--rotstift);
+  border-radius: 3px;
+  color: var(--rotstift);
+  font: 700 .85rem var(--font-interface);
+  letter-spacing: .28em;
+  text-transform: uppercase;
+  padding: .5rem .9rem;
+  transform: rotate(-4deg);
+  opacity: .82;
+}
+
+/* Karteikarte */
+.karteikarte {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 1.25rem 1.35rem;
+  position: relative;
+}
+.karteikarte::before {
+  content: "";
+  position: absolute; left: 0; right: 0; top: 2.6rem;
+  border-top: 1px solid var(--rule);
+  pointer-events: none;
+}
+
+/* Achtung label */
+.achtung {
+  color: var(--rotstift);
+  font: 600 .62rem var(--font-interface);
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+/* TOC dotted leader lines */
+.toc-row { display: flex; align-items: baseline; gap: .5rem; }
+.toc-row .leader {
+  flex: 1;
+  border-bottom: 1px dotted var(--ink-soft);
+  min-width: 2rem;
+  transform: translateY(-3px);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; gap: .45rem;
+  border-radius: 3px;
+  font: 600 .8rem var(--font-interface);
+  padding: .55rem 1rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.btn-primary { background: var(--tintenblau); color: var(--paper); }
+.btn-primary:hover { background: color-mix(in srgb, var(--tintenblau) 88%, var(--ink)); }
+.btn-outline { border-color: var(--rule); color: var(--ink); background: transparent; }
+.btn-outline:hover { background: var(--paper-deep); border-color: var(--ink-soft); }
+.btn-quiet { color: var(--tintenblau); background: transparent; }
+.btn-quiet:hover { text-decoration: underline; text-underline-offset: 3px; }
+.btn:disabled { opacity: .4; cursor: not-allowed; }
+
+.rule-divider { border: 0; border-top: 1px solid var(--rule); }
+
+/* Soft, purposeful motion */
+.fade-in { animation: fade-in 180ms ease-out; }
+@keyframes fade-in { from { opacity: 0; transform: translateY(2px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+@media (max-width: 700px) {
+  .book-page { padding: 1.5rem 1rem; }
+  .margin-note { border-left: 2px solid var(--rule); margin: 1rem 0; }
+}
+
+@media print {
+  body { background: white !important; background-image: none !important; color: #111 !important; }
+  header, footer, button, nav { display: none !important; }
+  main { margin: 0 !important; }
+  .book-page { max-width: none; padding: 0; }
+  .stamp { opacity: 1; }
 }

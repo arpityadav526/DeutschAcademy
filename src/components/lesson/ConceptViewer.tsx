@@ -19,61 +19,48 @@ export function ConceptViewer({
   deepDives,
 }: ConceptViewerProps) {
   return (
-    <div className="space-y-6">
-      <div className="border-b border-slate-200 pb-3">
-        <h2 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
+    <div className="space-y-8">
+      <header className="space-y-1">
+        <p className="running-head">
+          <span>Theorie · Regeln</span>
+        </p>
+        <h2 className="text-2xl font-bold text-ink tracking-tight font-serif mt-4">
           {title}
         </h2>
-        <p className="text-xs text-slate-500 mt-1">
-          Conceptual theory and grammatical mechanics explained step by step.
+        <p className="text-sm text-ink-soft">
+          Conceptual theory and grammatical mechanics, explained step by step.
         </p>
-      </div>
+      </header>
 
-      {/* Main explanation body */}
-      <div className="prose prose-slate max-w-none text-slate-800 text-sm sm:text-base leading-relaxed bg-white p-5 rounded-lg border border-slate-200 shadow-sm space-y-3">
+      {/* Explanation body — reading column */}
+      <div className="reading-copy text-ink">
         <GrammarText content={explanation} />
       </div>
 
-      {/* Grammar Tables */}
+      {/* Grammar tables — printed-book style */}
       {tables && tables.length > 0 && (
-        <div className="space-y-6 my-6">
+        <div className="space-y-8">
           {tables.map((table, tIdx) => (
-            <div
-              key={tIdx}
-              className="rounded-lg border border-slate-200 overflow-hidden shadow-sm bg-white"
-            >
+            <figure key={tIdx} className="space-y-2">
               {table.caption && (
-                <div className="px-4 py-2.5 bg-slate-50 border-b border-slate-200 font-semibold text-xs text-slate-700 uppercase tracking-wider">
-                  {table.caption}
-                </div>
+                <figcaption className="eyebrow smallcaps">
+                  Tabelle {tIdx + 1} — {table.caption}
+                </figcaption>
               )}
               <div className="overflow-x-auto">
-                <table className="min-w-full divide-y divide-slate-200 text-left text-xs sm:text-sm">
-                  <thead className="bg-slate-100">
+                <table className="book-table text-sm">
+                  <thead>
                     <tr>
                       {table.headers.map((h, hIdx) => (
-                        <th
-                          key={hIdx}
-                          className="px-3 sm:px-4 py-2.5 font-semibold text-slate-700"
-                        >
-                          {h}
-                        </th>
+                        <th key={hIdx}>{h}</th>
                       ))}
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-slate-100 bg-white">
+                  <tbody>
                     {table.rows.map((row, rIdx) => (
-                      <tr
-                        key={rIdx}
-                        className={rIdx % 2 === 0 ? "bg-white" : "bg-slate-50/50"}
-                      >
+                      <tr key={rIdx}>
                         {row.map((cell, cIdx) => (
-                          <td
-                            key={cIdx}
-                            className={`px-3 sm:px-4 py-2.5 text-slate-800 ${
-                              cIdx === 0 ? "font-medium" : ""
-                            }`}
-                          >
+                          <td key={cIdx} className={cIdx === 0 ? "font-medium text-ink" : "text-ink"}>
                             <GrammarText content={cell} />
                           </td>
                         ))}
@@ -82,12 +69,12 @@ export function ConceptViewer({
                   </tbody>
                 </table>
               </div>
-            </div>
+            </figure>
           ))}
         </div>
       )}
 
-      {/* Teacher Deep Dive Notes */}
+      {/* Teacher deep-dive notes as margin asides */}
       {deepDives && deepDives.length > 0 && (
         <div className="space-y-3">
           {deepDives.map((note, nIdx) => (

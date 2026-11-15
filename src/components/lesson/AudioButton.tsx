@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Volume2, Volume1, Loader2 } from "lucide-react";
+import { Volume2, Loader2 } from "lucide-react";
 import { speakGerman } from "@/lib/speech";
 
 interface AudioButtonProps {
@@ -18,20 +18,14 @@ export function AudioButton({
   className = "",
 }: AudioButtonProps) {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [slowMode, setSlowMode] = useState(false);
 
   const handlePlay = async (e: React.MouseEvent) => {
     e.stopPropagation();
     if (isPlaying) return;
 
     setIsPlaying(true);
-    await speakGerman(text, slowMode);
+    await speakGerman(text, false);
     setIsPlaying(false);
-  };
-
-  const toggleSpeed = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    setSlowMode(!slowMode);
   };
 
   const iconSizes = {
@@ -46,30 +40,16 @@ export function AudioButton({
         type="button"
         onClick={handlePlay}
         disabled={isPlaying}
-        aria-label={`Listen to German pronunciation: ${text}`}
-        className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-100 hover:bg-slate-200 active:bg-slate-300 text-slate-700 hover:text-slate-900 border border-slate-300 transition-colors text-xs font-medium cursor-pointer shadow-sm"
+        aria-label={`Deutsche Aussprache anhören: ${text}`}
+        title="Audio anhören"
+        className="inline-flex items-center gap-1.5 px-2 py-1 rounded-sm border border-rule text-ink-soft hover:text-ink hover:bg-paper-deep text-xs"
       >
         {isPlaying ? (
-          <Loader2 className={`${iconSizes[size]} animate-spin text-slate-500`} />
-        ) : slowMode ? (
-          <Volume1 className={`${iconSizes[size]} text-amber-700`} />
+          <Loader2 className={`${iconSizes[size]} animate-spin`} />
         ) : (
-          <Volume2 className={`${iconSizes[size]} text-slate-700`} />
+          <Volume2 className={iconSizes[size]} />
         )}
         {label ? <span>{label}</span> : null}
-      </button>
-
-      <button
-        type="button"
-        onClick={toggleSpeed}
-        title={slowMode ? "Slow audio active (0.75x). Click for normal." : "Normal audio (1.0x). Click for slow."}
-        className={`px-1.5 py-0.5 rounded text-[10px] font-mono border transition-colors ${
-          slowMode
-            ? "bg-amber-100 border-amber-300 text-amber-800 font-semibold"
-            : "bg-transparent border-slate-200 text-slate-500 hover:border-slate-300"
-        }`}
-      >
-        {slowMode ? "0.75x" : "1.0x"}
       </button>
     </div>
   );

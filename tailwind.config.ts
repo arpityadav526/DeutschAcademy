@@ -11,44 +11,31 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        paper: "var(--paper)",
+        "paper-deep": "var(--paper-deep)",
+        rule: "var(--rule)",
+        ink: "var(--ink)",
+        "ink-soft": "var(--ink-soft)",
+        tintenblau: "var(--tintenblau)",
+        rotstift: "var(--rotstift)",
+        moos: "var(--moos)",
+        textmarker: "var(--textmarker)",
         grammar: {
-          nom: {
-            bg: "#eff6ff",
-            border: "#93c5fd",
-            text: "#1d4ed8",
-            badge: "#dbeafe",
-          },
-          akk: {
-            bg: "#fef2f2",
-            border: "#fca5a5",
-            text: "#b91c1c",
-            badge: "#fee2e2",
-          },
-          dat: {
-            bg: "#fffbeb",
-            border: "#fcd34d",
-            text: "#b45309",
-            badge: "#fef3c7",
-          },
-          gen: {
-            bg: "#f0fdf4",
-            border: "#86efac",
-            text: "#15803d",
-            badge: "#dcfce7",
-          },
-          verb: {
-            bg: "#faf5ff",
-            border: "#d8b4fe",
-            text: "#7e22ce",
-            badge: "#f3e8ff",
-          },
-          prefix: {
-            bg: "#fdf4ff",
-            border: "#f0abfc",
-            text: "#a21caf",
-            badge: "#fae8ff",
-          },
+          nom: "var(--case-nom)",
+          akk: "var(--case-akk)",
+          dat: "var(--case-dat)",
+          gen: "var(--case-gen)",
+          verb: "var(--case-verb)",
+          prefix: "var(--case-prefix)",
         },
+      },
+      fontFamily: {
+        serif: ["var(--font-reading)", "Georgia", "serif"],
+        sans: ["var(--font-interface)", "'Avenir Next'", "sans-serif"],
+        fraktur: ["var(--font-fraktur)", "serif"],
+      },
+      borderRadius: {
+        DEFAULT: "2px",
       },
     },
   },

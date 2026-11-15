@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { VocabularyItem } from "@/lib/types";
 import { AudioButton } from "./AudioButton";
-import { Bookmark, BookmarkCheck, Check } from "lucide-react";
+import { Bookmark, BookmarkCheck } from "lucide-react";
 
 interface VocabularyViewProps {
   vocabulary: VocabularyItem[];
@@ -13,16 +13,16 @@ interface VocabularyViewProps {
 export function VocabularyView({ vocabulary, onSaveToSRS }: VocabularyViewProps) {
   const [savedIds, setSavedIds] = useState<Set<string>>(new Set());
 
-  const getArticleBadge = (article?: string) => {
+  const articleClass = (article?: string) => {
     switch (article) {
       case "der":
-        return "bg-blue-100 text-blue-800 border-blue-300";
+        return "gender-der";
       case "die":
-        return "bg-red-100 text-red-800 border-red-300";
+        return "gender-die";
       case "das":
-        return "bg-emerald-100 text-emerald-800 border-emerald-300";
+        return "gender-das";
       default:
-        return "bg-slate-100 text-slate-700 border-slate-300";
+        return "";
     }
   };
 
@@ -37,90 +37,74 @@ export function VocabularyView({ vocabulary, onSaveToSRS }: VocabularyViewProps)
   };
 
   return (
-    <div className="space-y-6 my-6">
-      <div className="border-b border-slate-200 pb-2 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-        <div>
-          <h3 className="text-lg font-semibold text-slate-900 tracking-tight">
-            Thematic Vocabulary in Context
-          </h3>
-          <p className="text-xs text-slate-500">
-            German vocabulary must always be learned with its grammatical gender and inside real sentences.
-          </p>
-        </div>
-        <div className="text-xs text-slate-500 font-mono bg-slate-100 px-2.5 py-1 rounded">
-          {vocabulary.length} core items
-        </div>
-      </div>
+    <div className="space-y-6">
+      <header className="space-y-1">
+        <p className="running-head">
+          <span>Wortschatz · Karteikarten</span>
+        </p>
+        <h3 className="text-xl font-bold text-ink font-serif mt-4">
+          Wortschatz im Kontext
+        </h3>
+        <p className="text-sm text-ink-soft">
+          German vocabulary is always learned with its gender and inside a real sentence.
+          Every card can be saved to your daily Wiederholung queue.
+        </p>
+      </header>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {/* Karteikarten grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {vocabulary.map((v, idx) => {
           const itemKey = `${v.article || ""}-${v.word}`;
           const isSaved = savedIds.has(itemKey);
 
           return (
-            <div
-              key={idx}
-              className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm hover:border-slate-300 transition-all flex flex-col justify-between gap-3"
-            >
-              <div>
-                {/* Header: German term + Audio + Save */}
-                <div className="flex items-start justify-between gap-2">
-                  <div className="flex items-center gap-2 flex-wrap">
-                    {v.article && (
-                      <span
-                        className={`px-2 py-0.5 rounded text-xs font-semibold border ${getArticleBadge(
-                          v.article
-                        )}`}
-                      >
-                        {v.article}
-                      </span>
-                    )}
-                    <span className="text-base font-bold text-slate-900">
-                      {v.word}
+            <div key={idx} className="karteikarte space-y-2">
+              {/* Above the rule: the word itself */}
+              <div className="flex items-start justify-between gap-2 pb-3">
+                <p className="text-lg font-serif text-ink">
+                  {v.article && (
+                    <span className={`${articleClass(v.article)} font-semibold mr-1.5`}>
+                      {v.article}
                     </span>
-                    {v.plural && (
-                      <span className="text-xs text-slate-500 font-mono">
-                        (Pl. {v.plural})
-                      </span>
+                  )}
+                  {v.word}
+                  {v.plural && (
+                    <span className="text-xs text-ink-soft font-sans ml-2">
+                      (Pl. {v.plural})
+                    </span>
+                  )}
+                </p>
+                <div className="flex items-center gap-1.5 shrink-0">
+                  <AudioButton text={`${v.article ? v.article + " " : ""}${v.word}`} size="sm" />
+                  <button
+                    type="button"
+                    onClick={() => handleSave(v)}
+                    disabled={isSaved}
+                    title={isSaved ? "Bereits zur Wiederholung gespeichert" : "Zur täglichen Wiederholung speichern"}
+                    aria-label={isSaved ? "Bereits gespeichert" : "Zur Wiederholung speichern"}
+                    className={`p-1 rounded-sm transition-colors ${
+                      isSaved
+                        ? "text-moos"
+                        : "text-ink-soft hover:text-ink"
+                    }`}
+                  >
+                    {isSaved ? (
+                      <BookmarkCheck className="w-4 h-4" />
+                    ) : (
+                      <Bookmark className="w-4 h-4" />
                     )}
-                  </div>
-                  <div className="flex items-center gap-1.5 shrink-0">
-                    <AudioButton text={`${v.article ? v.article + " " : ""}${v.word}`} size="sm" />
-                    <button
-                      type="button"
-                      onClick={() => handleSave(v)}
-                      disabled={isSaved}
-                      title={isSaved ? "Saved to SRS review" : "Save to daily review queue"}
-                      className={`p-1.5 rounded transition-colors text-xs ${
-                        isSaved
-                          ? "text-emerald-700 bg-emerald-50 border border-emerald-200"
-                          : "text-slate-400 hover:text-slate-700 hover:bg-slate-100 border border-transparent"
-                      }`}
-                    >
-                      {isSaved ? (
-                        <BookmarkCheck className="w-4 h-4" />
-                      ) : (
-                        <Bookmark className="w-4 h-4" />
-                      )}
-                    </button>
-                  </div>
-                </div>
-
-                {/* English meaning */}
-                <div className="text-sm font-medium text-slate-600 mt-1">
-                  {v.english}
+                  </button>
                 </div>
               </div>
 
-              {/* Context sentence */}
-              <div className="bg-slate-50 p-2.5 rounded border border-slate-100 text-xs space-y-1">
-                <div className="text-slate-900 font-medium flex items-center justify-between gap-2">
-                  <span>{v.exampleSentence}</span>
+              {/* Below the rule: meaning and example in context */}
+              <div className="pt-2 space-y-1.5">
+                <p className="text-sm text-ink-soft">{v.english}</p>
+                <div className="flex items-baseline justify-between gap-2">
+                  <p className="german-example !text-[1.02rem] text-ink">{v.exampleSentence}</p>
                   <AudioButton text={v.exampleSentence} size="sm" />
                 </div>
-                <div className="text-slate-500 italic">
-                  {v.exampleTranslation}
-                </div>
+                <p className="german-translation">{v.exampleTranslation}</p>
               </div>
             </div>
           );

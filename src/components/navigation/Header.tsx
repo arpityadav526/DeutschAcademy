@@ -3,33 +3,22 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  BookOpen,
-  Brain,
-  Compass,
-  LayoutDashboard,
-  GraduationCap,
-  FileText,
-  Volume2,
-  Menu,
-  X,
-  Award,
-} from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export function Header() {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { href: "/learn/a1/unit-01", label: "Curriculum", icon: BookOpen },
-    { href: "/grammar", label: "Grammar Reference", icon: Compass },
-    { href: "/review", label: "SRS Review", icon: Brain },
-    { href: "/reading", label: "Reading Lab", icon: FileText },
-    { href: "/listening", label: "Listening", icon: Volume2 },
-    { href: "/writing", label: "Writing Studio", icon: GraduationCap },
-    { href: "/exam-prep", label: "Exam Prep", icon: Award },
-    { href: "/placement", label: "Placement Test", icon: Compass },
-    { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
+    { href: "/learn/a1/unit-01", label: "Lektion" },
+    { href: "/grammar", label: "Nachschlagewerk" },
+    { href: "/review", label: "Wiederholung" },
+    { href: "/reading", label: "Lesesaal" },
+    { href: "/listening", label: "Hörsaal" },
+    { href: "/writing", label: "Schreibwerkstatt" },
+    { href: "/exam-prep", label: "Prüfungsvorbereitung" },
+    { href: "/placement", label: "Einstufungstest" },
+    { href: "/dashboard", label: "Studienbuch" },
   ];
 
   const isActive = (href: string) => {
@@ -40,59 +29,46 @@ export function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo & Brand */}
-          <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-8 h-8 rounded bg-slate-900 text-white flex items-center justify-center font-serif font-bold text-base shadow-sm group-hover:bg-slate-800 transition-colors">
-              D
-            </div>
-            <div className="flex flex-col">
-              <span className="font-bold text-slate-900 tracking-tight text-base font-serif">
-                DeutschAcademy
-              </span>
-              <span className="text-[10px] text-slate-500 font-mono tracking-wider uppercase -mt-0.5">
-                Teaching-First Platform
-              </span>
-            </div>
+    <header className="sticky top-0 z-40 bg-paper border-b border-rule">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-14">
+          {/* Wordmark — the one Fraktur touch, like a book's spine title */}
+          <Link href="/" className="flex items-baseline gap-3 group">
+            <span className="font-fraktur text-2xl text-ink leading-none">
+              DeutschAcademy
+            </span>
+            <span className="hidden sm:inline eyebrow smallcaps">
+              Grammatik · Lektion · Übung
+            </span>
           </Link>
 
-          {/* Desktop Nav Items */}
-          <nav className="hidden xl:flex items-center space-x-1">
+          {/* Desktop nav — running-header style */}
+          <nav className="hidden xl:flex items-center space-x-4">
             {navItems.map((item) => {
-              const Icon = item.icon;
               const active = isActive(item.href);
               return (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium transition-colors ${
+                  className={`text-xs font-medium pb-0.5 border-b-2 transition-colors ${
                     active
-                      ? "bg-slate-100 text-slate-900 font-semibold"
-                      : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
+                      ? "border-tintenblau text-ink"
+                      : "border-transparent text-ink-soft hover:text-ink"
                   }`}
                 >
-                  <Icon className={`w-3.5 h-3.5 ${active ? "text-slate-900" : "text-slate-400"}`} />
                   <span>{item.label}</span>
                 </Link>
               );
             })}
           </nav>
 
-          {/* User profile / Quick Auth Link */}
+          {/* Quick auth links */}
           <div className="hidden sm:flex items-center gap-2">
-            <Link
-              href="/login"
-              className="text-xs font-medium text-slate-600 hover:text-slate-900 px-3 py-1.5 rounded hover:bg-slate-100 transition-colors"
-            >
-              Sign In
+            <Link href="/login" className="btn btn-quiet text-xs">
+              Anmelden
             </Link>
-            <Link
-              href="/learn/a1/unit-01"
-              className="text-xs font-semibold bg-slate-900 text-white px-3.5 py-1.5 rounded-md hover:bg-slate-800 transition-colors shadow-sm"
-            >
-              Start A1 Unit 1
+            <Link href="/learn/a1/unit-01" className="btn btn-primary text-xs">
+              A1 · Kapitel 1
             </Link>
           </div>
 
@@ -101,8 +77,8 @@ export function Header() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-md text-slate-600 hover:text-slate-900 hover:bg-slate-100"
-              aria-label="Toggle Navigation Menu"
+              className="p-2 text-ink-soft hover:text-ink"
+              aria-label="Navigation öffnen oder schließen"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
@@ -112,40 +88,38 @@ export function Header() {
 
       {/* Mobile drawer */}
       {mobileMenuOpen && (
-        <div className="xl:hidden border-t border-slate-200 bg-white px-4 pt-2 pb-4 space-y-1">
+        <div className="xl:hidden border-t border-rule bg-paper px-4 pt-2 pb-4 space-y-0.5">
           {navItems.map((item) => {
-            const Icon = item.icon;
             const active = isActive(item.href);
             return (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`flex items-center gap-2.5 px-3 py-2 rounded-md text-sm ${
+                className={`flex items-center gap-2.5 px-3 py-2 text-sm ${
                   active
-                    ? "bg-slate-100 text-slate-900 font-semibold"
-                    : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
+                    ? "text-ink font-semibold bg-paper-deep"
+                    : "text-ink-soft hover:text-ink"
                 }`}
               >
-                <Icon className="w-4 h-4 text-slate-500" />
                 <span>{item.label}</span>
               </Link>
             );
           })}
-          <div className="pt-2 border-t border-slate-100 flex items-center justify-between">
+          <div className="pt-2 border-t border-rule flex items-center justify-between">
             <Link
               href="/login"
               onClick={() => setMobileMenuOpen(false)}
-              className="text-xs text-slate-600 hover:text-slate-900"
+              className="text-xs text-ink-soft hover:text-ink"
             >
-              Sign In / Account
+              Anmelden / Konto
             </Link>
             <Link
               href="/placement"
               onClick={() => setMobileMenuOpen(false)}
-              className="text-xs font-semibold text-indigo-700"
+              className="text-xs font-semibold text-tintenblau"
             >
-              Take Placement Exam →
+              Einstufungstest →
             </Link>
           </div>
         </div>
